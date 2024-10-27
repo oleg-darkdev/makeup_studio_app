@@ -1,59 +1,100 @@
 <script lang="ts">
-	// import Counter from './Counter.svelte';
-	import welcomeFallback from '$lib/images/svelte-welcome.png';
-	import welcome from '$lib/images/svelte-welcome.webp';
+	import { SEO } from '$sharedUtils';
+	import { boardgamesList, categories } from '$sharedData';
+	import { LineDivider, BigContaciDivider, SmallContaciDivider } from '$sharedUi';
+	import {
+		LinkinBio,
+		Services,
+		TagsLine,
+		About,
+		Gallery,
+		Stats,
+		Faq,
+		FullWidthBanner,
+		Features,
+		Instructions,
+		PleaseEnterPassword,
+		BestBoardgames,
+		Blog,
+		ColourfulSection,
+		ContactForm,
+		BoardgamesList,
+		Price,
+		Team,
+		FreeFirst,
+		OurMission
+	} from '$widgetsLanding';
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Puzzle Management | Home </title>
+	<meta name="description" content="" />
 </svelte:head>
 
-<section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcomeFallback} alt="Welcome" />
-			</picture>
-		</span>
+<!-- <SEO title="Home" /> -->
 
-		to your new<br />SvelteKit app
-	</h1>
+<TagsLine />
 
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
 
-	<!-- <Counter /> -->
-</section>
 
-<style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-	}
+<About {categories}/>
 
-	h1 {
-		width: 100%;
-	}
+<!-- <Stats /> -->
 
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
+<LineDivider />
 
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
+<OurMission />
+
+<LineDivider />
+
+<Features {categories}/>
+
+<SmallContaciDivider />
+
+<!-- <LineDivider /> -->
+
+<BoardgamesList {categories} />
+
+<!-- <Gallery /> -->
+
+<LineDivider />
+
+
+
+<LineDivider />
+
+<ColourfulSection />
+
+
+<!-- <LineDivider /> -->
+
+<BestBoardgames />
+
+<LineDivider />
+
+<!-- <Price /> -->
+
+<Services />
+
+<BigContaciDivider />
+
+<Faq />
+
+
+
+<!-- <Team /> -->
+
+<!-- <FreeFirst /> -->
+
+<!-- <FullWidthBanner /> -->
+
+<!-- <ContactForm /> -->
+
+<!-- <Instructions /> -->
+
+<!-- <PleaseEnterPassword /> -->
+
+<!-- <LinkinBio /> -->
+
+<style lang="postcss">
 </style>
