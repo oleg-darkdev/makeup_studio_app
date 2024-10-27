@@ -7,9 +7,10 @@ const config = {
 		// inspector: { toggleKeyCombo: 'control' }
 	},
 	preprocess: [vitePreprocess()],
-
 	kit: {
-		adapter: adapter(),
+		adapter: adapter({
+			runtime: 'edge'
+		}),
 		csrf: {
 			checkOrigin: false
 		},
@@ -19,7 +20,15 @@ const config = {
 		},
 		alias: {
 			$i18n: 'src/i18n',
-			$components: 'src/components'
+			$entitiesLanding: 'src/lib/entities/landing',
+			$entitiesApp: 'src/lib/entities/app',
+			$widgetsLanding: 'src/lib/widgets/Landing',
+			$widgetsApp: 'src/lib/widgets/app',
+			$sharedUi: 'src/lib/shared/ui',
+			$sharedData: 'src/lib/shared/data',
+			$sharedStores: 'src/lib/shared/stores',
+			$sharedUtils: 'src/lib/shared/utils',
+			$sharedTypes: 'src/lib/shared/types'
 		}
 	},
 	compilerOptions: {
