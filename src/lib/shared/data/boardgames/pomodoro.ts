@@ -65,7 +65,7 @@ const boardgame = {
 		subscription: '8'
 	},
 	shortDesc:
-		"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+		'Pomaga skupić się na wykonywaniu, ocenie I planowaniu zadań przy użyciu technik pomodoro I kanban.',
 	desc: [
 		"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
 		"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",

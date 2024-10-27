@@ -65,7 +65,7 @@ const boardgame = {
 		subscription: '8'
 	},
 	shortDesc:
-		"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+		'Gra symulacyjna, której celem jest zapoznanie uczestników z organizacją I moderowaniem dyskusji z wykorzystaniem metody «lean coffee», a także z podstawami facylitacji za pomocą «core cards».',
 	desc: [
 		"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
 		"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",

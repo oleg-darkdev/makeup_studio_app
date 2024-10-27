@@ -65,7 +65,7 @@ const boardgame = {
 		subscription: '8'
 	},
 	shortDesc:
-		"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+		'Symulacyjna gra o organizacji pracy I znaczeniu skrócenia czasu dostarczania wartości klientom, z różnymi wąskimi gardłami.',
 	desc: [
 		"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
 		"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",

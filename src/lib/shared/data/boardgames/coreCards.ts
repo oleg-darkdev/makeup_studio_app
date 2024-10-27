@@ -22,7 +22,7 @@ const boardgame = {
 	freeValueForReplace: '',
 	miniFaq: '',
 	api: 'https://puzzle-management.vercel.app/api/wip-puzzle',
-	progress: { app: 0, boardgame: 0, landing: 0 },
+	progress: { app: 0, boardgame: 0, landing: 1 },
 	tags: [
 		'Lorem impsum',
 		'Lorem impsum',
@@ -65,7 +65,7 @@ const boardgame = {
 		subscription: '8'
 	},
 	shortDesc:
-		"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+		'Zestaw kart facylitacyjnych bazujący na zasadach wizualizacji fraz kluczowych - służący poprawie komunikacji I organizacji dyskusji w grupach.',
 	desc: [
 		"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
 		"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",

@@ -65,7 +65,7 @@ const boardgame = {
 		subscription: '8'
 	},
 	shortDesc:
-		"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+		'Gra edukacyjna o frameworku «scrum», która szczegółowo wprowadza graczy w kluczowe zasady I praktyki opisane w oficjalnym podręczniku «scrum».',
 	desc: [
 		"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
 		"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
