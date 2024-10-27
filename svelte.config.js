@@ -22,7 +22,7 @@ const config = {
 			$i18n: 'src/i18n',
 			$entitiesLanding: 'src/lib/entities/landing',
 			$entitiesApp: 'src/lib/entities/app',
-			$widgetsLanding: 'src/lib/widgets/Landing',
+			$widgetsLanding: 'src/lib/widgets/landing',
 			$widgetsApp: 'src/lib/widgets/app',
 			$sharedUi: 'src/lib/shared/ui',
 			$sharedData: 'src/lib/shared/data',
