@@ -15,7 +15,7 @@
 </script>
 
 <div
-	class="accordion-wrap group transition delay-150 duration-300 ease-in-out xl:hover:translate-x-16 lg:hover:translate-x-16 md:hover:translate-x-16 hover:translate-x-4"
+	class="accordion-wrap group transition delay-150 duration-300 ease-in-out xl:hover:translate-x-16 lg:hover:translate-x-16 md:hover:translate-x-16"
 	onmouseenter={() => (isHovered = true)}
 	onmouseleave={() => (isHovered = false)}
 >

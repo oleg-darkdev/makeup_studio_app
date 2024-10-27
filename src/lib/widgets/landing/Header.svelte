@@ -1,6 +1,9 @@
 <script lang="ts">
 	// import {  } from '$shared';
+import {
+	fade,
 
+} from 'svelte/transition';
 	import type { NavigationLink } from '$sharedTypes';
 
 	interface NavigationProps {
@@ -9,14 +12,14 @@
 	let { navigation, boardgamesList }: NavigationProps = $props();
 
 
-	let showMenu = $state(true);
+	let showMenu = $state(false);
 </script>
 
 <div role="banner" class="navbar w-nav">
 	<div class="container-full w-container">
 		<div class="navbar-grid">
 			{#if showMenu}
-			<div class="sm-menu flex h-screen flex-col" onclick={()=> showMenu = !showMenu}>
+			<div transition:fade class="sm-menu flex h-screen flex-col" onclick={()=> showMenu = !showMenu}>
 				<div class="flex flex-col text-center my-auto">
 					{#each navigation as { title, link }}<a
 							href={link}
@@ -83,9 +86,10 @@
 				/>
 			</a>
 
-			<div class="menu-button w-nav-button w--open" onclick={()=> showMenu = !showMenu}>
+			<div class="menu-button w-nav-button  {showMenu ? 'w--open rotate-45': ''} transition delay-150 duration-300 ease-in-out" onclick={()=> showMenu = !showMenu}>
 				<!-- <div class="w-icon-nav-menu"></div> -->
-				<h4>=</h4>
+				<!-- <h4 class='my-auto'>=</h4> -->
+				 <img src="/images/menu-icon.svg" class='h-10 w-auto' alt="">
 			</div>
 		</div>
 	</div>
