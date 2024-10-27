@@ -1,13 +1,13 @@
 <script lang="ts">
 	import { Header, Footer } from '$widgetsLanding';
-	import { navigation, categories } from '$sharedData';
+	import { navigation, categories, boardgamesList } from '$sharedData';
 	import '../../../app/app.css';
 
 	let { children } = $props();
 </script>
 
 <div class="page-wrapper">
-	<Header {navigation}/>
+	<Header {navigation} {boardgamesList}/>
 
 	<main>
 		{@render children()}

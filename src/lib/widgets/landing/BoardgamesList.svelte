@@ -22,31 +22,26 @@
 	let showInfo = $state(true);
 </script>
 
-
 <section class="work-process-section section-spacing-bottom">
 	<div class="w-layout-blockcontainer container-full w-container">
-
-        <a name="boardgames"></a>
+		<a name="boardgames"></a>
 
 		<div class=" work-process-wrap">
 			<div class="">
 				<div class="section-title">
 					<div class="sub-title-wrap">
-						<img
-							src="images/66d0464eec8062a3c7b9f0ae_icon-20.svg"
-							loading="lazy"
-							alt=""
-							class="sub-title-icon"
-						/>
+						<img src="/images/offer-icon.svg" loading="lazy" alt="" class="sub-title-icon" />
 						<div class="text-dark">. Nasza propozycja</div>
 					</div>
 					<h3 class="text-dark">Lista dostępnych gier planszowych</h3>
 				</div>
 
 				<div class="accordion">
+					
 					{#each categories as { title, anchor, games, abstractIcon, bgColor }}
 						<a name={anchor}></a>
-						<div class=" category-wrap mb-4 mt-14">
+
+						<div class=" category-wrap mb-4 ">
 							<div class="accordion-heading flex flex-row">
 								<div class="accordion-title-wrap">
 									<img src={abstractIcon} class="h-10" alt="" />
@@ -55,20 +50,19 @@
 								</div>
 							</div>
 						</div>
-
-						{#each games as boardgame : Boardgame (boardgame.id)}
+						<!-- :  : Boardgame -->
+						{#each games as boardgame (boardgame.id)}
 							<BoardgameCard {boardgame} />
 						{/each}
 					{/each}
 				</div>
 			</div>
 			<div class="career-title-sticky">
-				<AppCard {boardgamesList}/>
+				<AppCard {boardgamesList} />
 			</div>
 		</div>
 	</div>
 </section>
-
 
 <style lang="postcss">
 	.category-wrap {

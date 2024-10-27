@@ -72,12 +72,7 @@
 			<div id="w-node-_45944e5e-b661-70cb-db38-62e73eb5a1fc-c7b9f0a4">
 				<div class="section-title">
 					<div class="sub-title-wrap">
-						<img
-							src="images/66d0464eec8062a3c7b9f0ae_icon-20.svg"
-							loading="lazy"
-							alt=""
-							class="sub-title-icon"
-						/>
+						<img src="images/offer-icon.svg" loading="lazy" alt="" class="sub-title-icon" />
 						<div class="text-dark">. How we work</div>
 					</div>
 					<h3 class="text-dark">Our work process</h3>
