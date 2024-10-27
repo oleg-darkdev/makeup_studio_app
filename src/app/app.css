@@ -2799,7 +2799,7 @@ figcaption {
 }
 
 .hero-2-section {
-	background-image: url('/images/66d0464eec8062a3c7b9f071_body-bg.jpg');
+	background-image: url('/images/gradient-body-bg.jpg');
 	background-position: 50%;
 	background-size: cover;
 	border-radius: 15px;
@@ -3007,7 +3007,7 @@ figcaption {
 .bg-gradient {
 	z-index: -1;
 	background-color: var(--color--primary-1);
-	background-image: url('/images/66d0464eec8062a3c7b9f071_body-bg.jpg');
+	background-image: url('/images/gradient-body-bg.jpg');
 	background-position: 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -3295,7 +3295,7 @@ figcaption {
 .contact-form-wrap {
 	border-radius: var(--border-radius--border-radius);
 	background-color: #fff;
-	background-image: url('/images/66d0464eec8062a3c7b9f071_body-bg.jpg');
+	background-image: url('/images/gradient-body-bg.jpg');
 	background-position: 50%;
 	background-size: cover;
 	padding: 50px;
@@ -3369,7 +3369,7 @@ figcaption {
 
 .grid-mission {
 	border-radius: var(--border-radius--border-radius);
-	background-image: url('/images/66d0464eec8062a3c7b9f071_body-bg.jpg');
+	background-image: url('/images/gradient-body-bg.jpg');
 	background-position: 50%;
 	background-size: cover;
 	grid-template-rows: auto;
@@ -4141,7 +4141,7 @@ figcaption {
 	border-radius: var(--border-radius--button);
 	color: var(--color--white);
 	text-align: center;
-	background-image: url('/images/66d0464eec8062a3c7b9f071_body-bg.jpg');
+	background-image: url('/images/gradient-body-bg.jpg');
 	background-position: 50%;
 	background-size: cover;
 	justify-content: center;
