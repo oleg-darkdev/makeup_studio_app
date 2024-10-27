@@ -1,6 +1,10 @@
-export { default as LineDivider } from './LineDivider.svelte';
-export { default as BigContaciDivider } from './BigContaciDivider.svelte';
-export { default as SmallContaciDivider } from './SmallContaciDivider.svelte';
-export { default as Layout } from './Layout.svelte';
-// export { default as PleaseEnterPassword } from './PleaseEnterPassword.svelte';
-// export { default as PleaseEnterPassword } from './PleaseEnterPassword.svelte';
+import  LineDivider  from './LineDivider.svelte';
+import  BigContaciDivider  from './BigContaciDivider.svelte';
+import  SmallContaciDivider  from './SmallContaciDivider.svelte';
+// import  Layout from './Layout.svelte';
+
+
+export { LineDivider, BigContaciDivider, SmallContaciDivider };
+
+// import  PleaseEnterPassword } from './PleaseEnterPassword.svelte';
+// import  PleaseEnterPassword } from './PleaseEnterPassword.svelte';
