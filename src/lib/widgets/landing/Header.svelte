@@ -1,16 +1,12 @@
 <script lang="ts">
 	// import {  } from '$shared';
-import {
-	fade,
-
-} from 'svelte/transition';
+	import { fade } from 'svelte/transition';
 	import type { NavigationLink } from '$sharedTypes';
 
 	interface NavigationProps {
 		navigation: NavigationLink[];
 	}
 	let { navigation, boardgamesList }: NavigationProps = $props();
-
 
 	let showMenu = $state(false);
 </script>
@@ -19,16 +15,20 @@ import {
 	<div class="container-full w-container">
 		<div class="navbar-grid">
 			{#if showMenu}
-			<div transition:fade class="sm-menu flex h-screen flex-col" onclick={()=> showMenu = !showMenu}>
-				<div class="flex flex-col text-center my-auto">
-					{#each navigation as { title, link }}<a
-							href={link}
-							aria-current="page"
-							class="w-nav-link text-white"><h2>{title}</h2></a
-						>{/each}
-					<!-- <a href="/" class="button-link">more about us</a> -->
-				</div>
-				<!-- <div class="footer-item px-10">
+				<div
+					transition:fade
+					class="sm-menu flex h-screen flex-col"
+					onclick={() => (showMenu = !showMenu)}
+				>
+					<div class="my-auto flex flex-col text-center">
+						{#each navigation as { title, link }}<a
+								href={link}
+								aria-current="page"
+								class="w-nav-link text-white"><h2>{title}</h2></a
+							>{/each}
+						<!-- <a href="/" class="button-link">more about us</a> -->
+					</div>
+					<!-- <div class="footer-item px-10">
 					<div class="footer-title-wrap">
 						<img src="/images/boardgames-icon.svg" loading="lazy" alt="" class="footer-shape-1" />
 						<h6 class="footer-title">Lista gier</h6>
@@ -42,7 +42,7 @@ import {
 						{/each}
 					</div>
 				</div> -->
-			</div>
+				</div>
 			{/if}
 
 			<div class="nav-left">
@@ -86,10 +86,15 @@ import {
 				/>
 			</a>
 
-			<div class="menu-button w-nav-button  {showMenu ? 'w--open rotate-45': ''} transition delay-150 duration-300 ease-in-out" onclick={()=> showMenu = !showMenu}>
+			<div
+				class="menu-button w-nav-button {showMenu
+					? 'w--open rotate-45'
+					: ''} transition delay-150 duration-300 ease-in-out"
+				onclick={() => (showMenu = !showMenu)}
+			>
 				<!-- <div class="w-icon-nav-menu"></div> -->
 				<!-- <h4 class='my-auto'>=</h4> -->
-				 <img src="/images/menu-icon.svg" class='h-10 w-auto' alt="">
+				<img src="/images/menu-icon.svg" class="h-10 w-auto" alt="" />
 			</div>
 		</div>
 	</div>
