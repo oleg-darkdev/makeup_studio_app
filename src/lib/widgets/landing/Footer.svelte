@@ -134,7 +134,7 @@ value="Submit"
 					<!-- w-layout-grid grid-footer-menu -->
 					<div class="">
 						{#each categories.slice(0,2) as { title, games, abstractIcon }}
-							<div class="mb-10">
+							<div class="mb-12">
 								<div class="mb-4">
 									<h6 class="footer-title">{title}</h6>
 								</div>
@@ -171,7 +171,7 @@ value="Submit"
 					<!-- w-layout-grid grid-footer-menu -->
 					<div class="">
 						{#each categories.slice(1,3) as { title, games, abstractIcon }}
-							<div class="mb-10">
+							<div class="mb-12">
 								<div class="mb-4">
 									<h6 class="footer-title">{title}</h6>
 								</div>
