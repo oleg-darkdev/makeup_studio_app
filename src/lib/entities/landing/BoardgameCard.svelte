@@ -6,16 +6,15 @@
 	interface BoardgameProps {
 		boardgame: Boardgame;
 	}
-
+	import { fade } from 'svelte/transition';
 	let { boardgame }: BoardgameProps = $props();
 
-	let showInfo = $state(false);
-
-	let isHovered = $state(false);
+	let showInfo = $state(false),
+		isHovered = $state(false);
 </script>
 
 <div
-	class="accordion-wrap group transition delay-150 duration-300 ease-in-out xl:hover:translate-x-16 lg:hover:translate-x-16 md:hover:translate-x-16"
+	class="accordion-wrap group transition delay-150 duration-300 ease-in-out md:hover:translate-x-16 lg:hover:translate-x-16 xl:hover:translate-x-16"
 	onmouseenter={() => (isHovered = true)}
 	onmouseleave={() => (isHovered = false)}
 >
@@ -24,34 +23,49 @@
 			<div class="accordion-title-wrap">
 				<!-- <div class="accordion-title-number">.01</div> -->
 				<!-- iconDark -->
-				<img src={isHovered ? boardgame.icon : boardgame.iconDark} alt="" class="h-12" />
+				<img
+					src={isHovered ? boardgame.icon : boardgame.iconDark}
+					alt=""
+					class="h-32 lg:h-12 xl:h-12"
+				/>
 				<!-- <div class="h-8 h-8"></div> -->
 				<!-- group-hover:text-pink-600 -->
-				<h4 class="accordion-title">{boardgame.title}</h4>
+				<h4 class="accordion-title text-left uppercase">{boardgame.title}</h4>
 			</div>
-			<img src="images/plus-icon.svg" loading="lazy" alt="" class="accordion-icon" />
+
+			<div
+				class="menu-button w-nav-button h-10 w-12 {showInfo
+					? 'w--open'
+					: ''}"
+			>
+				<img src="images/plus-icon.svg" loading="lazy" alt="" class="{showInfo
+					? ' rotate-45'
+					: ''}  transition delay-150 duration-300 ease-in-out accordion-icon h-10 w-10" />
+			</div>
 		</div>
 		{#if showInfo}
-			<img
-				src={isHovered ? boardgame.logo : boardgame.logoDark}
-				alt="{boardgame.title} logo mt-8"
-				class="w-full"
-			/>
+			<div class="" transition:fade>
+				<img
+					src={isHovered ? boardgame.logo : boardgame.logoDark}
+					alt="{boardgame.title} logo mt-8"
+					class="w-full"
+				/>
 
-			<div class="about-list">
-				{#each boardgame.tags as tag}
-					<div class="hero-about-counter-item">{tag}</div>
-				{/each}
+				<div class="about-list">
+					{#each boardgame.tags as tag}
+						<div class="hero-about-counter-item uppercase">{tag}</div>
+					{/each}
+				</div>
 			</div>
 		{/if}
 
-		<p class="accordion-border-description mt-6 text-left">
+		<p class="accordion-border-description mt-6 text-left uppercase">
 			{boardgame.shortDesc}
 		</p>
 	</button>
 
 	{#if showInfo}
-		<div style="" class="accordion-content">
+		<div style="" transition:fade class="accordion-content">
 			<div class="accordion-border-content">
 				<div class="layout-grid grid-boardgame-content">
 					<div class="boardgame-item">
@@ -132,6 +146,14 @@
 </div>
 
 <style lang="postcss">
+
+
+	.menu-button.w--open {
+		background-color: var(--color--border-color);
+		border-radius: var(--border-radius--border-radius);
+		margin-left: auto;
+	}
+
 	.accordion-wrap {
 		border: 1px solid var(--color--border-color);
 		border-radius: var(--border-radius--border-radius);
