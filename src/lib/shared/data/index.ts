@@ -18,7 +18,8 @@ import {
 	roles,
 	scrum,
 	todo,
-	wip
+	wip,
+	coreCards
 } from './boardgames';
 import navigation from './navigation';
 import {
@@ -61,6 +62,8 @@ roles.miniFaq = rolesMiniFaq;
 scrum.miniFaq = scrumMiniFaq;
 todo.miniFaq = todoMiniFaq;
 wip.miniFaq = wipMiniFaq;
+coreCards.miniFaq = coreCardsMiniFaq;
+
 
 export {
 	// faq
@@ -105,5 +108,6 @@ export {
 	roles,
 	scrum,
 	todo,
-	wip
+	wip,
+	coreCards
 };
