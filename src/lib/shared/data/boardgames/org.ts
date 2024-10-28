@@ -12,28 +12,34 @@ const boardgame = {
 	logoWhite: '/images/logos/org_puzzle.svg',
 	iconWhite: '/images/icons/org_puzzle.svg',
 
-	iconUrl: '',
-	logoUrl: '',
-	logoDarkUrl: '',
-	iconDarkUrl: '',
-	logoWhiteUrl: '',
-	iconWhiteUrl: '',
+	iconUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/icons/org_puzzle.svg',
+	logoUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/logos/org_puzzle.svg',
+	logoDarkUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/logos/org_puzzle_black.svg',
+	iconDarkUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/icons/org_puzzle_black.svg',
+	logoWhiteUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/logos/org_puzzle.svg',
+	iconWhiteUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/icons/org_puzzle.svg',
 
 	freeValueForReplace: '',
 	miniFaq: '',
 	api: 'https://puzzle-management.vercel.app/api/org-puzzle',
 	progress: { app: 0, boardgame: 0, landing: 0 },
 	tags: [
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum'
+		'Spiralna dynamika',
+		'Rodzaje organizacji',
+		`Etapy rozwoju organizacji`,
+		'Schematy mentalne',
+		'Kultura organizacyjna',
+		'Wartości organizacyjne',
+		'Ewolucja społeczeństwa'
 	],
 	type: 'Kooperacyjna gra edukacyjna',
-	age: '12+',
+	age: '18+',
 	features: [
 		{
 			title: 'Lorem Ipsum has',
@@ -50,15 +56,15 @@ const boardgame = {
 	],
 	amountPlayers: {
 		min: 4,
-		max: 20
+		max: 8
 	},
 	durationGame: {
-		min: 40,
+		min: 140,
 		max: 180
 	},
 	durationWorkshop: {
-		min: 40,
-		max: 180
+		min: 140,
+		max: 200
 	},
 	pricing: {
 		box: '40',

@@ -12,26 +12,24 @@ const boardgame = {
 	logoWhite: '/images/logos/holacrat_puzzle.svg',
 	iconWhite: '/images/icons/holacrat_puzzle.svg',
 
-	iconUrl: '',
-	logoUrl: '',
-	logoDarkUrl: '',
-	iconDarkUrl: '',
-	logoWhiteUrl: '',
-	iconWhiteUrl: '',
+	iconUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/icons/holacrat_puzzle.svg',
+	logoUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/logos/holacrat_puzzle.svg',
+	logoDarkUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/logos/holacrat_puzzle_black.svg',
+	iconDarkUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/icons/holacrat_puzzle_black.svg',
+	logoWhiteUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/logos/holacrat_puzzle.svg',
+	iconWhiteUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/icons/holacrat_puzzle.svg',
 
 	freeValueForReplace: '',
 	miniFaq: '',
 	api: 'https://puzzle-management.vercel.app/api/holacrat-puzzle',
 	progress: { app: 0, boardgame: 0, landing: 0 },
-	tags: [
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum'
-	],
+	tags: ['Struktura organizacji', 'Model zarządzania', 'Role w zespole', 'Holakracja'],
 	type: 'Kooperacyjna gra edukacyjna',
 	age: '12+',
 	features: [
