@@ -38,7 +38,7 @@ const boardgame = {
 		'Elastyczność i adaptacja'
 	],
 	type: 'Kooperacyjna gra edukacyjna',
-	age: '12+',
+	age: '14+',
 	features: [
 		{
 			title: 'Lorem Ipsum has',

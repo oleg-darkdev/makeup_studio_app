@@ -12,28 +12,26 @@ const boardgame = {
 	logoWhite: '/images/logos/roles_puzzle.svg',
 	iconWhite: '/images/icons/roles_puzzle.svg',
 
-	iconUrl: '',
-	logoUrl: '',
-	logoDarkUrl: '',
-	iconDarkUrl: '',
-	logoWhiteUrl: '',
-	iconWhiteUrl: '',
+	iconUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/icons/roles_puzzle.svg',
+	logoUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/logos/roles_puzzle.svg',
+	logoDarkUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/logos/roles_puzzle_black.svg',
+	iconDarkUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/icons/roles_puzzle_black.svg',
+	logoWhiteUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/logos/roles_puzzle.svg',
+	iconWhiteUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/icons/roles_puzzle.svg',
 
 	freeValueForReplace: '',
 	miniFaq: '',
 	api: 'https://puzzle-management.vercel.app/api/roles-puzzle',
 	progress: { app: 0, boardgame: 0, landing: 0 },
-	tags: [
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum'
-	],
+	tags: ['', '', '', '', '', '', ''],
 	type: 'Kooperacyjna gra edukacyjna',
-	age: '12+',
+	age: '14+',
 	features: [
 		{
 			title: 'Lorem Ipsum has',

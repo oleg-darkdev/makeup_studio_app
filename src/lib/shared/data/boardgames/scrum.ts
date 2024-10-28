@@ -12,28 +12,32 @@ const boardgame = {
 	logoWhite: '/images/logos/scrum_puzzle.svg',
 	iconWhite: '/images/icons/scrum_puzzle.svg',
 
-	iconUrl: '',
-	logoUrl: '',
-	logoDarkUrl: '',
-	iconDarkUrl: '',
-	logoWhiteUrl: '',
-	iconWhiteUrl: '',
+	iconUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/icons/scrum_puzzle.svg',
+	logoUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/logos/scrum_puzzle.svg',
+	logoDarkUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/logos/scrum_puzzle_black.svg',
+	iconDarkUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/icons/scrum_puzzle_black.svg',
+	logoWhiteUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/logos/scrum_puzzle.svg',
+	iconWhiteUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/icons/scrum_puzzle.svg',
 
 	freeValueForReplace: '',
 	miniFaq: '',
 	api: 'https://puzzle-management.vercel.app/api/scrum-puzzle',
 	progress: { app: 0, boardgame: 0, landing: 0 },
 	tags: [
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum'
+		'Scrum framework',
+		'Scrum Book',
+		'Agile',
+		'Zespoły interdyscyplinarne',
+		'Scrum Master'
 	],
 	type: 'Kooperacyjna gra edukacyjna',
-	age: '12+',
+	age: '18+',
 	features: [
 		{
 			title: 'Lorem Ipsum has',
@@ -50,15 +54,15 @@ const boardgame = {
 	],
 	amountPlayers: {
 		min: 4,
-		max: 20
+		max: 12
 	},
 	durationGame: {
-		min: 40,
-		max: 180
+		min: 80,
+		max: 140
 	},
 	durationWorkshop: {
-		min: 40,
-		max: 180
+		min: 80,
+		max: 140
 	},
 	pricing: {
 		box: '40',

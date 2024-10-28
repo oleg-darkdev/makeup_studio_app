@@ -12,28 +12,32 @@ const boardgame = {
 	logoWhite: '/images/logos/pomodoro_puzzle.svg',
 	iconWhite: '/images/icons/pomodoro_puzzle.svg',
 
-	iconUrl: '',
-	logoUrl: '',
-	logoDarkUrl: '',
-	iconDarkUrl: '',
-	logoWhiteUrl: '',
-	iconWhiteUrl: '',
+	iconUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/icons/pomodoro_puzzle.svg',
+	logoUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/logos/pomodoro_puzzle.svg',
+	logoDarkUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/logos/pomodoro_puzzle_black.svg',
+	iconDarkUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/icons/pomodoro_puzzle_black.svg',
+	logoWhiteUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/logos/pomodoro_puzzle.svg',
+	iconWhiteUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/icons/pomodoro_puzzle.svg',
 
 	freeValueForReplace: '',
 	miniFaq: '',
 	api: 'https://puzzle-management.vercel.app/api/pomodoro-puzzle',
 	progress: { app: 0, boardgame: 0, landing: 0 },
 	tags: [
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum'
+		'Technika Pomodoro',
+		'Zarządzanie czasem',
+		'Koncentracja i produktywność',
+		'Strategia koncentracji',
+		'Samoorganizacja'
 	],
 	type: 'Kooperacyjna gra edukacyjna',
-	age: '12+',
+	age: '14+',
 	features: [
 		{
 			title: 'Lorem Ipsum has',
