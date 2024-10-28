@@ -24,10 +24,7 @@ import todo from './todo';
 import wip from './todo';
 import coreCards from './coreCards';
 
-
-
 import pm from './pm';
-
 
 // logo icon logoDark iconDark logoWhite iconWhite
 const boardgamesList = [
@@ -53,65 +50,96 @@ const boardgamesList = [
 
 const categories = [
 	{
-		title: 'Управление',
+		title: 'Zarządzanie',
 		id: 100,
 		bgColor: 'one',
 		abstractIcon: 'images/feature_1_abstract.svg',
 		anchor: 'management',
+		// развивают навыки эффективного управления и лидерства, помогая пользователям освоить стратегическое планирование, постановку целей и организацию рабочих процессов
 		shortDesc:
-			'развивают навыки эффективного управления и лидерства, помогая пользователям освоить стратегическое планирование, постановку целей и организацию рабочих процессов',
-		icon: 'images/star_icon-5.svg',
+			' Rozwijaj umiejętności zarządzania i przywództwa, pomagając użytkownikom opanować planowanie strategiczne, wyznaczanie celów i organizację pracy.',
+		icon: '/images/star_icon-5.svg',
 		features: [
-			'Построение стратегического мышления',
+			// Организация и оптимизация рабочих процессов
+			// Методы и практики управления в условиях неопределенности
+			// Выявление  "узких мест" в операционной деятельности
+			// Построение стратегического и системного мышления
+			// гибкости в подходах к управлению
+			// Контроль делегированных задач
+			// `Organizacja i optymalizacja procesów biznesowych`,
+			// `Metody i praktyki zarządzania w warunkach niepewności`,
+			// `Identyfikacja wąskich gardeł w działalności operacyjnej`,
+			// `Budowanie myślenia strategicznego i systemowego`
 
-			'Решение комплексных задач ',
-			'Оптимизация процессов '
+			`Organizacja procesów biznesowych`,
+			`Metody i praktyki zarządzania`,
+			`Budowanie myślenia systemowego`,
+			`Identyfikacja wąskich gardeł`,
+			`Kontrola delegowanych zadań`
+			// `Elastyczność w podejściach do zarządzania`
 		],
 		games: [cynefin, delegation, holacrat, kanban, scrum, org]
 	},
 	{
-		title: 'Коммуникации',
+		title: 'Komunikacja',
 		id: 200,
 		anchor: 'communications',
 		bgColor: 'two',
-		abstractIcon: 'images/feature_2_abstract.svg',
-		shortDesc: 'фокусируется на улучшении навыков общения и взаимодействия внутри команды.',
-		icon: 'images/star_icon-2.svg',
-		features: ['Развитие навыков активного слушания', 'Улучшение навыков обратной связи ', '', ''],
+		abstractIcon: '.images/feature_2_abstract.svg',
+		// фокусируется на улучшении навыков общения и взаимодействия внутри команды.
+		shortDesc: 'Koncentruje się na doskonaleniu kompetencji komunikacyjnych i facylitacyjnych.',
+		icon: '/images/star_icon-2.svg',
+		// Конструктивная обратная связь
+		// Распознавание барьеров в общении
+		// Практики ведения диалога в группе
+		// Вовлечение каждого члена команды в дискуссию
+		// Способы уточнения и раскрытия информации
+		// Выявление и обработка причин конфликта
+		// Дискуссия и открытость внутри группы
+		// 'Развитие навыков активного слушания',
+		// 'Улучшение навыков обратной связи ',
+		features: [
+			'Rozpoznawanie barier w komunikacji',
+			'Prowadzenie dialogu grupowego',
+			`Angażowanie każdego w dyskusję`,
+			// `Metody ujawniania informacji`,
+			`Identyfikacja przyczyn konfliktu`
+		],
 		games: [coffee, roles, health, hr, coreCards]
 	},
 	{
-		title: 'Планирование',
+		title: 'Planowanie',
 		id: 300,
 		bgColor: 'three',
 		abstractIcon: 'images/feature_3_abstract.svg',
 		anchor: 'planning',
-		shortDesc: 'развить навыки проектного планирования, анализа рисков и оценки ресурсов',
-		icon: 'images/star_icon-3.svg',
+		shortDesc:
+			'Rozwijanie umiejętności planowania projektów, analizy zagrożeń, ustalania priorytetów i oceny dostępnych zasobów.',
+		icon: '.images/star_icon-3.svg',
 		features: [
-			'Управление временем и ресурсами',
-			'Управление рисками',
-			'Навыки прогнозирования',
-			''
+			// 'Umiejętności przewidywania',
+			`Produktywność osobista`,
+			`Przemyślenia i uświadomienie sytuacji`,
+			`Reagowanie i wprowadzanie korekt`,
+			`Ustalanie priorytetów`
 		],
-		games: [owner, multitasking, pizza]
+		games: [owner, pomodoro]
 	},
 	{
-		title: 'Выполнение',
+		title: 'Realizacja',
 		id: 400,
 		bgColor: 'four',
 		abstractIcon: 'images/feature_4_abstract.svg',
 		anchor: 'implementation',
 		shortDesc:
-			'сосредоточены на практических аспектах выполнения задач: организация работы, реализация проектов и контроль над выполнением поручений.',
+			'Koncentruje się na praktycznych aspektach realizacji zadań, wdrażaniu projektów i monitorowaniu ich postępów za pomocą wizualizacji.',
 		icon: 'images/star_icon-4.svg',
 		features: [
-			'Развитие навыков концентрации',
-			'Усиление личной ответственности',
-			'Повышение личной продуктивности',
-			''
+			'Kształtowanie umiejętności koncentracji',
+			`Efektywna organizacja przestrzeni`,
+			`Szybka realizacja zadań priorytetowych`
 		],
-		games: [pomodoro, todo, delay]
+		games: [todo, delay, pizza, multitasking]
 	}
 ];
 
