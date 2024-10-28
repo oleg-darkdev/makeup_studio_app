@@ -1,13 +1,11 @@
 <script lang="ts">
-	import {
-		pmFaq
-	} from '$sharedData';
-	import { FaqCard } from '$entitiesLanding'
+	import { pmFaq } from '$sharedData';
+
+	import { FaqCard } from '$entitiesLanding';
 </script>
 
 <section class="careers-section section-spacing">
 	<div class="w-layout-blockcontainer container-full w-container">
-
 		<a name="faq"></a>
 		<div class="w-layout-grid grid-career">
 			<div class="career-title-sticky">
@@ -17,7 +15,7 @@
 			</div>
 			<div class="accordion-border-wrap">
 				{#each pmFaq as faqItem}
-					<FaqCard {faqItem}/>
+					<FaqCard {faqItem} />
 				{/each}
 			</div>
 		</div>

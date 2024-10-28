@@ -3003,7 +3003,7 @@ figcaption {
 .accordion-title-wrap {
 	grid-column-gap: 15px;
 	grid-row-gap: 15px;
-	align-items: center;
+	/* align-items: center; */
 	display: flex;
 }
 
@@ -3499,7 +3499,7 @@ figcaption {
 }
 
 .accordion-border-icon {
-	width: 14px;
+	width: 26px;
 }
 
 .career-list-item {
