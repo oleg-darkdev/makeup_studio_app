@@ -3,6 +3,7 @@
 	import { LineDivider, SmallContaciDivider } from '$sharedUi';
 	import {
 		About,
+		TagsLine,
 		Faq,
 		Features,
 		BoardgamesList,
@@ -15,6 +16,7 @@
 	<meta name="description" content="" />
 </svelte:head>
 
+<TagsLine />
 
 <About {categories}/>
 

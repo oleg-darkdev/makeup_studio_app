@@ -1,6 +1,6 @@
 const boardgame = {
 	id: 17,
-	title: 'CoreCards',
+	title: 'Core Cards',
 	linkLanding: 'https://core-cards.vercel.app/',
 	linkApp: '/',
 	promoVideo: '',

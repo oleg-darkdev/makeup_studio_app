@@ -135,9 +135,9 @@ const categories = [
 			'Koncentruje się na praktycznych aspektach realizacji zadań, wdrażaniu projektów i monitorowaniu ich postępów za pomocą wizualizacji.',
 		icon: 'images/star_icon-4.svg',
 		features: [
-			'Kształtowanie umiejętności koncentracji',
+			'Koncentracja i skupienie',
 			`Efektywna organizacja przestrzeni`,
-			`Szybka realizacja zadań priorytetowych`
+			`Realizacja zadań priorytetowych`
 		],
 		games: [todo, delay, pizza, multitasking]
 	}
