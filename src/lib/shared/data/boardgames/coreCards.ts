@@ -5,34 +5,39 @@ const boardgame = {
 	linkApp: '/',
 	promoVideo: '',
 	github: 'https://github.com/oleg-darkdev/core-cards_app',
-	icon: '/images/icons/wip_puzzle.svg',
-	logo: '/images/logos/wip_puzzle.svg',
-	logoDark: '/images/logos/wip_puzzle_black.svg',
-	iconDark: '/images/icons/wip_puzzle_black.svg',
-	logoWhite: '/images/logos/wip_puzzle.svg',
-	iconWhite: '/images/icons/wip_puzzle.svg',
+	icon: '/images/icons/core_cards.svg',
+	logo: '/images/logos/core_cards.svg',
+	logoDark: '/images/logos/core_cards_black.svg',
+	iconDark: '/images/icons/core_cards_black.svg',
+	logoWhite: '/images/logos/core_cards.svg',
+	iconWhite: '/images/icons/core_cards.svg',
 
-	iconUrl: '',
-	logoUrl: '',
-	logoDarkUrl: '',
-	iconDarkUrl: '',
-	logoWhiteUrl: '',
-	iconWhiteUrl: '',
+	iconUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/icons/core_cards.svg',
+	logoUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/logos/core_cards.svg',
+	logoDarkUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/logos/core_cards_black.svg',
+	iconDarkUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/icons/core_cards_black.svg',
+	logoWhiteUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/logos/core_cards.svg',
+	iconWhiteUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/icons/core_cards.svg',
 
 	freeValueForReplace: '',
 	miniFaq: '',
-	api: 'https://puzzle-management.vercel.app/api/wip-puzzle',
+	api: 'https://puzzle-management.vercel.app/api/corecards',
 	progress: { app: 0, boardgame: 0, landing: 1 },
 	tags: [
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum'
+		'Moderacja',
+		'Retrospektywa',
+		'Facylitacja',
+		'Informacja zwrotna',
+		'Skuteczna komunikacja',
+		'Lean Coffee'
 	],
-	type: 'Kooperacyjna gra edukacyjna',
+	type: 'Zestaw kart facylitacyjnych.',
 	age: '12+',
 	features: [
 		{
@@ -53,12 +58,12 @@ const boardgame = {
 		max: 20
 	},
 	durationGame: {
-		min: 40,
-		max: 180
+		min: 10,
+		max: 60
 	},
 	durationWorkshop: {
-		min: 40,
-		max: 180
+		min: 10,
+		max: 60
 	},
 	pricing: {
 		box: '40',

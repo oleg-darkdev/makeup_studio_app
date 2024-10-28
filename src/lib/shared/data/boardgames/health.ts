@@ -12,25 +12,29 @@ const boardgame = {
 	logoWhite: '/images/logos/health_puzzle.svg',
 	iconWhite: '/images/icons/health_puzzle.svg',
 
-	iconUrl: '',
-	logoUrl: '',
-	logoDarkUrl: '',
-	iconDarkUrl: '',
-	logoWhiteUrl: '',
-	iconWhiteUrl: '',
+	iconUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/icons/health_puzzle.svg',
+	logoUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/logos/health_puzzle.svg',
+	logoDarkUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/logos/health_puzzle_black.svg',
+	iconDarkUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/icons/health_puzzle_black.svg',
+	logoWhiteUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/logos/health_puzzle.svg',
+	iconWhiteUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/icons/health_puzzle.svg',
 
 	freeValueForReplace: '',
 	miniFaq: '',
 	api: 'https://puzzle-management.vercel.app/api/health-puzzle',
 	progress: { app: 0, boardgame: 0, landing: 0 },
 	tags: [
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum'
+		'Retrospektywa',
+		'Informacja zwrotna',
+		'Diagnoza problemów',
+		'Klimat w zespole',
+		'Otwartość zespołu'
 	],
 	type: 'Kooperacyjna gra edukacyjna',
 	age: '12+',
@@ -49,16 +53,16 @@ const boardgame = {
 		}
 	],
 	amountPlayers: {
-		min: 4,
-		max: 20
+		min: 3,
+		max: 12
 	},
 	durationGame: {
-		min: 40,
-		max: 180
+		min: 20,
+		max: 80
 	},
 	durationWorkshop: {
 		min: 40,
-		max: 180
+		max: 100
 	},
 	pricing: {
 		box: '40',

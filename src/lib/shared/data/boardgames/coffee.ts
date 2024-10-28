@@ -12,25 +12,30 @@ const boardgame = {
 	logoWhite: '/images/logos/coffee_puzzle.svg',
 	iconWhite: '/images/icons/coffee_puzzle.svg',
 
-	iconUrl: '',
-	logoUrl: '',
-	logoDarkUrl: '',
-	iconDarkUrl: '',
-	logoWhiteUrl: '',
-	iconWhiteUrl: '',
+	iconUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/icons/coffee_puzzle.svg',
+	logoUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/icons/coffee_puzzle.svg',
+	logoDarkUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/logos/coffee_puzzle_black.svg',
+	iconDarkUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/icons/coffee_puzzle_black.svg',
+	logoWhiteUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/icons/coffee_puzzle.svg',
+	iconWhiteUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/icons/coffee_puzzle.svg',
 
 	freeValueForReplace: '',
 	miniFaq: '',
 	api: 'https://puzzle-management.vercel.app/api/coffee-puzzle',
 	progress: { app: 0, boardgame: 0, landing: 0 },
 	tags: [
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum'
+		'Informacja zwrotna',
+		'Skuteczna komunikacja',
+		'Retrospektywa',
+		'Moderacja',
+		'Facylitacja',
+		'Lean Coffee',
 	],
 	type: 'Kooperacyjna gra edukacyjna',
 	age: '12+',
@@ -39,26 +44,18 @@ const boardgame = {
 			title: 'Lorem Ipsum has',
 			desc: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer."
 		},
-		{
-			title: 'Lorem Ipsum has',
-			desc: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer."
-		},
-		{
-			title: 'Lorem Ipsum has',
-			desc: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer."
-		}
 	],
 	amountPlayers: {
 		min: 4,
 		max: 20
 	},
 	durationGame: {
-		min: 40,
-		max: 180
+		min: 30,
+		max: 90
 	},
 	durationWorkshop: {
-		min: 40,
-		max: 180
+		min: 30,
+		max: 120
 	},
 	pricing: {
 		box: '40',

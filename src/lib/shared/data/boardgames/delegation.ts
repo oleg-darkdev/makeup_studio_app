@@ -13,25 +13,28 @@ const boardgame = {
 	logoWhite: '/images/logos/delegation_puzzle.svg',
 	iconWhite: '/images/icons/delegation_puzzle.svg',
 
-	iconUrl: '',
-	logoUrl: '',
-	logoDarkUrl: '',
-	iconDarkUrl: '',
-	logoWhiteUrl: '',
-	iconWhiteUrl: '',
+	iconUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/9afec22a08ce4ba99dc2dddad7dc8f2541538c3a/static/images/icons/delegation_puzzle.svg',
+	logoUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/logos/delegation_puzzle.svg',
+	logoDarkUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/logos/delegation_puzzle_black.svg',
+	iconDarkUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/9afec22a08ce4ba99dc2dddad7dc8f2541538c3a/static/images/icons/delegation_puzzle_black.svg',
+	logoWhiteUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/refs/heads/main/static/images/logos/delegation_puzzle.svg',
+	iconWhiteUrl:
+		'https://raw.githubusercontent.com/oleg-darkdev/puzzle-management_app/9afec22a08ce4ba99dc2dddad7dc8f2541538c3a/static/images/icons/delegation_puzzle.svg',
 
 	freeValueForReplace: '',
 	miniFaq: '',
 	api: 'https://puzzle-management.vercel.app/api/delegation-puzzle',
 	progress: { app: 0, boardgame: 0, landing: 1 },
 	tags: [
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum',
-		'Lorem impsum'
+		'Delegowanie',
+		'Przywództwo',
+		'Indywidualna odpowiedzialność',
+		'Sterowanie zadaniami'
 	],
 	type: 'Kooperacyjna gra edukacyjna',
 	age: '12+',
@@ -50,16 +53,16 @@ const boardgame = {
 		}
 	],
 	amountPlayers: {
-		min: 4,
-		max: 20
+		min: 3,
+		max: 8
 	},
 	durationGame: {
-		min: 40,
-		max: 180
+		min: 30,
+		max: 160
 	},
 	durationWorkshop: {
-		min: 40,
-		max: 180
+		min: 30,
+		max: 160
 	},
 	pricing: {
 		box: '40',
