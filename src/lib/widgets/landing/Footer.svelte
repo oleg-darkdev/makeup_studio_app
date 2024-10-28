@@ -131,16 +131,88 @@ value="Submit"
 						<img src="/images/boardgames-icon.svg" loading="lazy" alt="" class="footer-shape-1" />
 						<h6 class="footer-title">Lista gier</h6>
 					</div>
-					<div class="w-layout-grid grid-footer-menu">
-						{#each boardgamesList as { title, progress, linkLanding, icon }}
+					<!-- w-layout-grid grid-footer-menu -->
+					<div class="">
+						{#each categories.slice(0,2) as { title, games, abstractIcon }}
+							<div class="mb-10">
+								<div class="mb-4">
+									<h6 class="footer-title">{title}</h6>
+								</div>
+								<!-- :  : Boardgame -->
+								<div class="w-layout-grid grid-footer-menu">
+									{#each games as { progress, title, icon, linkLanding }}
+										<!-- <BoardgameCard {boardgame} /> -->
+										<a
+											href={progress.landing ? linkLanding : '#'}
+											target="_blank"
+											class="footer-link"
+										>
+											<img src={icon} class="h-8" alt={title} />
+											{title}
+										</a>
+									{/each}
+								</div>
+							</div>
+						{/each}
+						<!-- {#each boardgamesList as { title, progress, linkLanding, icon }}
 							<a href={progress.landing ? linkLanding : '#'} target="_blank" class="footer-link">
 								<img src={icon} class="h-8" alt={title} />
 								{title}
 							</a>
-						{/each}
+						{/each} -->
 					</div>
 				</div>
 				<div class="footer-item">
+					<div class="footer-title-wrap">
+						<!-- <img src="/images/boardgames-icon.svg" loading="lazy" alt="" class="footer-shape-1" /> -->
+						 <div class="footer-shape-1"></div>
+						<h6 class="footer-title"></h6>
+					</div>
+					<!-- w-layout-grid grid-footer-menu -->
+					<div class="">
+						{#each categories.slice(1,3) as { title, games, abstractIcon }}
+							<div class="mb-10">
+								<div class="mb-4">
+									<h6 class="footer-title">{title}</h6>
+								</div>
+								<!-- :  : Boardgame -->
+								<div class="w-layout-grid grid-footer-menu">
+									{#each games as { progress, title, icon, linkLanding }}
+										<!-- <BoardgameCard {boardgame} /> -->
+										<a
+											href={progress.landing ? linkLanding : '#'}
+											target="_blank"
+											class="footer-link"
+										>
+											<img src={icon} class="h-8" alt={title} />
+											{title}
+										</a>
+									{/each}
+								</div>
+							</div>
+						{/each}
+					</div>
+				</div>
+
+				<div class="footer-item">
+					<div class="footer-title-wrap">
+						<img src="/images/social-icon.svg" loading="lazy" alt="" class="footer-shape-1" />
+						<h6 class="footer-title">Social media</h6>
+					</div>
+					<div class="footer-social mb-20">
+						<a
+							href="https://www.facebook.com/"
+							target="_blank"
+							class="footer-social-item w-inline-block"
+						>
+							<img src="images/facebook.svg" loading="lazy" alt="" class="footer-social-icon" />
+						</a>
+
+						<!-- images/66d0464eec8062a3c7b9f08b_twitter.svg -->
+						<!-- 66d0464eec8062a3c7b9f089_facebook.svg -->
+						<!-- images/66d0464eec8062a3c7b9f08a_instagram.svg -->
+					</div>
+
 					<div class="footer-title-wrap">
 						<img src="/images/contact-icon.svg" loading="lazy" alt="" class="footer-shape-1" />
 						<h6 class="footer-title">Kontact</h6>
@@ -152,31 +224,6 @@ value="Submit"
 						<a href="tel:+48000000000" class="text-white">+48 000 000 000</a>
 						<a href="mailto:darkdev_brand@riseup.net" class="text-white">darkdev_brand@riseup.net</a
 						>
-					</div>
-				</div>
-
-				<div class="footer-item">
-					<div class="footer-title-wrap">
-						<img src="/images/social-icon.svg" loading="lazy" alt="" class="footer-shape-1" />
-						<h6 class="footer-title">Social media</h6>
-					</div>
-					<div class="footer-social">
-						<a
-							href="https://www.facebook.com/"
-							target="_blank"
-							class="footer-social-item w-inline-block"
-						>
-							<img
-								src="images/facebook.svg"
-								loading="lazy"
-								alt=""
-								class="footer-social-icon"
-							/>
-						</a>
-
-						<!-- images/66d0464eec8062a3c7b9f08b_twitter.svg -->
-						<!-- 66d0464eec8062a3c7b9f089_facebook.svg -->
-						<!-- images/66d0464eec8062a3c7b9f08a_instagram.svg -->
 					</div>
 				</div>
 			</div>
