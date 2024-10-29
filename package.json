@@ -50,6 +50,7 @@
 		"@supabase/auth-ui-svelte": "^0.2.9",
 		"@supabase/ssr": "^0.5.1",
 		"@supabase/supabase-js": "^2.45.6",
+		"countup.js": "^2.6.0",
 		"svelte-seo": "^1.4.1"
 	}
 }
