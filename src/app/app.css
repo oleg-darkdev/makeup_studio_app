@@ -3277,10 +3277,7 @@ figcaption {
 	overflow: hidden;
 }
 
-.grid-mission-feature {
-	grid-template-rows: auto;
-	grid-template-columns: 1fr 1fr 1fr;
-}
+
 
 .mission-image-wrap {
 	position: relative;

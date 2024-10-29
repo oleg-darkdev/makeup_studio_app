@@ -11,45 +11,39 @@
     <div class="w-layout-blockcontainer container-full w-container">
         <div class="w-layout-grid grid-mission">
             <div >
-                <h3>Our mission</h3>
+                <h3>Misją Puzzle Management </h3>
                 <p>
-                    our mission is Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+Misją Puzzle Management jest zapewnienie, aby szkolenia z zarządzania były atrakcyjne i przyjazne, poprzez dostarczanie innowacyjnych gier planszowych, które pomagają rozwijać kluczowe umiejętności w zakresie zarządzania, komunikacji i planowania. 
                 </p>
             </div>
             <div >
                 <div class="section-title">
-                    <h3>Our value</h3>
+                    <h3>Nasze wartości</h3>
                     <p>
-                        our values Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                        Tworzenie narzędzi warsztatowych, dzięki którym każdy uczestnik może uwolnić swój potencjał przywódczy i zdobyć krytyczną wiedzę.
                     </p>
                 </div>
-                <div class="w-layout-grid grid-mission-feature">
-                    <div>
-                        <h6>Lorem Ipsum</h6>
-                        <ul role="list">
+                <div class="grid grid-cols-2 gap-8">
+                    <div class='p-2'>
+                        <h6>Kompleksowe podejście do edukacji</h6>
+                        <!-- <ul role="list">
                             <li>Lorem Ipsum</li>
                             <li>Lorem Ipsum</li>
-                        </ul>
+                        </ul> -->
                     </div>
-                    <div>
-                        <h6>Lorem Ipsum</h6>
-                        <ul role="list">
+                    <div class='p-2'>
+                        <h6>Grywalizacja procesu nauczania</h6>
+                        <!-- <ul role="list">
                             <li>Lorem Ipsum</li>
                             <li>Lorem Ipsum</li>
-                        </ul>
+                        </ul> -->
                     </div>
-                    <div>
-                        <h6>Lorem Ipsum</h6>
-                        <ul role="list">
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                        </ul>
-                    </div>
+
                 </div>
             </div>
             <div class="mission-image-wrap">
                 <img
-                    src="images/66d0464eec8062a3c7b9f0d4_elemnet-8.svg"
+                    src="/images/mission.svg"
                     loading="lazy"
                     alt=""
                     class="mission-image"
