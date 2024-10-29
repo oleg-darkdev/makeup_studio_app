@@ -1,15 +1,13 @@
 <script lang="ts">
-	// import {  } from '$shared';
-	// import {  } from '$widgets';
-	// import {  } from '$entities'
+	import { fade } from 'svelte/transition';
 	let { faq } = $props();
 
 	let showAnswer = $state(false);
 </script>
 
 <ul role="list" class="service-lists-wrap accordion-border-description">
-	<li class="boardgame-list-item">
-		<div class="flex items-center justify-between" onclick={() => (showAnswer = !showAnswer)}>
+	<li class="boardgame-list-item mb-4" onclick={() => (showAnswer = !showAnswer)}>
+		<div class="flex items-center justify-between mb-2" >
 			<div class="flex items-center">
 				<span class="service-list-icon"> </span>
 				<span>{faq.q}</span>
@@ -28,11 +26,13 @@
 		</div>
 
 		{#if showAnswer}
-			{#each faq.a as asnwer}
-				<p class="mb-2">
-					{asnwer}
-				</p>
-			{/each}
+			<div class="" transition:fade>
+				{#each faq.a as asnwer}
+					<p class="mb-2">
+						{asnwer}
+					</p>
+				{/each}
+			</div>
 		{/if}
 	</li>
 </ul>
