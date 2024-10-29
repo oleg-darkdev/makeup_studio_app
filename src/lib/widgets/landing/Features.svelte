@@ -18,7 +18,7 @@
 			{#each categories as { title, anchor, shortDesc, icon, features, games, bgColor }}
 				<a href="#{anchor}" class="service-item w-inline-block">
 					<div class="service-icon-wrap {bgColor}">
-						<img src={icon} loading="lazy" alt="" class="service-icon" />
+						<!-- <img src={icon} loading="lazy" alt="" class="service-icon" /> -->
 					</div>
 					<div class="margin-bottom-28">
 						<h2 class="heading-h5">{title}</h2>
