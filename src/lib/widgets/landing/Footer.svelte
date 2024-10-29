@@ -133,7 +133,7 @@ value="Submit"
 					</div>
 					<!-- w-layout-grid grid-footer-menu -->
 					<div class="">
-						{#each categories.slice(0,2) as { title, games, abstractIcon }}
+						{#each categories.slice(0, 2) as { title, games, abstractIcon }}
 							<div class="mb-12">
 								<div class="mb-4">
 									<h6 class="footer-title">{title}</h6>
@@ -163,14 +163,14 @@ value="Submit"
 					</div>
 				</div>
 				<div class="footer-item">
-					<div class="footer-title-wrap">
+					<div class="footer-title-wrap empty-title">
 						<!-- <img src="/images/boardgames-icon.svg" loading="lazy" alt="" class="footer-shape-1" /> -->
-						 <div class="footer-shape-1"></div>
+						<div class="footer-shape-1"></div>
 						<h6 class="footer-title"></h6>
 					</div>
 					<!-- w-layout-grid grid-footer-menu -->
 					<div class="">
-						{#each categories.slice(1,3) as { title, games, abstractIcon }}
+						{#each categories.slice(2, 4) as { title, games, abstractIcon }}
 							<div class="mb-12">
 								<div class="mb-4">
 									<h6 class="footer-title">{title}</h6>
@@ -295,4 +295,9 @@ value="Submit"
 </div> -->
 
 <style lang="postcss">
+	@media (max-width: 768px) {
+		.empty-title {
+			display: none;
+		}
+	}
 </style>
