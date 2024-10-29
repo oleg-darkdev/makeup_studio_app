@@ -33,14 +33,15 @@
 				<h4 class="accordion-title text-left uppercase">{boardgame.title}</h4>
 			</div>
 
-			<div
-				class="menu-button w-nav-button h-10 w-12 {showInfo
-					? 'w--open'
-					: ''}"
-			>
-				<img src="images/plus-icon.svg" loading="lazy" alt="" class="{showInfo
-					? ' rotate-45'
-					: ''}  transition delay-150 duration-300 ease-in-out accordion-icon h-10 w-10" />
+			<div class="menu-button w-nav-button h-10 w-12 {showInfo ? 'w--open' : ''}">
+				<img
+					src="images/plus-icon.svg"
+					loading="lazy"
+					alt=""
+					class="{showInfo
+						? ' rotate-45'
+						: ''}  accordion-icon h-10 w-10 transition delay-150 duration-300 ease-in-out"
+				/>
 			</div>
 		</div>
 		{#if showInfo}
@@ -93,49 +94,57 @@
 					</div>
 				</div>
 
-				<div class="mb-12">
-					{#each boardgame.features as { title, desc }}
-						<div class="boardgame-requirement mb-2">
-							<h6 class="boardgame-location-title">{title}</h6>
-							<!-- w-list-unstyled -->
-							<ul role="list" class="service-lists-wrap">
-								<li class="boardgame-list-item">
-									<span class="service-list-icon"> </span>
-									{desc}
-								</li>
-							</ul>
-						</div>
-					{/each}
-				</div>
-
-				<h6 class="boardgame-location-title">Opis</h6>
-				{#each boardgame.desc as text}
-					<p class="accordion-border-description">
-						{text}
-					</p>
-				{/each}
-
-				<div class="mb-12">
-					<div class="boardgame-requirement mb-2">
-						<h6 class="boardgame-location-title">F.A.Q.</h6>
-						<!-- w-list-unstyled -->
-						{#each boardgame.miniFaq as { q, a }}
-							<ul role="list" class="service-lists-wrap accordion-border-description">
-								<li class="boardgame-list-item">
-									<span class="service-list-icon"> </span>
-									<span>{q}</span>
-									{#each a as asnwer}
-										<p class="mb-2">
-											{asnwer}
-										</p>
-									{/each}
-								</li>
-							</ul>
+				{#if boardgame.features.length < 2}
+					<div class="mb-12">
+						{#each boardgame.features as { title, desc }}
+							<div class="boardgame-requirement mb-2">
+								<h6 class="boardgame-location-title">{title}</h6>
+								<!-- w-list-unstyled -->
+								<ul role="list" class="service-lists-wrap">
+									<li class="boardgame-list-item">
+										<span class="service-list-icon"> </span>
+										{desc}
+									</li>
+								</ul>
+							</div>
 						{/each}
 					</div>
-				</div>
+				{/if}
 
-				{#if boardgame.linkLanding.length > 3}
+				{#if boardgame.desc.length < 2}
+					<h6 class="boardgame-location-title">Opis</h6>
+					{#each boardgame.desc as text}
+						<p class="accordion-border-description">
+							{text}
+						</p>
+					{/each}
+				{/if}
+
+				{#if boardgame.miniFaq.length > 2}
+					<div class="mb-12">
+						<div class="boardgame-requirement mb-2">
+							<h6 class="boardgame-location-title">F.A.Q.</h6>
+							<!-- w-list-unstyled -->
+							{#each boardgame.miniFaq as { q, a }}
+								<ul role="list" class="service-lists-wrap accordion-border-description">
+									<li class="boardgame-list-item">
+										<span class="service-list-icon"> </span>
+										<span>{q}</span>
+										{#each a as asnwer}
+											<p class="mb-2">
+												{asnwer}
+											</p>
+										{/each}
+									</li>
+								</ul>
+							{/each}
+						</div>
+					</div>
+				{/if}
+
+
+
+				{#if boardgame.progress.landing >= 1}
 					<a href={boardgame.linkLanding} target="_blank" class="button-white w-button"
 						>Strona www</a
 					>
@@ -146,8 +155,6 @@
 </div>
 
 <style lang="postcss">
-
-
 	.menu-button.w--open {
 		background-color: var(--color--border-color);
 		border-radius: var(--border-radius--border-radius);
