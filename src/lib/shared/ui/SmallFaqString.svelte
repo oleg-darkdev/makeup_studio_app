@@ -6,21 +6,21 @@
 </script>
 
 <ul role="list" class="service-lists-wrap accordion-border-description">
-	<li class="boardgame-list-item mb-4" onclick={() => (showAnswer = !showAnswer)}>
-		<div class="flex items-center justify-between mb-2" >
-			<div class="flex items-center">
+	<li class="boardgame-list-item mb-6" onclick={() => (showAnswer = !showAnswer)}>
+		<div class="grid grid-cols-[9fr_1fr] gap-4 mb-2" >
+			<div class="flex items-start justify-between">
 				<span class="service-list-icon"> </span>
 				<span>{faq.q}</span>
 			</div>
 
-			<div class="menu-button w-nav-button h-10 w-12 {showAnswer ? 'w--open' : ''}">
+			<div class=" h-12 w-12 ml-auto {showAnswer ? 'w--open' : ''}">
 				<img
-					src="images/plus-icon.svg"
+					src="/images/plus-icon.svg"
 					loading="lazy"
 					alt=""
 					class="{showAnswer
 						? ' rotate-45'
-						: ''}  accordion-icon h-10 w-10 transition delay-150 duration-300 ease-in-out"
+						: ''}   h-full w-full transition delay-150 duration-300 ease-in-out"
 				/>
 			</div>
 		</div>
