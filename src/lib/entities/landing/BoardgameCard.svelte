@@ -1,5 +1,5 @@
 <script lang="ts">
-	// import {  } from '$shared';
+	import { SmallFaqString } from '$sharedUi';
 	// import {  } from '$widgets';
 	// import {  } from '$entities';
 	import type { Boardgame } from '$sharedTypes';
@@ -125,24 +125,12 @@
 						<div class="boardgame-requirement mb-2">
 							<h6 class="boardgame-location-title">F.A.Q.</h6>
 							<!-- w-list-unstyled -->
-							{#each boardgame.miniFaq as { q, a }}
-								<ul role="list" class="service-lists-wrap accordion-border-description">
-									<li class="boardgame-list-item">
-										<span class="service-list-icon"> </span>
-										<span>{q}</span>
-										{#each a as asnwer}
-											<p class="mb-2">
-												{asnwer}
-											</p>
-										{/each}
-									</li>
-								</ul>
+							{#each boardgame.miniFaq as faq}
+								<SmallFaqString {faq} />
 							{/each}
 						</div>
 					</div>
 				{/if}
-
-
 
 				{#if boardgame.progress.landing >= 1}
 					<a href={boardgame.linkLanding} target="_blank" class="button-white w-button"
@@ -174,7 +162,8 @@
 		background-repeat: no-repeat;
 		background-size: contain;
 		margin-right: 10px;
-		padding: 10px;
+		padding: 8px;
+		/* height: 10px; */
 	}
 
 	.layout-grid {
