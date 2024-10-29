@@ -72,8 +72,8 @@ const boardgame = {
 	shortDesc:
 		'Symulacyjna gra planszowa, w której uczestnicy próbują swoich sił w roli product ownera, uczą się ustalać priorytety backlogów I planować iteracje z wykorzystaniem założeń agile.',
 	desc: [
-		"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-		"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+		'',
+		'',
 		"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
 	],
 	gallery: [

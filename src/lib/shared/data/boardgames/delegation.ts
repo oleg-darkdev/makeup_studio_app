@@ -30,12 +30,7 @@ const boardgame = {
 	miniFaq: '',
 	api: 'https://puzzle-management.vercel.app/api/delegation-puzzle',
 	progress: { app: 0, boardgame: 0, landing: 1 },
-	tags: [
-		'Delegowanie',
-		'Przywództwo',
-		'Indywidualna odpowiedzialność',
-		'Sterowanie zadaniami'
-	],
+	tags: ['Delegowanie', 'Przywództwo', 'Indywidualna odpowiedzialność', 'Sterowanie zadaniami'],
 	type: 'Kooperacyjna gra edukacyjna',
 	age: '12+',
 	features: [
@@ -71,8 +66,8 @@ const boardgame = {
 	shortDesc:
 		'Gra edukacyjna, która pomaga wdrożyć kulturę współpracy w organizacji poprzez delegowanie decyzji I zadań w zespole.',
 	desc: [
-		"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-		"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+		'',
+		'',
 		"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
 	],
 	gallery: [

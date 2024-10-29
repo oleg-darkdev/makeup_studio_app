@@ -30,13 +30,7 @@ const boardgame = {
 	miniFaq: '',
 	api: 'https://puzzle-management.vercel.app/api/cynefin-puzzle',
 	progress: { app: 0, boardgame: 0, landing: 0 },
-	tags: [
-		'Agile',
-		'Waterfall',
-		'Model Cynefin',
-		'Podejścia w zarządzaniu',
-		'Złożone systemy'
-	],
+	tags: ['Agile', 'Waterfall', 'Model Cynefin', 'Podejścia w zarządzaniu', 'Złożone systemy'],
 	type: 'Kooperacyjna gra edukacyjna',
 	age: '16+',
 	features: [
@@ -71,8 +65,8 @@ const boardgame = {
 	},
 	shortDesc: `Gra edukacyjna, która pozwala na głębsze zrozumienie «modelu cynefin» I podejmowania decyzji w zarządzaniu, dając uczestnikom możliwość zbadania różnych praktyk I podejść w zależności od kontekstu, w którym się znajdują.`,
 	desc: [
-		"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-		"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+		'',
+		'',
 		"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
 	],
 	gallery: [

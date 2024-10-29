@@ -29,13 +29,7 @@ const boardgame = {
 	miniFaq: '',
 	api: 'https://puzzle-management.vercel.app/api/scrum-puzzle',
 	progress: { app: 0, boardgame: 0, landing: 0 },
-	tags: [
-		'Scrum framework',
-		'Scrum Book',
-		'Agile',
-		'Zespoły interdyscyplinarne',
-		'Scrum Master'
-	],
+	tags: ['Scrum framework', 'Scrum Book', 'Agile', 'Zespoły interdyscyplinarne', 'Scrum Master'],
 	type: 'Kooperacyjna gra edukacyjna',
 	age: '18+',
 	features: [
@@ -71,8 +65,8 @@ const boardgame = {
 	shortDesc:
 		'Gra edukacyjna o frameworku «scrum», która szczegółowo wprowadza graczy w kluczowe zasady I praktyki opisane w oficjalnym podręczniku «scrum».',
 	desc: [
-		"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-		"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+		'',
+		'',
 		"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
 	],
 	gallery: [

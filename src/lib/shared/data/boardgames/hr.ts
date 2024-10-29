@@ -65,8 +65,8 @@ const boardgame = {
 	shortDesc:
 		'Grywalizacja, która pomaga zespołowi określić, na ile motywacje zespołu I nowego kandydata są do siebie podobne.',
 	desc: [
-		"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-		"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+		'',
+		'',
 		"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
 	],
 	gallery: [
