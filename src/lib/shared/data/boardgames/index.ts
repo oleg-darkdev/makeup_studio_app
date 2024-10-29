@@ -85,7 +85,7 @@ const categories = [
 		id: 200,
 		anchor: 'communications',
 		bgColor: 'two',
-		abstractIcon: '.images/feature_2_abstract.svg',
+		abstractIcon: '/images/feature_2_abstract.svg',
 		// фокусируется на улучшении навыков общения и взаимодействия внутри команды.
 		shortDesc: 'Koncentruje się na doskonaleniu kompetencji komunikacyjnych i facylitacyjnych.',
 		icon: '/images/star_icon-2.svg',
