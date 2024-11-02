@@ -33,11 +33,11 @@ const config = {
 		}
 	},
 	plugins: [
-		plugin(function ({ addBase }) {
-			addBase({
-				html: { fontSize: '10px' }
-			});
-		})
+		// plugin(function ({ addBase }) {
+		// 	addBase({
+		// 		html: { fontSize: '10px' }
+		// 	});
+		// })
 	]
 };
 
