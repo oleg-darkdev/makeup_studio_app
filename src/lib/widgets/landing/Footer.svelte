@@ -87,7 +87,7 @@
 						<h6 class="footer-title">Lista gier</h6>
 					</div>
 					<!-- w-layout-grid grid-footer-menu -->
-					<div class="grid grid-cols-4 gap-6">
+					<div class="grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6">
 						{#each categories as { title, games, abstractIcon }}
 							<div class="mb-12">
 								<div class="mb-4">
