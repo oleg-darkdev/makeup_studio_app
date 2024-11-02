@@ -44,6 +44,7 @@
 				/>
 			</div>
 		</div>
+		
 		{#if showInfo}
 			<div class="" transition:fade>
 				<img

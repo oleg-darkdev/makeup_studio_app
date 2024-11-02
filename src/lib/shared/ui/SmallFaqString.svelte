@@ -8,7 +8,7 @@
 <ul role="list" class="service-lists-wrap accordion-border-description">
 	<li class="boardgame-list-item mb-6" onclick={() => (showAnswer = !showAnswer)}>
 		<div class="grid grid-cols-[9fr_1fr] gap-4 mb-2" >
-			<div class="flex items-start justify-between">
+			<div class="flex items-start">
 				<span class="service-list-icon"> </span>
 				<span>{faq.q}</span>
 			</div>
