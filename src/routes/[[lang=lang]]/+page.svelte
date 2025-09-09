@@ -1,91 +1,58 @@
 <script lang="ts">
-	import { boardgamesList, categories } from '$sharedData';
-	import { LineDivider, SmallContaciDivider } from '$sharedUi';
+	// import {} from '$sharedData';
+	// import {} from '$sharedUi';
 	import {
-		About,
-		TagsLine,
-		Faq,
+		Footer,
+		Header,
+		PortfolioCarousel,
+		Hero,
 		Features,
-		BoardgamesList,
-		OurMission
+		Services,
+		AboutTrainer,
+		CTA,
+		CourseProgramm,
+		GiveGift,
+		FreeBlockFirst,
+		Testimonials,
+		Instagram
 	} from '$widgetsLanding';
 	// import { SEO } from '$sharedUtils';
-	// import {
-	// 	LinkinBio,
-	// 	Services,
-	// 	TagsLine,
-	// 	About,
-	// 	Gallery,
-	// 	Stats,
-	// 	Faq,
-	// 	FullWidthBanner,
-	// 	Features,
-	// 	Instructions,
-	// 	PleaseEnterPassword,
-	// 	BestBoardgames,
-	// 	Blog,
-	// 	ColourfulSection,
-	// 	ContactForm,
-	// 	BoardgamesList,
-	// 	Price,
-	// 	Team,
-	// 	FreeFirst,
-	// 	OurMission
-	// } from '$widgetsLanding';
 </script>
 
 <svelte:head>
-	<title>Puzzle Management | Home </title>
+	<title>| Home</title>
 	<meta name="description" content="" />
 </svelte:head>
 
 <!-- <SEO title="Home" /> -->
 
-<TagsLine />
+<div class="page-wrapper">
+	<Header />
 
-<About {categories}/>
+	<main class="main-wrapper">
+		<Hero />
 
-<!-- <Stats /> -->
+		<PortfolioCarousel />
 
-<LineDivider />
+		<!-- <FreeBlockFirst /> -->
 
-<OurMission />
+		<Services />
 
-<LineDivider />
+		<Features />
 
-<Features {categories}/>
-
-<SmallContaciDivider />
-
-<!-- <LineDivider /> -->
-
-<BoardgamesList {categories} />
-
-<!-- <ColourfulSection /> -->
-<!-- <BestBoardgames /> -->
-<!-- <Gallery /> -->
-<!-- <BestBoardgames /> -->
-<!-- <Price /> -->
-<!-- <BigContaciDivider /> -->
-<!-- <Services /> -->
-<LineDivider />
-
-<Faq />
-
-<!-- <Team /> -->
-
-<!-- <FreeFirst /> -->
-
-<!-- <FullWidthBanner /> -->
-
-<!-- <ContactForm /> -->
-
-<!-- <Instructions /> -->
-
-<!-- <PleaseEnterPassword /> -->
-
-<!-- <LinkinBio /> -->
+		<AboutTrainer />
 
 
-<style lang="postcss">
-</style>
+		<CourseProgramm />
+
+		<CTA />
+
+		<Instagram />
+
+		<!-- faq? -->
+
+		<GiveGift />
+	</main>
+
+	<Footer />
+</div>

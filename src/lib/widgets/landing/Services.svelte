@@ -1,93 +1,129 @@
 <script lang="ts">
-	// import {  } from '$shared';
+	import { services } from '$sharedData';
 	// import {  } from '$widgets';
-	// import {  } from '$entities'
+	import { ServiceCard } from '$entitiesLanding';
 </script>
 
-<section data-w-id="1b9b33d5-a3ed-ae5b-1662-cad83f445ee2" class="section-spacing">
-	<div class="w-layout-blockcontainer container-full w-container">
-		<div class="section-title">
-			<div class="sub-title-wrap">
-				<img src="images/innovation-icon.svg" loading="lazy" alt="" class="sub-title-icon" />
-				<div>. Services</div>
+<section class="section_services">
+	<div class="padding-global">
+		<div class="container-large position-relative">
+			<div class="padding-top padding-xhuge">
+				<div class="margin-bottom margin-large">
+					<h2 class="heading-style-h1">
+						Wynik po ukonczeniu <span class="text-underline-v1 noise-effect">EYE LINER</span>
+					</h2>
+				</div>
+
+				<div class="margin-bottom margin-large">
+					<div class="services_heading-wrap">
+						<div class="button-group">
+							<a href="/" class="button is-link w-inline-block">
+								<div
+									class="button_icon-wrapper transform transition duration-300 hover:scale-105 hover:text-rose-300"
+								>
+									<div>Zarezerwuj dostep</div>
+									<div class="icon-embed-xxsmall w-embed">
+										<svg
+											width=" 100%"
+											height=" 100%"
+											viewBox="0 0 12 12"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M12 0.923078H10.1538V8.85231L1.30154 0L0 1.30154L8.85231 10.1538H0.923077V12L12 12L12 0.923078Z"
+												fill="currentColor"
+											></path>
+										</svg>
+									</div>
+								</div>
+								<div class="button_underline"></div>
+								<div class="button_underline-fill"></div>
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
-			<h2 class="service-section-title">Your gateway to our services:</h2>
-		</div>
-		<div class="w-layout-grid grid-service-page">
-			<a href="/service-details" class="service-item w-inline-block"
-				><div class="service-icon-wrap one">
-					<img src="images/star_icon-5.svg" loading="lazy" alt="" class="service-icon" />
-				</div>
-				<div>
-					<div class="service-title">Graphics design</div>
-					<p class="service-description">
-						The good gathering doesn't bearing day Stars over Open behold May male tree.
-					</p>
-				</div></a
-			><a href="/service-details" class="service-item w-inline-block"
-				><div class="service-icon-wrap two">
-					<img src="images/star_icon-2" loading="lazy" alt="" class="service-icon" />
-				</div>
-				<div>
-					<div class="service-title">Content creation</div>
-					<p class="service-description">
-						They're Said kind grass fish seas it midst saw thing evening she'd replenish.
-					</p>
-				</div></a
-			><a href="/service-details" class="service-item w-inline-block"
-				><div class="service-icon-wrap three">
-					<img src="star_icon-3" loading="lazy" alt="" class="service-icon" />
-				</div>
-				<div>
-					<div class="service-title">UI/UX design</div>
-					<p class="service-description">
-						Greater seed lesser Good she'd man female under from days replenish.
-					</p>
-				</div></a
-			><a href="/service-details" class="service-item w-inline-block"
-				><div class="service-icon-wrap four">
-					<img src="images/star_icon-4" loading="lazy" alt="" class="service-icon" />
-				</div>
-				<div>
-					<div class="service-title">Web design</div>
-					<p class="service-description">
-						Our Created beast subdue Divide brought air man Beast morning waters.
-					</p>
-				</div></a
-			><a href="/service-details" class="service-item w-inline-block"
-				><div class="service-icon-wrap one">
+			<div class="w-layout-grid services_component">
+				<div class="services_carousel-wrap">
+					<div class="splide cards_carousel">
+						<div class="splide__track w-dyn-list">
+							<div role="list" class="splide__list w-dyn-items">
+								{#each services as service}
+									<ServiceCard {service} />
+								{/each}
+							</div>
+						</div>
+					</div>
 					<img
-						src="images/66d0464eec8062a3c7b9f0f9_icon-25.svg"
+						src="images/services-heart.svg"
 						loading="lazy"
-						alt=""
-						class="service-icon"
+						alt="Star"
+						class="services_object-heart"
 					/>
 				</div>
-				<div>
-					<div class="service-title">Offline access</div>
-					<p class="service-description">
-						The good gathering doesn't bearing day Stars over Open behold May male tree.
-					</p>
-				</div></a
-			><a href="/service-details" class="service-item w-inline-block"
-				><div class="service-icon-wrap two">
-					<img
-						src="images/66d0464eec8062a3c7b9f0fa_icon-26.svg"
-						loading="lazy"
-						alt=""
-						class="service-icon"
-					/>
+			</div>
+			<div class="mx-auto my-6">
+				<div class="splide__buttons">
+					<a href="#" class="slide-arrow prev noise-effect w-inline-block">
+						<img
+							src="images/icon_slider-arrow-left.svg"
+							loading="lazy"
+							alt="arrow left"
+						/>
+					</a>
+					<a href="#" class="slide-arrow next noise-effect w-inline-block">
+						<img
+							src="images/icon_slider-arrow-right.svg"
+							loading="lazy"
+							alt="Arrow Right"
+						/>
+					</a>
 				</div>
-				<div>
-					<div class="service-title">Email integration</div>
-					<p class="service-description">
-						They're Said kind grass fish seas it midst saw thing evening she'd replenish.
-					</p>
-				</div></a
-			>
+			</div>
+			<img
+				src="images/services-lines.svg"
+				loading="lazy"
+				alt="Lines"
+				class="services_object-lines"
+			/>
 		</div>
 	</div>
 </section>
 
 <style lang="postcss">
+	.services_object-lines {
+		z-index: 9;
+		position: absolute;
+	}
+	@media screen and (min-width: 991px) {
+		.splide__buttons {
+			display: none;
+		}
+
+		.services_object-lines {
+			inset: auto auto -3rem -8rem;
+		}
+	}
+	@media screen and (max-width: 991px) {
+	}
+	@media screen and (max-width: 767px) {
+		.services_object-heart {
+			display: none;
+		}
+	}
+
+	@media screen and (max-width: 479px) {
+		.splide__buttons {
+			grid-column-gap: 1rem;
+			grid-row-gap: 1rem;
+			justify-content: flex-end;
+			align-self: flex-end;
+			align-items: center;
+			display: flex;
+		}
+		.services_object-lines {
+			inset: auto auto -8rem 0;
+		}
+	}
 </style>

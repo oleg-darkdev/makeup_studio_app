@@ -1,32 +1,32 @@
 const navigation = [
 	{
-		title: 'O projekcie',
-		link: '#about'
+		title: 'Dla kogo',
+		link: '#for'
 	},
 	{
-		title: 'Misja',
-		link: '#mission'
+		title: 'O autorze',
+		link: '#coach'
 	},
-	// {
-	// 	title: 'Lorem Ipsum',
-	// 	link: '/'
-	// },
 	{
-		title: 'Lista gier',
-		link: '#boardgames'
+		title: 'Program',
+		link: '#program'
 	},
-	// {
-	// 	title: 'Lorem Ipsum',
-	// 	link: '/'
-	// },
+	{
+		title: 'Cenniki',
+		link: '/'
+	},
 	{
 		title: 'F.A.Q.',
 		link: '#faq'
 	},
 	// {
-	// 	title: 'Lorem Ipsum',
-	// 	link: '/'
-	// }
+	// 	title: 'Prezent',
+	// 	link: '/#gift'
+	// },
+	{
+		title: 'Kontakt',
+		link: '#contact'
+	}
 ];
 
 export default navigation;
