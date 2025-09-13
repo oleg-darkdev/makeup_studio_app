@@ -1,6 +1,6 @@
 const posts = [
 	{
-		media: '/images/insta/10.jpg',
+		avif: '/images/insta/10.avif', media: '/images/insta/10.jpg',
 		postLink: 'https://www.instagram.com/p/DIRRV-0N6ge/',
 		desc: [
 			'На фото: свежие брови сразу после процедуры и зажившие теневые стрелки.',
@@ -16,7 +16,7 @@ const posts = [
 		id: 10
 	},
 	// {
-	// 	media: '/images/insta/16.jpg',
+	// 	avif: '/images/insta/.avif', media: '/images/insta/16.jpg',
 	// 	postLink: 'https://www.instagram.com/p/DIik5btNN5J/?img_index=1',
 	// 	desc: [
 	// 		'Когда я только узнала,что я еду на конгресс в Румынию - я хладнокровно посмотрела на свой календарь-расписание и внесла коррективы!'
@@ -27,7 +27,7 @@ const posts = [
 	// 	id: 16
 	// },
 	{
-		media: '/images/insta/17.png',
+		avif: '/images/insta/17.avif', media: '/images/insta/17.png',
 		postLink: 'https://www.instagram.com/p/DMGVDYaNVR5/',
 		desc: [
 			'Не люблю перманент который видно!!!',
@@ -39,7 +39,7 @@ const posts = [
 		id: 17
 	},
 	{
-		media: '/images/insta/3.jpg',
+		avif: '/images/insta/3.avif', media: '/images/insta/3.jpg',
 		postLink: 'https://www.instagram.com/p/C8CYdxmAIMD/',
 		desc: [
 			'Microbeau machines have long dominated the market and are among the most popular choices. 💫',
@@ -53,7 +53,7 @@ const posts = [
 		id: 3
 	},
 	// {
-	// 	media: '/images/insta/6.jpg',
+	// 	avif: '/images/insta/.avif', media: '/images/insta/6.jpg',
 	// 	postLink: 'https://www.instagram.com/p/DDfiaUTt1qS/?img_index=1',
 	// 	desc: [
 	// 		'Clase magistral de “Sombreado de Ojos “del campeóna mundial y mejor entrenadora en el campo del maquillaje permanente.',
@@ -65,7 +65,7 @@ const posts = [
 	// 	id: 6
 	// },
 	{
-		media: '/images/insta/9.jpg',
+		avif: '/images/insta/9.avif', media: '/images/insta/9.jpg',
 		postLink: 'https://www.instagram.com/p/DIN5a00sz4h/',
 		desc: [
 			'JURY EYELIDS 🏆Półfinał Mistrzostw Świata ETALON MIX 🏆 Kategorie EYELIDS Junior i Master będzie oceniało 5 wybitnych specjalistów w tej dziedzinie.',
@@ -80,7 +80,7 @@ const posts = [
 		id: 9
 	},
 	{
-		media: '/images/insta/8.jpg',
+		avif: '/images/insta/8.avif', media: '/images/insta/8.jpg',
 		postLink: 'https://www.instagram.com/p/DGQKxjms-Ag/',
 		desc: ['Валерия Васильева @vasilyeva_pmu судья чемпионата GLOBAL'],
 		commentsCount: 0,
@@ -89,7 +89,7 @@ const posts = [
 		id: 8
 	},
 	// {
-	// 	media: '/images/insta/1.jpg',
+	// 	avif: '/images/insta/.avif', media: '/images/insta/1.jpg',
 	// 	postLink: 'https://www.instagram.com/p/C63mQ26Nvw9/?img_index=1',
 	// 	desc: [
 	// 		'С днём матери всех тех, кто выбрал для себя эту прекрасную роль в жизни ♥️',
@@ -102,7 +102,7 @@ const posts = [
 	// },
 
 	// {
-	// 	media: '/images/insta/18.jpg',
+	// 	avif: '/images/insta/.avif', media: '/images/insta/18.jpg',
 	// 	postLink: 'https://www.instagram.com/p/C46aqYzNpfW/?img_index=1',
 	// 	desc: [
 	// 		'Это был один из крутейших, по организации и масштабам, конгресс!!!',
@@ -115,7 +115,7 @@ const posts = [
 	// },
 
 	// {
-	// 	media: '/images/insta/2.jpg',
+	// 	avif: '/images/insta/.avif', media: '/images/insta/2.jpg',
 	// 	postLink: 'https://www.instagram.com/p/C8Tm-SXN2xA/?img_index=1',
 	// 	desc: [
 	// 		'Я мечтала перевернуть мир перманентного макияжа! Хотела что бы за мной последовали, перестали работать черным и наконец учли возрастные изменения! И у меня получилось! А дальше только масштабировать это и учить работать правильно и на долгосрочный результат. И именно этим я сейчас занимаюсь.',
@@ -127,7 +127,7 @@ const posts = [
 	// 	id: 2
 	// },
 	{
-		media: '/images/insta/14.jpg',
+		avif: '/images/insta/14.avif', media: '/images/insta/14.jpg',
 		postLink: 'https://www.instagram.com/p/DMTI9yEtgmz/',
 		desc: [
 			'До сих пор боишься, когда клиент приходит на коррекцию? 🔮 Не умеешь предугадать, как заживёт работа? 🧩 Трудно анализировать и видеть причинно-следственные связи? 🪫 Много знаний — но нет системы?',
@@ -141,7 +141,7 @@ const posts = [
 	},
 
 	{
-		media: '/images/insta/5.jpg',
+		avif: '/images/insta/5.avif', media: '/images/insta/5.jpg',
 		postLink: 'https://www.instagram.com/p/DCEVVPqC225/?img_index=1',
 		desc: [
 			'И опять я со своей важностью отсроченных результатов... Знаю-знаю, вы любите молодую кожу, стрелку до ушей и пиксельную растушевку в горошек сразу после процедуры.',
@@ -155,7 +155,7 @@ const posts = [
 	},
 	// {
 	// 	// /images/insta/4.jpg
-	// 	media: '/images/insta/.jpg',
+	// 	avif: '/images/insta/.avif', media: '/images/insta/.jpg',
 	// 	postLink: 'https://www.instagram.com/p/DAgbiI1NuB9/?img_index=1',
 	// 	desc: [
 	// 		'Огромная часть нашей работы это перекрытия и исправления устаревшего перманентного макияжа.',
@@ -167,7 +167,7 @@ const posts = [
 	// 	id: 4
 	// },
 	{
-		media: '/images/insta/15.jpg',
+		avif: '/images/insta/15.avif', media: '/images/insta/15.jpg',
 		postLink: 'https://www.instagram.com/p/DMNpgWGN5zv/',
 		desc: [
 			'Делиться своими знаниями, своим мнением и получать взамен огромную энергию из зала - это нереально!!! Это что-то космическое 🥰',
@@ -181,7 +181,7 @@ const posts = [
 		id: 15
 	}
 	// {
-	// 	media: '/images/insta/9.jpg',
+	// 	avif: '/images/insta/.avif', media: '/images/insta/9.jpg',
 	// 	postLink: 'https://www.instagram.com/p/DIN5a00sz4h/',
 	// 	desc: [
 	// 		'JURY EYELIDS 🏆Półfinał Mistrzostw Świata ETALON MIX 🏆 Kategorie EYELIDS Junior i Master będzie oceniało 5 wybitnych specjalistów w tej dziedzinie.',
@@ -197,7 +197,7 @@ const posts = [
 	// },
 
 	// {
-	// 	media: '/images/insta/7.jpg',
+	// 	avif: '/images/insta/.avif', media: '/images/insta/7.jpg',
 	// 	postLink: 'https://www.instagram.com/p/DELODTiu__-/?img_index=1',
 	// 	desc: [
 	// 		'Крайне редко в повседневной жизни нам удается поработать с действительно идеальной кожей.',
@@ -211,7 +211,7 @@ const posts = [
 	// },
 
 	// {
-	// 	media: '/images/insta/11.jpg',
+	// 	avif: '/images/insta/.avif', media: '/images/insta/11.jpg',
 	// 	postLink: 'https://www.instagram.com/p/DJU52tTuVLz/',
 	// 	desc: [
 	// 		'Почему важна эскиз перед работой?',
@@ -227,7 +227,7 @@ const posts = [
 	// }
 
 	// {
-	// 	media: '/images/insta/12.PNG',
+	// 	avif: '/images/insta/.avif', media: '/images/insta/12.PNG',
 	// 	postLink: 'https://www.instagram.com/p/DKaNDvCtiGy/',
 	// 	desc: [
 	// 		'Всеми любимые коллажи - такие залипательные 🤩',
@@ -241,7 +241,7 @@ const posts = [
 	// 	id: 12
 	// },
 	// {
-	// 	media: '/images/insta/13.jpg',
+	// 	avif: '/images/insta/.avif', media: '/images/insta/13.jpg',
 	// 	postLink: 'https://www.instagram.com/p/DKxl7ZWNbyx/',
 	// 	desc: [
 	// 		'Губы спустя год после пигментации ✨ Да-да, целый год, а результат — как будто только что после процедуры.',

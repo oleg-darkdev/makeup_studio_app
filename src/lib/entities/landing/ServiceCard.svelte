@@ -5,7 +5,7 @@
 
 	let { service } = $props();
 
-	let { image, title } = service;
+	let { image, title, avif } = service;
 </script>
 
 <div
@@ -14,7 +14,7 @@
             mx-2 transform transition duration-300 hover:scale-110"
 >
 	<div
-		style="  background-image: url({image});
+		style="  background-image: url({avif});
 "
 		class="services_cards w-inline-block relative"
 	>

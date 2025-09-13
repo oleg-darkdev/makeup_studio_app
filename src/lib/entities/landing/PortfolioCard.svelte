@@ -3,12 +3,14 @@
 	// import {  } from '$widgets';
 	// import {  } from '$entities'
 
-	let { img, title } = $props();
+	let { img, title, avif } = $props();
 </script>
 
 <div class="splide__slide splide_carousel-slide">
 	<div class="splide_carousel-wrap">
 		<div class=" splide_carousel-image-wrap bg-white">
+			<picture>
+				<source srcset={avif} type="image/avif">
 			<img
 				loading="lazy"
 				width="Auto"
@@ -19,6 +21,7 @@
 				class="splide_carousel-image transform transition
                duration-300 hover:scale-105"
 			/>
+			</picture>
 		</div>
 	</div>
 </div>

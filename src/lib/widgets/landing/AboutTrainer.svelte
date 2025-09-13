@@ -34,7 +34,7 @@
 	};
 </script>
 
-<section class="section_about" id='coach'>
+<section class="section_about" id="coach">
 	<div class="padding-global">
 		<div class="container-large position-relative">
 			<div class="padding-section-large">
@@ -47,13 +47,21 @@
 							class="about_object-lines"
 						/>
 						<div class="about_image-wrapper">
-							<img
-								src="images/author.jpg"
-								loading="lazy"
-								sizes="(max-width: 901px) 100vw, 901px"
-								alt=""
-								class="about_image"
-							/>
+							<picture>
+								<source
+									sizes="(max-width: 901px) 100vw, 901px"
+									srcset="images/author.avif"
+									class="about_image"
+									type="image/avif"
+								/>
+								<img
+									src="images/author.jpg"
+									loading="lazy"
+									sizes="(max-width: 901px) 100vw, 901px"
+									alt=""
+									class="about_image"
+								/>
+							</picture>
 						</div>
 					</div>
 					<div class="about_content">
@@ -79,7 +87,6 @@
 								an unknown printer took a galley of type and scrambled it to make a type specimen
 								book.
 							</p>
-							
 						</div>
 
 						<div class="margin-bottom margin-small pb-6">
@@ -96,7 +103,7 @@
 						</div>
 
 						<div class="margin-bottom margin-small">
-							<div class="features_list-wave "></div>
+							<div class="features_list-wave"></div>
 							<div class="margin-bottom margin-xsmall">
 								<h3 class="heading-style-h5 text-weight-bold text-style-allcaps">
 									Na konferencjach
@@ -110,7 +117,9 @@
 								</p>
 							{/each}
 						</div>
-						<div class="text-style-signature noise-effect"><img src="/images/signature_1.png" class='h-10 w-full' alt=""></div>
+						<div class="text-style-signature noise-effect">
+							<img src="/images/signature_1.png" class="h-10 w-full" alt="" />
+						</div>
 						<!-- <p class="text-style-signature noise-effect">Valeria Vasilyeva</p> -->
 						<!--  -->
 					</div>

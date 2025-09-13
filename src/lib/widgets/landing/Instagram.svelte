@@ -15,16 +15,22 @@
 								<div class="eapps-instagram-feed-header-user-picture-wrapper">
 									<a
 										href="https://www.instagram.com/vasilyeva_pmu/"
-										title=""
+										title="Tnstagram profile"
 										target="_blank"
 										rel="noopener noreferrer nofollow"
 									>
 										<!-- insta avatar -->
-										<img
-											class="eapps-instagram-feed-header-user-picture bg-black"
-											src="/images/inst_avatar.jpg"
-											alt=""
-										/>
+										<picture>
+											<source
+												srcset="/images/inst_avatar.avif"
+												type="image/avif"
+											/>
+											<img
+												class="eapps-instagram-feed-header-user-picture"
+												src="/images/inst_avatar.jpg"
+												alt=""
+											/>
+										</picture>
 									</a>
 								</div>
 

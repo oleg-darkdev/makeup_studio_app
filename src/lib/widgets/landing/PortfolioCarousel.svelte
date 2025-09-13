@@ -19,9 +19,9 @@
 			</div> -->
 			<div class="splide splide_carousel">
 				<div class="splide__track">
-					<div class="splide__list flex w-full flex-row lg:justify-between">
+					<div class="splide__list flex w-full flex-row lg:justify-between items-end ">
 						<div class="hide-mobile">
-							<PortfolioCard img={portfolio[0].img} title={portfolio[0].title} />
+							<PortfolioCard avif={portfolio[0].avif} img={portfolio[0].img} title={portfolio[0].title} />
 						</div>
 						<div class="splide__slide splide_carousel-slide mx-auto">
 							<a href="/" class="splide_carousel-wrap w-inline-block">
@@ -74,7 +74,7 @@
 							</a>
 						</div>
 						<div class="hide-mobile">
-							<PortfolioCard img={portfolio[1].img} title={portfolio[1].title} />
+							<PortfolioCard img={portfolio[1].img} avif={portfolio[1].avif} title={portfolio[1].title} />
 						</div>
 						<!-- <PortfolioCard img={portfolio[2].img} title={portfolio[2].title} /> -->
 					</div>
@@ -86,10 +86,10 @@
 				<div class="splide__track">
 					<div class="splide__list">
 						<div class="hide-mobile">
-							<PortfolioCard img={portfolio[3].img} title={portfolio[3].title} />
+							<PortfolioCard img={portfolio[3].img} avif={portfolio[3].avif} title={portfolio[3].title} />
 						</div>
 						<div class="show-mobile">
-							<PortfolioCard img={portfolio[4].img} title={portfolio[4].title} />
+							<PortfolioCard img={portfolio[4].img} avif={portfolio[4].avif} title={portfolio[4].title} />
 						</div>
 						<div class="hide-mobile">
 							<div class="splide__slide splide_carousel-slide">
@@ -112,7 +112,7 @@
 						</div>
 						<div class="hide-mobile">
 							<!-- <div class="hide-mobile"> -->
-							<PortfolioCard img={portfolio[5].img} title={portfolio[5].title} />
+							<PortfolioCard img={portfolio[5].img} avif={portfolio[5].avif} title={portfolio[5].title} />
 						</div>
 					</div>
 				</div>

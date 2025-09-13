@@ -20,8 +20,14 @@
 	>
 		<div class="eapps-instagram-feed-posts-item-media">
 			<div class="eapps-instagram-feed-posts-item-image-wrapper">
-				<img class="eapps-instagram-feed-posts-item-image bg-black" src={post.media} alt="" />
-
+				<picture>
+					<source
+						class="eapps-instagram-feed-posts-item-image bg-black"
+						src={post.avif}
+						type="image/avif"
+					/>
+					<img class="eapps-instagram-feed-posts-item-image bg-black" src={post.media} alt="" />
+				</picture>
 				<span
 					class="eapps-instagram-feed-posts-item-image-icon-video eapps-instagram-feed-posts-item-image-icon es-post-type"
 				>

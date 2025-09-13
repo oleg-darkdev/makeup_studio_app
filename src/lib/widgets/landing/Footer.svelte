@@ -314,7 +314,7 @@
 		grid-template-rows: auto;
 	}
 	.footer_heading {
-		background-image: url(/images/642959385fbce2477f60b2e0_text-underline-7.svg);
+		background-image: url(/images/text-underline-7.svg);
 		background-position: 0 100%;
 		background-repeat: no-repeat;
 		background-size: auto;
