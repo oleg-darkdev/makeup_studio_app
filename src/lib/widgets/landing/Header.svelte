@@ -5,7 +5,7 @@
 
 	import { fade } from 'svelte/transition';
 
-	let menuIsOpen = $state(true);
+	let menuIsOpen = $state(false);
 </script>
 
 <header class="section_header cards_dropdown-wrapper w-nav" role="banner">
