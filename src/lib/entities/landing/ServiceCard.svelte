@@ -10,7 +10,7 @@
 
 <div
 	role="listitem"
-	class="splide__slide services-item group
+	class="splide__slide servicesPl-item group
             mx-2 transform transition duration-300 hover:scale-110"
 >
 	<div

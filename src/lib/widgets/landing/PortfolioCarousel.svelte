@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { portfolio } from '$sharedData';
+	import { portfolioPl } from '$sharedData';
 	// import {  } from '$widgets';
 	import { PortfolioCard } from '$entitiesLanding';
 </script>
@@ -19,16 +19,19 @@
 			</div> -->
 			<div class="splide splide_carousel">
 				<div class="splide__track">
-					<div class="splide__list flex w-full flex-row lg:justify-between items-end ">
+					<div class="splide__list flex w-full flex-row items-end lg:justify-between">
 						<div class="hide-mobile">
-							<PortfolioCard avif={portfolio[0].avif} img={portfolio[0].img} title={portfolio[0].title} />
+							<PortfolioCard
+								avif={portfolioPl[0].avif}
+								img={portfolioPl[0].img}
+								title={portfolioPl[0].title}
+							/>
 						</div>
 						<div class="splide__slide splide_carousel-slide mx-auto">
 							<a href="/" class="splide_carousel-wrap w-inline-block">
 								<div class="splide_carousel-content noise-effect">
 									<div
-										class="mx-auto max-w-[340px] transform transition duration-300 hover:scale-105
-               lg:max-w-2xl"
+										class="mx-auto max-w-[340px] transform transition duration-300 hover:scale-105 lg:max-w-2xl"
 									>
 										<div class="margin-bottom margin-small">
 											<h2 class=" text-color-main-black heading-style-h3">Po ukonczeniu kursu</h2>
@@ -74,9 +77,13 @@
 							</a>
 						</div>
 						<div class="hide-mobile">
-							<PortfolioCard img={portfolio[1].img} avif={portfolio[1].avif} title={portfolio[1].title} />
+							<PortfolioCard
+								img={portfolioPl[1].img}
+								avif={portfolioPl[1].avif}
+								title={portfolioPl[1].title}
+							/>
 						</div>
-						<!-- <PortfolioCard img={portfolio[2].img} title={portfolio[2].title} /> -->
+						<!-- <PortfolioCard img={portfolioPl[2].img} title={portfolioPl[2].title} /> -->
 					</div>
 				</div>
 			</div>
@@ -86,10 +93,18 @@
 				<div class="splide__track">
 					<div class="splide__list">
 						<div class="hide-mobile">
-							<PortfolioCard img={portfolio[3].img} avif={portfolio[3].avif} title={portfolio[3].title} />
+							<PortfolioCard
+								img={portfolioPl[3].img}
+								avif={portfolioPl[3].avif}
+								title={portfolioPl[3].title}
+							/>
 						</div>
 						<div class="show-mobile">
-							<PortfolioCard img={portfolio[4].img} avif={portfolio[4].avif} title={portfolio[4].title} />
+							<PortfolioCard
+								img={portfolioPl[4].img}
+								avif={portfolioPl[4].avif}
+								title={portfolioPl[4].title}
+							/>
 						</div>
 						<div class="hide-mobile">
 							<div class="splide__slide splide_carousel-slide">
@@ -112,7 +127,11 @@
 						</div>
 						<div class="hide-mobile">
 							<!-- <div class="hide-mobile"> -->
-							<PortfolioCard img={portfolio[5].img} avif={portfolio[5].avif} title={portfolio[5].title} />
+							<PortfolioCard
+								img={portfolioPl[5].img}
+								avif={portfolioPl[5].avif}
+								title={portfolioPl[5].title}
+							/>
 						</div>
 					</div>
 				</div>
@@ -133,7 +152,7 @@
 				display: none !important;
 			}
 			.show-mobile {
-				margin: 0 auto ;
+				margin: 0 auto;
 			}
 		}
 	}

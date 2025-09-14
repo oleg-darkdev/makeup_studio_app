@@ -1,7 +1,9 @@
 <script lang="ts">
-	import { courseData } from '$sharedData';
+	// import { courseDataPl } from '$sharedData';
 	// import {  } from '$widgets';
 	import { ProgramCard } from '$entitiesLanding';
+
+	import LL from '$i18n/i18n-svelte';
 </script>
 
 <section class="section_faq" id="program">
@@ -52,7 +54,7 @@
 					</div>
 					<div class="faq_icon-wrap">
 						<div class="w-layout-grid faq_list">
-							{#each courseData as stage}
+							{#each $LL.courseData as stage}
 								<ProgramCard {stage} />
 							{/each}
 						</div>

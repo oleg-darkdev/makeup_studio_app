@@ -1,7 +1,12 @@
 <script lang="ts">
-	import { navigation, prices } from '$sharedData';
+	// import { pricesPl } from '$sharedData';
 	// import {  } from '$widgets';
 	// import {  } from '$entities'
+
+	import LL from '$i18n/i18n-svelte';
+
+	// console.log($LL.footer.contactDataTitle())
+	// console.log($LL.footer.empty)
 </script>
 
 <footer class="section_footer" id="contact">
@@ -15,7 +20,7 @@
 								<div class="footer_details-wrap margin-bottom margin-xsmall">
 									<div class="footer_details-item">
 										<div class="margin-bottom margin-xsmall">
-											<h3 class="footer_heading">Contact:</h3>
+											<h3 class="footer_heading">{$LL.footer.contactDataTitle()}:</h3>
 										</div>
 										<div>
 											<a href="tel:+48451143933" class="footer_details-link text-color-pink"
@@ -35,13 +40,13 @@
 										href="https://www.google.pl/maps/place/Makija%C5%BC+Permanentny+Gda%C5%84sk+Valeria+Vasilyeva/@54.3564161,18.6501469,15z/data=!4m6!3m5!1s0x46fd73fc1ad206d9:0xd1fb0408db22dab9!8m2!3d54.3564916!4d18.650074!16s%2Fg%2F11s3zwzgr7?hl=ru&entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D"
 										target="_blank"
 										class="footer_details-link text-color-pink"
-										>Jana Heweliusza 11 / piętro 10, lok. 1007 <br /> 80-890 Gdańsk
+										>{$LL.footer.address()} <br /> 80-890 Gdańsk
 									</a>
 								</div>
 							</div>
 							<div class="w-layout-grid social_icons-grid">
 								<a
-									href="https://www.facebook.com/vasilyevavaleriapmu"
+									href="{$LL.footer.social.facebook()}"
 									target="_blank"
 									class="social_icons-link noise-effect w-inline-block"
 								>
@@ -63,7 +68,7 @@
 									</div>
 								</a>
 								<a
-									href="https://www.instagram.com/vasilieva.pmu/"
+									href="{$LL.footer.social.instagram()}"
 									target="_blank"
 									class="social_icons-link noise-effect w-inline-block"
 								>
@@ -99,11 +104,11 @@
 						<div class="grid-gap-4 grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
 							<div class="mb-10 w-full md:mb-0 lg:mb-0">
 								<div class="margin-bottom margin-small">
-									<h3 class="footer_heading">Pakiety</h3>
+									<h3 class="footer_heading">{$LL.footer.pricesTitle()}</h3>
 								</div>
 								<div class="">
 									<div class="footer_link-list">
-										{#each prices as { title, link }}
+										{#each $LL.prices as { title, link }}
 											<!-- <a href={link} aria-current="page" class="footer_link"
 												>Taryfa <span class="text-color-pink">"{title}"</span></a
 											> -->
@@ -114,11 +119,11 @@
 							</div>
 							<div class="w-full">
 								<div class="margin-bottom margin-small">
-									<h3 class="footer_heading">Nawigacja</h3>
+									<h3 class="footer_heading">{$LL.footer.navigationTitle()}</h3>
 								</div>
 								<div class="">
 									<div class="footer_link-list">
-										{#each navigation as { title, link }}
+										{#each $LL.navigation as { title, link }}
 											<a href={link} aria-current="page" class="footer_link">{title}</a>
 										{/each}
 									</div>

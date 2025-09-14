@@ -12,7 +12,6 @@ import FreeBlockFirst from './FreeBlockFirst.svelte';
 import Testimonials from './Testimonials.svelte';
 import Instagram from './Instagram.svelte';
 
-
 export {
 	Header,
 	Footer,

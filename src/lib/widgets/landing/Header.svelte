@@ -1,11 +1,12 @@
 <script lang="ts">
-	import { navigation } from '$sharedData';
-	// import {  } from '$widgets';
+	import { LangSwitcher } from '$sharedUi';
 	// import {  } from '$entities'
 
 	import { fade } from 'svelte/transition';
 
 	let menuIsOpen = $state(false);
+
+	import LL from '$i18n/i18n-svelte';
 </script>
 
 <header class="section_header cards_dropdown-wrapper w-nav" role="banner">
@@ -38,7 +39,8 @@
 			</div>
 
 			<nav role="navigation" class="navbar_menu_desc space-between flex w-full">
-				{#each navigation as { title, link }}
+				<!-- $LL.navigationPl -->
+				{#each $LL.navigation as { title, link }}
 					<div class="navbar_link-wrap">
 						<a href={link} class="header_link-block w-inline-block group">
 							<div
@@ -63,6 +65,8 @@
 						</div>
 					</div>
 				</div>
+
+				<LangSwitcher />
 			</nav>
 			{#if menuIsOpen}
 				<!-- navbar_menu -->
@@ -75,13 +79,11 @@
 					class="navbar_menu-mobile static z-50 flex h-screen w-full flex-col"
 				>
 					<div class="mb-4">
-						{#each navigation as { title, link }}
+						{#each $LL.navigation as { title, link }}
 							<div class="navbar_link-wrap">
 								<a href={link} class="header_link-block w-inline-block">
 									<div
-										class="header_link mx-auto my-3 transform
-             text-center text-4xl text-white
-             transition duration-300 group-hover:scale-105 group-hover:text-rose-300"
+										class="header_link mx-auto my-3 transform text-center text-4xl text-white transition duration-300 group-hover:scale-105 group-hover:text-rose-300"
 									>
 										{title}
 									</div>
@@ -101,6 +103,8 @@
 					<div class="text-style-signature noise-effect mx-auto mt-12">
 						<img src="/images/signature_1.png" class="h-6 w-64" alt="" />
 					</div>
+
+					<LangSwitcher />
 
 					<!-- <div class="navbar_link-wrap">
 					<div

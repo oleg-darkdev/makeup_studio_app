@@ -1,7 +1,9 @@
 <script lang="ts">
-	import { targetAudience } from '$sharedData';
+	// import { targetAudiencePl } from '$sharedData';
 	// import {  } from '$widgets';
 	// import {  } from '$entities'
+
+	import LL from '$i18n/i18n-svelte';
 </script>
 
 <section class="section_features" id="for">
@@ -9,7 +11,7 @@
 		<div class="container-large">
 			<div class="padding-section-large">
 				<div class="w-layout-grid features_component">
-					<div class="features_heading ">
+					<div class="features_heading">
 						<div class="margin-bottom margin-xsmall">
 							<h2 class="mb-4">
 								<!-- Why <span class="text-color-pink noise-effect">....</span> is
@@ -57,7 +59,7 @@
 					</div>
 					<div class="layout32_content">
 						<div class="w-layout-grid features_list">
-							{#each targetAudience as { title, desc, decoration }}
+							{#each $LL.targetAudience as { title, desc, decoration }}
 								<div class="features_list-item group">
 									<div class="layout32_item-text-wrapper">
 										<div class="features_list-wave {decoration}"></div>

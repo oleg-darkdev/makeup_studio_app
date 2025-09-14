@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { posts } from '$sharedData';
+	import { postsPl } from '$sharedData';
 	// import {  } from '$widgets';
 	import { InstagramCard } from '$entitiesLanding';
 </script>
@@ -21,10 +21,7 @@
 									>
 										<!-- insta avatar -->
 										<picture>
-											<source
-												srcset="/images/inst_avatar.avif"
-												type="image/avif"
-											/>
+											<source srcset="/images/inst_avatar.avif" type="image/avif" />
 											<img
 												class="eapps-instagram-feed-header-user-picture"
 												src="/images/inst_avatar.jpg"
@@ -125,7 +122,7 @@
 					</div>
 
 					<div class="flex flex-row flex-wrap">
-						{#each posts as post}
+						{#each postsPl as post}
 							<InstagramCard {post} />
 						{/each}
 					</div>

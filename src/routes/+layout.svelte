@@ -1,4 +1,7 @@
 <script lang="ts">
+	import { page } from '$app/stores';
+	import LL, { setLocale } from '$i18n/i18n-svelte';
+
 	import type { Snippet } from 'svelte';
 	import type { LayoutData } from './$types';
 	import { invalidate } from '$app/navigation';
@@ -6,10 +9,15 @@
 
 	type Props = {
 		data: LayoutData;
-		children: Snippet; 
+		children: Snippet;
 	};
 
 	let { data, children }: Props = $props();
+
+	// at the very top, set the locale before you access the store and before the actual rendering takes place
+	setLocale(data.locale);
+
+	// console.log(data)
 
 	// $effect(() => {
 	// 	const result = data.supabase.auth.onAuthStateChange((event, _session) => {
@@ -21,6 +29,12 @@
 	// 	return () => result.data.subscription.unsubscribe();
 	// });
 </script>
+
+<svelte:head>
+	<title>{$page.data.title || 'typesafe-i18n'}</title>
+	<!-- <html lang={data.locale} /> -->
+	<!-- <HeadHrefLangs /> -->
+</svelte:head>
 
 <Layout>
 	{@render children?.()}

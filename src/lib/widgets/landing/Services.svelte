@@ -1,7 +1,11 @@
 <script lang="ts">
-	import { services } from '$sharedData';
+	// import { servicesPl } from '$sharedData';
 	// import {  } from '$widgets';
 	import { ServiceCard } from '$entitiesLanding';
+
+	import LL from '$i18n/i18n-svelte';
+
+	// console.log($LL.services)
 </script>
 
 <section class="section_services">
@@ -49,7 +53,7 @@
 					<div class="splide cards_carousel">
 						<div class="splide__track w-dyn-list">
 							<div role="list" class="splide__list w-dyn-items">
-								{#each services as service}
+								{#each $LL.services as service}
 									<ServiceCard {service} />
 								{/each}
 							</div>
@@ -66,18 +70,10 @@
 			<div class="mx-auto my-6">
 				<div class="splide__buttons">
 					<a href="#" class="slide-arrow prev noise-effect w-inline-block">
-						<img
-							src="images/icon_slider-arrow-left.svg"
-							loading="lazy"
-							alt="arrow left"
-						/>
+						<img src="images/icon_slider-arrow-left.svg" loading="lazy" alt="arrow left" />
 					</a>
 					<a href="#" class="slide-arrow next noise-effect w-inline-block">
-						<img
-							src="images/icon_slider-arrow-right.svg"
-							loading="lazy"
-							alt="Arrow Right"
-						/>
+						<img src="images/icon_slider-arrow-right.svg" loading="lazy" alt="Arrow Right" />
 					</a>
 				</div>
 			</div>
