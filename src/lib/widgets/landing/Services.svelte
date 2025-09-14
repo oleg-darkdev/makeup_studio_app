@@ -14,7 +14,7 @@
 			<div class="padding-top padding-xhuge">
 				<div class="margin-bottom margin-large">
 					<h2 class="heading-style-h1">
-						Wynik po ukonczeniu <span class="text-underline-v1 noise-effect">EYE LINER</span>
+						Wynik po ukonczeniu <br/> kursu <span class="text-underline-v1 noise-effect">EYE LINER</span>
 					</h2>
 				</div>
 

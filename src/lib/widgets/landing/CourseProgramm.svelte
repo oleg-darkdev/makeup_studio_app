@@ -13,7 +13,7 @@
 				<div class="w-layout-grid faq_component">
 					<div class="faq_content fade_in-300">
 						<h2>
-							<span class="text-underline-v7 noise-effect">Program </span> szkolenia «EYE LINER»
+							Program kursu<span class="text-underline-v1 noise-effect"> «EYE LINER» </span>
 						</h2>
 						<div class="margin-top margin-small">
 							<div class="button-group">

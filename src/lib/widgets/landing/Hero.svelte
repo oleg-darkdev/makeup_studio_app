@@ -21,7 +21,7 @@
 								</div>
 							</div>
 							<h2 class="heading-style-h1">
-								<span class="text-underline-v1 noise-effect">EYE LINER</span> Start w lipcu
+								Kurs <span class="text-underline-v1 noise-effect">EYE LINER</span> Start w lipcu
 							</h2>
 							<div class="margin-top margin-medium">
 								<div class="button-group">
