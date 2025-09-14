@@ -1,12 +1,12 @@
 <script lang="ts">
 	// import { Header, Footer } from '$widgetsLanding';
-	// import { navigation, categories, boardgamesList } from '$sharedData';
+	// import {navigationPl, categories, boardgamesList } from '$sharedData';
 	import '../../../app/app.css';
 
 	let { children } = $props();
 </script>
 
-<div class="page-wrapper">
+<div class="">
 	<!-- <Header {navigation} {boardgamesList}/> -->
 
 	<main>
@@ -15,7 +15,6 @@
 
 	<!-- <Footer {navigation} {categories}/> -->
 </div>
-<div class="bg-gradient"></div>
 
 <style lang="postcss">
 </style>

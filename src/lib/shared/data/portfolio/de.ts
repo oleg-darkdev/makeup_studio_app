@@ -1,4 +1,4 @@
-const portfolio = [
+const portfolioPl = [
 	{
 		avif: '/images/portfolio/4.avif',
 		img: '/images/portfolio/portfolio_4.jpg',
@@ -31,4 +31,4 @@ const portfolio = [
 	}
 ];
 
-export default portfolio;
+export default portfolioPl;

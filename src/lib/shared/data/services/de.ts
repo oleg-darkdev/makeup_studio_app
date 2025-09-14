@@ -1,4 +1,4 @@
-const services = [
+const servicesPl = [
 	{
 		avif: '/images/results/cropped/result_1.avif',
 		image: '/images/results/cropped/result_1.png',
@@ -33,6 +33,4 @@ const services = [
 	// { image: '', title: 'Certyfikat u mistrza świata' }
 ];
 
-
-
-export default services;
+export default servicesPl;

@@ -1,4 +1,4 @@
-const courseData = [
+const courseDataPl = [
 	{
 		title: 'Wprowadzenie do kursu.',
 		id: 1,
@@ -67,7 +67,7 @@ const courseData = [
 			'Kolorowe cienie i dlaczego nie.',
 			'Organika i minerały w pracy z oczami.'
 		],
-		practice: [] 
+		practice: []
 	},
 	{
 		title: 'Treść fotograficzna i udział w mistrzostwach.',
@@ -117,5 +117,4 @@ const courseData = [
 	}
 ];
 
-
-export default courseData;
+export default courseDataPl;

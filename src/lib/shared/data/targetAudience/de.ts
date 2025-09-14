@@ -1,4 +1,4 @@
-const targetAudience = [
+const targetAudiencePl = [
 	{
 		title: 'Początkujące',
 		decoration: '',
@@ -22,4 +22,4 @@ const targetAudience = [
 	}
 ];
 
-export default targetAudience;
+export default targetAudiencePl;

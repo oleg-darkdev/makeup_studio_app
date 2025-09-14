@@ -3,10 +3,11 @@
 import type { BaseTranslation as BaseTranslationType } from 'typesafe-i18n'
 
 export type BaseTranslation = BaseTranslationType
-export type BaseLocale = 'en'
+export type BaseLocale = 'pl'
 
 export type Locales =
 	| 'en'
+	| 'pl'
 	| 'ru'
 
 export type Translation = RootTranslation

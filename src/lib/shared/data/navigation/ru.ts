@@ -1,18 +1,18 @@
-const navigation = [
+const navigationPl = [
 	{
-		title: 'Dla kogo',
+		title: 'Для кого',
 		link: '#for'
 	},
 	{
-		title: 'O autorze',
+		title: 'Об авторке',
 		link: '#coach'
 	},
 	{
-		title: 'Program',
+		title: 'Программа',
 		link: '#program'
 	},
 	{
-		title: 'Cenniki',
+		title: 'Цены',
 		link: '/'
 	},
 	{
@@ -24,9 +24,9 @@ const navigation = [
 	// 	link: '/#gift'
 	// },
 	{
-		title: 'Kontakt',
+		title: 'Контакт',
 		link: '#contact'
 	}
 ];
 
-export default navigation;
+export default navigationPl;

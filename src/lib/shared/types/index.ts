@@ -41,7 +41,7 @@ export interface Boardgame {
 }
 
 
-export interface NavigationLink {
+export interfacenavigationPlLink {
 	title: string;
 	link: string; 
 }
