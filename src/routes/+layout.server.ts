@@ -17,13 +17,13 @@ import { redirect } from '@sveltejs/kit';
 export const load = async ({ params }) => {
 	let locale = params.lang;
 
-	 if (!locale) {
-			// event.cookies.set(langParam, newLocale, { path: '/' });
-			// event.url.searchParams.delete(langParam);
-			locale = 'en';
-			throw redirect(302, '/en');
-		}
+	// event.cookies.set(langParam, newLocale, { path: '/' });
+	// event.url.searchParams.delete(langParam);
 
+	if (!locale) {
+		locale = 'en';
+		throw redirect(302, '/en');
+	}
 
 	return { locale };
 };

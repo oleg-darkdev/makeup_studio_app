@@ -31,7 +31,7 @@
 </script>
 
 <svelte:head>
-	<title>{$page.data.title || 'typesafe-i18n'}</title>
+	<title>{$page.data.title || ''}</title>
 	<!-- <html lang={data.locale} /> -->
 	<!-- <HeadHrefLangs /> -->
 </svelte:head>
