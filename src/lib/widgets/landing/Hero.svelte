@@ -3,9 +3,7 @@
 	// import {  } from '$widgets';
 	// import {  } from '$entities'
 
-
-		import LL from '$i18n/i18n-svelte';
-
+	import LL from '$i18n/i18n-svelte';
 </script>
 
 <section class="section_hero">
@@ -18,14 +16,14 @@
 							<div class="margin-bottom margin-xsmall">
 								<div class="preheading_wrap">
 									<h1 class="pre-heading">
-										{$LL.hero.preheading()} <a href="#coach" class="text-pink noise-effect"
-											>Valeria Vasilyeva</a
-										>
+										{$LL.hero.preheading()}
+										<a href="#coach" class="text-pink noise-effect">Valeria Vasilyeva</a>
 									</h1>
 								</div>
 							</div>
 							<h2 class="heading-style-h1">
-								{$LL.hero.course()} <span class="text-underline-v1 noise-effect">EYE LINER</span> {$LL.hero.startMounth()}
+								{$LL.hero.course()} <span class="text-underline-v1 noise-effect">EYE LINER</span>
+								{$LL.hero.startMounth()}
 							</h2>
 							<div class="margin-top margin-medium">
 								<div class="button-group">
@@ -59,11 +57,13 @@
 									</h3>
 								</div>
 								<p class="my-4">
-									{$LL.hero.coachTitle()} <a href="#coach" class="">
+									{$LL.hero.coachTitle()}
+									<a href="#coach" class="">
 										<!-- <div class="text-style-signature noise-effect"> -->
 										<img src="/images/signature_1.png" class="h-5 w-40" alt="" />
 										<!-- </div> -->
-									</a> {$LL.hero.coachDesc()}
+									</a>
+									{$LL.hero.coachDesc()}
 								</p>
 
 								<div class="button-group">

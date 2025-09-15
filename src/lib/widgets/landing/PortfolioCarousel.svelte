@@ -1,5 +1,7 @@
 <script lang="ts">
-	import { portfolioPl } from '$sharedData';
+	import { portfolioImgs } from '$sharedData';
+	import LL from '$i18n/i18n-svelte';
+
 	// import {  } from '$widgets';
 	import { PortfolioCard } from '$entitiesLanding';
 </script>
@@ -22,9 +24,9 @@
 					<div class="splide__list flex w-full flex-row items-end lg:justify-between">
 						<div class="hide-mobile">
 							<PortfolioCard
-								avif={portfolioPl[0].avif}
-								img={portfolioPl[0].img}
-								title={portfolioPl[0].title}
+								avif={portfolioImgs[0].avif}
+								img={portfolioImgs[0].img}
+								title={portfolioImgs[0].title}
 							/>
 						</div>
 						<div class="splide__slide splide_carousel-slide mx-auto">
@@ -34,17 +36,16 @@
 										class="mx-auto max-w-[340px] transform transition duration-300 hover:scale-105 lg:max-w-2xl"
 									>
 										<div class="margin-bottom margin-small">
-											<h2 class=" text-color-main-black heading-style-h3">Po ukonczeniu kursu</h2>
+											<h2 class=" text-color-main-black heading-style-h3">{$LL.portfolio.title()}</h2>
 										</div>
 										<div class="margin-bottom margin-xxsmall">
 											<p class="mb-3">
-												Po ukończeniu kursu otrzymasz praktyczną wiedzę potwierdzoną certyfikatem.
+												{$LL.portfolio.desc1()}
 											</p>
 
 											<p class="mb-8">
-												Kurs na żywo dostępny jest tylko <strong class="text-black"
-													>w języku polskim i rosyjskim.</strong
-												>
+												{$LL.portfolio.warning1()}
+												<strong class="text-black">{$LL.portfolio.warning2()}</strong>
 											</p>
 										</div>
 									</div>
@@ -78,12 +79,12 @@
 						</div>
 						<div class="hide-mobile">
 							<PortfolioCard
-								img={portfolioPl[1].img}
-								avif={portfolioPl[1].avif}
-								title={portfolioPl[1].title}
+								img={portfolioImgs[1].img}
+								avif={portfolioImgs[1].avif}
+								title={portfolioImgs[1].title}
 							/>
 						</div>
-						<!-- <PortfolioCard img={portfolioPl[2].img} title={portfolioPl[2].title} /> -->
+						<!-- <PortfolioCard img={portfolioImgs[2].img} title={portfolioImgs[2].title} /> -->
 					</div>
 				</div>
 			</div>
@@ -94,16 +95,16 @@
 					<div class="splide__list">
 						<div class="hide-mobile">
 							<PortfolioCard
-								img={portfolioPl[3].img}
-								avif={portfolioPl[3].avif}
-								title={portfolioPl[3].title}
+								img={portfolioImgs[3].img}
+								avif={portfolioImgs[3].avif}
+								title={portfolioImgs[3].title}
 							/>
 						</div>
 						<div class="show-mobile">
 							<PortfolioCard
-								img={portfolioPl[4].img}
-								avif={portfolioPl[4].avif}
-								title={portfolioPl[4].title}
+								img={portfolioImgs[4].img}
+								avif={portfolioImgs[4].avif}
+								title={portfolioImgs[4].title}
 							/>
 						</div>
 						<div class="hide-mobile">
@@ -128,9 +129,9 @@
 						<div class="hide-mobile">
 							<!-- <div class="hide-mobile"> -->
 							<PortfolioCard
-								img={portfolioPl[5].img}
-								avif={portfolioPl[5].avif}
-								title={portfolioPl[5].title}
+								img={portfolioImgs[5].img}
+								avif={portfolioImgs[5].avif}
+								title={portfolioImgs[5].title}
 							/>
 						</div>
 					</div>
