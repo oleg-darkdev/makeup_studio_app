@@ -2,6 +2,10 @@
 	// import {  } from '$shared';
 	// import {  } from '$widgets';
 	// import {  } from '$entities'
+
+
+		import LL from '$i18n/i18n-svelte';
+
 </script>
 
 <section class="section_hero">
@@ -14,19 +18,19 @@
 							<div class="margin-bottom margin-xsmall">
 								<div class="preheading_wrap">
 									<h1 class="pre-heading">
-										Podstawowy kurs online - autorka <a href="#coach" class="text-pink noise-effect"
+										{$LL.hero.preheading()} <a href="#coach" class="text-pink noise-effect"
 											>Valeria Vasilyeva</a
 										>
 									</h1>
 								</div>
 							</div>
 							<h2 class="heading-style-h1">
-								Kurs <span class="text-underline-v1 noise-effect">EYE LINER</span> Start w lipcu
+								{$LL.hero.course()} <span class="text-underline-v1 noise-effect">EYE LINER</span> {$LL.hero.startMounth()}
 							</h2>
 							<div class="margin-top margin-medium">
 								<div class="button-group">
 									<a href="/" target="_blank" class="button noise-effect w-inline-block">
-										<div>Zarezerwuj dostep</div>
+										<div>{$LL.hero.buttonBook()}</div>
 									</a>
 								</div>
 							</div>
@@ -51,17 +55,15 @@
 							<div class="">
 								<div class="margin-bottom margin-xxsmall">
 									<h3 class="pre-heading">
-										Kurs jest odpowiedni zarówno dla początkujących, jak i dla osób praktykujących,
-										a nawet przygotowujących się do udziału w mistrzostwach.
+										{$LL.hero.description()}
 									</h3>
 								</div>
 								<p class="my-4">
-									Kurs prowadzi <a href="#coach" class="">
+									{$LL.hero.coachTitle()} <a href="#coach" class="">
 										<!-- <div class="text-style-signature noise-effect"> -->
 										<img src="/images/signature_1.png" class="h-5 w-40" alt="" />
 										<!-- </div> -->
-									</a> - mistrz świata WULOP 2022, a także wielokrotny zwycięzca wielu innych międzynarodowych
-									turniejów.
+									</a> {$LL.hero.coachDesc()}
 								</p>
 
 								<div class="button-group">
@@ -70,7 +72,7 @@
 											class="button_icon-wrapper transform
            transition duration-300 hover:scale-105 hover:text-rose-300"
 										>
-											<div>Info o trenerze</div>
+											<div>{$LL.hero.buttonCoach()}</div>
 											<div class="icon-embed-xxsmall w-embed">
 												<svg
 													width=" 100%"

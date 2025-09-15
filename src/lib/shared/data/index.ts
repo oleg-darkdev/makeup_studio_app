@@ -7,7 +7,7 @@ import servicesEn from './services/en.ts';
 // import postsEn from './instaPosts/en.ts';
 import portfolioEn from './portfolio/en.ts';
 import footerEn from './layout-i18/footer/en.ts';
-// import heroEn from './hero/en.ts';
+import heroEn from './layout-i18/hero/en.ts';
 // import featuresEn from './features/en.ts';
 // import coachEn from './coach/en.ts';
 // import programEn from './program/en.ts';
@@ -23,7 +23,7 @@ import servicesRu from './services/ru.ts';
 // import postsRu from './instaPosts/ru.ts';
 import portfolioRu from './portfolio/ru.ts';
 import footerRu from './layout-i18/footer/ru.ts';
-// import heroRu from './hero/ru.ts';
+import heroRu from './layout-i18/hero/ru.ts';
 // import featuresRu from './features/ru.ts';
 // import coachRu from './coach/ru.ts';
 // import programRu from './program/ru.ts';
@@ -39,7 +39,7 @@ import servicesEs from './services/es.ts';
 // import postsEs from './instaPosts/es.ts';
 import portfolioEs from './portfolio/es.ts';
 import footerEs from './layout-i18/footer/es.ts';
-// import heroEs from './hero/es.ts';
+import heroEs from './layout-i18/hero/es.ts';
 // import featuresEs from './features/es.ts';
 // import coachEs from './coach/es.ts';
 // import programEs from './program/es.ts';
@@ -55,7 +55,7 @@ import servicesFr from './services/fr.ts';
 // import postsFr from './instaPosts/fr.ts';
 import portfolioFr from './portfolio/fr.ts';
 import footerFr from './layout-i18/footer/fr.ts';
-// import heroFr from './hero/fr.ts';
+import heroFr from './layout-i18/hero/fr.ts';
 // import featuresFr from './features/fr.ts';
 // import coachFr from './coach/fr.ts';
 // import programFr from './program/fr.ts';
@@ -71,7 +71,7 @@ import servicesDe from './services/de.ts';
 // import postsDe from './instaPosts/de.ts';
 import portfolioDe from './portfolio/de.ts';
 import footerDe from './layout-i18/footer/de.ts';
-// import heroDe from './hero/de.ts';
+import heroDe from './layout-i18/hero/de.ts';
 // import featuresDe from './features/de.ts';
 // import coachDe from './coach/de.ts';
 // import programDe from './program/de.ts';
@@ -87,7 +87,7 @@ import servicesPl from './services/pl.ts';
 import postsPl from './instaPosts/pl.ts';
 import portfolioPl from './portfolio/pl.ts';
 import footerPl from './layout-i18/footer/pl.ts';
-// import heroPl from './hero/pl.ts';
+import heroPl from './layout-i18/hero/pl.ts';
 // import featuresPl from './features/pl.ts';
 // import coachPl from './coach/pl.ts';
 // import programPl from './program/pl.ts';
@@ -104,6 +104,8 @@ export {
 	portfolioEn,
 	footerEn,
 	targetAudienceEn,
+	heroEn,
+	
 	// Russian
 	navigationRu,
 	courseDataRu,
@@ -113,6 +115,8 @@ export {
 	portfolioRu,
 	footerRu,
 	targetAudienceRu,
+	heroRu,
+
 	// Spanish
 	navigationEs,
 	courseDataEs,
@@ -121,7 +125,9 @@ export {
 	// postsEs,
 	portfolioEs,
 	footerEs,
+	heroEs,
 	targetAudienceEs,
+
 	// French
 	navigationFr,
 	courseDataFr,
@@ -129,8 +135,10 @@ export {
 	servicesFr,
 	// postsFr,
 	portfolioFr,
+	heroFr,
 	footerFr,
 	targetAudienceFr,
+
 	// German
 	navigationDe,
 	courseDataDe,
@@ -138,8 +146,11 @@ export {
 	servicesDe,
 	// postsDe,
 	portfolioDe,
+	heroDe,
 	footerDe,
 	targetAudienceDe,
+
+
 	// Polish
 	navigationPl,
 	courseDataPl,
@@ -148,5 +159,6 @@ export {
 	postsPl,
 	portfolioPl,
 	footerPl,
+	heroPl,
 	targetAudiencePl
 };

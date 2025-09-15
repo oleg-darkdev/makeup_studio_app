@@ -46,7 +46,7 @@
 							</div>
 							<div class="w-layout-grid social_icons-grid">
 								<a
-									href="{$LL.footer.social.facebook()}"
+									href={$LL.footer.social.facebook()}
 									target="_blank"
 									class="social_icons-link noise-effect w-inline-block"
 								>
@@ -68,7 +68,7 @@
 									</div>
 								</a>
 								<a
-									href="{$LL.footer.social.instagram()}"
+									href={$LL.footer.social.instagram()}
 									target="_blank"
 									class="social_icons-link noise-effect w-inline-block"
 								>

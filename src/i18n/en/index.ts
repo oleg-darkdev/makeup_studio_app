@@ -7,7 +7,8 @@ import {
 	// postsEn,
 	footerEn,
 	portfolioEn,
-	targetAudienceEn
+	targetAudienceEn,
+	heroEn
 } from '../../lib/shared/data';
 // import heroEn from '../../lib/shared/data/hero/en.ts';
 // import featuresEn from '../../lib/shared/data/features/en.ts';
@@ -24,8 +25,8 @@ const en = {
 	portfolio: portfolioEn,
 	targetAudience: targetAudienceEn,
 	navigation: navigationEn,
-	footer: footerEn
-	// hero: heroEn,
+	footer: footerEn,
+	hero: heroEn,
 	// features: featuresEn,
 	// coach: coachEn,
 	// program: programEn,

@@ -7,7 +7,8 @@ import {
 	// postsRu,
 	portfolioRu,
 	targetAudienceRu,
-	footerRu
+	footerRu,
+	heroRu
 } from '../../lib/shared/data';
 // import heroRu from '../../lib/shared/data/hero/ru.ts';
 // import featuresRu from '../../lib/shared/data/features/ru.ts';
@@ -24,8 +25,8 @@ const ru = {
 	portfolio: portfolioRu,
 	targetAudience: targetAudienceRu,
 	navigation: navigationRu,
-	footer: footerRu
-	// hero: heroRu,
+	footer: footerRu,
+	hero: heroRu,
 	// features: featuresRu,
 	// coach: coachRu,
 	// program: programRu,

@@ -9,7 +9,8 @@ import {
 	postsPl,
 	portfolioPl,
 	footerPl,
-	targetAudiencePl
+	targetAudiencePl,
+	heroPl
 } from '../../lib/shared/data';
 // import heroPl from '../../lib/shared/data/hero/pl.ts';
 // import featuresPl from '../../lib/shared/data/features/pl.ts';
@@ -26,8 +27,8 @@ const pl = {
 	portfolio: portfolioPl,
 	targetAudience: targetAudiencePl,
 	navigation: navigationPl,
-	footer: footerPl
-	// hero: heroPl,
+	footer: footerPl,
+	hero: heroPl,
 	// features: featuresPl,
 	// coach: coachPl,
 	// program: programPl,
