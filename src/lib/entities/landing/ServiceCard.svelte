@@ -18,11 +18,13 @@
 "
 		class="services_cards w-inline-block relative"
 	>
-		<div class="services_cards-heading mx-auto text-left text-white group-hover:text-rose-300">
+		<h2
+			class=" font-poppins services_cards-heading mx-auto text-left font-black uppercase text-white group-hover:text-rose-300"
+		>
 			{title}
-		</div>
+		</h2>
 		<div
-			class="absolute inset-0 bg-black opacity-0 transition-opacity duration-300 group-hover:opacity-70"
+			class="absolute inset-0 bg-black bg-black opacity-30 transition-opacity duration-300 group-hover:opacity-70"
 		></div>
 		<!-- <div class="services_cards-button">
 			<div class="icon-embed-xxsmall w-embed">
@@ -51,9 +53,7 @@
 
 		transform: rotate(90deg);
 		transform-origin: top left;
-		font-family: Quicksilver, sans-serif;
 		font-size: 2rem;
-		font-weight: 400;
 		line-height: 1.05;
 		position: relative;
 		display: inline-block;

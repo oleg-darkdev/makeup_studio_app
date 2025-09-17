@@ -11,9 +11,10 @@
 		<div class="container-large">
 			<div class="padding-section-large">
 				<div class="w-layout-grid faq_component">
-					<div class="faq_content fade_in-300">
-						<h2>
-							Program kursu<span class="text-underline-v1 noise-effect"> «EYE LINER» </span>
+					<div class="faq_content">
+						<h2 class="heading-style-h2 font-poppins mb-8 font-black uppercase">
+							{$LL.program.title()}
+							<span class="text-underline-v1 noise-effect"> «EYE LINER» </span>
 						</h2>
 						<div class="margin-top margin-small">
 							<div class="button-group">
@@ -22,7 +23,7 @@
 										class="button_icon-wrapper transform transition duration-300 hover:scale-105 hover:text-rose-300"
 									>
 										<!-- do kursu -->
-										<div>Zakup dostępu</div>
+										<div>{$LL.program.buttonBuy()}</div>
 										<div class="icon-embed-xxsmall w-embed">
 											<svg
 												width=" 100%"
@@ -44,17 +45,16 @@
 							</div>
 
 							<div class="mt-8 max-w-md">
-								<p class="">
-									Kurs na żywo dostępny jest tylko <strong class="text-rose-300"
-										>w języku polskim i rosyjskim.</strong
-									>
+								<p class="font-poppins font-bold">
+									{$LL.program.warning1()}
+									<strong class="text-rose-300">{$LL.program.warning2()} </strong>
 								</p>
 							</div>
 						</div>
 					</div>
 					<div class="faq_icon-wrap">
 						<div class="w-layout-grid faq_list">
-							{#each $LL.courseData as stage}
+							{#each $LL.program.courseData as stage}
 								<ProgramCard {stage} />
 							{/each}
 						</div>

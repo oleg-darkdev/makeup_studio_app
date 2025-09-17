@@ -3,7 +3,10 @@ const en = {
 	desc1:
 		'After completing the course, you will gain practical knowledge confirmed by a certificate.',
 	warning1: 'The live course is available ',
-	warning2: 'only in Polish and Russian.'
+	warning2: 'only in Polish and Russian.',
+	gallery: [
+		
+	]
 };
 
 export default en;

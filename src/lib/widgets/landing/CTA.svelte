@@ -9,28 +9,27 @@
 		<div class="container-large">
 			<div class="padding-section-large">
 				<div class="w-layout-grid cta_component noise-effect">
-					<div class="cta_card ">
-						<div class="margin-bottom margin-small z-index-2">
-							<h2 class="text-color-main-black">
-								Zarezerwuj dostep <span class="text-underline-v6"
-									>z Valeria Vasilyeva na zywo
-								</span> juz dzis
+					<div class="cta_card">
+						<div class="z-index-2 mb-10">
+							<h2 class="text-color-main-black font-poppins font-black">
+								Zarezerwuj dostęp <br />
+								<span class="text-underline-v6">z Valeria Vasilyeva na zywo </span> <br /> juz dzis
 							</h2>
 						</div>
 						<div class="max-w-2xl">
-							<p class='mb-4'>
+							<p class="mb-4">
 								Jeśli jesteś osobą, która pragnie przenieść swój wizerunek na nowy poziom, poczuć
 								pewność siebie i swobodnie wyrażać siebie, nasz kurs pomoże Ci w tym.
 							</p>
 
-							<p class=''>
+							<p class="">
 								Kurs na żywo dostępny jest <strong>tylko w języku polskim i rosyjskim.</strong>
 							</p>
 						</div>
 
-						<div class="margin-top margin-small">
+						<div class="mt-4">
 							<div class="button-group">
-								<a href="#" class=" button is-alternate w-inline-block">
+								<a href="#" class="button is-alternate w-inline-block no-underline">
 									<div>Zarezerwuj dostep</div>
 								</a>
 							</div>
@@ -60,12 +59,7 @@
 								</div>
 							</div>
 						</a>
-						<img
-							src="images/cta-lines.svg"
-							loading="lazy"
-							alt="waves"
-							class="cta_object-lines"
-						/>
+						<img src="images/cta-lines.svg" loading="lazy" alt="waves" class="cta_object-lines" />
 					</div>
 				</div>
 			</div>

@@ -13,8 +13,11 @@
 		<div class="container-large position-relative">
 			<div class="padding-top padding-xhuge">
 				<div class="margin-bottom margin-large">
-					<h2 class="heading-style-h1">
-						Wynik po ukonczeniu <br/> kursu <span class="text-underline-v1 noise-effect">EYE LINER</span>
+					<!-- <br/> kursu  -->
+					<h2 class="heading-style-h1 font-poppins max-w-4xl font-black">
+						{$LL.services.title()}
+						{$LL.services.course()} <br />
+						<span class="text-underline-v1 noise-effect">EYE LINER</span>
 					</h2>
 				</div>
 
@@ -25,7 +28,7 @@
 								<div
 									class="button_icon-wrapper transform transition duration-300 hover:scale-105 hover:text-rose-300"
 								>
-									<div>Zarezerwuj dostep</div>
+									<div>{$LL.services.buttonBook()}</div>
 									<div class="icon-embed-xxsmall w-embed">
 										<svg
 											width=" 100%"
@@ -53,7 +56,7 @@
 					<div class="splide cards_carousel">
 						<div class="splide__track w-dyn-list">
 							<div role="list" class="splide__list w-dyn-items">
-								{#each $LL.services as service}
+								{#each $LL.services.data as service}
 									<ServiceCard {service} />
 								{/each}
 							</div>

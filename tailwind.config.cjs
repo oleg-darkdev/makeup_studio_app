@@ -29,6 +29,9 @@ const config = {
 			},
 			animation: {
 				'reverse-spin': 'reverseSpin 2s linear infinite'
+			},
+			fontFamily: {
+				roboto: ['Poppins', 'sans-serif']
 			}
 		}
 	},

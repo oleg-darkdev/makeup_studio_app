@@ -15,7 +15,7 @@
 						alt="Heart"
 						class="testimonials_object-heart"
 					/>
-					<h2 class="text-align-center mobile-text-align-left">
+					<h2 class="text-align-center mobile-text-align-left font-poppins font-black">
 						What our <span class="text-color-pink noise-effect">Clients</span> say
 						<span class="text-underline-v4"></span>
 					</h2>

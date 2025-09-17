@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { page } from '$app/stores';
 	import LL, { setLocale } from '$i18n/i18n-svelte';
 
 	import type { Snippet } from 'svelte';
@@ -31,7 +30,7 @@
 </script>
 
 <svelte:head>
-	<title>{$page.data.title || ''}</title>
+	<title></title>
 	<!-- <html lang={data.locale} /> -->
 	<!-- <HeadHrefLangs /> -->
 </svelte:head>

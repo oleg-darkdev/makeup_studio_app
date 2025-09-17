@@ -249,7 +249,7 @@
 		font-family:
 			-apple-system,
 			BlinkMacSystemFont,
-			Roboto,
+			Poppins,
 			Open Sans,
 			Helvetica Neue,
 			sans-serif;

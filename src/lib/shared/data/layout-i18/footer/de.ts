@@ -12,4 +12,5 @@ const footerDe = {
 	navigationTitle: 'Navigation'
 };
 
+
 export default footerDe

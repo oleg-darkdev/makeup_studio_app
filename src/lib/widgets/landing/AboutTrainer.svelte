@@ -1,37 +1,5 @@
 <script lang="ts">
-	// import {  } from '$shared';
-	// import {  } from '$widgets';
-	// import {  } from '$entities'
-
-	const achievements = {
-		overall: [
-			'Mistrz świata WULOP 2022 🏆🥇',
-			'Wielokrotny mistrz 🏆🥇🥇🥇',
-			// 'Top-trener 🔝',
-			'Współorganizator półfinału mistrzostw WORLDS Poland',
-			'Międzynarodowy sędzia ⚖️',
-			// 'Tester sprzętu do makijażu permanentnego',
-			'Partner największych producentów sprzętu i pigmentów do makijażu permanentnego',
-			'Praktykujący mistrz i nauczyciel'
-			// 'Autor unikalnych metod i kursów z zakresu makijażu permanentnego'
-		],
-
-		speaker: [
-			'Mówca międzynarodowych kongresów 🎤',
-			'Mówca WULOP',
-			'Mówca World Grand Final',
-			'Mówca Bsbpmucongress Brazilian',
-			'Mówca PMU Balkan Congress',
-			'Mówca Etalon Mix Event',
-			'Mówca Czech PMU Congress',
-			'Mówca Europmufest',
-			'Mówca Upgrade for Italian competition',
-			'Referent World Beauty Top Serbia',
-			'Mówca Queens Night',
-			'Mówca Vselennaya online',
-			'I wielu innych kongresów...'
-		]
-	};
+	import LL from '$i18n/i18n-svelte';
 </script>
 
 <section class="section_about" id="coach">
@@ -67,58 +35,62 @@
 					<div class="about_content">
 						<div class="margin-bottom margin-xsmall">
 							<div class="preheading_wrap">
-								<h1 class="pre-heading">
-									Podstawowy kurs online - autorka <span class="text-pink noise-effect"
-										>Valeria Vasilyeva</span
-									>
+								<h1 class="pre-heading font-poppins font-black">
+									{$LL.coach.preheading()}
+									<span class="text-pink noise-effect">Valeria Vasilyeva</span>
 								</h1>
 							</div>
 						</div>
-						<div class="margin-bottom margin-small">
-							<h2>
-								Wplyw <span class="text-color-pink noise-effect">transformacji</span> artystycznej
-
-								<!-- The <span class="text-color-pink noise-effect">Impact</span> of Artful transformation -->
+						<div class="mb-4">
+							<h2 class="heading-style-h3 font-poppins max-w-2xl font-black uppercase">
+								{$LL.coach.titleStart()}<span class="text-color-pink noise-effect"
+									>{$LL.coach.titleCenter()}</span
+								>
+								{$LL.coach.titleEnd()}
 							</h2>
 						</div>
-						<div class="margin-bottom margin-small">
+						<div class="mb-4">
 							<p>
-								Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
-								an unknown printer took a galley of type and scrambled it to make a type specimen
-								book.
+								{$LL.coach.description()}
 							</p>
 						</div>
 
-						<div class="margin-bottom margin-small pb-6">
+						<div class="mb-4 pb-6">
 							<div class="features_list-wave line-2"></div>
 							<div class="margin-bottom margin-xsmall">
-								<h3 class="heading-style-h5 text-weight-bold text-style-allcaps">Osiągnięcia</h3>
+								<h3 class="heading-style-h5 text-weight-bold text-style-allcaps">
+									{$LL.coach.achievementsTitle()}
+								</h3>
 							</div>
-							{#each achievements.overall as achievement}
+							{#each $LL.coach.achievements.overall as achievement}
 								<p class="mb-2">
 									<img src="images/about_list-pointer.svg" class="mr-4 h-6 w-6" alt="-" />
-									{achievement}
+									{achievement()}
 								</p>
 							{/each}
 						</div>
 
-						<div class="margin-bottom margin-small">
+						<div class="mb-4">
 							<div class="features_list-wave"></div>
 							<div class="margin-bottom margin-xsmall">
 								<h3 class="heading-style-h5 text-weight-bold text-style-allcaps">
-									Na konferencjach
+									{$LL.coach.conferencesTitle()}
 								</h3>
 							</div>
 
-							{#each achievements.speaker as speaker}
+							{#each $LL.coach.achievements.speaker as speaker}
 								<p class="mb-2">
 									<img src="images/about_list-pointer.svg" class="mr-4 h-6 w-6" alt="-" />
-									{speaker}
+									{speaker()}
 								</p>
 							{/each}
 						</div>
 						<div class="text-style-signature noise-effect">
-							<img src="/images/signature_1.png" class="h-10 w-full" alt="" />
+							<img
+								src="/images/signature_1.png"
+								class="h-10 w-full"
+								alt={$LL.coach.signatureAlt()}
+							/>
 						</div>
 						<!-- <p class="text-style-signature noise-effect">Valeria Vasilyeva</p> -->
 						<!--  -->

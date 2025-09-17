@@ -13,13 +13,16 @@
 				<div class="w-layout-grid features_component">
 					<div class="features_heading">
 						<div class="margin-bottom margin-xsmall">
-							<h2 class="mb-4">
+							<h2 class="font-poppins mb-4 font-black">
 								<!-- Why <span class="text-color-pink noise-effect">....</span> is
 								<span class="text-underline-v4">....</span> -->
 
 								<span class="text-underline-v1 noise-effect mb-4">EYE LINER</span>
 							</h2>
-							<h2>ten kurs <span class="text-underline-v4">dla</span></h2>
+
+							<h2 class="font-poppins font-black uppercase">
+								{$LL.features.title()} <span class="text-underline-v4">{$LL.features.ta()}</span>
+							</h2>
 						</div>
 						<div class="margin-top margin-small">
 							<div class="button-group">
@@ -27,7 +30,7 @@
 									<div
 										class="button_icon-wrapper transform transition duration-300 hover:scale-105 hover:text-rose-300"
 									>
-										<div>Zarezerwuj dostep</div>
+										<div>{$LL.features.buttonBook()}</div>
 										<div class="icon-embed-xsmall w-embed">
 											<svg
 												width=" 100%"
@@ -49,9 +52,8 @@
 
 								<div class="mt-4 max-w-md">
 									<p class="">
-										Kurs na żywo dostępny jest tylko <strong class="text-rose-300"
-											>w języku polskim i rosyjskim.</strong
-										>
+										{$LL.features.warning1()}
+										<strong class="text-rose-300">{$LL.features.warning2()}</strong>
 									</p>
 								</div>
 							</div>
@@ -59,14 +61,14 @@
 					</div>
 					<div class="layout32_content">
 						<div class="w-layout-grid features_list">
-							{#each $LL.targetAudience as { title, desc, decoration }}
+							{#each $LL.features.targetAudience as { title, desc, decoration }}
 								<div class="features_list-item group">
 									<div class="layout32_item-text-wrapper">
 										<div class="features_list-wave {decoration}"></div>
 
 										<div class="margin-bottom margin-xsmall">
 											<h3
-												class="heading-style-h5 text-weight-bold text-style-allcaps transform transition duration-300 group-hover:scale-105 group-hover:text-rose-300"
+												class="heading-style-h5 font-poppins text-style-allcaps transform text-lg font-bold transition duration-300 group-hover:scale-105 group-hover:text-rose-300"
 											>
 												{title}
 											</h3>
@@ -74,7 +76,7 @@
 
 										{#each desc as text}
 											<p
-												class="transform transition duration-300 group-hover:scale-105 group-hover:text-rose-300"
+												class="font-poppins transform transition duration-300 group-hover:scale-105 group-hover:text-rose-300"
 											>
 												{text}
 											</p>

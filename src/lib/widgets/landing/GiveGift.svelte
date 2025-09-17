@@ -10,9 +10,11 @@
 			<div class="padding-section-medium">
 				<div class="w-layout-grid giftcard-component">
 					<div class="single_testimonial-heading">
-						<div class="margin-bottom margin-small">
+						<div class="mb-6">
 							<!-- Give the -->
-							<h2>Podaruj <span class="text-color-pink noise-effect">unikalny prezent</span></h2>
+							<h2 class="heading-style-h2 font-poppins font-black">
+								Podaruj <span class="text-color-pink noise-effect">unikalny prezent</span>
+							</h2>
 						</div>
 						<!-- <img
 							src="images/testimonial-diamond-1.svg"
@@ -28,7 +30,7 @@
 						/> -->
 
 						<div class="margin-bottom">
-							<p class="text-size-medium">
+							<p class="text-bold font-poppins text-lg">
 								Kurs <span class="text-underline-v1 noise-effect"> EYE LINER</span> dla siebie lub
 								podaruj ją znajomemej!
 								<!-- Get an  gift card for yourself or gift one to a friend! -->
@@ -37,9 +39,9 @@
 					</div>
 					<div class="giftcard-col">
 						<div class="button-group is-end mobile-justify-align-start">
-							<a href="/" target="_blank" class="button noise-effect w-inline-block">
+							<a href="/" target="_blank" class="button noise-effect w-inline-block no-underline">
 								<!-- Purchase Now -->
-								<div>Zamów prezent</div>
+								<div>Zamów</div>
 							</a>
 						</div>
 					</div>

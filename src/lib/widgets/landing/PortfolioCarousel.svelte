@@ -30,13 +30,15 @@
 							/>
 						</div>
 						<div class="splide__slide splide_carousel-slide mx-auto">
-							<a href="/" class="splide_carousel-wrap w-inline-block">
+							<a href="/" class="splide_carousel-wrap w-inline-block no-underline">
 								<div class="splide_carousel-content noise-effect">
 									<div
 										class="mx-auto max-w-[340px] transform transition duration-300 hover:scale-105 lg:max-w-2xl"
 									>
 										<div class="margin-bottom margin-small">
-											<h2 class=" text-color-main-black heading-style-h3">{$LL.portfolio.title()}</h2>
+											<h2 class="text-color-main-black heading-style-h3 font-poppins font-black">
+												{$LL.portfolio.title()}
+											</h2>
 										</div>
 										<div class="margin-bottom margin-xxsmall">
 											<p class="mb-3">

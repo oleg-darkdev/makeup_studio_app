@@ -59,8 +59,8 @@
 				<div class="">
 					<div class="navbar_link-wrap">
 						<div class="navbar1_menu-buttons">
-							<a href="#" class="button is-small noise-effect w-inline-block">
-								<div>Kup dostep</div>
+							<a href="#" class="button is-small noise-effect w-inline-block no-underline">
+								<div>kup dostęp</div>
 							</a>
 						</div>
 					</div>
@@ -94,8 +94,8 @@
 
 					<div class="navbar_link-wrap mx-auto mb-20">
 						<div class="navbar1_menu-buttons">
-							<a href="#" class="button is-small noise-effect w-inline-block">
-								<div>Kup dostep</div>
+							<a href="#" class="button is-small noise-effect w-inline-block no-underline">
+								kup dostęp
 							</a>
 						</div>
 					</div>

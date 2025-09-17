@@ -15,19 +15,24 @@
 						<div class="hero_content-left-wrap">
 							<div class="margin-bottom margin-xsmall">
 								<div class="preheading_wrap">
-									<h1 class="pre-heading">
+									<h1 class="pre-heading font-poppins font-black">
 										{$LL.hero.preheading()}
 										<a href="#coach" class="text-pink noise-effect">Valeria Vasilyeva</a>
 									</h1>
 								</div>
 							</div>
-							<h2 class="heading-style-h1">
+							<h2 class="heading-style-h1 font-poppins font-black uppercase">
 								{$LL.hero.course()} <span class="text-underline-v1 noise-effect">EYE LINER</span>
+								<br />
 								{$LL.hero.startMounth()}
 							</h2>
 							<div class="margin-top margin-medium">
 								<div class="button-group">
-									<a href="/" target="_blank" class="button noise-effect w-inline-block">
+									<a
+										href="/"
+										target="_blank"
+										class="button noise-effect w-inline-block no-underline"
+									>
 										<div>{$LL.hero.buttonBook()}</div>
 									</a>
 								</div>
@@ -66,11 +71,10 @@
 									{$LL.hero.coachDesc()}
 								</p>
 
-								<div class="button-group">
+								<!-- <div class="button-group">
 									<a href="#coach" class="button is-link w-inline-block">
 										<div
-											class="button_icon-wrapper transform
-           transition duration-300 hover:scale-105 hover:text-rose-300"
+											class="button_icon-wrapper transform transition duration-300 hover:scale-105 hover:text-rose-300"
 										>
 											<div>{$LL.hero.buttonCoach()}</div>
 											<div class="icon-embed-xxsmall w-embed">
@@ -91,7 +95,7 @@
 										<div class="button_underline"></div>
 										<div class="button_underline-fill"></div>
 									</a>
-								</div>
+								</div> -->
 							</div>
 							<div class="w-layout-grid social_icons-list">
 								<a

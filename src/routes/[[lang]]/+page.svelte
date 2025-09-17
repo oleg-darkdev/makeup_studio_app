@@ -1,6 +1,6 @@
 <script lang="ts">
-	// import {} from '$sharedData';
-	// import {} from '$sharedUi';
+	import { page } from '$app/stores';
+
 	import {
 		Footer,
 		Header,
@@ -20,7 +20,7 @@
 </script>
 
 <svelte:head>
-	<title>| Home</title>
+	<title>EYE LINER | {$page.data.locale}</title>
 	<meta name="description" content="" />
 </svelte:head>
 
@@ -41,7 +41,6 @@
 		<Features />
 
 		<AboutTrainer />
-
 
 		<CourseProgramm />
 
