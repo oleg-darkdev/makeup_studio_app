@@ -38,7 +38,7 @@
 				</div>
 			</div>
 
-			<nav role="navigation" class="navbar_menu_desc space-between flex w-full">
+			<nav role="navigation" class="navbar_menu_desc static flex items-center content-center space-between flex w-full">
 				<!-- $LL.navigationPl -->
 				{#each $LL.navigation as { title, link }}
 					<div class="navbar_link-wrap">
@@ -56,10 +56,10 @@
 					</div>
 				{/each}
 
-				<div class="">
+				<div class="max-w-[140px]">
 					<div class="navbar_link-wrap">
-						<div class="navbar1_menu-buttons">
-							<a href="#" class="button is-small noise-effect w-inline-block no-underline">
+						<div class="navbar1_menu-buttons pt-8">
+							<a href="#" class="button-3 is-navbar4-button  noise-effect w-inline-block no-underline">
 								<div>kup dostęp</div>
 							</a>
 						</div>
@@ -206,9 +206,6 @@
 	.navbar_menu_desc {
 		grid-column-gap: 3rem;
 		grid-row-gap: 4rem;
-		align-items: center;
-		display: flex;
-		position: static;
 	}
 	.header_logo {
 		max-height: 5rem;
@@ -238,7 +235,7 @@
 		grid-template-rows: auto;
 		grid-template-columns: 1fr 1fr;
 		grid-auto-columns: 1fr;
-		align-items: center;
+		
 		display: flex;
 	}
 	@media screen and (min-width: 991px) {

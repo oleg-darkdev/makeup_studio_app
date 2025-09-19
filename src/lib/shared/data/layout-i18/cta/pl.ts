@@ -1,10 +1,12 @@
 const pl = {
-	title:
-		'Zarezerwuj dostęp <span class="text-underline-v6">z Valeria Vasilyeva na zywo</span> juz dzis',
-	description1:
-		'Jeśli jesteś osobą, która pragnie przenieść swój wizerunek na nowy poziom, poczuć pewność siebie i swobodnie wyrażać siebie, nasz kurs pomoże Ci w tym.',
-	description2: 'Kurs na żywo dostępny jest <strong>tylko w języku polskim i rosyjskim.</strong>',
-	button: 'Zarezerwuj dostep'
-};
+	titleStart: 'Zarezerwuj dostęp',
+	titleCenter: 'na żywo',
+	titleEnd: 'już dziś',
 
+	description1:
+		'Jeśli chcesz wynieść swój wizerunek na wyższy poziom, poczuć pewność siebie i swobodnie się wyrażać — nasz kurs ci w tym pomoże.',
+	warningMsg1: 'Kurs na żywo jest dostępny',
+	warningMsg2: 'tylko w języku polskim i rosyjskim.',
+	button: 'Zarezerwuj dostęp'
+};
 export default pl;

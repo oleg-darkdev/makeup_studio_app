@@ -4,9 +4,6 @@
 	// import {  } from '$entities'
 
 	import LL from '$i18n/i18n-svelte';
-
-	// console.log($LL.footer.contactDataTitle())
-	// console.log($LL.footer.empty)
 </script>
 
 <footer class="section_footer" id="contact">
@@ -20,7 +17,7 @@
 								<div class="footer_details-wrap margin-bottom margin-xsmall">
 									<div class="footer_details-item">
 										<div class="margin-bottom margin-xsmall">
-											<h3 class="font-poppins font-bold text-2xl">{$LL.footer.contactDataTitle()}</h3>
+											<h3 class="font-poppins font-bold text-2xl uppercase">{$LL.footer.contactDataTitle()}</h3>
 										</div>
 										<div>
 											<a href="tel:+48451143933" class="font-bold footer_details-link text-color-pink"
@@ -104,7 +101,7 @@
 						<div class="grid-gap-4 grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
 							<div class="mb-10 w-full md:mb-0 lg:mb-0">
 								<div class="margin-bottom margin-small">
-									<h3 class="font-poppins font-bold text-2xl">{$LL.footer.pricesTitle()}</h3>
+									<h3 class="font-poppins font-bold text-2xl uppercase">{$LL.footer.pricesTitle()}</h3>
 								</div>
 								<div class="">
 									<div class="footer_link-list">
@@ -118,7 +115,7 @@
 								</div>
 							</div>
 							<div class="w-full">
-								<div class="margin-bottom margin-small">
+								<div class="margin-bottom margin-small uppercase">
 									<h3 class="font-poppins font-bold text-2xl">{$LL.footer.navigationTitle()}</h3>
 								</div>
 								<div class="">

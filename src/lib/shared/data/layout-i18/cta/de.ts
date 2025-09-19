@@ -1,9 +1,12 @@
 const de = {
-	title:
-		'Buche den Zugang <span class="text-underline-v6">mit Valeria Vasilyeva live</span> noch heute',
+	titleStart: 'Buche den Zugang',
+	titleCenter: 'live',
+	titleEnd: 'noch heute',
+
 	description1:
-		'Wenn du dein Image auf ein neues Level bringen, Selbstvertrauen gewinnen und dich frei ausdrücken möchtest, wird dir unser Kurs dabei helfen.',
-	description2: 'Der Live-Kurs ist <strong>nur auf Polnisch und Russisch</strong> verfügbar.',
+		'Wenn du dein Image auf das nächste Level bringen, Selbstvertrauen gewinnen und dich frei ausdrücken möchtest — unser Kurs hilft dir dabei.',
+	warningMsg1: 'Der Live-Kurs ist verfügbar',
+	warningMsg2: 'nur auf Polnisch und Russisch.',
 	button: 'Zugang buchen'
 };
 

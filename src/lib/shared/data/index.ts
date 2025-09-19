@@ -4,7 +4,7 @@ import programEn from './layout-i18/program/en.ts';
 // import pricesEn from './prices/en.ts';
 import featuresEn from './layout-i18/features/en.ts';
 // import postsEn from './instaPosts/en.ts';
-// import portfolioEn from './layout-i18/portfolio/en.ts';
+import giftEn from './layout-i18/gift/en.ts';
 import footerEn from './layout-i18/footer/en.ts';
 import heroEn from './layout-i18/hero/en.ts';
 import portfolioEn from './layout-i18/portfolio/en.ts';
@@ -28,6 +28,7 @@ import heroRu from './layout-i18/hero/ru.ts';
 import coachRu from './layout-i18/coach/ru.ts';
 import ctaRu from './layout-i18/cta/ru.ts';
 import faqRu from './layout-i18/faq/ru.ts';
+import giftRu from './layout-i18/gift/ru.ts';
 
 // Spanish
 import navigationEs from './navigation/es.ts';
@@ -42,6 +43,7 @@ import heroEs from './layout-i18/hero/es.ts';
 import coachEs from './layout-i18/coach/es.ts';
 import ctaEs from './layout-i18/cta/es.ts';
 import faqEs from './layout-i18/faq/es.ts';
+import giftEs from './layout-i18/gift/es.ts';
 
 // French
 import navigationFr from './navigation/fr.ts';
@@ -56,6 +58,7 @@ import heroFr from './layout-i18/hero/fr.ts';
 import coachFr from './layout-i18/coach/fr.ts';
 import ctaFr from './layout-i18/cta/fr.ts';
 import faqFr from './layout-i18/faq/fr.ts';
+import giftFr from './layout-i18/gift/fr.ts';
 
 // German
 import navigationDe from './navigation/de.ts';
@@ -70,6 +73,7 @@ import heroDe from './layout-i18/hero/de.ts';
 import coachDe from './layout-i18/coach/de.ts';
 import ctaDe from './layout-i18/cta/de.ts';
 import faqDe from './layout-i18/faq/de.ts';
+import giftDe from './layout-i18/gift/de.ts';
 
 // Polish
 import navigationPl from './navigation/pl.ts';
@@ -86,6 +90,7 @@ import coachPl from './layout-i18/coach/pl.ts';
 // import programPl from './program/pl.ts';
 import ctaPl from './layout-i18/cta/pl.ts';
 import faqPl from './layout-i18/faq/pl.ts';
+import giftPl from './layout-i18/gift/pl.ts';
 
 //
 import portfolioImgs from './portfolioImgs.ts';
@@ -106,6 +111,7 @@ export {
 	coachEn,
 	faqEn,
 	ctaEn,
+	giftEn,
 	// Russian
 	navigationRu,
 	programRu,
@@ -119,7 +125,7 @@ export {
 	faqRu,
 	heroRu,
 	ctaRu,
-
+	giftRu,
 	// Spanish
 	navigationEs,
 	programEs,
@@ -133,6 +139,7 @@ export {
 	coachEs,
 	ctaEs,
 	faqEs,
+	giftEs,
 	// French
 	navigationFr,
 	programFr,
@@ -146,6 +153,7 @@ export {
 	coachFr,
 	ctaFr,
 	faqFr,
+	giftFr,
 	// German
 	navigationDe,
 	programDe,
@@ -159,7 +167,7 @@ export {
 	featuresDe,
 	coachDe,
 	ctaDe,
-
+	giftDe,
 	// Polish
 	navigationPl,
 	programPl,
@@ -172,5 +180,6 @@ export {
 	footerPl,
 	heroPl,
 	ctaPl,
-	featuresPl
+	featuresPl,
+	giftPl
 };

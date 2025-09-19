@@ -1,5 +1,5 @@
 const footerPl = {
-	contactDataTitle: 'Kontakt:',
+	contactDataTitle: 'Kontakt',
 	phone: '(48) 451-143-933',
 	email: 'vasilyeva.pmu@gmail.com',
 	address: 'Jana Heweliusza 11 / piętro 10, lok. 1007',
@@ -12,5 +12,4 @@ const footerPl = {
 	navigationTitle: 'Nawigacja'
 };
 
-
-export default footerPl
+export default footerPl;

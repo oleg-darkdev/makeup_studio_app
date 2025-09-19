@@ -1,5 +1,5 @@
 const footerDe = {
-	contactDataTitle: 'Contact:',
+	contactDataTitle: 'Contact',
 	phone: '(48) 451-143-933',
 	email: 'vasilyeva.pmu@gmail.com',
 	address: 'Jana Heweliusza 11 / floor 10, apt. 1007',

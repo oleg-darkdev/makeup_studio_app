@@ -11,7 +11,8 @@ import {
 	footerRu,
 	ctaRu,
 	heroRu,
-	faqRu
+	faqRu,
+	giftRu
 } from '../../lib/shared/data';
 
 const ru = {
@@ -26,7 +27,8 @@ const ru = {
 	coach: coachRu,
 	program: programRu,
 	cta: ctaRu,
-	faq: faqRu
+	faq: faqRu,
+	gift: giftRu
 } satisfies BaseTranslation;
 
 export default ru;

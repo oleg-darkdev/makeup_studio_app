@@ -1,7 +1,7 @@
 <script lang="ts">
 	// import {  } from '$shared';
 	// import {  } from '$widgets';
-	// import {  } from '$entities'
+	import LL from '$i18n/i18n-svelte';
 </script>
 
 <section id="gift" class="section_giftcard">
@@ -12,8 +12,9 @@
 					<div class="single_testimonial-heading">
 						<div class="mb-6">
 							<!-- Give the -->
-							<h2 class="heading-style-h2 font-poppins font-black">
-								Podaruj <span class="text-color-pink noise-effect">unikalny prezent</span>
+							<h2 class="uppercase heading-style-h2 font-poppins font-black">
+								{$LL.gift.titleStart()}
+								<span class="text-color-pink noise-effect">{$LL.gift.titleEnd()}</span>
 							</h2>
 						</div>
 						<!-- <img
@@ -31,8 +32,9 @@
 
 						<div class="margin-bottom">
 							<p class="text-bold font-poppins text-lg">
-								Kurs <span class="text-underline-v1 noise-effect"> EYE LINER</span> dla siebie lub
-								podaruj ją znajomemej!
+								{$LL.gift.descriptionStart()}
+								<span class="text-underline-v1 noise-effect"> EYE LINER</span>
+								{$LL.gift.descriptionEnd()}
 								<!-- Get an  gift card for yourself or gift one to a friend! -->
 							</p>
 						</div>
@@ -41,7 +43,7 @@
 						<div class="button-group is-end mobile-justify-align-start">
 							<a href="/" target="_blank" class="button noise-effect w-inline-block no-underline">
 								<!-- Purchase Now -->
-								<div>Zamów</div>
+								<div>{$LL.gift.button()}</div>
 							</a>
 						</div>
 					</div>

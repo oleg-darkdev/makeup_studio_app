@@ -11,7 +11,8 @@ import {
 	programEn,
 	ctaEn,
 	heroEn,
-	faqEn
+	faqEn,
+	giftEn,
 } from '../../lib/shared/data';
 
 const en = {
@@ -26,7 +27,8 @@ const en = {
 	coach: coachEn,
 	program: programEn,
 	cta: ctaEn,
-	faq: faqEn
+	faq: faqEn,
+	gift: giftEn
 } satisfies BaseTranslation;
 
 export default en;

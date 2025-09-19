@@ -2,6 +2,8 @@
 	// import {  } from '$shared';
 	// import {  } from '$widgets';
 	// import {  } from '$entities'
+
+	import LL from '$i18n/i18n-svelte';
 </script>
 
 <section class="section_cta">
@@ -11,26 +13,28 @@
 				<div class="w-layout-grid cta_component noise-effect">
 					<div class="cta_card">
 						<div class="z-index-2 mb-10">
-							<h2 class="text-color-main-black font-poppins font-black">
-								Zarezerwuj dostęp <br />
-								<span class="text-underline-v6">z Valeria Vasilyeva na zywo </span> <br /> juz dzis
+							<h2 class="uppercase text-color-main-black font-poppins font-black">
+								{$LL.cta.titleStart()} <br />
+								<span class="text-underline-v6">Valeria Vasilyeva {$LL.cta.titleCenter()} </span>
+								<br />
+								{$LL.cta.titleEnd()}
 							</h2>
 						</div>
 						<div class="max-w-2xl">
 							<p class="mb-4">
-								Jeśli jesteś osobą, która pragnie przenieść swój wizerunek na nowy poziom, poczuć
-								pewność siebie i swobodnie wyrażać siebie, nasz kurs pomoże Ci w tym.
+								{$LL.cta.description1()}
 							</p>
 
 							<p class="">
-								Kurs na żywo dostępny jest <strong>tylko w języku polskim i rosyjskim.</strong>
+								{$LL.cta.warningMsg1()}
+								<strong>{$LL.cta.warningMsg2()}</strong>
 							</p>
 						</div>
 
 						<div class="mt-4">
 							<div class="button-group">
 								<a href="#" class="button is-alternate w-inline-block no-underline">
-									<div>Zarezerwuj dostep</div>
+									<div>{$LL.cta.button()}</div>
 								</a>
 							</div>
 						</div>

@@ -1,12 +1,13 @@
 const fr = {
-	title:
-		'Réservez l’accès <span class="text-underline-v6">avec Valeria Vasilyeva en direct</span> dès aujourd’hui',
+	titleStart: 'Réservez l’accès',
+	titleCenter: 'en direct',
+	titleEnd: 'dès aujourd’hui',
+
 	description1:
-		'Si vous êtes une personne qui souhaite porter son image à un nouveau niveau, ressentir de la confiance et s’exprimer librement, notre cours vous aidera à y parvenir.',
-	description2:
-		'Le cours en direct est disponible <strong>uniquement en polonais et en russe.</strong>',
+		'Si vous souhaitez porter votre image à un niveau supérieur, vous sentir confiant et vous exprimer librement — notre cours vous y aidera.',
+	warningMsg1: 'Le cours en direct est disponible',
+	warningMsg2: 'uniquement en polonais et en russe.',
 	button: 'Réserver l’accès'
 };
-
 
 export default fr;
