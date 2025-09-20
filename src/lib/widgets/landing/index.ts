@@ -11,6 +11,8 @@ import GiveGift from './GiveGift.svelte';
 import FreeBlockFirst from './FreeBlockFirst.svelte';
 import Testimonials from './Testimonials.svelte';
 import Instagram from './Instagram.svelte';
+import Faq from './Faq.svelte';
+import Prices from './Prices.svelte';
 
 export {
 	Header,
@@ -25,5 +27,7 @@ export {
 	GiveGift,
 	FreeBlockFirst,
 	Testimonials,
-	Instagram
+	Instagram,
+	Faq,
+	Prices
 };

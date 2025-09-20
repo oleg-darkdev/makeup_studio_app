@@ -1,10 +1,10 @@
-const navigationPl = [
+const navigationRu = [
 	{
 		title: 'Для кого',
 		link: '#for'
 	},
 	{
-		title: 'Об авторке',
+		title: 'О aвторке',
 		link: '#coach'
 	},
 	{
@@ -20,7 +20,7 @@ const navigationPl = [
 		link: '#faq'
 	},
 	// {
-	// 	title: 'Prezent',
+	// 	title: 'Подарок',
 	// 	link: '/#gift'
 	// },
 	{
@@ -29,4 +29,4 @@ const navigationPl = [
 	}
 ];
 
-export default navigationPl;
+export default navigationRu;

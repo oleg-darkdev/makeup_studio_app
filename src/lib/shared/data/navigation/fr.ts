@@ -1,18 +1,18 @@
-const navigationPl = [
+const navigationFr = [
 	{
-		title: 'Dla kogo',
+		title: 'Pour qui',
 		link: '#for'
 	},
 	{
-		title: 'O autorze',
+		title: 'À propos de l’auteur',
 		link: '#coach'
 	},
 	{
-		title: 'Program',
+		title: 'Programme',
 		link: '#program'
 	},
 	{
-		title: 'Cenniki',
+		title: 'Tarifs',
 		link: '/'
 	},
 	{
@@ -20,13 +20,13 @@ const navigationPl = [
 		link: '#faq'
 	},
 	// {
-	// 	title: 'Prezent',
+	// 	title: 'Cadeau',
 	// 	link: '/#gift'
 	// },
 	{
-		title: 'Kontakt',
+		title: 'Contact',
 		link: '#contact'
 	}
 ];
 
-export default navigationPl;
+export default navigationFr;

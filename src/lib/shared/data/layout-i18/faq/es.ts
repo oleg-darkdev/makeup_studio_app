@@ -1,33 +1,23 @@
-const es = [
-	{
-		q: 'Lorem Ipsum jest tekstem stosowanym jako przykładowy.',
-		a: [
-			'Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. ',
-			'Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. '
-		]
-	},
-	{
-		q: 'Lorem Ipsum jest tekstem stosowanym jako przykładowy.',
-		a: [
-			'Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. ',
-			'Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. '
-		]
-	},
-	{
-		q: 'Lorem Ipsum jest tekstem stosowanym jako przykładowy.',
-		a: [
-			'Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. ',
-			'Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. '
-		]
-	},
-	{
-		q: 'Lorem Ipsum jest tekstem stosowanym jako przykładowy.',
-		a: [
-			'Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. ',
-			'Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. '
-		]
-	}
-];
-
+const es = {
+	titleStart: 'Preguntas',
+	titleEnd: 'frecuentes',
+	button: 'Contáctanos',
+	faq: [
+		{
+			q: 'Lorem Ipsum se utiliza como texto de ejemplo.',
+			a: [
+				'Lorem Ipsum es un texto de relleno utilizado en la industria de la impresión. Se usó por primera vez en el siglo XV por un impresor desconocido para llenar un libro de prueba.',
+				'Lorem Ipsum es un texto de relleno utilizado en la industria de la impresión. Se usó por primera vez en el siglo XV por un impresor desconocido para llenar un libro de prueba.'
+			]
+		},
+		{
+			q: 'Lorem Ipsum se utiliza como texto de ejemplo.',
+			a: [
+				'Lorem Ipsum es un texto de relleno utilizado en la industria de la impresión. Se usó por primera vez en el siglo XV por un impresor desconocido para llenar un libro de prueba.',
+				'Lorem Ipsum es un texto de relleno utilizado en la industria de la impresión. Se usó por primera vez en el siglo XV por un impresor desconocido para llenar un libro de prueba.'
+			]
+		}
+	]
+};
 
 export default es;

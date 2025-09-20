@@ -38,7 +38,10 @@
 				</div>
 			</div>
 
-			<nav role="navigation" class="navbar_menu_desc static flex items-center content-center space-between flex w-full">
+			<nav
+				role="navigation"
+				class="navbar_menu_desc space-between static mx-auto flex flex w-full content-center items-center"
+			>
 				<!-- $LL.navigationPl -->
 				{#each $LL.navigation as { title, link }}
 					<div class="navbar_link-wrap">
@@ -56,18 +59,22 @@
 					</div>
 				{/each}
 
-				<div class="max-w-[140px]">
+				<div class="max-w-[180px]">
 					<div class="navbar_link-wrap">
 						<div class="navbar1_menu-buttons pt-8">
-							<a href="#" class="button-3 is-navbar4-button  noise-effect w-inline-block no-underline">
+							<a
+								href="#"
+								class="button-3 is-navbar4-button noise-effect w-inline-block no-underline"
+							>
 								<div>kup dostęp</div>
 							</a>
 						</div>
 					</div>
 				</div>
-
-				<LangSwitcher />
 			</nav>
+
+			<LangSwitcher />
+
 			{#if menuIsOpen}
 				<!-- navbar_menu -->
 				<!-- 			background-color: var(--main-black);
@@ -235,7 +242,7 @@
 		grid-template-rows: auto;
 		grid-template-columns: 1fr 1fr;
 		grid-auto-columns: 1fr;
-		
+
 		display: flex;
 	}
 	@media screen and (min-width: 991px) {

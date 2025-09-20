@@ -6,11 +6,11 @@
 	import LL from '$i18n/i18n-svelte';
 </script>
 
-<section class="section_faq" id="program">
+<section class="overflow-hidden" id="program">
 	<div class="padding-global">
 		<div class="container-large">
 			<div class="padding-section-large">
-				<div class="w-layout-grid faq_component">
+				<div class="w-layout-grid program_component">
 					<div class="faq_content">
 						<h2 class="heading-style-h2 font-poppins mb-8 font-black uppercase">
 							{$LL.program.title()}
@@ -53,7 +53,7 @@
 						</div>
 					</div>
 					<div class="faq_icon-wrap">
-						<div class="w-layout-grid faq_list">
+						<div class="w-layout-grid program_list">
 							{#each $LL.program.courseData as stage}
 								<ProgramCard {stage} />
 							{/each}
@@ -84,8 +84,37 @@
 </section>
 
 <style lang="postcss">
-	@media screen and (max-width: 991px) {
+	.program_list {
+		grid-column-gap: 1rem;
+		grid-row-gap: 1rem;
+		grid-template-rows: auto;
+		grid-template-columns: 100%;
+		grid-auto-columns: 100%;
+		place-items: start stretch;
+		display: grid;
 	}
+
+	.program_component {
+		grid-column-gap: 3rem;
+		grid-row-gap: 3rem;
+		grid-template-rows: auto;
+		grid-template-columns: 1fr 1fr;
+		grid-auto-columns: 1fr;
+		align-items: start;
+		display: grid;
+		position: relative;
+	}
+
+	@media screen and (max-width: 991px) {
+		.program_component {
+			grid-column-gap: 1rem;
+			grid-row-gap: 1rem;
+			grid-template-columns: 1fr;
+			grid-auto-flow: row;
+			min-height: auto;
+		}
+	}
+
 	@media screen and (max-width: 767px) {
 	}
 

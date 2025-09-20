@@ -1,7 +1,7 @@
 import type { BaseTranslation } from '../i18n-types';
 import {
 	navigationEn,
-	// pricesEn,
+	pricesEn,
 	servicesEn,
 	// postsEn,
 	footerEn,
@@ -16,7 +16,7 @@ import {
 } from '../../lib/shared/data';
 
 const en = {
-	// prices: pricesEn,
+	prices: pricesEn,
 	services: servicesEn,
 	// posts: postsEn,
 	portfolio: portfolioEn,

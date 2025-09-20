@@ -4,8 +4,6 @@
 	import { ServiceCard } from '$entitiesLanding';
 
 	import LL from '$i18n/i18n-svelte';
-
-	// console.log($LL.services)
 </script>
 
 <section class="section_services">
@@ -14,7 +12,7 @@
 			<div class="padding-top padding-xhuge">
 				<div class="margin-bottom margin-large">
 					<!-- <br/> kursu  -->
-					<h2 class="heading-style-h1 font-poppins max-w-4xl font-black uppercase">
+					<h2 class="heading-style-h2 font-poppins max-w-4xl font-black uppercase">
 						{$LL.services.title()}
 						{$LL.services.course()} <br />
 						<span class="text-underline-v1 noise-effect">EYE LINER</span>

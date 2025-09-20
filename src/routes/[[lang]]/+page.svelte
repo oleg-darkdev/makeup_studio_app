@@ -14,7 +14,9 @@
 		GiveGift,
 		FreeBlockFirst,
 		Testimonials,
-		Instagram
+		Faq,
+		Instagram,
+		Prices
 	} from '$widgetsLanding';
 	// import { SEO } from '$sharedUtils';
 </script>
@@ -44,11 +46,13 @@
 
 		<CourseProgramm />
 
+		<Prices />
+
 		<CTA />
 
 		<Instagram />
 
-		<!-- faq? -->
+		<Faq />
 
 		<GiveGift />
 	</main>

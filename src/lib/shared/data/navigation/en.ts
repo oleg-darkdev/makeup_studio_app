@@ -1,10 +1,10 @@
 const navigationEn = [
 	{
-		title: 'For',
+		title: 'For whom',
 		link: '#for'
 	},
 	{
-		title: 'Coach',
+		title: 'Author',
 		link: '#coach'
 	},
 	{
@@ -20,8 +20,8 @@ const navigationEn = [
 		link: '#faq'
 	},
 	// {
-	//   title: 'Gift',
-	//   link: '/#gift'
+	// 	title: 'Gift',
+	// 	link: '/#gift'
 	// },
 	{
 		title: 'Contact',

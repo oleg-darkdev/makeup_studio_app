@@ -1,7 +1,7 @@
 // English
 import navigationEn from './navigation/en.ts';
 import programEn from './layout-i18/program/en.ts';
-// import pricesEn from './prices/en.ts';
+import pricesEn from './layout-i18/prices/en.ts';
 import featuresEn from './layout-i18/features/en.ts';
 // import postsEn from './instaPosts/en.ts';
 import giftEn from './layout-i18/gift/en.ts';
@@ -9,16 +9,14 @@ import footerEn from './layout-i18/footer/en.ts';
 import heroEn from './layout-i18/hero/en.ts';
 import portfolioEn from './layout-i18/portfolio/en.ts';
 import servicesEn from './layout-i18/services/en.ts';
-// import featuresEn from './features/en.ts';
 import coachEn from './layout-i18/coach/en.ts';
-// import programEn from './program/en.ts';
 import ctaEn from './layout-i18/cta/en.ts';
 import faqEn from './layout-i18/faq/en.ts';
 
 // Russian
 import navigationRu from './navigation/ru.ts';
 import programRu from './layout-i18/program/ru.ts';
-// import pricesRu from './prices/ru.ts';
+import pricesRu from './layout-i18/prices/ru.ts';
 import featuresRu from './layout-i18/features/ru.ts';
 // import postsRu from './instaPosts/ru.ts';
 import portfolioRu from './layout-i18/portfolio/ru.ts';
@@ -33,7 +31,7 @@ import giftRu from './layout-i18/gift/ru.ts';
 // Spanish
 import navigationEs from './navigation/es.ts';
 import programEs from './layout-i18/program/es.ts';
-// import pricesEs from './prices/es.ts';
+import pricesEs from './layout-i18/prices/es.ts';
 import featuresEs from './layout-i18/features/es.ts';
 import servicesEs from './layout-i18/services/es.ts';
 // import postsEs from './instaPosts/es.ts';
@@ -48,7 +46,7 @@ import giftEs from './layout-i18/gift/es.ts';
 // French
 import navigationFr from './navigation/fr.ts';
 import programFr from './layout-i18/program/fr.ts';
-// import pricesFr from './prices/fr.ts';
+import pricesFr from './layout-i18/prices/fr.ts';
 import featuresFr from './layout-i18/features/fr.ts';
 import servicesFr from './layout-i18/services/fr.ts';
 // import postsFr from './instaPosts/fr.ts';
@@ -63,7 +61,7 @@ import giftFr from './layout-i18/gift/fr.ts';
 // German
 import navigationDe from './navigation/de.ts';
 import programDe from './layout-i18/program/de.ts';
-// import pricesDe from './prices/de.ts';
+import pricesDe from './layout-i18/prices/de.ts';
 import featuresDe from './layout-i18/features/de.ts';
 import servicesDe from './layout-i18/services/de.ts';
 // import postsDe from './instaPosts/de.ts';
@@ -78,14 +76,13 @@ import giftDe from './layout-i18/gift/de.ts';
 // Polish
 import navigationPl from './navigation/pl.ts';
 import programPl from './layout-i18/program/pl.ts';
-import pricesPl from './prices/pl.ts';
+import pricesPl from './layout-i18/prices/pl.ts';
 import featuresPl from './layout-i18/features/pl.ts';
 import servicesPl from './layout-i18/services/pl.ts';
 import postsPl from './instaPosts/pl.ts';
 import portfolioPl from './layout-i18/portfolio/pl.ts';
 import footerPl from './layout-i18/footer/pl.ts';
 import heroPl from './layout-i18/hero/pl.ts';
-// import featuresPl from './features/pl.ts';
 import coachPl from './layout-i18/coach/pl.ts';
 // import programPl from './program/pl.ts';
 import ctaPl from './layout-i18/cta/pl.ts';
@@ -111,9 +108,11 @@ export {
 	coachEn,
 	faqEn,
 	ctaEn,
+	pricesEn,
 	giftEn,
 	// Russian
 	navigationRu,
+	pricesRu,
 	programRu,
 	// pricesRu,
 	servicesRu,
@@ -128,6 +127,7 @@ export {
 	giftRu,
 	// Spanish
 	navigationEs,
+	pricesEs,
 	programEs,
 	// pricesEs,
 	servicesEs,
@@ -142,6 +142,7 @@ export {
 	giftEs,
 	// French
 	navigationFr,
+	pricesFr,
 	programFr,
 	// pricesFr,
 	servicesFr,
@@ -157,6 +158,7 @@ export {
 	// German
 	navigationDe,
 	programDe,
+	pricesDe,
 	faqDe,
 	// pricesDe,
 	servicesDe,
@@ -170,8 +172,8 @@ export {
 	giftDe,
 	// Polish
 	navigationPl,
-	programPl,
 	pricesPl,
+	programPl,
 	servicesPl,
 	postsPl,
 	faqPl,
