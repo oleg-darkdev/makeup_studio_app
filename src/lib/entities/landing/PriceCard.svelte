@@ -1,14 +1,10 @@
 <script lang="ts">
-	// import {  } from '$shared';
-	// import {  } from '$widgets';
-	// import {  } from '$entities'
-
 	let { price } = $props();
 </script>
 
 <div role="listitem" class="cms_list-item w-dyn-item">
 	<div id="tooth-gems" class="cms_list-wrapper">
-		<img src={price.img} loading="lazy" alt=" Tooth Gems" class="cms_list-image" />
+		<img src={price.img} loading="lazy" alt="" class="cms_list-image" />
 	</div>
 	<div class="cms_list-content">
 		<div class="cms_list-content-wrap">
@@ -22,7 +18,7 @@
 
 				{#each price.features as feature}
 					<p class="mb-2">
-						<img src="images/about_list-pointer.svg" class="mr-4 h-6 w-6" alt="-" />
+						<img src="images/about_list-pointer.svg" class="mr-4 h-6 w-6" alt="" />
 						{feature}
 					</p>
 				{/each}

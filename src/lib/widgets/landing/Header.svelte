@@ -73,7 +73,9 @@
 				</div>
 			</nav>
 
-			<LangSwitcher />
+			<div class="locales_desc -mt-12">
+				<LangSwitcher />
+			</div>
 
 			{#if menuIsOpen}
 				<!-- navbar_menu -->
@@ -111,7 +113,9 @@
 						<img src="/images/signature_1.png" class="h-6 w-64" alt="" />
 					</div>
 
-					<LangSwitcher />
+					<div class="my-4 mx-auto">
+						<LangSwitcher />
+					</div>
 
 					<!-- <div class="navbar_link-wrap">
 					<div
@@ -268,7 +272,7 @@
 			/* font-size: 1.125rem; */
 		}
 
-		.navbar_menu_desc {
+		.navbar_menu_desc, .locales_desc {
 			display: none;
 		}
 
