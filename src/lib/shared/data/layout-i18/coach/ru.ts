@@ -1,5 +1,5 @@
 const ru = {
-	preheading: 'Базовый онлайн-курс — автор',
+	preheading: 'Онлайн-курс — автор',
 	author: 'Валерия Васильева',
 	titleStart: 'Влияние',
 	titleCenter: 'художественной',

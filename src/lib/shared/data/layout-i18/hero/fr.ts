@@ -1,7 +1,7 @@
 const fr = {
-	preheading: `Cours en ligne de base - auteur`,
+	preheading: `Cours en ligne - auteur`,
 	course: `Cours`,
-	startMounth: ' Débute en juillet',
+	startMounth: 'Déjà disponible',
 	buttonBook: 'Réserver l’accès',
 	description: `Le cours convient aussi bien aux débutants qu’aux praticiens, et même à ceux qui se préparent à participer aux championnats.`,
 	coachTitle: `Le cours est dirigé par`,

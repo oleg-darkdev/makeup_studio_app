@@ -1,35 +1,38 @@
-const ru = {
-	titleStart: 'Доступные',
-	titleEnd: 'тарифные планы',
+const es = {
+	titleStart: 'Planes',
+	titleEnd: 'disponibles',
+	buttonBuy: 'Obtener acceso',
 	data: [
 		{
 			id: 1,
-			title: 'Samodzielny',
-			shortDesc: 'dostęp do wszystkich lekcji kursu',
+			title: 'Autoaprendizaje',
+			shortDesc:
+				'La opción ideal para quienes desean aprender a su propio ritmo. Obtendrás acceso completo a todas las lecciones sin restricciones.',
 			img: '/images/prices/self.webp',
-			features: ['', ''],
-
+			features: ['Aprende a tu propio ritmo'],
 			price: '400 €',
 			link: '/'
 		},
 		{
 			id: 2,
-			title: 'Z kuratorem',
+			title: 'Con tutor',
 			shortDesc:
-				'dostęp do wszystkich lekcji kursu + informacja zwrotna na temat prac domowych w czacie z wykwalifikowanym kuratorem kursu online (liczba miejsc ograniczona)',
+				'No solo ves las lecciones, sino que también tienes un mentor. Después de cada tarea, el tutor te dará comentarios detallados y te ayudará a corregir errores. (plazas limitadas)',
 			img: '/images/prices/curator.webp',
-			features: ['', ''],
-
+			features: ['Apoyo personalizado', 'Contacto directo con el maestro'],
 			price: '600 €',
 			link: '/'
 		},
 		{
 			id: 3,
-			title: 'Z Valerią',
-			features: ['', ''],
-
+			title: 'Con Valeria',
+			features: [
+				'Contacto directo — trabaja personalmente con la maestra',
+				'Aprende de primera mano',
+				'Trabajo en grupo reducido — máxima atención y compromiso'
+			],
 			shortDesc:
-				'dostęp do wszystkich lekcji kursu + informacja zwrotna na temat prac domowych w czacie osobiście z autorem kursu, grupa do 10 osób (liczba miejsc ograniczona)',
+				'Versión premium del curso. Estudiarás en un grupo de hasta 10 personas directamente con la autora del curso. Más que apoyo: acceso exclusivo al conocimiento y la experiencia.',
 			img: '/images/prices/valeria.webp',
 			price: '1500 €',
 			link: '/'
@@ -37,6 +40,4 @@ const ru = {
 	]
 };
 
-
-
-export default ru;
+export default es;

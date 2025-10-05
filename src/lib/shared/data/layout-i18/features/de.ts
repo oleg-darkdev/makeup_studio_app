@@ -4,6 +4,8 @@ const de = {
 	buttonBook: 'Zugang buchen',
 	warning1: 'Der Live-Kurs ist nur verfügbar ',
 	warning2: 'auf Polnisch und Russisch.',
+	warning3: 'Für das Selbststudium ist der Kurs verfügbar auf ',
+	warning4: 'russisch, englisch, polnisch, spanisch, französisch und deutsch.',
 	targetAudience: [
 		{
 			title: 'Anfängerinnen',

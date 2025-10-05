@@ -1,35 +1,38 @@
-const ru = {
-	titleStart: 'Доступные',
-	titleEnd: 'тарифные планы',
+const fr = {
+	titleStart: 'Formules',
+	titleEnd: 'disponibles',
+	buttonBuy: 'Obtenir l’accès',
 	data: [
 		{
 			id: 1,
-			title: 'Samodzielny',
-			shortDesc: 'dostęp do wszystkich lekcji kursu',
+			title: 'En autonomie',
+			shortDesc:
+				'Idéal pour ceux qui souhaitent apprendre à leur propre rythme. Vous aurez un accès complet à toutes les leçons sans aucune restriction.',
 			img: '/images/prices/self.webp',
-			features: ['', ''],
-
+			features: ['Apprenez à votre propre rythme'],
 			price: '400 €',
 			link: '/'
 		},
 		{
 			id: 2,
-			title: 'Z kuratorem',
+			title: 'Avec un tuteur',
 			shortDesc:
-				'dostęp do wszystkich lekcji kursu + informacja zwrotna na temat prac domowych w czacie z wykwalifikowanym kuratorem kursu online (liczba miejsc ograniczona)',
+				'Vous ne faites pas que regarder les cours — vous avez un mentor. Après chaque devoir, le tuteur vous donnera un retour détaillé et vous aidera à corriger vos erreurs. (nombre de places limité)',
 			img: '/images/prices/curator.webp',
-			features: ['', ''],
-
+			features: ['Soutien personnalisé', 'Contact direct avec le maître'],
 			price: '600 €',
 			link: '/'
 		},
 		{
 			id: 3,
-			title: 'Z Valerią',
-			features: ['', ''],
-
+			title: 'Avec Valeria',
+			features: [
+				'Contact direct — travail personnel avec le maître',
+				'Connaissances de première main',
+				'Travail en petit groupe — attention maximale et implication'
+			],
 			shortDesc:
-				'dostęp do wszystkich lekcji kursu + informacja zwrotna na temat prac domowych w czacie osobiście z autorem kursu, grupa do 10 osób (liczba miejsc ograniczona)',
+				'Version premium du cours. Vous étudierez dans un mini-groupe de 10 personnes maximum avec l’auteure du cours. Plus qu’un soutien — un accès exclusif à son expérience et savoir-faire.',
 			img: '/images/prices/valeria.webp',
 			price: '1500 €',
 			link: '/'
@@ -37,6 +40,4 @@ const ru = {
 	]
 };
 
-
-
-export default ru;
+export default fr;

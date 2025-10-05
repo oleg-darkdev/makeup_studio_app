@@ -1,35 +1,38 @@
-const ru = {
-	titleStart: 'Доступные',
-	titleEnd: 'тарифные планы',
+const en = {
+	titleStart: 'Available',
+	titleEnd: 'plans',
+	buttonBuy: 'Get access',
 	data: [
 		{
 			id: 1,
-			title: 'Samodzielny',
-			shortDesc: 'dostęp do wszystkich lekcji kursu',
+			title: 'Self-study',
+			shortDesc:
+				'Perfect for those who want to learn at their own pace. You’ll get full access to all lessons without any restrictions.',
 			img: '/images/prices/self.webp',
-			features: ['', ''],
-
+			features: ['Study at your own pace'],
 			price: '400 €',
 			link: '/'
 		},
 		{
 			id: 2,
-			title: 'Z kuratorem',
+			title: 'With a curator',
 			shortDesc:
-				'dostęp do wszystkich lekcji kursu + informacja zwrotna na temat prac domowych w czacie z wykwalifikowanym kuratorem kursu online (liczba miejsc ograniczona)',
+				'You don’t just watch lessons — you get a mentor. After each homework, the curator provides detailed feedback and helps you correct mistakes. (limited seats available)',
 			img: '/images/prices/curator.webp',
-			features: ['', ''],
-
+			features: ['Personalized support', 'Direct contact with the master'],
 			price: '600 €',
 			link: '/'
 		},
 		{
 			id: 3,
-			title: 'Z Valerią',
-			features: ['', ''],
-
+			title: 'With Valeria',
+			features: [
+				'Direct contact — learn personally with the master',
+				'Get knowledge straight from the source',
+				'Small group — maximum attention and engagement'
+			],
 			shortDesc:
-				'dostęp do wszystkich lekcji kursu + informacja zwrotna na temat prac domowych w czacie osobiście z autorem kursu, grupa do 10 osób (liczba miejsc ograniczona)',
+				'Premium version of the course. You’ll study in a mini-group of up to 10 people directly with the course author. More than support — it’s exclusive access to experience and expertise.',
 			img: '/images/prices/valeria.webp',
 			price: '1500 €',
 			link: '/'
@@ -37,6 +40,4 @@ const ru = {
 	]
 };
 
-
-
-export default ru;
+export default en;

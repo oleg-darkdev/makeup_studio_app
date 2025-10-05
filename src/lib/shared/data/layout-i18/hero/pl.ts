@@ -1,7 +1,7 @@
 const pl = {
-	preheading: `Podstawowy kurs online - autorka`,
+	preheading: `Online Kurs - autorka`,
 	course: `Kurs`,
-	startMounth: ' Start w lipcu',
+	startMounth: 'Już dostępny',
 	buttonBook: 'Zarezerwuj dostęp',
 	description: `Kurs jest odpowiedni zarówno dla początkujących, jak i dla osób praktykujących, a nawet przygotowujących się do udziału w mistrzostwach.`,
 	coachTitle: `Kurs prowadzi`,

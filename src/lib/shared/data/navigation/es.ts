@@ -13,7 +13,7 @@ const navigationEs = [
 	},
 	{
 		title: 'Precios',
-		link: '/'
+		link: '#pricing'
 	},
 	{
 		title: 'F.A.Q.',

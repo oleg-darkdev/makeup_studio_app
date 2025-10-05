@@ -1,5 +1,5 @@
 const es = {
-	preheading: 'Curso básico en línea - autora',
+	preheading: 'Curso en línea - autora',
 	author: 'Valeria Vasilyeva',
 	titleStart: 'El impacto de',
 	titleCenter: 'la transformación',

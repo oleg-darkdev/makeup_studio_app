@@ -1,6 +1,6 @@
 const en = {
-	title: 'Result after completing the course',
-	course: '',
+	title: 'Improve your skills during',
+	course: 'course',
 	buttonBook: 'Book access',
 	data: [
 		{

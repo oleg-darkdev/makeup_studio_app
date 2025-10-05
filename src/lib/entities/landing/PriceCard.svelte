@@ -1,5 +1,6 @@
 <script lang="ts">
 	let { price } = $props();
+	import LL from '$i18n/i18n-svelte';
 </script>
 
 <div role="listitem" class="cms_list-item w-dyn-item">
@@ -29,7 +30,7 @@
 		<div class="button-group is-end">
 			<a href="#" class="button is-link w-inline-block">
 				<div class="button_icon-wrapper">
-					<div>Book today</div>
+					<div>{$LL.prices.buttonBuy()}</div>
 					<div class="icon-embed-xxsmall w-embed">
 						<svg
 							width=" 100%"

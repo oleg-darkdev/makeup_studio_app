@@ -41,13 +41,18 @@
 											</h2>
 										</div>
 										<div class="margin-bottom margin-xxsmall">
-											<p class="mb-3">
+											<p class="mb-2">
 												{$LL.portfolio.desc1()}
 											</p>
 
-											<p class="mb-8">
+											<p class="mb-2">
 												{$LL.portfolio.warning1()}
 												<strong class="text-black">{$LL.portfolio.warning2()}</strong>
+											</p>
+
+											<p class="mb-6">
+												{$LL.portfolio.warning3()}
+												<strong class="text-black">{$LL.portfolio.warning4()}</strong>
 											</p>
 										</div>
 									</div>

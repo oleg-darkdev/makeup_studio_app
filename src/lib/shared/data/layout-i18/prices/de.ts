@@ -1,33 +1,38 @@
-const ru = {
-	titleStart: 'Доступные',
-	titleEnd: 'тарифные планы',
+const de = {
+	titleStart: 'Verfügbare',
+	titleEnd: 'Tarifpläne',
+	buttonBuy: 'Zugang erhalten',
 	data: [
 		{
 			id: 1,
-			title: 'Samodzielny',
-			shortDesc: 'dostęp do wszystkich lekcji kursu',
-			features: ['', ''],
+			title: 'Selbststudium',
+			shortDesc:
+				'Die ideale Option für alle, die in ihrem eigenen Tempo lernen möchten. Du erhältst vollen Zugriff auf alle Lektionen ohne Einschränkungen.',
 			img: '/images/prices/self.webp',
+			features: ['Lerne in deinem eigenen Tempo'],
 			price: '400 €',
 			link: '/'
 		},
 		{
 			id: 2,
-			title: 'Z kuratorem',
+			title: 'Mit Kurator',
 			shortDesc:
-				'dostęp do wszystkich lekcji kursu + informacja zwrotna na temat prac domowych w czacie z wykwalifikowanym kuratorem kursu online (liczba miejsc ograniczona)',
-			features: ['', ''],
-
+				'Du schaust nicht nur Lektionen an — du hast einen Mentor. Nach jeder Hausaufgabe gibt dir der Kurator detailliertes Feedback und hilft, Fehler zu korrigieren. (begrenzte Plätze)',
 			img: '/images/prices/curator.webp',
+			features: ['Personalisierte Unterstützung', 'Direkter Kontakt mit dem Meister'],
 			price: '600 €',
 			link: '/'
 		},
 		{
 			id: 3,
-			title: 'Z Valerią',
-			features: ['', ''],
+			title: 'Mit Valeria',
+			features: [
+				'Direkter Kontakt — persönliche Arbeit mit dem Meister',
+				'Wissen aus erster Hand',
+				'Arbeiten in einer kleinen Gruppe — maximale Aufmerksamkeit und Engagement'
+			],
 			shortDesc:
-				'dostęp do wszystkich lekcji kursu + informacja zwrotna na temat prac domowych w czacie osobiście z autorem kursu, grupa do 10 osób (liczba miejsc ograniczona)',
+				'Premium-Version des Kurses. Du lernst in einer kleinen Gruppe von bis zu 10 Personen direkt mit der Autorin des Kurses. Mehr als Unterstützung — exklusiver Zugang zu Wissen und Erfahrung.',
 			img: '/images/prices/valeria.webp',
 			price: '1500 €',
 			link: '/'
@@ -35,6 +40,4 @@ const ru = {
 	]
 };
 
-
-
-export default ru;
+export default de;

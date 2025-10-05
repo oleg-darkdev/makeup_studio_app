@@ -7,7 +7,7 @@
 </script>
 
 <section class="section_testimonial">
-	<div class="padding-global">
+	<div class="padding-global" id="pricing">
 		<div class="container-large">
 			<div class="padding-section-large">
 				<div class="margin-bottom margin-large">

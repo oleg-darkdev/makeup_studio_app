@@ -1,6 +1,5 @@
 const pl = {
-	title: 'Wynik po ukończeniu',
-
+	title: 'Podniesiesz swoje umiejętności w trakcie',
 	course: 'kursu',
 	buttonBook: 'Zarezerwuj dostęp',
 	data: [

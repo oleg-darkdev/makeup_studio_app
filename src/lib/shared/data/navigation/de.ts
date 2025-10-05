@@ -13,7 +13,7 @@ const navigationDe = [
 	},
 	{
 		title: 'Preise',
-		link: '/'
+		link: '#pricing'
 	},
 	{
 		title: 'F.A.Q.',

@@ -1,6 +1,6 @@
 const de = {
-	title: 'Ergebnis nach Abschluss des Kurses',
-	course: '',
+	title: 'Verbessere deine Fähigkeiten im Laufe ',
+	course: 'des Spiels',
 	buttonBook: 'Zugang buchen',
 	data: [
 		{

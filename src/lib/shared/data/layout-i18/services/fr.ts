@@ -1,7 +1,7 @@
 const fr = {
-	title: 'Résultat après avoir terminé le cours',
+	title: 'Améliorez vos compétences au',
 	buttonBook: 'Réserver l’accès',
-	course: '',
+	course: 'cours de',
 	data: [
 		{
 			avif: '/images/results/cropped/result_1.avif',

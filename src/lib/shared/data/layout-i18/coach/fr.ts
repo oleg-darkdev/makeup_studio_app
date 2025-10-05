@@ -1,5 +1,5 @@
 const fr = {
-	preheading: 'Cours en ligne de base - auteur',
+	preheading: 'Cours en ligne - auteur',
 	author: 'Valeria Vasilyeva',
 	titleStart: 'L’impact de',
 	titleCenter: 'la transformation',

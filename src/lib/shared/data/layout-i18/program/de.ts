@@ -6,11 +6,16 @@ const de = {
 	courseName: 'EYE LINER',
 	buttonBuy: 'Zugang kaufen',
 	warning1: 'Der Live-Kurs ist nur verfügbar ',
-	warning2: 'auf Polnisch und Russisch.',
+	warning2: 'auf polnisch und russisch.',
+	warning3: 'Für das Selbststudium ist der Kurs verfügbar auf ',
+	warning4: 'russisch, englisch, polnisch, spanisch, französisch und deutsch.',
 	courseData: [
 		{
 			title: 'Einführung in den Kurs',
 			id: 1,
+			avif: '/images/results/cropped/result_0.avif',
+			image: '/images/results/cropped/result_0.png',
+
 			theory: [
 				'Lernen wir uns kennen. Meine Geschichte. Meine Ästhetik.',
 				'Aufbau des Augenlids. Verbotene Bereiche.',
@@ -21,6 +26,9 @@ const de = {
 		{
 			title: 'Skizze und Vorbereitung',
 			id: 2,
+			avif: '/images/results/cropped/result_2.avif',
+			image: '/images/results/cropped/result_2.png',
+
 			theory: [
 				'Grundsätze der Skizzenerstellung. Theoretischer Teil.',
 				'Skizzenerstellung. Beispiel am Modell.',
@@ -32,6 +40,9 @@ const de = {
 		{
 			title: 'Grundlagen der Technik und Schattierung',
 			id: 3,
+			avif: '/images/results/cropped/result_3.avif',
+			image: '/images/results/cropped/result_3.png',
+
 			theory: [
 				'Lange und kurze Bewegungen der Maschinen-Nadel.',
 				'Grundlagen der Schattierung.',
@@ -47,6 +58,9 @@ const de = {
 		{
 			title: 'Verläufe, Farbdichte und Farbverarbeitung',
 			id: 4,
+			avif: '/images/results/cropped/result_5.avif',
+			image: '/images/results/cropped/result_5.png',
+
 			theory: [
 				'Farbtypen.',
 				'Mathematischer und mechanischer Verlauf auf Latex.',
@@ -71,6 +85,9 @@ const de = {
 		{
 			title: 'Farbe und Pigmente im Permanent-Make-up',
 			id: 5,
+			avif: '/images/results/cropped/result_4-5.avif',
+			image: '/images/results/cropped/result_4-5.png',
+
 			theory: [
 				'Pigmente. Farbauswahl. Korrekturen.',
 				'Bunte Schatten und warum nicht.',
@@ -81,6 +98,9 @@ const de = {
 		{
 			title: 'Fotoinhalte und Teilnahme an Wettbewerben',
 			id: 6,
+			avif: '/images/results/cropped/result_6.avif',
+			image: '/images/results/cropped/result_6.png',
+
 			theory: [
 				'Retusche, Fotos und Software zur Bild- und Videobearbeitung.',
 				'Teilnahme an Wettbewerben. Unterschied zwischen Modell und Kunde.',
@@ -91,6 +111,9 @@ const de = {
 		{
 			title: 'Verfahrensregeln und Arbeitsabläufe',
 			id: 7,
+			avif: '/images/results/cropped/result_7.avif',
+			image: '/images/results/cropped/result_7.png',
+
 			theory: [
 				'Schattierungsrichtungsschema für die Arbeit mit den Augen. Arbeit mit beiden Augen.',
 				'Latex. Übung der Schattierungsrichtungen.',
@@ -108,6 +131,9 @@ const de = {
 		{
 			title: 'Demonstrationsarbeiten an Modellen. Fehleranalyse',
 			id: 8,
+			avif: '/images/results/cropped/result_8.avif',
+			image: '/images/results/cropped/result_8.png',
+
 			theory: [
 				'Demonstrationsarbeit am Modell. Gesamtplan.',
 				'Korrektutheorie.',

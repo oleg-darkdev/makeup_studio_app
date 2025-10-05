@@ -6,11 +6,16 @@ const en = {
 	theory: 'Theory part',
 	practice: 'Practical part',
 	warning1: 'The live course is available only ',
-	warning2: 'in Polish and Russian.',
+	warning2: 'in polish and russian.',
+	warning3: 'For self-study, the course is available in ',
+	warning4: 'russian, english, polish, spanish, french, and german.',
 	courseData: [
 		{
 			title: 'Introduction to the course.',
 			id: 1,
+			avif: '/images/results/cropped/result_0.avif',
+			image: '/images/results/cropped/result_0.png',
+
 			theory: [
 				'Let’s get to know each other. My story. My aesthetics.',
 				'Eyelid structure. Forbidden zones.',
@@ -21,6 +26,9 @@ const en = {
 		{
 			title: 'Sketch and preparation',
 			id: 2,
+			avif: '/images/results/cropped/result_2.avif',
+			image: '/images/results/cropped/result_2.png',
+
 			theory: [
 				'Rules for creating a sketch. Theory.',
 				'Creating a sketch. Example on a model.',
@@ -32,6 +40,9 @@ const en = {
 		{
 			title: 'Basics of technique and shading',
 			id: 3,
+			avif: '/images/results/cropped/result_3.avif',
+			image: '/images/results/cropped/result_3.png',
+
 			theory: [
 				'Long and short machine needle movement.',
 				'Shading basics.',
@@ -44,6 +55,9 @@ const en = {
 		{
 			title: 'Gradients, density and color processing.',
 			id: 4,
+			avif: '/images/results/cropped/result_5.avif',
+			image: '/images/results/cropped/result_5.png',
+
 			theory: [
 				'Types of colors.',
 				'Mathematical and mechanical gradient on latex.',
@@ -68,6 +82,9 @@ const en = {
 		{
 			title: 'Color and pigments in permanent makeup.',
 			id: 5,
+			avif: '/images/results/cropped/result_4-5.avif',
+			image: '/images/results/cropped/result_4-5.png',
+
 			theory: [
 				'Pigments. Shade selection. Correctors.',
 				'Colored shadows and why not.',
@@ -78,6 +95,9 @@ const en = {
 		{
 			title: 'Photo content and competitions.',
 			id: 6,
+			avif: '/images/results/cropped/result_6.avif',
+			image: '/images/results/cropped/result_6.png',
+
 			theory: [
 				'Retouching, photos, and editing programs.',
 				'Participation in competitions. Difference between model and client.',
@@ -88,6 +108,9 @@ const en = {
 		{
 			title: 'Procedure regulations and work schemes.',
 			id: 7,
+			avif: '/images/results/cropped/result_7.avif',
+			image: '/images/results/cropped/result_7.png',
+
 			theory: [
 				'Shading direction scheme for eyes. Working with two eyes.',
 				'Latex: shading direction practice.',
@@ -105,6 +128,9 @@ const en = {
 		{
 			title: 'Demonstration work on models. Error analysis.',
 			id: 8,
+			avif: '/images/results/cropped/result_8.avif',
+			image: '/images/results/cropped/result_8.png',
+
 			theory: [
 				'Demo work on model. General plan.',
 				'Correction theory.',

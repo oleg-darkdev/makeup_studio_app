@@ -13,7 +13,7 @@ const navigationRu = [
 	},
 	{
 		title: 'Цены',
-		link: '/'
+		link: '#pricing'
 	},
 	{
 		title: 'F.A.Q.',

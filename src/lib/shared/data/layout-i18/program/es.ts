@@ -7,10 +7,15 @@ const es = {
 	practice: 'Parte práctica',
 	warning1: 'El curso en vivo está disponible solo ',
 	warning2: 'en polaco y ruso.',
+	warning3: 'Para el autoestudio, el curso está disponible en ',
+	warning4: 'ruso, inglés, polaco, español, francés y alemán.',
 	courseData: [
 		{
 			title: 'Introducción al curso',
 			id: 1,
+			avif: '/images/results/cropped/result_0.avif',
+			image: '/images/results/cropped/result_0.png',
+
 			theory: [
 				'Conozcámonos. Mi historia. Mi estética.',
 				'Estructura del párpado. Zonas prohibidas.',
@@ -21,6 +26,9 @@ const es = {
 		{
 			title: 'Boceto y preparación',
 			id: 2,
+			avif: '/images/results/cropped/result_2.avif',
+			image: '/images/results/cropped/result_2.png',
+
 			theory: [
 				'Principios de creación del boceto. Parte teórica.',
 				'Creación del boceto. Ejemplo en modelo.',
@@ -32,6 +40,9 @@ const es = {
 		{
 			title: 'Fundamentos de técnica y sombreado',
 			id: 3,
+			avif: '/images/results/cropped/result_3.avif',
+			image: '/images/results/cropped/result_3.png',
+
 			theory: [
 				'Movimiento largo y corto de la aguja de la máquina.',
 				'Fundamentos de sombreado.',
@@ -47,6 +58,9 @@ const es = {
 		{
 			title: 'Gradientes, densidad y tratamiento del color',
 			id: 4,
+			avif: '/images/results/cropped/result_5.avif',
+			image: '/images/results/cropped/result_5.png',
+
 			theory: [
 				'Tipos de colores.',
 				'Gradiente matemático y mecánico en látex.',
@@ -71,6 +85,9 @@ const es = {
 		{
 			title: 'Color y pigmentos en maquillaje permanente',
 			id: 5,
+			avif: '/images/results/cropped/result_4-5.avif',
+			image: '/images/results/cropped/result_4-5.png',
+
 			theory: [
 				'Pigmentos. Selección de tonos. Correctores.',
 				'Sombras de colores y por qué no usarlas.',
@@ -81,6 +98,9 @@ const es = {
 		{
 			title: 'Contenido fotográfico y participación en campeonatos',
 			id: 6,
+			avif: '/images/results/cropped/result_6.avif',
+			image: '/images/results/cropped/result_6.png',
+
 			theory: [
 				'Retoque, fotos y programas para procesar fotos y videos.',
 				'Participación en campeonatos. Diferencia entre modelo y cliente.',
@@ -91,6 +111,9 @@ const es = {
 		{
 			title: 'Reglamento de procedimientos y esquemas de trabajo',
 			id: 7,
+			avif: '/images/results/cropped/result_7.avif',
+			image: '/images/results/cropped/result_7.png',
+
 			theory: [
 				'Esquema de dirección de sombreado al trabajar con los ojos. Trabajo con ambos ojos.',
 				'Látex. Ejercicio de direcciones de sombreado.',
@@ -108,6 +131,9 @@ const es = {
 		{
 			title: 'Trabajos demostrativos en modelos. Análisis de errores',
 			id: 8,
+			avif: '/images/results/cropped/result_8.avif',
+			image: '/images/results/cropped/result_8.png',
+
 			theory: [
 				'Trabajo demostrativo en modelo. Plan general.',
 				'Teoría de corrección.',

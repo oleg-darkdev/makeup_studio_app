@@ -13,7 +13,7 @@ import coachEn from './layout-i18/coach/en.ts';
 import ctaEn from './layout-i18/cta/en.ts';
 import faqEn from './layout-i18/faq/en.ts';
 
-// Russian
+// russian
 import navigationRu from './navigation/ru.ts';
 import programRu from './layout-i18/program/ru.ts';
 import pricesRu from './layout-i18/prices/ru.ts';
@@ -73,7 +73,7 @@ import ctaDe from './layout-i18/cta/de.ts';
 import faqDe from './layout-i18/faq/de.ts';
 import giftDe from './layout-i18/gift/de.ts';
 
-// Polish
+// polish
 import navigationPl from './navigation/pl.ts';
 import programPl from './layout-i18/program/pl.ts';
 import pricesPl from './layout-i18/prices/pl.ts';
@@ -110,7 +110,7 @@ export {
 	ctaEn,
 	pricesEn,
 	giftEn,
-	// Russian
+	// russian
 	navigationRu,
 	pricesRu,
 	programRu,
@@ -170,7 +170,7 @@ export {
 	coachDe,
 	ctaDe,
 	giftDe,
-	// Polish
+	// polish
 	navigationPl,
 	pricesPl,
 	programPl,

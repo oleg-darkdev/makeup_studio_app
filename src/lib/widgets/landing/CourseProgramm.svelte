@@ -45,9 +45,14 @@
 							</div>
 
 							<div class="mt-8 max-w-md">
-								<p class="font-poppins font-bold">
+								<p class="font-poppins mb-4 font-bold">
 									{$LL.program.warning1()}
 									<strong class="text-rose-300">{$LL.program.warning2()} </strong>
+								</p>
+
+								<p class="font-poppins font-bold">
+									{$LL.program.warning3()}
+									<strong class="text-rose-300">{$LL.program.warning4()} </strong>
 								</p>
 							</div>
 						</div>

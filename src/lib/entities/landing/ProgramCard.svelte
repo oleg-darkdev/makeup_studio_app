@@ -3,7 +3,7 @@
 
 	let { stage } = $props();
 
-	let { title, theory, practice, id } = stage;
+	let { title, theory, practice, id, image } = stage;
 
 	let showInfo = $state(false);
 
@@ -34,6 +34,9 @@
 			</svg>
 		</div>
 	</div>
+	<!-- <div class="h-24 w-full overflow-hidden ">
+		<img src={image} class="h-full w-full rotate-90 object-cover" alt="" />
+	</div> -->
 
 	{#if showInfo}
 		<div transition:fade class="faq_accordion-answer">

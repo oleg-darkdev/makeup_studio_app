@@ -25,9 +25,14 @@
 								{$LL.cta.description1()}
 							</p>
 
-							<p class="">
+							<p class="mb-4">
 								{$LL.cta.warningMsg1()}
 								<strong>{$LL.cta.warningMsg2()}</strong>
+							</p>
+
+							<p class="">
+								{$LL.cta.warning3()}
+								<strong>{$LL.cta.warning4()}</strong>
 							</p>
 						</div>
 

@@ -51,9 +51,13 @@
 								</a>
 
 								<div class="mt-4 max-w-md">
-									<p class="">
+									<p class="mb-4">
 										{$LL.features.warning1()}
 										<strong class="text-rose-300">{$LL.features.warning2()}</strong>
+									</p>
+									<p class="">
+										{$LL.features.warning3()}
+										<strong class="text-rose-300">{$LL.features.warning4()}</strong>
 									</p>
 								</div>
 							</div>

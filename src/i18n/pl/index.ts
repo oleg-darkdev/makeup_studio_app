@@ -1,6 +1,6 @@
 import type { BaseTranslation } from '../i18n-types';
 
-// Polish
+// polish
 import {
 	navigationPl,
 	pricesPl,

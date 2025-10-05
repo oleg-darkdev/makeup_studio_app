@@ -8,10 +8,15 @@ const pl = {
 	buttonBuy: 'Zakup dostępu',
 	warning1: 'Kurs na żywo dostępny jest tylko ',
 	warning2: 'w języku polskim i rosyjskim.',
+	warning3: 'Do samodzielnej nauki kurs dostępny jest w ',
+	warning4: 'rosyjskim, angielskim, polskim, hiszpańskim, francuskim, niemieckim.',
 	courseData: [
 		{
 			title: 'Wprowadzenie do kursu.',
 			id: 1,
+			avif: '/images/results/cropped/result_0.avif',
+			image: '/images/results/cropped/result_0.png',
+
 			theory: [
 				'Poznajmy się. Moja historia. Moja estetyka.',
 				'Budowa powieki. Zakazane strefy.',
@@ -22,6 +27,9 @@ const pl = {
 		{
 			title: 'Szkic i przygotowanie',
 			id: 2,
+			avif: '/images/results/cropped/result_2.avif',
+			image: '/images/results/cropped/result_2.png',
+
 			theory: [
 				'Zasady tworzenia szkicu. Część teoretyczna.',
 				'Tworzenie szkicu. Przykład na modelu.',
@@ -33,6 +41,9 @@ const pl = {
 		{
 			title: 'Podstawy techniki i cieniowania',
 			id: 3,
+			avif: '/images/results/cropped/result_3.avif',
+			image: '/images/results/cropped/result_3.png',
+
 			theory: [
 				'Długi i krótki ruch igły maszyny.',
 				'Podstawy cieniowania.',
@@ -48,6 +59,9 @@ const pl = {
 		{
 			title: 'Gradienty, gęstość i obróbka koloru.',
 			id: 4,
+			avif: '/images/results/cropped/result_5.avif',
+			image: '/images/results/cropped/result_5.png',
+
 			theory: [
 				'Typy kolorów.',
 				'Matematyczny i mechaniczny gradient na lateksie.',
@@ -72,6 +86,9 @@ const pl = {
 		{
 			title: 'Kolor i pigmenty w makijażu permanentnym.',
 			id: 5,
+			avif: '/images/results/cropped/result_4-5.avif',
+			image: '/images/results/cropped/result_4-5.png',
+
 			theory: [
 				'Pigmenty. Dobór odcieni. Korektory.',
 				'Kolorowe cienie i dlaczego nie.',
@@ -82,6 +99,9 @@ const pl = {
 		{
 			title: 'Treść fotograficzna i udział w mistrzostwach.',
 			id: 6,
+			avif: '/images/results/cropped/result_6.avif',
+			image: '/images/results/cropped/result_6.png',
+
 			theory: [
 				'Retusz, zdjęcia i programy do obróbki zdjęć i wideo.',
 				'Udział w mistrzostwach. Różnica między modelem a klientem.',
@@ -92,6 +112,9 @@ const pl = {
 		{
 			title: 'Regulamin wykonania procedury i schematy w pracy.',
 			id: 7,
+			avif: '/images/results/cropped/result_7.avif',
+			image: '/images/results/cropped/result_7.png',
+
 			theory: [
 				'Schemat kierunku cieniowania przy pracy z oczami. Praca z dwoma oczami.',
 				'Lateks. Ćwiczenie kierunków cieniowania.',
@@ -109,6 +132,9 @@ const pl = {
 		{
 			title: 'Prace pokazowe na modelach. Analiza błędów.',
 			id: 8,
+			avif: '/images/results/cropped/result_8.avif',
+			image: '/images/results/cropped/result_8.png',
+
 			theory: [
 				'Pokazowa praca na modelu. Ogólny plan.',
 				'Teoria korekcji.',

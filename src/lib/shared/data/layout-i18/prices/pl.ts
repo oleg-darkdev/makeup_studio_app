@@ -1,14 +1,15 @@
-const ru = {
+const pl = {
 	titleStart: 'Dostępne',
-	titleEnd: 'pakiety',
+	titleEnd: 'plany taryfowe',
+	buttonBuy: 'Uzyskaj dostęp',
 	data: [
 		{
 			id: 1,
 			title: 'Samodzielny',
-			shortDesc: 'dostęp do wszystkich lekcji kursu',
+			shortDesc:
+				'Idealna opcja dla tych, którzy chcą uczyć się we własnym tempie. Otrzymasz pełny dostęp do wszystkich lekcji bez żadnych ograniczeń.',
 			img: '/images/prices/self.webp',
-			features: ['', ''],
-
+			features: ['Możliwość nauki w dogodnym dla siebie tempie'],
 			price: '400 €',
 			link: '/'
 		},
@@ -16,20 +17,22 @@ const ru = {
 			id: 2,
 			title: 'Z kuratorem',
 			shortDesc:
-				'dostęp do wszystkich lekcji kursu + informacja zwrotna na temat prac domowych w czacie z wykwalifikowanym kuratorem kursu online (liczba miejsc ograniczona)',
+				'Nie tylko oglądasz lekcje — masz mentora. Po każdej pracy domowej kurator udzieli szczegółowej informacji zwrotnej i pomoże poprawić błędy. (liczba miejsc ograniczona)',
 			img: '/images/prices/curator.webp',
-			features: ['', ''],
-
+			features: ['Indywidualne wsparcie', 'Bezpośredni kontakt z mistrzem'],
 			price: '600 €',
 			link: '/'
 		},
 		{
 			id: 3,
 			title: 'Z Valerią',
-			features: ['', ''],
-
+			features: [
+				'Bezpośredni kontakt — praca osobiście z mistrzem',
+				'Zdobywanie wiedzy z pierwszej ręki',
+				'Praca w małej grupie — maksymalne zaangażowanie i uwaga'
+			],
 			shortDesc:
-				'dostęp do wszystkich lekcji kursu + informacja zwrotna na temat prac domowych w czacie osobiście z autorem kursu, grupa do 10 osób (liczba miejsc ograniczona)',
+				'Wersja premium kursu. Będziesz uczyć się w mini grupie do 10 osób bezpośrednio z autorką kursu. To coś więcej niż wsparcie — to ekskluzywny dostęp do wiedzy i doświadczenia.',
 			img: '/images/prices/valeria.webp',
 			price: '1500 €',
 			link: '/'
@@ -37,6 +40,4 @@ const ru = {
 	]
 };
 
-
-
-export default ru;
+export default pl;

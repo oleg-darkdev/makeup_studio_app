@@ -7,6 +7,9 @@ const ru = {
 	buttonBuy: 'Приобрести доступ',
 	warning1: 'Курс в прямом эфире доступен только ',
 	warning2: 'на польском и русском языках.',
+	warning3: 'Для самостоятельного изучения курс доступен на ',
+	warning4: 'русском, английском, польском, испанском, французском, немецком.',
+
 	courseData: [
 		{
 			title: 'Введение в курс',
@@ -16,11 +19,15 @@ const ru = {
 				'Строение века. Запрещённые зоны.',
 				'Процессы старения и их взаимодействие.'
 			],
+			avif: '/images/results/cropped/result_0.avif',
+			image: '/images/results/cropped/result_0.png',
 			practice: []
 		},
 		{
 			title: 'Эскиз и подготовка',
 			id: 2,
+			avif: '/images/results/cropped/result_2.avif',
+			image: '/images/results/cropped/result_2.png',
 			theory: [
 				'Принципы создания эскиза. Теория.',
 				'Создание эскиза. Пример на модели.',
@@ -32,6 +39,8 @@ const ru = {
 		{
 			title: 'Основы техники и растушёвки',
 			id: 3,
+			avif: '/images/results/cropped/result_3.avif',
+			image: '/images/results/cropped/result_3.png',
 			theory: [
 				'Долгий и короткий ход иглы аппарата.',
 				'Основы растушёвки.',
@@ -47,6 +56,8 @@ const ru = {
 		{
 			title: 'Градиенты, плотность и работа с цветом',
 			id: 4,
+			avif: '/images/results/cropped/result_5.avif',
+			image: '/images/results/cropped/result_5.png',
 			theory: [
 				'Типы цветов.',
 				'Математический и механический градиент на латексе.',
@@ -71,6 +82,8 @@ const ru = {
 		{
 			title: 'Цвет и пигменты в перманентном макияже',
 			id: 5,
+			avif: '/images/results/cropped/result_4-5.avif',
+			image: '/images/results/cropped/result_4-5.png',
 			theory: [
 				'Пигменты. Подбор оттенков. Корректоры.',
 				'Цветные тени и почему их не использовать.',
@@ -81,6 +94,8 @@ const ru = {
 		{
 			title: 'Фотоконтент и участие в чемпионатах',
 			id: 6,
+			avif: '/images/results/cropped/result_6.avif',
+			image: '/images/results/cropped/result_6.png',
 			theory: [
 				'Ретушь, фото и программы для обработки фото и видео.',
 				'Участие в чемпионатах. Разница между моделью и клиентом.',
@@ -91,6 +106,8 @@ const ru = {
 		{
 			title: 'Правила выполнения процедуры и схемы работы',
 			id: 7,
+			avif: '/images/results/cropped/result_7.avif',
+			image: '/images/results/cropped/result_7.png',
 			theory: [
 				'Схема направления растушёвки при работе с глазами. Работа с двумя глазами.',
 				'Латекс. Упражнение на направления растушёвки.',
@@ -108,6 +125,8 @@ const ru = {
 		{
 			title: 'Показательные работы на моделях. Анализ ошибок',
 			id: 8,
+			avif: '/images/results/cropped/result_8.avif',
+			image: '/images/results/cropped/result_8.png',
 			theory: [
 				'Показательная работа на модели. Общий план.',
 				'Теория коррекции.',

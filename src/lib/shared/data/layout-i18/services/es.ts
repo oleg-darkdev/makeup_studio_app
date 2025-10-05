@@ -1,6 +1,6 @@
 const es = {
-	title: 'Resultado después de completar el curso',
-	course: '',
+	title: 'Mejorá tus habilidades durante',
+	course: 'el curso',
 	buttonBook: 'Reservar acceso',
 	data: [
 		{

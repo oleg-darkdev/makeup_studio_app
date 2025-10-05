@@ -57,9 +57,10 @@
 						<div class="hero_content-right-wrap">
 							<div class="">
 								<div class="margin-bottom margin-xxsmall">
-									<h3 class="pre-heading">
+									<!-- pre-heading -->
+									<p class="">
 										{$LL.hero.description()}
-									</h3>
+									</p>
 								</div>
 								<p class="my-4">
 									{$LL.hero.coachTitle()}

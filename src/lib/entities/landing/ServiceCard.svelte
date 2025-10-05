@@ -15,8 +15,7 @@
 >
 	<div
 		style="  background-image: url({avif});
-"
-		class="services_cards w-inline-block relative"
+"		class="services_cards w-inline-block relative"
 	>
 		<h2
 			class=" font-poppins services_cards-heading mx-auto text-left font-black uppercase text-white group-hover:text-rose-300"

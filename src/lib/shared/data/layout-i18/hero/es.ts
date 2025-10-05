@@ -1,7 +1,7 @@
 const es = {
-	preheading: `Curso básico en línea - autora`,
+	preheading: `Curso en línea - autora`,
 	course: `Curso`,
-	startMounth: ' Comienza en julio',
+	startMounth: 'Ya disponible',
 	buttonBook: 'Reservar acceso',
 	description: `El curso es adecuado tanto para principiantes como para profesionales en práctica e incluso para quienes se preparan para competiciones.`,
 	coachTitle: `El curso lo imparte`,

@@ -5,6 +5,8 @@ const pl = {
 	buttonBook: 'Zarezerwuj dostęp',
 	warning1: 'Kurs na żywo dostępny jest tylko ',
 	warning2: 'w języku polskim i rosyjskim.',
+	warning3: 'Do samodzielnej nauki kurs dostępny jest w ',
+	warning4: 'rosyjskim, angielskim, polskim, hiszpańskim, francuskim, niemieckim.',
 	targetAudience: [
 		{
 			title: 'Początkujące',

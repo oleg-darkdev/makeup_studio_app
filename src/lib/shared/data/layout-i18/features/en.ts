@@ -4,7 +4,9 @@ const en = {
 
 	buttonBook: 'Book access',
 	warning1: 'The live course is available only ',
-	warning2: 'in Polish and Russian.',
+	warning2: 'in polish and russian.',
+	warning3: 'For self-study, the course is available in ',
+	warning4: 'russian, english, polish, spanish, french, and german.',
 	targetAudience: [
 		{
 			title: 'Beginners',

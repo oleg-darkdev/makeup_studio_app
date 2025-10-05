@@ -13,7 +13,7 @@ const navigationPl = [
 	},
 	{
 		title: 'Cenniki',
-		link: '/'
+		link: '#pricing'
 	},
 	{
 		title: 'F.A.Q.',

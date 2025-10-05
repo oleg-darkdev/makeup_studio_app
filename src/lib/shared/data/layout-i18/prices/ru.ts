@@ -1,35 +1,41 @@
 const ru = {
 	titleStart: 'Доступные',
 	titleEnd: 'тарифные планы',
+	buttonBuy: 'Получить доступ',
 	data: [
 		{
 			id: 1,
-			title: 'Samodzielny',
-			shortDesc: 'dostęp do wszystkich lekcji kursu',
+			title: 'Самостоятельный',
+			shortDesc:
+				'идеальный вариант для тех, кто хочет изучать курс в своём ритме. Ты получишь полный доступ ко всем урокам без каких-либо ограничений.',
 			img: '/images/prices/self.webp',
-			features: ['', ''],
+			features: ['Возможность обучаться в удобном для тебя ритме'],
 
 			price: '400 €',
 			link: '/'
 		},
 		{
 			id: 2,
-			title: 'Z kuratorem',
+			title: 'С кураторем',
 			shortDesc:
-				'dostęp do wszystkich lekcji kursu + informacja zwrotna na temat prac domowych w czacie z wykwalifikowanym kuratorem kursu online (liczba miejsc ograniczona)',
+				'ты не просто смотришь уроки — ты получаешь наставника. После каждой домашней работы куратор даст развернутую обратную связь и поможет исправить ошибки. (количество мест ограничено)',
 			img: '/images/prices/curator.webp',
-			features: ['', ''],
+			features: ['Персонализированная поддержка', 'Непосредственный контакт с мастером'],
 
 			price: '600 €',
 			link: '/'
 		},
 		{
 			id: 3,
-			title: 'Z Valerią',
-			features: ['', ''],
+			title: 'С Валерией',
+			features: [
+				'Прямой контакт — работа лично с мастером',
+				'Получение знаний «из первых рук»',
+				'Работа в малой группе — максимальное внимание и гарантия  вовлечённости'
+			],
 
 			shortDesc:
-				'dostęp do wszystkich lekcji kursu + informacja zwrotna na temat prac domowych w czacie osobiście z autorem kursu, grupa do 10 osób (liczba miejsc ograniczona)',
+				'премиум-версия курса. Ты будешь обучаться в мини-группе до 10 человек лично с автором курса. Это больше, чем поддержка — это эксклюзивный доступ к знаниям и опыту.',
 			img: '/images/prices/valeria.webp',
 			price: '1500 €',
 			link: '/'

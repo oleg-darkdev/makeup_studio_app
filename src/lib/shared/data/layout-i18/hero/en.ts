@@ -1,7 +1,7 @@
 const en = {
-	preheading: `Basic online course - author`,
+	preheading: `Online course - author`,
 	course: `Course`,
-	startMounth: ' Starts in July',
+	startMounth: 'Already available',
 	buttonBook: 'Book access',
 	description: `The course is suitable for beginners, practicing specialists, and even those preparing for competitions.`,
 	coachTitle: `The course is led by`,
