@@ -11,7 +11,10 @@ const fr = {
 			img: '/images/prices/self.webp',
 			features: ['Apprenez à votre propre rythme'],
 			price: '400 €',
-			link: '/'
+			link: '#self',
+			anchor: 'self',
+
+			buyLink: '/'
 		},
 		{
 			id: 2,
@@ -21,7 +24,10 @@ const fr = {
 			img: '/images/prices/curator.webp',
 			features: ['Soutien personnalisé', 'Contact direct avec le maître'],
 			price: '600 €',
-			link: '/'
+			link: '#curator',
+			anchor: 'curator',
+
+			buyLink: '/'
 		},
 		{
 			id: 3,
@@ -35,7 +41,10 @@ const fr = {
 				'Version premium du cours. Vous étudierez dans un mini-groupe de 10 personnes maximum avec l’auteure du cours. Plus qu’un soutien — un accès exclusif à son expérience et savoir-faire.',
 			img: '/images/prices/valeria.webp',
 			price: '1500 €',
-			link: '/'
+			link: '#with-valeria',
+						anchor: 'with-valeria',
+
+			buyLink: '/'
 		}
 	]
 };

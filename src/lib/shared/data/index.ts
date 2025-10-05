@@ -12,6 +12,7 @@ import servicesEn from './layout-i18/services/en.ts';
 import coachEn from './layout-i18/coach/en.ts';
 import ctaEn from './layout-i18/cta/en.ts';
 import faqEn from './layout-i18/faq/en.ts';
+import headerEn from './layout-i18/header/en.ts';
 
 // russian
 import navigationRu from './navigation/ru.ts';
@@ -27,6 +28,7 @@ import coachRu from './layout-i18/coach/ru.ts';
 import ctaRu from './layout-i18/cta/ru.ts';
 import faqRu from './layout-i18/faq/ru.ts';
 import giftRu from './layout-i18/gift/ru.ts';
+import headerRu from './layout-i18/header/ru.ts';
 
 // Spanish
 import navigationEs from './navigation/es.ts';
@@ -42,6 +44,7 @@ import coachEs from './layout-i18/coach/es.ts';
 import ctaEs from './layout-i18/cta/es.ts';
 import faqEs from './layout-i18/faq/es.ts';
 import giftEs from './layout-i18/gift/es.ts';
+import headerEs from './layout-i18/header/es.ts';
 
 // French
 import navigationFr from './navigation/fr.ts';
@@ -57,6 +60,7 @@ import coachFr from './layout-i18/coach/fr.ts';
 import ctaFr from './layout-i18/cta/fr.ts';
 import faqFr from './layout-i18/faq/fr.ts';
 import giftFr from './layout-i18/gift/fr.ts';
+import headerFr from './layout-i18/header/fr.ts';
 
 // German
 import navigationDe from './navigation/de.ts';
@@ -72,6 +76,7 @@ import coachDe from './layout-i18/coach/de.ts';
 import ctaDe from './layout-i18/cta/de.ts';
 import faqDe from './layout-i18/faq/de.ts';
 import giftDe from './layout-i18/gift/de.ts';
+import headerDe from './layout-i18/header/de.ts';
 
 // polish
 import navigationPl from './navigation/pl.ts';
@@ -88,6 +93,7 @@ import coachPl from './layout-i18/coach/pl.ts';
 import ctaPl from './layout-i18/cta/pl.ts';
 import faqPl from './layout-i18/faq/pl.ts';
 import giftPl from './layout-i18/gift/pl.ts';
+import headerPl from './layout-i18/header/pl.ts';
 
 //
 import portfolioImgs from './portfolioImgs.ts';
@@ -96,6 +102,7 @@ export {
 	portfolioImgs,
 
 	// English
+	headerEn,
 	navigationEn,
 	programEn,
 	// pricesEn,
@@ -114,6 +121,7 @@ export {
 	navigationRu,
 	pricesRu,
 	programRu,
+	headerRu,
 	// pricesRu,
 	servicesRu,
 	// postsRu,
@@ -127,6 +135,7 @@ export {
 	giftRu,
 	// Spanish
 	navigationEs,
+	headerEs,
 	pricesEs,
 	programEs,
 	// pricesEs,
@@ -142,6 +151,7 @@ export {
 	giftEs,
 	// French
 	navigationFr,
+	headerFr,
 	pricesFr,
 	programFr,
 	// pricesFr,
@@ -157,6 +167,7 @@ export {
 	giftFr,
 	// German
 	navigationDe,
+	headerDe,
 	programDe,
 	pricesDe,
 	faqDe,
@@ -171,6 +182,7 @@ export {
 	ctaDe,
 	giftDe,
 	// polish
+	headerPl,
 	navigationPl,
 	pricesPl,
 	programPl,

@@ -12,7 +12,8 @@ import {
 	ctaFr,
 	heroFr,
 	faqFr,
-	giftFr
+	giftFr,
+	headerFr
 } from '../../lib/shared/data';
 
 const fr = {
@@ -28,7 +29,8 @@ const fr = {
 	program: programFr,
 	cta: ctaFr,
 	faq: faqFr,
-	gift: giftFr
+	gift: giftFr,
+			header: headerFr
 } satisfies BaseTranslation;
 
 export default fr;

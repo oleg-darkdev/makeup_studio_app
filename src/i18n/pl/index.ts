@@ -14,7 +14,8 @@ import {
 	featuresPl,
 	heroPl,
 	faqPl,
-	giftPl
+	giftPl,
+	headerPl
 } from '../../lib/shared/data';
 
 const pl = {
@@ -30,7 +31,8 @@ const pl = {
 	program: programPl,
 	cta: ctaPl,
 	faq: faqPl,
-	gift: giftPl
+	gift: giftPl,
+			header: headerPl
 } satisfies BaseTranslation;
 
 export default pl;

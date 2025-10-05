@@ -66,7 +66,7 @@
 								href="#"
 								class="button-3 is-navbar4-button noise-effect w-inline-block no-underline"
 							>
-								<div>kup dostęp</div>
+								<div>{$LL.header.button()}</div>
 							</a>
 						</div>
 					</div>

@@ -4,31 +4,38 @@ const en = {
 	button: 'Contact us',
 	faq: [
 		{
-			q: 'Lorem Ipsum jest tekstem stosowanym jako przykładowy.',
+			q: 'Who is this course for?',
 			a: [
-				'Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. ',
-				'Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. '
+				'For beginner artists who want to master the "eyeliner" technique.',
+				'For experienced PMU artists who wish to deepen their knowledge and improve results.',
+				'For those preparing to compete in championships and aiming for a higher professional level.'
 			]
 		},
 		{
-			q: 'Lorem Ipsum jest tekstem stosowanym jako przykładowy.',
+			q: 'In what languages is the course available?',
 			a: [
-				'Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. ',
-				'Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. '
+				'The live course (broadcasted online) is available in Russian and Polish.',
+				'The self-study version is available in Russian, English, Polish, Spanish, French, and German.'
 			]
 		},
 		{
-			q: 'Lorem Ipsum jest tekstem stosowanym jako przykładowy.',
+			q: 'Will I receive a certificate after completing the course?',
 			a: [
-				'Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. ',
-				'Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. '
+				'Yes — upon completion, you will receive a certificate confirming your practical knowledge.'
 			]
 		},
 		{
-			q: 'Lorem Ipsum jest tekstem stosowanym jako przykładowy.',
+			q: 'Can I take the course completely independently?',
 			a: [
-				'Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. ',
-				'Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. '
+				'Yes, the course is available in a self-study format, with materials provided in multiple languages (Russian, English, Polish, Spanish, French, German).'
+			]
+		},
+		{
+			q: 'How can I contact the course organizer or team?',
+			a: [
+				'Phone: (48) 451-143-933',
+				'E-mail: vasilyeva.pmu@gmail.com',
+				'Office address: Jana Heweliusza 11, 10th floor, office 1007, 80-890 Gdańsk'
 			]
 		}
 	]

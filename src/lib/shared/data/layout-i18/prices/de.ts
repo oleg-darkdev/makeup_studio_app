@@ -10,8 +10,10 @@ const de = {
 				'Die ideale Option für alle, die in ihrem eigenen Tempo lernen möchten. Du erhältst vollen Zugriff auf alle Lektionen ohne Einschränkungen.',
 			img: '/images/prices/self.webp',
 			features: ['Lerne in deinem eigenen Tempo'],
-			price: '400 €',
-			link: '/'
+			link: '#self',
+			anchor: 'self',
+
+			buyLink: '/'
 		},
 		{
 			id: 2,
@@ -21,7 +23,10 @@ const de = {
 			img: '/images/prices/curator.webp',
 			features: ['Personalisierte Unterstützung', 'Direkter Kontakt mit dem Meister'],
 			price: '600 €',
-			link: '/'
+			link: '#curator',
+			anchor: 'curator',
+
+			buyLink: '/'
 		},
 		{
 			id: 3,
@@ -35,7 +40,10 @@ const de = {
 				'Premium-Version des Kurses. Du lernst in einer kleinen Gruppe von bis zu 10 Personen direkt mit der Autorin des Kurses. Mehr als Unterstützung — exklusiver Zugang zu Wissen und Erfahrung.',
 			img: '/images/prices/valeria.webp',
 			price: '1500 €',
-			link: '/'
+			link: '#with-valeria',
+			anchor: 'with-valeria',
+
+			buyLink: '/'
 		}
 	]
 };

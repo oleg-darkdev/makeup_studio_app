@@ -11,7 +11,10 @@ const en = {
 			img: '/images/prices/self.webp',
 			features: ['Study at your own pace'],
 			price: '400 €',
-			link: '/'
+			link: '#self',
+			anchor: 'self',
+
+			buyLink: '/'
 		},
 		{
 			id: 2,
@@ -21,7 +24,10 @@ const en = {
 			img: '/images/prices/curator.webp',
 			features: ['Personalized support', 'Direct contact with the master'],
 			price: '600 €',
-			link: '/'
+			link: '#curator',
+			anchor: 'curator',
+
+			buyLink: '/'
 		},
 		{
 			id: 3,
@@ -35,7 +41,10 @@ const en = {
 				'Premium version of the course. You’ll study in a mini-group of up to 10 people directly with the course author. More than support — it’s exclusive access to experience and expertise.',
 			img: '/images/prices/valeria.webp',
 			price: '1500 €',
-			link: '/'
+			link: '#with-valeria',
+			anchor: 'with-valeria',
+
+			buyLink: '/'
 		}
 	]
 };

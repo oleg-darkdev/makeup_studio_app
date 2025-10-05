@@ -12,7 +12,8 @@ import {
 	ctaDe,
 	heroDe,
 	faqDe,
-	giftDe
+	giftDe,
+	headerDe
 } from '../../lib/shared/data';
 
 const de = {
@@ -28,7 +29,8 @@ const de = {
 	program: programDe,
 	cta: ctaDe,
 	faq: faqDe,
-	gift: giftDe
+	gift: giftDe,
+	header: headerDe
 } satisfies BaseTranslation;
 
 export default de;

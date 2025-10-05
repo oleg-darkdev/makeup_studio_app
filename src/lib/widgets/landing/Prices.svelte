@@ -4,6 +4,7 @@
 	import { PriceCard } from '$entitiesLanding';
 
 	import LL from '$i18n/i18n-svelte';
+	
 </script>
 
 <section class="section_testimonial">

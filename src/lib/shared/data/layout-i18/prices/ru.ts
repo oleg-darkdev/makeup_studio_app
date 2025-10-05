@@ -12,7 +12,9 @@ const ru = {
 			features: ['Возможность обучаться в удобном для тебя ритме'],
 
 			price: '400 €',
-			link: '/'
+			link: '#self',
+			anchor: 'self',
+			buyLink: '/'
 		},
 		{
 			id: 2,
@@ -23,7 +25,10 @@ const ru = {
 			features: ['Персонализированная поддержка', 'Непосредственный контакт с мастером'],
 
 			price: '600 €',
-			link: '/'
+			link: '#curator',
+			anchor: 'curator',
+
+			buyLink: '/'
 		},
 		{
 			id: 3,
@@ -38,7 +43,10 @@ const ru = {
 				'премиум-версия курса. Ты будешь обучаться в мини-группе до 10 человек лично с автором курса. Это больше, чем поддержка — это эксклюзивный доступ к знаниям и опыту.',
 			img: '/images/prices/valeria.webp',
 			price: '1500 €',
-			link: '/'
+			link: '#with-valeria',
+			anchor: 'with-valeria',
+
+			buyLink: '/'
 		}
 	]
 };

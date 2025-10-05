@@ -12,7 +12,8 @@ import {
 	ctaRu,
 	heroRu,
 	faqRu,
-	giftRu
+	giftRu,
+	headerRu
 } from '../../lib/shared/data';
 
 const ru = {
@@ -28,7 +29,8 @@ const ru = {
 	program: programRu,
 	cta: ctaRu,
 	faq: faqRu,
-	gift: giftRu
+	gift: giftRu,
+			header: headerRu
 } satisfies BaseTranslation;
 
 export default ru;

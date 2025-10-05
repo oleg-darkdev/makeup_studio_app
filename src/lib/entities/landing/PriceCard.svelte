@@ -3,7 +3,7 @@
 	import LL from '$i18n/i18n-svelte';
 </script>
 
-<div role="listitem" class="cms_list-item w-dyn-item">
+<div role="listitem" id={price.anchor} class="cms_list-item w-dyn-item">
 	<div id="tooth-gems" class="cms_list-wrapper">
 		<img src={price.img} loading="lazy" alt="" class="cms_list-image" />
 	</div>
@@ -28,7 +28,7 @@
 			<a href="#" class="slide-read-more-button read-less-button">Read less</a> -->
 		</div>
 		<div class="button-group is-end">
-			<a href="#" class="button is-link w-inline-block">
+			<a href={$LL.prices.buyLink()} target="_blank" class="button is-link w-inline-block">
 				<div class="button_icon-wrapper">
 					<div>{$LL.prices.buttonBuy()}</div>
 					<div class="icon-embed-xxsmall w-embed">

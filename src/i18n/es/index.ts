@@ -12,7 +12,7 @@ import {
 	ctaEs,
 	heroEs,
 	faqEs,
-	giftEs
+	giftEs,headerEs
 } from '../../lib/shared/data';
 
 const es = {
@@ -28,7 +28,8 @@ const es = {
 	program: programEs,
 	cta: ctaEs,
 	faq: faqEs,
-	gift: giftEs
+	gift: giftEs,
+			header: headerEs
 } satisfies BaseTranslation;
 
 export default es;

@@ -11,7 +11,10 @@ const pl = {
 			img: '/images/prices/self.webp',
 			features: ['Możliwość nauki w dogodnym dla siebie tempie'],
 			price: '400 €',
-			link: '/'
+			link: '#self',
+			anchor: 'self',
+
+			buyLink: '/'
 		},
 		{
 			id: 2,
@@ -21,7 +24,10 @@ const pl = {
 			img: '/images/prices/curator.webp',
 			features: ['Indywidualne wsparcie', 'Bezpośredni kontakt z mistrzem'],
 			price: '600 €',
-			link: '/'
+			link: '#curator',
+			anchor: 'curator',
+
+			buyLink: '/'
 		},
 		{
 			id: 3,
@@ -35,7 +41,10 @@ const pl = {
 				'Wersja premium kursu. Będziesz uczyć się w mini grupie do 10 osób bezpośrednio z autorką kursu. To coś więcej niż wsparcie — to ekskluzywny dostęp do wiedzy i doświadczenia.',
 			img: '/images/prices/valeria.webp',
 			price: '1500 €',
-			link: '/'
+			link: '#with-valeria',
+			anchor: 'with-valeria',
+
+			buyLink: '/'
 		}
 	]
 };
