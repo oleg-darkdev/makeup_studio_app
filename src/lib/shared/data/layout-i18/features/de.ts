@@ -18,14 +18,14 @@ const de = {
 			title: 'Praktizierende',
 			decoration: 'line-2 ',
 			desc: [
-				`Du hast bereits Erfahrung, möchtest aber deine Fähigkeiten verbessern? EYE LINER ist der Kurs, der dich auf das nächste Level bringt. Du lernst fortgeschrittene Methoden, die Geheimnisse perfekter Symmetrie und Techniken, die für verschiedene Make-up-Stile geeignet sind – von klassisch bis fashion. Valeria Vasilyeva teilt ihr Know-how, damit du deinen Kundinnen noch mehr Qualität und Präzision bieten kannst.`
+				`Sie haben bereits Erfahrung, möchten aber Ihre Fähigkeiten verbessern? EYE LINER ist ein Kurs, der Sie auf ein neues Niveau bringt. Sie lernen fortgeschrittene Arbeitsmethoden, die Geheimnisse perfekter Symmetrie und Techniken für verschiedene Make-up-Stile – von klassisch bis modisch. Ich teile meine Erfahrungen mit Ihnen, damit Sie Ihren Kunden noch mehr Qualität und Präzision bieten können.`
 			]
 		},
 		{
 			title: 'Vorbereitung auf Meisterschaften',
 			decoration: 'line-3 ',
 			desc: [
-				`Wenn dein Ziel die Teilnahme an Make-up-Meisterschaften ist, wird der EYE LINER-Kurs dein strategisches Werkzeug für den Erfolg. Unter der Anleitung von Valeria Vasilyeva lernst du nicht nur die technischen Aspekte des perfekten Lidstrichs, sondern auch die Details, die von Jurys bewertet werden: Sauberkeit der Ausführung, Kreativität und Trendkonformität. Dieses intensive Training bereitet dich auf den Wettbewerb auf höchstem Niveau vor.`
+				'Wenn Sie an Make-up-Meisterschaften teilnehmen möchten, ist der Kurs EYE LINER Ihr strategisches Werkzeug für den Erfolg. Unter meiner Anleitung lernen Sie nicht nur die technischen Aspekte des perfekten Lidstrichs kennen, sondern auch die Details, die von der Jury bewertet werden: Sauberkeit der Ausführung, Kreativität und Trendkonformität. Diese intensive Schulung bereitet Sie auf Wettbewerbe auf höchstem Niveau vor.'
 			]
 		}
 	]

@@ -26,7 +26,7 @@ const en = {
 			title: 'Championship preparation',
 			decoration: 'line-3 ',
 			desc: [
-				`If your goal is to compete in makeup championships, the EYE LINER course will be your strategic tool for success. Under the guidance of Valeria Vasilyeva, you’ll learn not only the technical aspects of a perfect line but also the details judged by juries: cleanliness of execution, creativity, and alignment with trends. This intensive training will prepare you to compete at the highest level.`
+				'If your goal is to participate in makeup championships, the EYE LINER course will be your strategic tool for success. Under my guidance, you will learn not only the technical aspects of the perfect winged eyeliner, but also the details that the jury evaluates: precision, creativity, and adherence to trends. This intensive training will prepare you for competitions at the highest level.'
 			]
 		}
 	]

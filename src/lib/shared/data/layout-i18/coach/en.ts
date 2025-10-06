@@ -4,7 +4,8 @@ const en = {
 	titleStart: 'The Impact of',
 	titleCenter: 'Artistic',
 	titleEnd: 'Transformation',
-	description: `Valeria Vasilyeva is a recognized world champion in permanent makeup, a multiple winner of international championships, and a respected trainer. Her experience and unique teaching methods ensure that course participants receive top-level knowledge backed by practice and international success. With her passion for teaching and precision in work, Valeria inspires her students to achieve excellence and confidence in the profession.`,
+	description: 
+`Hello, I am Valeria Vasilyeva — a recognized world champion in permanent makeup, multiple winner of international championships, and respected trainer. My experience and unique teaching methods ensure that course participants receive the highest level of knowledge, backed by practice and international success. Thanks to my passion for teaching and precision in my work, I strive to inspire students to achieve excellence and confidence in their profession.`,
 	achievementsTitle: 'Achievements',
 	conferencesTitle: 'At conferences',
 	signatureAlt: "Valeria Vasilyeva's signature",

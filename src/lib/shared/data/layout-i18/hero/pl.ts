@@ -4,9 +4,9 @@ const pl = {
 	startMounth: 'Już dostępny',
 	buttonBook: 'Zarezerwuj dostęp',
 	description: `Kurs jest odpowiedni zarówno dla początkujących, jak i dla osób praktykujących, a nawet przygotowujących się do udziału w mistrzostwach.`,
-	coachTitle: `Kurs prowadzi`,
+	coachTitle: `Kurs prowadze ja`,
 	coachDesc:
-		' - mistrz świata WULOP 2022, a także wielokrotny zwycięzca wielu innych międzynarodowych turniejów.',
+		' - mistrzynia świata WULOP 2022, a także wielokrotny zwycięzca wielu innych międzynarodowych turniejów.',
 	buttonCoach: 'Info o trenerze',
 	social: {
 		facebook: 'https://www.facebook.com/vasilyevavaleriapmu',

@@ -4,8 +4,7 @@ const pl = {
 	titleStart: 'Wpływ',
 	titleCenter: 'transformacji',
 	titleEnd: 'artystycznej',
-	description: `Valeria Vasilyeva to uznana mistrzyni świata w makijażu permanentnym, wielokrotna zwyciężczyni międzynarodowych mistrzostw oraz ceniona trenerka. Jej doświadczenie i unikalne metody szkoleniowe gwarantują, że uczestnicy kursu otrzymują wiedzę na najwyższym poziomie, popartą praktyką i sukcesami na arenie międzynarodowej. Dzięki pasji do nauczania i precyzji w pracy, Valeria inspiruje swoich kursantów do osiągania doskonałości i pewności w zawodzie.`,
-	achievementsTitle: 'Osiągnięcia',
+	description: `Cześć, jestem Valeria Vasilyeva – uznana mistrzyni świata w dziedzinie makijażu permanentnego, wielokrotna zwyciężczyni międzynarodowych mistrzostw i szanowana trenerka. Moje doświadczenie i unikalne metody nauczania gwarantują, że uczestnicy kursu zdobędą wiedzę na najwyższym poziomie, popartą praktyką i międzynarodowymi sukcesami. Dzięki mojej pasji do nauczania i precyzji w pracy staram się inspirować studentów do osiągania doskonałości i pewności siebie w zawodzie.`,	achievementsTitle: 'Osiągnięcia',
 	conferencesTitle: 'Na konferencjach',
 	signatureAlt: 'Podpis Valerii Vasilyevej',
 	achievements: {

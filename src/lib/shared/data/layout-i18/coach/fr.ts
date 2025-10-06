@@ -4,7 +4,8 @@ const fr = {
 	titleStart: 'L’impact de',
 	titleCenter: 'la transformation',
 	titleEnd: 'artistique',
-	description: `Valeria Vasilyeva est championne du monde reconnue en maquillage permanent, plusieurs fois gagnante de compétitions internationales et formatrice respectée. Son expérience et ses méthodes d’enseignement uniques garantissent aux participants du cours un savoir-faire de haut niveau, appuyé par la pratique et le succès international. Grâce à sa passion pour l’enseignement et sa précision, Valeria inspire ses élèves à atteindre l’excellence et la confiance dans leur métier.`,
+	description: 
+`Bonjour, je m'appelle Valeria Vasilieva. Je suis championne du monde reconnue en maquillage permanent, multiple gagnante de championnats internationaux et formatrice réputée. Mon expérience et mes méthodes d'enseignement uniques garantissent aux participants du cours d'acquérir des connaissances de très haut niveau, étayées par la pratique et des succès internationaux. Grâce à ma passion pour l'enseignement et à la précision de mon travail, j'essaie d'inspirer mes étudiants à atteindre la perfection et la confiance en eux dans leur profession.`,
 	achievementsTitle: 'Réalisations',
 	conferencesTitle: 'Lors de conférences',
 	signatureAlt: 'Signature de Valeria Vasilyeva',
