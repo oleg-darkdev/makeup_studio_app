@@ -4,21 +4,19 @@
 	import { pricesEn } from '$sharedData';
 
 	let { readyToNextStep } = $props();
-
-	// console.log(pricesEn)
-	// console.log($LL.prices.data.find((p) => p.id === $selectedPrice)?.price)
 </script>
 
 <section class="section_testimonial">
 	<div class="cms_collection-wrapper w-dyn-list">
 		<div role="list" class="cms_list w-dyn-items">
 			<!-- {#if $selectedPrice}
-				<h2>Выбранный тарифный план</h2>
+				<h2>Выбранный тарифный    план</h2>
 				<p class="text-white">
 					{$selectedPrice}
 					{$LL.prices.data.find((p) => p.id === $selectedPrice)?.price}
 				</p>
 			{:else} -->
+
 			<!-- $LL.prices.data -->
 			{#each pricesEn.data as price}
 				<div
