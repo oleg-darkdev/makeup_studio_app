@@ -38,7 +38,7 @@
 
 						<div class="mt-4">
 							<div class="button-group">
-								<a href="#" class="button is-alternate w-inline-block no-underline">
+								<a href="/app" target="_blank" class="button is-alternate w-inline-block no-underline">
 									<div>{$LL.cta.button()}</div>
 								</a>
 							</div>

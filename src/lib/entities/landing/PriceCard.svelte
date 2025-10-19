@@ -28,9 +28,9 @@
 			<a href="#" class="slide-read-more-button read-less-button">Read less</a> -->
 		</div>
 		<div class="button-group is-end">
-			<a href={$LL.prices.buyLink()} target="_blank" class="button is-link w-inline-block">
+			<a href='/app' target="_blank" class="button is-link w-inline-block">
 				<div class="button_icon-wrapper">
-					<div>{$LL.prices.buttonBuy()}</div>
+					<div>{$LL.prices.buttonBuy()}  {price.price} €</div>
 					<div class="icon-embed-xxsmall w-embed">
 						<svg
 							width=" 100%"

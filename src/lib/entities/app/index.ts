@@ -1,6 +1,6 @@
-// import BoardgameCard from './BoardgameCard.svelte';
-// import BoardgameCard from './BoardgameCard.svelte';
-// import BoardgameCard from './BoardgameCard.svelte';
+import ProgramCard from './ProgramCard.svelte';
+import UiLangSwitcherCard from './UiLangSwitcherCard.svelte';
+import PriceCard from './PriceCard.svelte';
 // import BoardgameCard from './BoardgameCard.svelte';
 // import BoardgameCard from './BoardgameCard.svelte';
 // import BoardgameCard from './BoardgameCard.svelte';
@@ -10,4 +10,4 @@
 // import BoardgameCard from './BoardgameCard.svelte';
 // import BoardgameCard from './BoardgameCard.svelte';
 
-export { };
+export { ProgramCard, UiLangSwitcherCard, PriceCard };

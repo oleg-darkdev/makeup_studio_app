@@ -41,7 +41,7 @@
 					</div>
 					<div class="giftcard-col">
 						<div class="button-group is-end mobile-justify-align-start">
-							<a href="/" target="_blank" class="button noise-effect w-inline-block no-underline">
+							<a href="/app" target="_blank" class="button noise-effect w-inline-block no-underline">
 								<!-- Purchase Now -->
 								<div>{$LL.gift.button()}</div>
 							</a>

@@ -4,6 +4,8 @@
 	// import {  } from '$entities'
 
 	import LL from '$i18n/i18n-svelte';
+
+	let { readyToNextStep = true } = $props();
 </script>
 
 <section class="section_hero">
@@ -29,7 +31,7 @@
 							<div class="margin-top margin-medium">
 								<div class="button-group">
 									<a
-										href="/app"
+										href="/"
 										target="_blank"
 										class="button noise-effect w-inline-block no-underline"
 									>

@@ -22,7 +22,7 @@
 				<div class="margin-bottom margin-large">
 					<div class="services_heading-wrap">
 						<div class="button-group">
-							<a href="/" class="button is-link w-inline-block">
+							<a href="/app" target="_blank" class="button is-link w-inline-block">
 								<div
 									class="button_icon-wrapper transform transition duration-300 hover:scale-105 hover:text-rose-300"
 								>

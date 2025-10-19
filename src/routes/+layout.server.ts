@@ -20,10 +20,10 @@ export const load = async ({ params }) => {
 	// event.cookies.set(langParam, newLocale, { path: '/' });
 	// event.url.searchParams.delete(langParam);
 
-	if (!locale) {
-		locale = 'en';
-		throw redirect(302, '/en');
-	}
+	// if (!locale) {
+	// 	locale = 'en';
+	// 	throw redirect(302, '/en');
+	// }
 
 	return { locale };
 };

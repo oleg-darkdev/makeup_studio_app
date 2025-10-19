@@ -12,8 +12,10 @@ const de = {
 			features: ['Lerne in deinem eigenen Tempo'],
 			link: '#self',
 			anchor: 'self',
+			price: '300',
+			priceId: 'price_1SJbXjEdBK6uZ4fP8gNktSSk',
 
-			buyLink: '/'
+			buyLink: '/app'
 		},
 		{
 			id: 2,
@@ -22,11 +24,12 @@ const de = {
 				'Du schaust nicht nur Lektionen an — du hast einen Mentor. Nach jeder Hausaufgabe gibt dir der Kurator detailliertes Feedback und hilft, Fehler zu korrigieren. (begrenzte Plätze)',
 			img: '/images/prices/curator.webp',
 			features: ['Personalisierte Unterstützung', 'Direkter Kontakt mit dem Meister'],
-			price: '600 €',
+			price: '500',
 			link: '#curator',
 			anchor: 'curator',
+			priceId: 'price_1SJbYCEdBK6uZ4fPbvndkMKk',
 
-			buyLink: '/'
+			buyLink: '/app'
 		},
 		{
 			id: 3,
@@ -39,11 +42,12 @@ const de = {
 			shortDesc:
 				'Premium-Version des Kurses. Du lernst in einer kleinen Gruppe von bis zu 10 Personen direkt mit der Autorin des Kurses. Mehr als Unterstützung — exklusiver Zugang zu Wissen und Erfahrung.',
 			img: '/images/prices/valeria.webp',
-			price: '1500 €',
+			price: '1500',
 			link: '#with-valeria',
 			anchor: 'with-valeria',
+			priceId: 'price_1SJbZ5EdBK6uZ4fPo6F0QDZu',
 
-			buyLink: '/'
+			buyLink: '/app'
 		}
 	]
 };

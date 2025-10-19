@@ -1,3 +1,5 @@
+import DB from './DB.js';
+
 // English
 import navigationEn from './navigation/en.ts';
 import programEn from './layout-i18/program/en.ts';
@@ -29,6 +31,8 @@ import ctaRu from './layout-i18/cta/ru.ts';
 import faqRu from './layout-i18/faq/ru.ts';
 import giftRu from './layout-i18/gift/ru.ts';
 import headerRu from './layout-i18/header/ru.ts';
+// app
+import programAppRu from './layout-i18/programApp/ru.ts';
 
 // Spanish
 import navigationEs from './navigation/es.ts';
@@ -100,6 +104,7 @@ import portfolioImgs from './portfolioImgs.ts';
 
 export {
 	portfolioImgs,
+	DB,
 
 	// English
 	headerEn,
@@ -133,6 +138,7 @@ export {
 	heroRu,
 	ctaRu,
 	giftRu,
+	programAppRu,
 	// Spanish
 	navigationEs,
 	headerEs,
