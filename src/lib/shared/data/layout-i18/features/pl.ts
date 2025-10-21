@@ -3,10 +3,11 @@ const pl = {
 	ta: 'dla',
 
 	buttonBook: 'Zarezerwuj dostęp',
-	warning1: 'Kurs na żywo dostępny jest tylko ',
+	warning1: 'Praca z kuratorem jest dostępna tylko',
 	warning2: 'w języku polskim i rosyjskim.',
 	warning3: 'Do samodzielnej nauki kurs dostępny jest w ',
-	warning4: 'rosyjskim, angielskim, polskim, hiszpańskim, francuskim, niemieckim.',
+	warning4:
+		'rosyjskim, angielskim, polskim, hiszpańskim, francuskim, portugalskim, włoskim oraz niemieckim.',
 	targetAudience: [
 		{
 			title: 'Początkujące',

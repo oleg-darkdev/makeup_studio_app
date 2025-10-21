@@ -5,10 +5,10 @@ const fr = {
 	module: 'Module',
 	theory: 'Partie théorique',
 	practice: 'Partie pratique',
-	warning1: 'Le cours en direct est disponible uniquement ',
+	warning1: 'Cours avec un tuteur ou un coach ',
 	warning2: 'en polonais et en russe.',
 	warning3: 'Pour l’auto-apprentissage, le cours est disponible en ',
-	warning4: 'russe, anglais, polonais, espagnol, français et allemand.',
+	warning4: 'russe, anglais, polonais, espagnol, français, portugais, italien et allemand.',
 	courseData: [
 		{
 			title: 'Introduction au cours',

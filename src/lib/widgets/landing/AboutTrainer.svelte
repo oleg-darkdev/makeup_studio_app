@@ -42,8 +42,11 @@
 							</div>
 						</div>
 						<div class="mb-4">
-							<h2 class="heading-style-h3 font-poppins max-w-2xl font-black uppercase">
-								{$LL.coach.titleStart()}<span class="text-color-pink noise-effect"
+							<!-- max-w-2xl -->
+							<h2 class="heading-style-h3 font-poppins  font-black uppercase">
+								{$LL.coach.titleStart()} 
+								
+								<span class="text-color-pink noise-effect"
 									>{$LL.coach.titleCenter()}</span
 								>
 								{$LL.coach.titleEnd()}

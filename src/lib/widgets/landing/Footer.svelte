@@ -18,13 +18,13 @@
 									<div class="footer_details-item">
 										<div class="margin-bottom margin-xsmall">
 											<h3 class="font-poppins text-2xl font-bold uppercase">
-												{$LL.footer.contactDataTitle()}
+												 {$LL.footer.contactDataTitle()}
 											</h3>
 										</div>
 										<div>
 											<a
 												href="tel:+48451143933"
-												class="footer_details-link text-color-pink font-bold">(48) 451-143-933</a
+												class="footer_details-link flex flex-row flex-wrap text-color-pink font-bold">WhatsApp: <span class=''>(+48) 451-143-933</span></a
 											>
 										</div>
 										<div>

@@ -15,7 +15,7 @@
 						<div class="z-index-2 mb-10">
 							<h2 class="uppercase text-color-main-black font-poppins font-black">
 								{$LL.cta.titleStart()} <br />
-								<span class="text-underline-v6">Valeria Vasilyeva {$LL.cta.titleCenter()} </span>
+								<span class="text-underline-v6">{$LL.cta.titleCenter()} </span>
 								<br />
 								{$LL.cta.titleEnd()}
 							</h2>

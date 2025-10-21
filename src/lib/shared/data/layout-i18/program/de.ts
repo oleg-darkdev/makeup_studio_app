@@ -5,10 +5,11 @@ const de = {
 	practice: 'Praktischer Teil',
 	courseName: 'EYE LINER',
 	buttonBuy: 'Zugang kaufen',
-	warning1: 'Der Live-Kurs ist nur verfügbar ',
+	warning1: 'Kurs mit einem Kurator oder Trainer ',
 	warning2: 'auf polnisch und russisch.',
 	warning3: 'Für das Selbststudium ist der Kurs verfügbar auf ',
-	warning4: 'russisch, englisch, polnisch, spanisch, französisch und deutsch.',
+	warning4:
+		'russisch, englisch, polnisch, spanisch, französisch, portugiesisch, italienisch und deutsch.',
 	courseData: [
 		{
 			title: 'Einführung in den Kurs',

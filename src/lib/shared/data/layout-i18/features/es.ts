@@ -3,10 +3,10 @@ const es = {
 	ta: 'para',
 
 	buttonBook: 'Reservar acceso',
-	warning1: 'El curso en vivo está disponible solo ',
+	warning1: 'El trabajo con un tutor está disponible solo',
 	warning2: 'en polaco y ruso.',
 	warning3: 'Para el autoestudio, el curso está disponible en ',
-	warning4: 'ruso, inglés, polaco, español, francés y alemán.',
+	warning4: 'ruso, inglés, polaco, español, francés, portugués, italiano y alemán.',
 	targetAudience: [
 		{
 			title: 'Principiantes',

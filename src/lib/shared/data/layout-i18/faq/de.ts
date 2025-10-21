@@ -14,8 +14,8 @@ const de = {
 		{
 			q: 'In welchen Sprachen wird der Kurs angeboten?',
 			a: [
-				'Der Live-Kurs (im Livestream) ist auf Russisch und Polnisch verfügbar.',
-				'Das Selbststudium ist auf Russisch, Englisch, Polnisch, Spanisch, Französisch und Deutsch verfügbar.'
+				'Arbeit mit einem Kurator und Trainer ist auf Russisch und Polnisch verfügbar.',
+				'Selbststudium ist auf Russisch, Englisch, Polnisch, Spanisch, Französisch, Portugiesisch, Italienisch und Deutsch verfügbar.'
 			]
 		},
 		{
@@ -27,13 +27,13 @@ const de = {
 		{
 			q: 'Kann ich den Kurs komplett selbstständig absolvieren?',
 			a: [
-				'Ja, der Kurs ist im Selbstlernformat verfügbar, mit Materialien in mehreren Sprachen (Russisch, Englisch, Polnisch, Spanisch, Französisch, Deutsch).'
+				'Ja, der Kurs ist im Selbstlernformat verfügbar, und die Materialien werden in mehreren Sprachen bereitgestellt (Russisch, Englisch, Polnisch, Spanisch, Französisch, Deutsch, Portugiesisch, Italienisch).'
 			]
 		},
 		{
 			q: 'Wie kann ich den Kursveranstalter oder das Team kontaktieren?',
 			a: [
-				'Telefon: (48) 451-143-933',
+				'WhatsApp: (48) 451-143-933',
 				'E-Mail: vasilyeva.pmu@gmail.com',
 				'Adresse: Jana Heweliusza 11, 10. Etage, Büro 1007, 80-890 Gdańsk'
 			]

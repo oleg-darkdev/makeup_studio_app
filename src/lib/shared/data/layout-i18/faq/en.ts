@@ -14,8 +14,8 @@ const en = {
 		{
 			q: 'In what languages is the course available?',
 			a: [
-				'The live course (broadcasted online) is available in Russian and Polish.',
-				'The self-study version is available in Russian, English, Polish, Spanish, French, and German.'
+				'Work with a curator and coach is available in Russian and Polish.',
+				'Self-study is available in Russian, English, Polish, Spanish, French, Portuguese, Italian, and German.'
 			]
 		},
 		{
@@ -27,13 +27,13 @@ const en = {
 		{
 			q: 'Can I take the course completely independently?',
 			a: [
-				'Yes, the course is available in a self-study format, with materials provided in multiple languages (Russian, English, Polish, Spanish, French, German).'
+				'Yes, the course is available in a self-study format, and materials are provided in several languages (Russian, English, Polish, Spanish, French, German, Portuguese, Italian).'
 			]
 		},
 		{
 			q: 'How can I contact the course organizer or team?',
 			a: [
-				'Phone: (48) 451-143-933',
+				'WhatsApp: (48) 451-143-933',
 				'E-mail: vasilyeva.pmu@gmail.com',
 				'Office address: Jana Heweliusza 11, 10th floor, office 1007, 80-890 Gdańsk'
 			]

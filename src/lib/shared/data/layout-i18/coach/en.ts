@@ -1,11 +1,10 @@
 const en = {
 	preheading: 'Online course - author',
 	author: 'Valeria Vasilyeva',
-	titleStart: 'The Impact of',
-	titleCenter: 'Artistic',
-	titleEnd: 'Transformation',
-	description: 
-`Hello, I am Valeria Vasilyeva — a recognized world champion in permanent makeup, multiple winner of international championships, and respected trainer. My experience and unique teaching methods ensure that course participants receive the highest level of knowledge, backed by practice and international success. Thanks to my passion for teaching and precision in my work, I strive to inspire students to achieve excellence and confidence in their profession.`,
+	titleStart: 'A little',
+	titleCenter: 'about the author',
+	titleEnd: 'of the course',
+	description: `Hello, I am Valeria Vasilyeva — a recognized world champion in permanent makeup, multiple winner of international championships, and respected trainer. My experience and unique teaching methods ensure that course participants receive the highest level of knowledge, backed by practice and international success. Thanks to my passion for teaching and precision in my work, I strive to inspire students to achieve excellence and confidence in their profession.`,
 	achievementsTitle: 'Achievements',
 	conferencesTitle: 'At conferences',
 	signatureAlt: "Valeria Vasilyeva's signature",

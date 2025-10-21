@@ -5,10 +5,10 @@ const en = {
 	module: 'Module',
 	theory: 'Theory part',
 	practice: 'Practical part',
-	warning1: 'The live course is available only ',
+	warning1: 'Course with a curator or coach ',
 	warning2: 'in polish and russian.',
 	warning3: 'For self-study, the course is available in ',
-	warning4: 'russian, english, polish, spanish, french, and german.',
+	warning4: 'russian, english, polish, spanish, french, portuguese, italian and german.',
 	courseData: [
 		{
 			title: 'Introduction to the course.',

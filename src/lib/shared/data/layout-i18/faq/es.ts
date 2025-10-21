@@ -14,8 +14,8 @@ const es = {
 		{
 			q: '¿En qué idiomas se imparte el curso?',
 			a: [
-				'El curso en vivo (transmitido en directo) está disponible en ruso y polaco.',
-				'La versión de autoaprendizaje está disponible en ruso, inglés, polaco, español, francés y alemán.'
+				'El trabajo con tutor y entrenador está disponible en ruso y polaco.',
+				'El autoaprendizaje está disponible en ruso, inglés, polaco, español, francés, portugués, italiano y alemán.'
 			]
 		},
 		{
@@ -27,19 +27,18 @@ const es = {
 		{
 			q: '¿Puedo estudiar el curso de forma completamente independiente?',
 			a: [
-				'Sí, el curso está disponible en formato de autoaprendizaje, con materiales en varios idiomas (ruso, inglés, polaco, español, francés, alemán).'
+				'Sí, el curso está disponible en formato de autoaprendizaje y los materiales se ofrecen en varios idiomas (ruso, inglés, polaco, español, francés, alemán, portugués, italiano).'
 			]
 		},
 		{
 			q: '¿Cómo puedo contactar con el organizador o el equipo del curso?',
 			a: [
-				'Teléfono: (48) 451-143-933',
+				'WhatsApp: (48) 451-143-933',
 				'Correo electrónico: vasilyeva.pmu@gmail.com',
 				'Dirección: Jana Heweliusza 11, piso 10, oficina 1007, 80-890 Gdańsk'
 			]
 		}
-	],
-
+	]
 };
 
 export default es;

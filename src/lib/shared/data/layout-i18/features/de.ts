@@ -2,10 +2,11 @@ const de = {
 	title: 'dieser Kurs ',
 	ta: 'ist',
 	buttonBook: 'Zugang buchen',
-	warning1: 'Der Live-Kurs ist nur verfügbar ',
+	warning1: 'Die Arbeit mit einem Kurator ist nur verfügbar',
 	warning2: 'auf Polnisch und Russisch.',
 	warning3: 'Für das Selbststudium ist der Kurs verfügbar auf ',
-	warning4: 'russisch, englisch, polnisch, spanisch, französisch und deutsch.',
+	warning4:
+		'russisch, englisch, polnisch, spanisch, französisch, portugiesisch, italienisch und deutsch.',
 	targetAudience: [
 		{
 			title: 'Anfängerinnen',

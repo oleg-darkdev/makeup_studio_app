@@ -6,10 +6,11 @@ const pl = {
 	practice: 'Praktyczna część',
 
 	buttonBuy: 'Zakup dostępu',
-	warning1: 'Kurs na żywo dostępny jest tylko ',
+	warning1: 'Kurs z kuratorem lub trenerem ',
 	warning2: 'w języku polskim i rosyjskim.',
 	warning3: 'Do samodzielnej nauki kurs dostępny jest w ',
-	warning4: 'rosyjskim, angielskim, polskim, hiszpańskim, francuskim, niemieckim.',
+	warning4:
+		'rosyjskim, angielskim, polskim, hiszpańskim, francuskim, portugalskim, włoskim oraz niemieckim.',
 	courseData: [
 		{
 			title: 'Wprowadzenie do kursu.',

@@ -1,10 +1,11 @@
 const pl = {
 	preheading: 'Kurs online - autorka',
 	author: 'Valeria Vasilyeva',
-	titleStart: 'Wpływ',
-	titleCenter: 'transformacji',
-	titleEnd: 'artystycznej',
-	description: `Cześć, jestem Valeria Vasilyeva – uznana mistrzyni świata w dziedzinie makijażu permanentnego, wielokrotna zwyciężczyni międzynarodowych mistrzostw i szanowana trenerka. Moje doświadczenie i unikalne metody nauczania gwarantują, że uczestnicy kursu zdobędą wiedzę na najwyższym poziomie, popartą praktyką i międzynarodowymi sukcesami. Dzięki mojej pasji do nauczania i precyzji w pracy staram się inspirować studentów do osiągania doskonałości i pewności siebie w zawodzie.`,	achievementsTitle: 'Osiągnięcia',
+	titleStart: 'Kilka słów',
+	titleCenter: 'o autorze',
+	titleEnd: 'kursu',
+	description: `Cześć, jestem Valeria Vasilyeva – uznana mistrzyni świata w dziedzinie makijażu permanentnego, wielokrotna zwyciężczyni międzynarodowych mistrzostw i szanowana trenerka. Moje doświadczenie i unikalne metody nauczania gwarantują, że uczestnicy kursu zdobędą wiedzę na najwyższym poziomie, popartą praktyką i międzynarodowymi sukcesami. Dzięki mojej pasji do nauczania i precyzji w pracy staram się inspirować studentów do osiągania doskonałości i pewności siebie w zawodzie.`,
+	achievementsTitle: 'Osiągnięcia',
 	conferencesTitle: 'Na konferencjach',
 	signatureAlt: 'Podpis Valerii Vasilyevej',
 	achievements: {

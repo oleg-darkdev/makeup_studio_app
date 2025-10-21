@@ -3,10 +3,10 @@ const fr = {
 	ta: 'pour',
 
 	buttonBook: 'Réserver l’accès',
-	warning1: 'Le cours en direct est disponible uniquement ',
+	warning1: 'Le travail avec un tuteur est disponible uniquement',
 	warning2: 'en polonais et en russe.',
 	warning3: 'Pour l’auto-apprentissage, le cours est disponible en ',
-	warning4: 'russe, anglais, polonais, espagnol, français et allemand.',
+	warning4: 'russe, anglais, polonais, espagnol, français, portugais, italien et allemand.',
 	targetAudience: [
 		{
 			title: 'Débutantes',

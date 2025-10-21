@@ -1,9 +1,10 @@
 const de = {
 	preheading: 'Kurs online - Autorin',
 	author: 'Valeria Vasilyeva',
-	titleStart: 'Die Wirkung',
-	titleCenter: 'künstlerischer',
-	titleEnd: 'Transformation',
+	titleStart: 'Ein wenig',
+	titleCenter: 'über den Autor',
+	titleEnd: 'des Kurses',
+
 	description: `Hallo, ich bin Valeria Vasilyeva – anerkannte Weltmeisterin im Permanent Make-up, mehrfache Gewinnerin internationaler Meisterschaften und angesehene Trainerin. Meine Erfahrung und meine einzigartigen Lehrmethoden garantieren, dass die Kursteilnehmer Wissen auf höchstem Niveau erhalten, das durch Praxis und internationale Erfolge untermauert ist. Dank meiner Leidenschaft für das Unterrichten und meiner Präzision in der Arbeit versuche ich, meine Studenten zu inspirieren, Perfektion und Selbstvertrauen in ihrem Beruf zu erreichen.`,
 	achievementsTitle: 'Erfolge',
 	conferencesTitle: 'Auf Konferenzen',

@@ -14,8 +14,8 @@ const pl = {
 		{
 			q: 'W jakich językach prowadzony jest kurs?',
 			a: [
-				'Kurs na żywo (na żywo online) dostępny jest w języku rosyjskim i polskim.',
-				'Samodzielna nauka dostępna jest w językach: rosyjskim, angielskim, polskim, hiszpańskim, francuskim i niemieckim.'
+				'Praca z kuratorem i trenerem jest dostępna w języku rosyjskim i polskim.',
+				'Nauka samodzielna jest dostępna w językach: rosyjskim, angielskim, polskim, hiszpańskim, francuskim, portugalskim, włoskim i niemieckim.'
 			]
 		},
 		{
@@ -27,13 +27,13 @@ const pl = {
 		{
 			q: 'Czy mogę uczyć się całkowicie samodzielnie?',
 			a: [
-				'Tak, kurs dostępny jest w formacie samodzielnej nauki, a materiały dostępne są w kilku językach (rosyjski, angielski, polski, hiszpański, francuski, niemiecki).'
+				'Tak, kurs jest dostępny w formie samodzielnej nauki, a materiały są udostępniane w kilku językach (rosyjski, angielski, polski, hiszpański, francuski, niemiecki, portugalski, włoski).'
 			]
 		},
 		{
 			q: 'Jak mogę skontaktować się z organizatorem / zespołem kursu?',
 			a: [
-				'Telefon: (48) 451-143-933',
+				'WhatsApp: (48) 451-143-933',
 				'E-mail: vasilyeva.pmu@gmail.com',
 				'Adres: Jana Heweliusza 11, piętro 10, biuro 1007, 80-890 Gdańsk'
 			]
