@@ -42,7 +42,7 @@ import headerRu from './layout-i18/header/ru.ts';
 import programAppRu from './app-i18/program/ru.ts';
 import pricesAppRu from './app-i18/selectPrice/ru.ts';
 import checkoutAppRu from './app-i18/checkout/ru.ts';
-import cancelPaymentAppRu from './app-i18/checkout/ru.ts';
+import cancelPaymentAppRu from './app-i18/cancelPayment/ru.ts';
 // import checkoutAppEn from './app-i18/checkout/en.ts';
 // import checkoutAppEn from './app-i18/checkout/en.ts';
 // import checkoutAppEn from './app-i18/checkout/en.ts';

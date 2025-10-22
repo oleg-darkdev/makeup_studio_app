@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { fade } from 'svelte/transition';
-	import { UiLangSwitcherCard } from '$entitiesApp';
-	import { LessonsList, Prices, Welcome, Checkout } from '$widgetsApp';
-	import { uiAppLang } from '$sharedStores';
+	import { page } from '$app/stores';
 </script>
 
-<h2>good</h2>
+<svelte:head>
+	<title>EYE LINER | {$page.data.locale}</title>
+	<meta name="description" content="" />
+</svelte:head>

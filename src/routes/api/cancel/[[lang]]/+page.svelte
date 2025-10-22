@@ -1,7 +1,14 @@
 <script lang="ts">
+	import { page } from '$app/stores';
+
 	import { fade } from 'svelte/transition';
 	import LL from '$i18n/i18n-svelte';
 </script>
+
+<svelte:head>
+	<title>EYE LINER | {$page.data.locale}</title>
+	<meta name="description" content="" />
+</svelte:head>
 
 <section class="section_cta">
 	<div class="padding-global">
