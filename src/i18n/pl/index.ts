@@ -18,7 +18,8 @@ import {
 	headerPl,
 	programAppPl,
 	pricesAppPl,
-	checkoutAppPl
+	checkoutAppPl,
+	cancelPaymentPl
 } from '../../lib/shared/data';
 
 const pl = {
@@ -39,7 +40,8 @@ const pl = {
 	app: {
 		program: programAppPl,
 		prices: pricesAppPl,
-		checkout: checkoutAppPl
+		checkout: checkoutAppPl,
+		cancelPayment: cancelPaymentPl
 	}
 } satisfies BaseTranslation;
 

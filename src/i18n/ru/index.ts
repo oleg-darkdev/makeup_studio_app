@@ -16,7 +16,8 @@ import {
 	headerRu,
 	pricesAppRu,
 	checkoutAppRu,
-	programAppRu
+	programAppRu,
+	cancelPaymentAppRu
 } from '../../lib/shared/data';
 
 const ru = {
@@ -37,7 +38,8 @@ const ru = {
 	app: {
 		program: programAppRu,
 		prices: pricesAppRu,
-		checkout: checkoutAppRu
+		checkout: checkoutAppRu,
+		cancelPayment: cancelPaymentAppRu
 	}
 } satisfies BaseTranslation;
 

@@ -16,7 +16,8 @@ import {
 	headerDe,
 	programAppDe,
 	pricesAppDe,
-	checkoutAppDe
+	checkoutAppDe,
+	cancelPaymentDe
 } from '../../lib/shared/data';
 
 const de = {
@@ -37,7 +38,8 @@ const de = {
 	app: {
 		program: programAppDe,
 		prices: pricesAppDe,
-		checkout: checkoutAppDe
+		checkout: checkoutAppDe,
+		cancelPayment: cancelPaymentDe
 	}
 } satisfies BaseTranslation;
 
