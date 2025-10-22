@@ -3,6 +3,8 @@
 	import { UiLangSwitcherCard } from '$entitiesApp';
 	import { LessonsList, Prices, Welcome, Checkout } from '$widgetsApp';
 	import { uiAppLang, step } from '$sharedStores';
+	import LL from '$i18n/i18n-svelte';
+
 
 	// let step = $state(0);
 	let readyToNextStep = $state(false);
@@ -12,10 +14,18 @@
 		// { title: 'Lang ui', screen: UiLangSwitcherCard },
 		// { title: 'Welcome', screen: Welcome },
 		// { title: 'Lang Course', screen: UiLangSwitcherCard },
-		{ title: 'выбор тарифного плана', screen: Prices },
-		{ title: 'информация о заказе', screen: Checkout },
+		{ title: $LL.app.prices.title(), screen: Prices },
+		{ title: $LL.app.checkout.title(), screen: Checkout },
 		// { title: 'Lorem ipsum #2', screen: LessonsList }
 	];
+
+	// {$LL.app.prices.title()}
+
+	// app: {
+	// 	program: programAppEn,
+	// 	prices: pricesAppEn,
+	// 	checkout: checkoutAppEn
+	// }
 
 	$effect(() => {
 		// console.log(readyToNextStep);

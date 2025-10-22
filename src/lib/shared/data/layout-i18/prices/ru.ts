@@ -15,6 +15,7 @@ const ru = {
 			price: '300',
 			link: '#self',
 			anchor: 'self',
+			lang: 'ru',
 			buyLink: '/app'
 		},
 		{
@@ -30,6 +31,7 @@ const ru = {
 			anchor: 'curator',
 			priceId: 'price_1SJbYCEdBK6uZ4fPbvndkMKk',
 
+			lang: 'ru',
 			buyLink: '/app'
 		},
 		{
@@ -49,6 +51,7 @@ const ru = {
 			anchor: 'with-valeria',
 			priceId: 'price_1SJbZ5EdBK6uZ4fPo6F0QDZu',
 
+			lang: 'ru',
 			buyLink: '/app'
 		}
 	]

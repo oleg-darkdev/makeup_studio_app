@@ -15,6 +15,14 @@ import coachEn from './layout-i18/coach/en.ts';
 import ctaEn from './layout-i18/cta/en.ts';
 import faqEn from './layout-i18/faq/en.ts';
 import headerEn from './layout-i18/header/en.ts';
+import programAppEn from './app-i18/program/en.ts';
+import pricesAppEn from './app-i18/selectPrice/en.ts';
+import checkoutAppEn from './app-i18/checkout/en.ts';
+// import checkoutAppEn from './app-i18/checkout/en.ts';
+// import checkoutAppEn from './app-i18/checkout/en.ts';
+// import checkoutAppEn from './app-i18/checkout/en.ts';
+// import checkoutAppEn from './app-i18/checkout/en.ts';
+// import checkoutAppEn from './app-i18/checkout/en.ts';
 
 // russian
 import navigationRu from './navigation/ru.ts';
@@ -31,8 +39,14 @@ import ctaRu from './layout-i18/cta/ru.ts';
 import faqRu from './layout-i18/faq/ru.ts';
 import giftRu from './layout-i18/gift/ru.ts';
 import headerRu from './layout-i18/header/ru.ts';
-// app
-import programAppRu from './layout-i18/programApp/ru.ts';
+import programAppRu from './app-i18/program/ru.ts';
+import pricesAppRu from './app-i18/selectPrice/ru.ts';
+import checkoutAppRu from './app-i18/checkout/ru.ts';
+// import checkoutAppEn from './app-i18/checkout/en.ts';
+// import checkoutAppEn from './app-i18/checkout/en.ts';
+// import checkoutAppEn from './app-i18/checkout/en.ts';
+// import checkoutAppEn from './app-i18/checkout/en.ts';
+// import checkoutAppEn from './app-i18/checkout/en.ts';
 
 // Spanish
 import navigationEs from './navigation/es.ts';
@@ -49,7 +63,14 @@ import ctaEs from './layout-i18/cta/es.ts';
 import faqEs from './layout-i18/faq/es.ts';
 import giftEs from './layout-i18/gift/es.ts';
 import headerEs from './layout-i18/header/es.ts';
-
+import programAppEs from './app-i18/program/es.ts';
+import pricesAppEs from './app-i18/selectPrice/es.ts';
+import checkoutAppEs from './app-i18/checkout/es.ts';
+// import checkoutAppEn from './app-i18/checkout/en.ts';
+// import checkoutAppEn from './app-i18/checkout/en.ts';
+// import checkoutAppEn from './app-i18/checkout/en.ts';
+// import checkoutAppEn from './app-i18/checkout/en.ts';
+// import checkoutAppEn from './app-i18/checkout/en.ts';
 // French
 import navigationFr from './navigation/fr.ts';
 import programFr from './layout-i18/program/fr.ts';
@@ -65,6 +86,14 @@ import ctaFr from './layout-i18/cta/fr.ts';
 import faqFr from './layout-i18/faq/fr.ts';
 import giftFr from './layout-i18/gift/fr.ts';
 import headerFr from './layout-i18/header/fr.ts';
+import programAppFr from './app-i18/program/fr.ts';
+import pricesAppFr from './app-i18/selectPrice/fr.ts';
+import checkoutAppFr from './app-i18/checkout/fr.ts';
+// import checkoutAppEn from './app-i18/checkout/en.ts';
+// import checkoutAppEn from './app-i18/checkout/en.ts';
+// import checkoutAppEn from './app-i18/checkout/en.ts';
+// import checkoutAppEn from './app-i18/checkout/en.ts';
+// import checkoutAppEn from './app-i18/checkout/en.ts';
 
 // German
 import navigationDe from './navigation/de.ts';
@@ -81,7 +110,14 @@ import ctaDe from './layout-i18/cta/de.ts';
 import faqDe from './layout-i18/faq/de.ts';
 import giftDe from './layout-i18/gift/de.ts';
 import headerDe from './layout-i18/header/de.ts';
-
+import programAppDe from './app-i18/program/de.ts';
+import pricesAppDe from './app-i18/selectPrice/de.ts';
+import checkoutAppDe from './app-i18/checkout/de.ts';
+// import checkoutAppEn from './app-i18/checkout/en.ts';
+// import checkoutAppEn from './app-i18/checkout/en.ts';
+// import checkoutAppEn from './app-i18/checkout/en.ts';
+// import checkoutAppEn from './app-i18/checkout/en.ts';
+// import checkoutAppEn from './app-i18/checkout/en.ts';
 // polish
 import navigationPl from './navigation/pl.ts';
 import programPl from './layout-i18/program/pl.ts';
@@ -93,13 +129,19 @@ import portfolioPl from './layout-i18/portfolio/pl.ts';
 import footerPl from './layout-i18/footer/pl.ts';
 import heroPl from './layout-i18/hero/pl.ts';
 import coachPl from './layout-i18/coach/pl.ts';
-// import programPl from './program/pl.ts';
 import ctaPl from './layout-i18/cta/pl.ts';
 import faqPl from './layout-i18/faq/pl.ts';
 import giftPl from './layout-i18/gift/pl.ts';
 import headerPl from './layout-i18/header/pl.ts';
+import programAppPl from './app-i18/program/pl.ts';
+import pricesAppPl from './app-i18/selectPrice/pl.ts';
+import checkoutAppPl from './app-i18/checkout/pl.ts';
+// import checkoutAppEn from './app-i18/checkout/en.ts';
+// import checkoutAppEn from './app-i18/checkout/en.ts';
+// import checkoutAppEn from './app-i18/checkout/en.ts';
+// import checkoutAppEn from './app-i18/checkout/en.ts';
+// import checkoutAppEn from './app-i18/checkout/en.ts';
 
-//
 import portfolioImgs from './portfolioImgs.ts';
 
 export {
@@ -122,6 +164,10 @@ export {
 	ctaEn,
 	pricesEn,
 	giftEn,
+	programAppEn,
+	pricesAppEn,
+	checkoutAppEn,
+
 	// russian
 	navigationRu,
 	pricesRu,
@@ -138,7 +184,10 @@ export {
 	heroRu,
 	ctaRu,
 	giftRu,
+	pricesAppRu,
+	checkoutAppRu,
 	programAppRu,
+
 	// Spanish
 	navigationEs,
 	headerEs,
@@ -155,6 +204,10 @@ export {
 	ctaEs,
 	faqEs,
 	giftEs,
+	programAppEs,
+	checkoutAppEs,
+	pricesAppEs,
+
 	// French
 	navigationFr,
 	headerFr,
@@ -171,6 +224,10 @@ export {
 	ctaFr,
 	faqFr,
 	giftFr,
+	programAppFr,
+	pricesAppFr,
+	checkoutAppFr,
+
 	// German
 	navigationDe,
 	headerDe,
@@ -187,6 +244,10 @@ export {
 	coachDe,
 	ctaDe,
 	giftDe,
+	programAppDe,
+	pricesAppDe,
+	checkoutAppDe,
+
 	// polish
 	headerPl,
 	navigationPl,
@@ -201,5 +262,8 @@ export {
 	heroPl,
 	ctaPl,
 	featuresPl,
-	giftPl
+	giftPl,
+	programAppPl,
+	pricesAppPl,
+	checkoutAppPl
 };

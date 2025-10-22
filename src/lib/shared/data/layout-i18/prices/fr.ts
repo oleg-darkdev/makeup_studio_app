@@ -15,7 +15,7 @@ const fr = {
 			anchor: 'self',
 			priceId: 'price_1SJbXjEdBK6uZ4fP8gNktSSk',
 
-			buyLink: '/app'
+			lang: 'fr', buyLink: '/app'
 		},
 		{
 			id: 2,
@@ -29,7 +29,7 @@ const fr = {
 			anchor: 'curator',
 			priceId: 'price_1SJbYCEdBK6uZ4fPbvndkMKk',
 
-			buyLink: '/app'
+			lang: 'fr', buyLink: '/app'
 		},
 		{
 			id: 3,
@@ -47,7 +47,7 @@ const fr = {
 			anchor: 'with-valeria',
 			priceId: 'price_1SJbZ5EdBK6uZ4fPo6F0QDZu',
 
-			buyLink: '/app'
+			lang: 'fr', buyLink: '/app'
 		}
 	]
 };

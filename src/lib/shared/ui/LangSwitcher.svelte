@@ -33,7 +33,7 @@
 
 <div
 	on:click={() => (showLocalesList = !showLocalesList)}
-	class="lg:absolute lg:left-20 mx-auto lg:ml-20 flex lg:w-64 flex-row flex-wrap  gap-2"
+	class="lg:absolute lg:left-40 mx-auto lg:ml-20 flex lg:w-64 flex-row lg:justify-start justify-center flex-wrap  gap-2"
 >
 	{#if !showLocalesList}
 		<!-- <div> -->

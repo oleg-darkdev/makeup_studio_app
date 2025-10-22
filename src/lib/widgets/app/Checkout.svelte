@@ -23,29 +23,36 @@
 	}
 
 	let { readyToNextStep } = $props();
+	import LL from '$i18n/i18n-svelte';
 </script>
 
-<!-- <h1 class="mb-4 text-2xl font-bold">Buy the course</h1> -->
 <div class="grid gap-4">
 	<div class="cms_list-content">
 		{#if $selectedPrice}
 			<div class="cms_list-content-wrap">
 				<div class="margin-bottom margin-small">
-					<h4 class=" text-white">Выбранный тип курса: {selectedPlan.title}</h4>
-					<h4 class=" border-2px mb-4 border-b text-white">Язык курса: {selectedPlan.title}</h4>
+					<h4 class=" text-white">
+						{$LL.app.checkout.selectedType()}:
+						<span class="text-pink-400">{selectedPlan.title}</span>
+					</h4>
+					<h4 class="mb-2 text-white">
+						{$LL.app.checkout.language()}: <span class="text-pink-400">{selectedPlan.lang}</span>
+					</h4>
 
-					<h4 class=" text-white">К оплате: {selectedPlan.price} €</h4>
+					<div class="mb-6 mt-4 h-[2px] w-full rounded-full bg-pink-400"></div>
+
+					<h4 class=" text-white">
+						{$LL.app.checkout.toPay()}: <span class="text-pink-400"> {selectedPlan.price} €</span>
+					</h4>
 				</div>
 
-				<span class="text-sm text-white"
-					>Внимание, для оплаты вы будете перенаправлены на сервис stripe</span
-				>
+				<span class="text-sm text-pink-400">{$LL.app.checkout.paymentNotice()}</span>
 				<div class="button-group is-end mobile-justify-align-start">
 					<button
 						on:click={() => handleCheckout($selectedPrice)}
 						class="button noise-effect w-inline-block no-underline"
 					>
-						Перейти к оплате
+						{$LL.app.checkout.payButton()}
 					</button>
 				</div>
 

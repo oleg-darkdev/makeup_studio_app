@@ -13,7 +13,10 @@ import {
 	heroFr,
 	faqFr,
 	giftFr,
-	headerFr
+	headerFr,
+	programAppFr,
+	pricesAppFr,
+	checkoutAppFr
 } from '../../lib/shared/data';
 
 const fr = {
@@ -30,7 +33,12 @@ const fr = {
 	cta: ctaFr,
 	faq: faqFr,
 	gift: giftFr,
-			header: headerFr
+	header: headerFr,
+	app: {
+		program: programAppFr,
+		prices: pricesAppFr,
+		checkout: checkoutAppFr
+	}
 } satisfies BaseTranslation;
 
 export default fr;

@@ -15,6 +15,7 @@ const de = {
 			price: '300',
 			priceId: 'price_1SJbXjEdBK6uZ4fP8gNktSSk',
 
+			lang: 'de',
 			buyLink: '/app'
 		},
 		{
@@ -29,6 +30,7 @@ const de = {
 			anchor: 'curator',
 			priceId: 'price_1SJbYCEdBK6uZ4fPbvndkMKk',
 
+			lang: 'de',
 			buyLink: '/app'
 		},
 		{
@@ -47,6 +49,7 @@ const de = {
 			anchor: 'with-valeria',
 			priceId: 'price_1SJbZ5EdBK6uZ4fPo6F0QDZu',
 
+			lang: 'de',
 			buyLink: '/app'
 		}
 	]

@@ -15,7 +15,10 @@ import {
 	heroPl,
 	faqPl,
 	giftPl,
-	headerPl
+	headerPl,
+	programAppPl,
+	pricesAppPl,
+	checkoutAppPl
 } from '../../lib/shared/data';
 
 const pl = {
@@ -32,7 +35,12 @@ const pl = {
 	cta: ctaPl,
 	faq: faqPl,
 	gift: giftPl,
-			header: headerPl
+	header: headerPl,
+	app: {
+		program: programAppPl,
+		prices: pricesAppPl,
+		checkout: checkoutAppPl
+	}
 } satisfies BaseTranslation;
 
 export default pl;
