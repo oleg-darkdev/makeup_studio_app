@@ -2,13 +2,13 @@
 	// import {  } from '$shared';
 	// import {  } from '$widgets';
 	// import {  } from '$entities'
-	import { selectedPrice } from '$sharedStores';
+	import { selectedPrice, step } from '$sharedStores';
 	import { findPriceById } from '$sharedUtils';
+
 	import { pricesEn } from '$sharedData';
+	import LL from '$i18n/i18n-svelte';
 
 	const selectedPlan = findPriceById(pricesEn.data, $selectedPrice);
-
-	// console.log(selectedPlan);
 
 	async function handleCheckout(priceId) {
 		const res = await fetch('/api/checkout', {
@@ -23,7 +23,6 @@
 	}
 
 	let { readyToNextStep } = $props();
-	import LL from '$i18n/i18n-svelte';
 </script>
 
 <div class="grid gap-4">
@@ -47,7 +46,30 @@
 				</div>
 
 				<span class="text-sm text-pink-400">{$LL.app.checkout.paymentNotice()}</span>
-				<div class="button-group is-end mobile-justify-align-start">
+
+				<div class="button-group is-end mobile-justify-align-start mt-10">
+					<div class="button_image-btn">
+						<button
+							on:click={() => ($step = $step - 1)}
+							class="splide_carousel-service-icon w-embed"
+						>
+							<svg
+								width="100%"
+								height="100%"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M15 18L9 12L15 6"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+					</div>
 					<button
 						on:click={() => handleCheckout($selectedPrice)}
 						class="button noise-effect w-inline-block no-underline"
