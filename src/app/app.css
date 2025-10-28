@@ -6,7 +6,7 @@
 
 .app_wrap {
 	/* background-color: var(--pink); */
-	color: var(--main-black);
+	/* color: var(--main-black); */
 	border-radius: 16px;
 	border: 2px var(--pink) solid;
 	flex-direction: column;
@@ -14,7 +14,7 @@
 	align-items: center;
 	min-height: 25rem;
 	padding: 3rem;
-	position: relative;
+	/* position: relative; */
 }
 
 html {

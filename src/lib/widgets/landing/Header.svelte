@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { LangSwitcher } from '$sharedUi';
-	
+
 	// import {  } from '$entities'
 
 	import { fade } from 'svelte/transition';
@@ -14,11 +14,16 @@
 	<div class="container-large">
 		<div class="navbar_container">
 			<div class="wrapper flex w-full flex-row content-center items-center justify-between">
-				<a href="/" aria-current="page" class="navbar_logo-link">
-					<img src="images/logo.PNG" loading="lazy" alt="" class="header_logo" />
-				</a>
+				<div class="">
+					<a href="/" aria-current="page" class="navbar_logo-link">
+						<img src="images/logo.PNG" loading="lazy" alt="" class="header_logo" />
+					</a>
+				</div>
 
-				<div class="navbar1_menu-button">
+				<div class="navbar1_menu-button flex flex-row justify-center content-center items-center">
+					<div class="mx-auto my-4 mr-6 ">
+						<LangSwitcher />
+					</div>
 					<div class="menu-icon1">
 						{#if !menuIsOpen}
 							<img
@@ -112,10 +117,6 @@
 
 					<div class="text-style-signature noise-effect mx-auto mt-12">
 						<img src="/images/signature_1.png" class="h-6 w-64" alt="" />
-					</div>
-
-					<div class="my-4 mx-auto">
-						<LangSwitcher />
 					</div>
 
 					<!-- <div class="navbar_link-wrap">
@@ -273,7 +274,8 @@
 			/* font-size: 1.125rem; */
 		}
 
-		.navbar_menu_desc, .locales_desc {
+		.navbar_menu_desc,
+		.locales_desc {
 			display: none;
 		}
 

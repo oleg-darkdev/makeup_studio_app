@@ -1,7 +1,8 @@
 <script>
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
-	import { onMount } from 'svelte';
+
+	import LL from '$i18n/i18n-svelte';
 
 	let userId = '';
 	let userData = null;
@@ -69,26 +70,34 @@
 	}
 </script>
 
-<main class="main-wrapper py-6 lg:py-20">
-	<div class="wrapper mx-auto max-w-2xl rounded-2xl border-2 border-[--pink] py-40 shadow-md">
+<main class="main-wrapper py-6 lg:py-16">
+	<div class="wrapper mx-auto max-w-2xl rounded-2xl border-2 border-[--pink] py-20 shadow-md">
 		<div class="mx-auto mx-auto flex w-full flex-col items-center justify-center px-6">
-			<h1 class="mb-4 text-2xl font-bold text-black">Создать аккаунт</h1>
-			<p class="mb-6 text-sm text-gray-600">
-				Создание аккаунта происходит без привязки e-mail. Никому не высылайте свой ID.
+			<div class="text-style-signature noise-effect mb-6">
+				<img src="/images/signature_1.png" class="h-6 w-full" alt="Logotype" />
+			</div>
+
+			<h2 class="heading-style-h2 font-poppins mb-10 text-center font-black uppercase">
+				{$LL.app.auth.title()}
+				<span class="text-underline-v1 noise-effect"> «EYE LINER» </span>
+			</h2>
+			<p class="mb-6 max-w-md text-center text-sm text-gray-600">
+				{$LL.app.auth.description()}
 			</p>
 
 			<div class="mx-auto flex w-full max-w-sm flex-col items-center justify-center">
 				<button
-					class="w-full rounded-lg bg-indigo-600 py-3 text-white hover:bg-indigo-700"
+					class="w-full rounded-xl bg-rose-400 px-4 py-2 text-white transition hover:bg-rose-600"
 					onclick={newUser}
-					disabled={loading}
 				>
-					{#if loading}Вход...{:else}Войти анонимно{/if}
+					{$LL.app.auth.createAccountButton()}
 				</button>
-				<div class="divider">OR</div>
-
+				<div class="divider uppercase">{$LL.app.auth.orDivider()}</div>
+				<p class="mb-6 mt-2 text-sm text-gray-600">
+					{$LL.app.auth.existingUserText()}
+				</p>
 				<form
-					class="flex w-full max-w-md flex-col items-start gap-3 rounded-2xl bg-gray-50 p-4 shadow-md"
+					class="flex w-full max-w-md flex-col items-start gap-3 rounded-xl bg-rose-300 bg-opacity-75 p-4 shadow-md"
 				>
 					<label class="input validator flex w-full items-center gap-2">
 						<svg
@@ -112,24 +121,20 @@
 							bind:value={userId}
 							type="text"
 							required
-							placeholder="Введите ваш ID"
+							placeholder={$LL.app.auth.inputPlaceholder()}
 							pattern="[A-Za-z0-9\-]+"
 							minlength="3"
 							maxlength="60"
-							title="Только буквы, цифры и дефис"
+							title={$LL.app.auth.inputTitle()}
 							class="flex-1 rounded-lg border p-2 outline-none focus:ring-2 focus:ring-rose-400"
 						/>
 					</label>
 
 					<button
 						onclick={() => checkUser()}
-						class="w-full rounded-xl bg-rose-500 px-4 py-2 text-white transition hover:bg-rose-600"
+						class="w-full rounded-xl bg-rose-600 px-4 py-2 text-white transition hover:bg-rose-700"
 					>
-						{#if loading}
-							⏳ Проверка...
-						{:else}
-							Проверить ID
-						{/if}
+						{$LL.app.auth.checkButton()}
 					</button>
 
 					{#if error}
@@ -138,25 +143,24 @@
 
 					{#if userData}
 						<div class="mt-3 w-full rounded-xl border bg-white p-3">
-							<p><strong>ID:</strong> {userData.user_id}</p>
-							<p><strong>Статус оплаты:</strong> {userData.payment_status}</p>
-							<p><strong>Прогресс:</strong> {userData.progress_level}%</p>
+							<p><strong>{$LL.app.auth.userData.idLabel()}:</strong> {userData.user_id}</p>
 							<p>
-								<strong>Дата регистрации:</strong>
+								<strong>{$LL.app.auth.userData.paymentStatus()}:</strong>
+								{userData.payment_status}
+							</p>
+							<p>
+								<strong>{$LL.app.auth.userData.progressLevel()}:</strong>
+								{userData.progress_level}%
+							</p>
+							<p>
+								<strong>{$LL.app.auth.userData.registrationDate()}:</strong>
 								{new Date(userData.registration_date).toLocaleDateString()}
 							</p>
 						</div>
 					{/if}
 				</form>
 
-				<p class="mb-6 mt-6 text-sm text-gray-600">
-					Если вы уже имеет свой ID - впишите его в эту форму.
-				</p>
-
-				<p class="validator-hint">
-					Must be 3 to 30 characters
-					<br />containing only letters, numbers or dash
-				</p>
+				<p class="validator-hint"></p>
 			</div>
 			<!-- <div class="mx-auto max-w-sm"></div> -->
 		</div>

@@ -35,26 +35,23 @@
 				<div class="w-layout-grid hero_grid">
 					<div class="">
 						<div class="flex flex-col items-center justify-center">
-							<div class="margin-bottom margin-xsmall">
-								<div class="preheading_wrap">
-									<h1 class="pre-heading font-poppins font-black">Аккаунт успешно создан</h1>
-								</div>
-							</div>
+							<h2 class="heading-style-h2 font-poppins mb-10 text-center font-black uppercase">
+								<span class="text-underline-v1 noise-effect"> «EYE LINER» </span>
+								{$LL.app.welcome.title()}
+							</h2>
 							<!-- <div class="avatar">
 								<div class="mask mask-heart animate-pulse-heart w-40 bg-rose-500"></div>
 							</div> -->
 
-							<div class="animate-pulse-heart h-20 w-20 w-40 bg-rose-500"></div>
-							<div class="hero_content-right-wrap">
-								<div class="">
-									<div class="margin-bottom margin-xxsmall">
-										<!-- pre-heading -->
-										<p class="text-twhite">
-											пожалуйста, соханите ваш id в надёжном месте - вы будете использовать его для
-											авторизации в будущем
-										</p>
-									</div>
-								</div>
+							<div class="h-20 w-20 w-40 animate-pulse-heart bg-rose-500"></div>
+							<div class="my-6 max-w-md">
+								<p class="text-twhite text-center">
+									{$LL.app.welcome.description()}
+								</p>
+
+								<p class="text-pink mt-2 text-center text-sm">
+									{$LL.app.welcome.userIdLabel()} <strong>{id}</strong>
+								</p>
 							</div>
 							<!-- <p><strong>created:</strong> {new Date(createdAt).toLocaleString()}</p> -->
 
@@ -64,19 +61,16 @@
 										onclick={copyUserId}
 										class="button noise-effect w-inline-block relative no-underline"
 									>
-										<div>Скопировать ID в буфер обмена</div>
+										<div>{$LL.app.welcome.copyButton()}</div>
 									</button>
 								</div>
-
-								<!-- просто чтобы показать, что копируется -->
-								<p class="mt-2 text-sm text-gray-400">ID пользователя: <strong>{id}</strong></p>
 							</div>
 
 							<button onclick={() => ($startPaymentProcess = true)} class="button is-link">
 								<div
 									class="button_icon-wrapper transform transition duration-300 hover:scale-105 hover:text-rose-300"
 								>
-									<div>Перейти к оплате</div>
+									<div>{$LL.app.welcome.payButton()}</div>
 									<div class="icon-embed-xsmall w-embed">
 										<svg
 											width=" 100%"

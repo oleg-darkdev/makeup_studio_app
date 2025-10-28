@@ -5,10 +5,8 @@
 	import { uiAppLang, step, startPaymentProcess } from '$sharedStores';
 	import LL from '$i18n/i18n-svelte';
 
-	// let step = $state(0);
 	let readyToNextStep = $state(false);
 
-	// Список экранов
 	let menu = [
 		// { title: 'Lang ui', screen: UiLangSwitcherCard },
 		// { title: 'Welcome', screen: Welcome },
@@ -18,34 +16,19 @@
 		// { title: 'Lorem ipsum #2', screen: LessonsList }
 	];
 
-	// {$LL.app.prices.title()}
-
-	// app: {
-	// 	program: programAppEn,
-	// 	prices: pricesAppEn,
-	// 	checkout: checkoutAppEn
-	// }
-
 	$effect(() => {
 		// console.log(readyToNextStep);
 		readyToNextStep = false;
 		// console.log(readyToNextStep);
 	});
 
-	// авторизация
 	// import { fade } from 'svelte/transition';
 	import { goto } from '$app/navigation';
 	// import { LessonsList } from '$widgetsApp';
 
 	let { data } = $props();
 
-	console.log(data.user)
-
 	let { id, progress, createdAt, paymentTransaction } = data.user;
-
-	// console.log(id);
-	// console.log(progress);
-	// console.log(createdAt);
 
 	async function logout() {
 		await fetch('/api/logout', { method: 'POST' });

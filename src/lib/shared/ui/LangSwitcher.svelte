@@ -31,26 +31,29 @@
 	let showLocalesList = $state(false);
 </script>
 
+<!-- right-20 -->
 <div
 	on:click={() => (showLocalesList = !showLocalesList)}
-	class="lg:absolute lg:left-40 mx-auto lg:ml-20 flex lg:w-64 flex-row lg:justify-start justify-center flex-wrap  gap-2"
+	class="absolute lg:left-40 left-24 top-8 z-10 mx-auto flex flex-row flex-wrap justify-center gap-2 rounded-xl bg-black p-3 lg:ml-20  {showLocalesList
+		? 'w-64'
+		: ''}  lg:justify-start"
 >
 	{#if !showLocalesList}
-		<!-- <div> -->
-		{#each locales as l}
-			{#if $page.params.lang === l.code}
-				<div
-					class="flex w-20 items-center justify-center rounded-lg border border-gray-600  p-2 text-center text-sm font-medium text-white
+		<div class="">
+			{#each locales as l}
+				{#if $page.params.lang === l.code}
+					<div
+						class="flex w-20 items-center justify-center rounded-lg border border-gray-600 p-2 text-center text-sm font-medium text-white
 			shadow-sm transition hover:bg-gray-100"
-				>
-					<img src={l.icon} class="rounded-md h-4 w-8" alt="" />
+					>
+						<img src={l.icon} class="h-4 w-8 rounded-md" alt="" />
 
-					<!-- <span class="mr-1">{l.flag}</span> -->
-					{l.code.toUpperCase()}
-				</div>
-			{/if}
-		{/each}
-		<!-- </div> -->
+						<!-- <span class="mr-1">{l.flag}</span> -->
+						{l.code.toUpperCase()}
+					</div>
+				{/if}
+			{/each}
+		</div>
 	{:else}
 		{#each locales as l}
 			<!-- <a
@@ -71,7 +74,7 @@
 					: 'border-gray-300  text-white'}"
 			>
 				<!-- <span class="mr-1">{l.flag}</span> -->
-				<img src={l.icon} class="rounded-md h-4 w-8" alt="" />
+				<img src={l.icon} class="h-4 w-8 rounded-md" alt="" />
 				{l.code.toUpperCase()}
 			</a>
 		{/each}

@@ -19,8 +19,8 @@ import programAppEn from './app-i18/program/en.ts';
 import pricesAppEn from './app-i18/selectPrice/en.ts';
 import checkoutAppEn from './app-i18/checkout/en.ts';
 import cancelPaymentAppEn from './app-i18/cancelPayment/en.ts';
-// import checkoutAppEn from './app-i18/checkout/en.ts';
-// import checkoutAppEn from './app-i18/checkout/en.ts';
+import welcomeAppEn from './app-i18/welcome/en.ts';
+import authAppEn from './app-i18/auth/en.ts';
 // import checkoutAppEn from './app-i18/checkout/en.ts';
 // import checkoutAppEn from './app-i18/checkout/en.ts';
 
@@ -43,10 +43,10 @@ import programAppRu from './app-i18/program/ru.ts';
 import pricesAppRu from './app-i18/selectPrice/ru.ts';
 import checkoutAppRu from './app-i18/checkout/ru.ts';
 import cancelPaymentAppRu from './app-i18/cancelPayment/ru.ts';
-// import checkoutAppEn from './app-i18/checkout/en.ts';
-// import checkoutAppEn from './app-i18/checkout/en.ts';
-// import checkoutAppEn from './app-i18/checkout/en.ts';
-// import checkoutAppEn from './app-i18/checkout/en.ts';
+import welcomeAppRu from './app-i18/welcome/en.ts';
+import authAppRu from './app-i18/auth/en.ts';
+// import checkoutAppRu from './app-i18/checkout/en.ts';
+// import checkoutAppRu from './app-i18/checkout/en.ts';
 
 // Spanish
 import navigationEs from './navigation/es.ts';
@@ -67,10 +67,10 @@ import programAppEs from './app-i18/program/es.ts';
 import pricesAppEs from './app-i18/selectPrice/es.ts';
 import checkoutAppEs from './app-i18/checkout/es.ts';
 import cancelPaymentAppEs from './app-i18/cancelPayment/es.ts';
-// import checkoutAppEn from './app-i18/checkout/en.ts';
-// import checkoutAppEn from './app-i18/checkout/en.ts';
-// import checkoutAppEn from './app-i18/checkout/en.ts';
-// import checkoutAppEn from './app-i18/checkout/en.ts';
+import welcomeAppEs from './app-i18/welcome/en.ts';
+import authAppEs from './app-i18/auth/en.ts';
+// import checkoutAppEs  from './app-i18/checkout/en.ts';
+// import checkoutAppEs  from './app-i18/checkout/en.ts';
 // French
 import navigationFr from './navigation/fr.ts';
 import programFr from './layout-i18/program/fr.ts';
@@ -90,10 +90,10 @@ import programAppFr from './app-i18/program/fr.ts';
 import pricesAppFr from './app-i18/selectPrice/fr.ts';
 import checkoutAppFr from './app-i18/checkout/fr.ts';
 import cancelPaymentFr from './app-i18/cancelPayment/fr.ts';
-// import checkoutAppEn from './app-i18/checkout/en.ts';
-// import checkoutAppEn from './app-i18/checkout/en.ts';
-// import checkoutAppEn from './app-i18/checkout/en.ts';
-// import checkoutAppEn from './app-i18/checkout/en.ts';
+import welcomeAppFr from './app-i18/welcome/en.ts';
+import authAppFr from './app-i18/auth/en.ts';
+// import checkoutAppFr from './app-i18/checkout/en.ts';
+// import checkoutAppFr from './app-i18/checkout/en.ts';
 
 // German
 import navigationDe from './navigation/de.ts';
@@ -114,10 +114,10 @@ import programAppDe from './app-i18/program/de.ts';
 import pricesAppDe from './app-i18/selectPrice/de.ts';
 import checkoutAppDe from './app-i18/checkout/de.ts';
 import cancelPaymentDe from './app-i18/cancelPayment/de.ts';
-// import checkoutAppEn from './app-i18/checkout/en.ts';
-// import checkoutAppEn from './app-i18/checkout/en.ts';
-// import checkoutAppEn from './app-i18/checkout/en.ts';
-// import checkoutAppEn from './app-i18/checkout/en.ts';
+import welcomeAppDe from './app-i18/welcome/en.ts';
+import authAppDe from './app-i18/auth/en.ts';
+// import checkoutAppDe from './app-i18/checkout/en.ts';
+// import checkoutAppDe from './app-i18/checkout/en.ts';
 // polish
 import navigationPl from './navigation/pl.ts';
 import programPl from './layout-i18/program/pl.ts';
@@ -137,10 +137,10 @@ import programAppPl from './app-i18/program/pl.ts';
 import pricesAppPl from './app-i18/selectPrice/pl.ts';
 import checkoutAppPl from './app-i18/checkout/pl.ts';
 import cancelPaymentPl from './app-i18/cancelPayment/pl.ts';
-// import checkoutAppEn from './app-i18/checkout/en.ts';
-// import checkoutAppEn from './app-i18/checkout/en.ts';
-// import checkoutAppEn from './app-i18/checkout/en.ts';
-// import checkoutAppEn from './app-i18/checkout/en.ts';
+import welcomeAppPl from './app-i18/welcome/en.ts';
+import authAppPl from './app-i18/auth/en.ts';
+// import checkoutAppPl from './app-i18/checkout/en.ts';
+// import checkoutAppPl from './app-i18/checkout/en.ts';
 
 import portfolioImgs from './portfolioImgs.ts';
 
@@ -168,6 +168,8 @@ export {
 	pricesAppEn,
 	checkoutAppEn,
 	cancelPaymentAppEn,
+	welcomeAppEn,
+	authAppEn,
 	// russian
 	navigationRu,
 	pricesRu,
@@ -188,6 +190,8 @@ export {
 	checkoutAppRu,
 	programAppRu,
 	cancelPaymentAppRu,
+	welcomeAppRu,
+	authAppRu,
 	// Spanish
 	navigationEs,
 	headerEs,
@@ -208,6 +212,8 @@ export {
 	checkoutAppEs,
 	pricesAppEs,
 	cancelPaymentAppEs,
+	welcomeAppEs,
+	authAppEs,
 	// French
 	navigationFr,
 	headerFr,
@@ -228,7 +234,8 @@ export {
 	pricesAppFr,
 	checkoutAppFr,
 	cancelPaymentFr,
-
+	authAppFr,
+	welcomeAppFr,
 	// German
 	navigationDe,
 	headerDe,
@@ -249,6 +256,8 @@ export {
 	pricesAppDe,
 	checkoutAppDe,
 	cancelPaymentDe,
+	welcomeAppDe,
+	authAppDe,
 	// polish
 	headerPl,
 	navigationPl,
@@ -267,5 +276,7 @@ export {
 	programAppPl,
 	pricesAppPl,
 	checkoutAppPl,
-	cancelPaymentPl
+	cancelPaymentPl,
+	welcomeAppPl,
+	authAppPl
 };

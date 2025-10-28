@@ -17,7 +17,9 @@ import {
 	programAppEs,
 	checkoutAppEs,
 	pricesAppEs,
-	cancelPaymentAppEs
+	cancelPaymentAppEs,
+	welcomeAppEs,
+	authAppEs
 } from '../../lib/shared/data';
 
 const es = {
@@ -39,7 +41,9 @@ const es = {
 		program: programAppEs,
 		prices: pricesAppEs,
 		checkout: checkoutAppEs,
-		cancelPayment: cancelPaymentAppEs
+		cancelPayment: cancelPaymentAppEs,
+		welcome: welcomeAppEs,
+		auth: authAppEs
 	}
 } satisfies BaseTranslation;
 
