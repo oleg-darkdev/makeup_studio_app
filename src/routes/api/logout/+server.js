@@ -1,6 +1,6 @@
-export async function POST({ cookies }) {
-	cookies.delete('session', { path: '/' });
-	return new Response(JSON.stringify({ ok: true }), {
-		status: 200,
-		headers: { 'Content-Type': 'application/json' }
-	});
+// export async function POST({ cookies }) {
+// 	cookies.delete('session', { path: '/' });
+// 	return new Response(JSON.stringify({ ok: true }), {
+// 		status: 200,
+// 		headers: { 'Content-Type': 'application/json' }
+// 	});

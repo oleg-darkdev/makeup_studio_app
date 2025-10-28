@@ -30,10 +30,10 @@
 
 	let { id, progress, createdAt, paymentTransaction } = data.user;
 
-	async function logout() {
-		await fetch('/api/logout', { method: 'POST' });
-		goto('/login');
-	}
+	// async function logout() {
+	// 	await fetch('/api/logout', { method: 'POST' });
+	// 	goto('/login');
+	// }
 </script>
 
 <main class="main-wrapper">
