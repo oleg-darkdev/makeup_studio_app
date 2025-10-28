@@ -35,6 +35,8 @@
 	<!-- <HeadHrefLangs /> -->
 </svelte:head>
 
-<Layout>
-	{@render children?.()}
-</Layout>
+<div class="page-wrapper">
+	<Layout>
+		{@render children?.()}
+	</Layout>
+</div>

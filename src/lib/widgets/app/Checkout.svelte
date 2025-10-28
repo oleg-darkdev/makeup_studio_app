@@ -1,20 +1,39 @@
 <script lang="ts">
-	// import {  } from '$shared';
-	// import {  } from '$widgets';
-	// import {  } from '$entities'
 	import { selectedPrice, step } from '$sharedStores';
 	import { findPriceById } from '$sharedUtils';
-
-	import { pricesEn } from '$sharedData';
+	import { page } from '$app/stores';
+	import { get } from 'svelte/store';
 	import LL from '$i18n/i18n-svelte';
+	import { pricesEn, pricesEs, pricesRu, pricesFr, pricesDe, pricesPl } from '$sharedData';
 
-	const selectedPlan = findPriceById(pricesEn.data, $selectedPrice);
+	let lang = get(page).url.pathname.split('/').pop() || 'en';
 
-	async function handleCheckout(priceId) {
+	function currentPrices(langPage) {
+		switch (langPage) {
+			case 'en':
+				return pricesEn.data;
+			case 'es':
+				return pricesEs.data;
+			case 'ru':
+				return pricesRu.data;
+			case 'fr':
+				return pricesFr.data;
+			case 'ge':
+				return pricesDe.data;
+			case 'pl':
+				return pricesPl.data;
+			default:
+				return pricesEn.data;
+		}
+	}
+
+	const selectedPlan = findPriceById(currentPrices(lang), $selectedPrice);
+
+	async function handleCheckout(priceId, lang) {
 		const res = await fetch('/api/checkout', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
-			body: JSON.stringify({ priceId })
+			body: JSON.stringify({ priceId, lang })
 		});
 
 		const data = await res.json();
@@ -71,7 +90,7 @@
 						</button>
 					</div>
 					<button
-						on:click={() => handleCheckout($selectedPrice)}
+						on:click={() => handleCheckout($selectedPrice, lang)}
 						class="button noise-effect w-inline-block no-underline"
 					>
 						{$LL.app.checkout.payButton()}

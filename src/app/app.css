@@ -4,6 +4,19 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+.app_wrap {
+	/* background-color: var(--pink); */
+	color: var(--main-black);
+	border-radius: 16px;
+	border: 2px var(--pink) solid;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 25rem;
+	padding: 3rem;
+	position: relative;
+}
+
 html {
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
@@ -4976,7 +4989,7 @@ figcaption {
 	.cta_card {
 		padding: 3rem;
 	}
-	
+
 	.hide-desktop {
 		display: block;
 	}

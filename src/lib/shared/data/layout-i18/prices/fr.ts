@@ -13,42 +13,45 @@ const fr = {
 			price: '300',
 			link: '#self',
 			anchor: 'self',
-			priceId: 'price_1SJbXjEdBK6uZ4fP8gNktSSk',
+			priceId: 'price_1SMvlIEdBK6uZ4fPVOYf3zQ2',
 
-			lang: 'fr', buyLink: '/app'
+			lang: 'fr',
+			buyLink: '/app'
 		},
-		{
-			id: 2,
-			title: 'Avec un tuteur',
-			shortDesc:
-				'Vous ne faites pas que regarder les cours — vous avez un mentor. Après chaque devoir, le tuteur vous donnera un retour détaillé et vous aidera à corriger vos erreurs. (nombre de places limité)',
-			img: '/images/prices/curator.webp',
-			features: ['Soutien personnalisé', 'Contact direct avec le maître'],
-			price: '500',
-			link: '#curator',
-			anchor: 'curator',
-			priceId: 'price_1SJbYCEdBK6uZ4fPbvndkMKk',
+		// {
+		// 	id: 2,
+		// 	title: 'Avec un tuteur',
+		// 	shortDesc:
+		// 		'Vous ne faites pas que regarder les cours — vous avez un mentor. Après chaque devoir, le tuteur vous donnera un retour détaillé et vous aidera à corriger vos erreurs. (nombre de places limité)',
+		// 	img: '/images/prices/curator.webp',
+		// 	features: ['Soutien personnalisé', 'Contact direct avec le maître'],
+		// 	price: '500',
+		// 	link: '#curator',
+		// 	anchor: 'curator',
+		// 	priceId: 'price_1SJbYCEdBK6uZ4fPbvndkMKk',
 
-			lang: 'fr', buyLink: '/app'
-		},
-		{
-			id: 3,
-			title: 'Avec Valeria',
-			features: [
-				'Contact direct — travail personnel avec le maître',
-				'Connaissances de première main',
-				'Travail en petit groupe — attention maximale et implication'
-			],
-			shortDesc:
-				'Version premium du cours. Vous étudierez dans un mini-groupe de 10 personnes maximum avec l’auteure du cours. Plus qu’un soutien — un accès exclusif à son expérience et savoir-faire.',
-			img: '/images/prices/valeria.webp',
-			price: '1500',
-			link: '#with-valeria',
-			anchor: 'with-valeria',
-			priceId: 'price_1SJbZ5EdBK6uZ4fPo6F0QDZu',
+		// 	lang: 'fr',
+		// 	buyLink: '/app'
+		// },
+		// {
+		// 	id: 3,
+		// 	title: 'Avec Valeria',
+		// 	features: [
+		// 		'Contact direct — travail personnel avec le maître',
+		// 		'Connaissances de première main',
+		// 		'Travail en petit groupe — attention maximale et implication'
+		// 	],
+		// 	shortDesc:
+		// 		'Version premium du cours. Vous étudierez dans un mini-groupe de 10 personnes maximum avec l’auteure du cours. Plus qu’un soutien — un accès exclusif à son expérience et savoir-faire.',
+		// 	img: '/images/prices/valeria.webp',
+		// 	price: '1500',
+		// 	link: '#with-valeria',
+		// 	anchor: 'with-valeria',
+		// 	priceId: 'price_1SJbZ5EdBK6uZ4fPo6F0QDZu',
 
-			lang: 'fr', buyLink: '/app'
-		}
+		// 	lang: 'fr',
+		// 	buyLink: '/app'
+		// }
 	]
 };
 

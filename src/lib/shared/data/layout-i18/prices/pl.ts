@@ -13,9 +13,10 @@ const pl = {
 			price: '300',
 			link: '#self',
 			anchor: 'self',
-			priceId: 'price_1SJbXjEdBK6uZ4fP8gNktSSk',
+			priceId: 'price_1SMvjnEdBK6uZ4fPpi7Tnapj',
 
-			lang: 'pl', buyLink: '/app'
+			lang: 'pl',
+			buyLink: '/app'
 		},
 		{
 			id: 2,
@@ -27,9 +28,10 @@ const pl = {
 			price: '500',
 			link: '#curator',
 			anchor: 'curator',
-			priceId: 'price_1SJbYCEdBK6uZ4fPbvndkMKk',
+			priceId: 'price_1SMvkCEdBK6uZ4fPAbaYANZG',
 
-			lang: 'pl', buyLink: '/app'
+			lang: 'pl',
+			buyLink: '/app'
 		},
 		{
 			id: 3,
@@ -45,9 +47,10 @@ const pl = {
 			price: '1500',
 			link: '#with-valeria',
 			anchor: 'with-valeria',
-			priceId: 'price_1SJbZ5EdBK6uZ4fPo6F0QDZu',
+			priceId: 'price_1SMvkaEdBK6uZ4fPkppS8Nsk',
 
-			lang: 'pl', buyLink: '/app'
+			lang: 'pl',
+			buyLink: '/app'
 		}
 	]
 };

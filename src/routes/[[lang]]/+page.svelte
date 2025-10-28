@@ -28,34 +28,32 @@
 
 <!-- <SEO title="Home" /> -->
 
-<div class="page-wrapper">
-	<Header />
+<Header />
 
-	<main class="main-wrapper">
-		<Hero />
+<main class="main-wrapper">
+	<Hero />
 
-		<PortfolioCarousel />
+	<PortfolioCarousel />
 
-		<!-- <FreeBlockFirst /> -->
+	<!-- <FreeBlockFirst /> -->
 
-		<Services />
+	<Services />
 
-		<Features />
+	<Features />
 
-		<AboutTrainer />
+	<AboutTrainer />
 
-		<CourseProgramm />
+	<CourseProgramm />
 
-		<Prices />
+	<Prices />
 
-		<CTA />
+	<CTA />
 
-		<Instagram />
+	<Instagram />
 
-		<Faq />
+	<Faq />
 
-		<GiveGift />
-	</main>
+	<GiveGift />
+</main>
 
-	<Footer />
-</div>
+<Footer />
