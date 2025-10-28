@@ -1,5 +1,6 @@
-import jwt from 'jsonwebtoken';
+// src/routes/+page.server.js (или другой серверный load)
 import { env } from '$env/dynamic/private';
+import { jwtVerify } from 'jose';
 
 const JWT_SECRET = env.JWT_SECRET;
 
@@ -13,18 +14,22 @@ export async function load({ cookies }) {
 		};
 	}
 
-	try {
-		const decoded = jwt.verify(token, JWT_SECRET);
+	if (!JWT_SECRET) {
+		console.error('❌ Missing JWT_SECRET in environment variables');
+		return { user: null };
+	}
 
-		// console.log(decoded);
+	try {
+		// Проверка JWT с помощью jose
+		const { payload } = await jwtVerify(token, new TextEncoder().encode(JWT_SECRET));
 
 		return {
 			user: {
-				id: decoded.userId,
-				anonymous: decoded.anonymous,
-				paymentTransaction: decoded.payment_status,
-				createdAt: new Date(decoded.createdAt),
-				progress: decoded.progress_level
+				id: payload.userId,
+				anonymous: payload.anonymous,
+				paymentTransaction: payload.payment_status,
+				createdAt: new Date(payload.createdAt),
+				progress: payload.progress_level
 			}
 		};
 	} catch (err) {

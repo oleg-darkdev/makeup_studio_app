@@ -1,6 +1,7 @@
-import jwt from 'jsonwebtoken';
+// src/routes/api/session-update/+server.js
 import { env } from '$env/dynamic/private';
 import { createClient } from '@supabase/supabase-js';
+import { SignJWT } from 'jose';
 
 const JWT_SECRET = env.JWT_SECRET;
 const JWT_EXPIRES_IN = env.JWT_EXPIRES_IN || '7d';
@@ -11,21 +12,19 @@ const supabase = createClient(
 );
 
 export async function POST({ request, cookies }) {
-
 	if (!JWT_SECRET) {
 		console.error('❌ Missing JWT_SECRET in environment variables');
 		return new Response(JSON.stringify({ error: 'Server misconfiguration' }), { status: 500 });
 	}
 
 	try {
-
 		const { userId } = await request.json();
 
 		if (!userId) {
 			return new Response(JSON.stringify({ error: 'userId is required' }), { status: 400 });
 		}
 
-		
+		// Получаем данные пользователя из Supabase
 		const { data: user, error } = await supabase
 			.from('users_progress')
 			.select('*')
@@ -37,7 +36,7 @@ export async function POST({ request, cookies }) {
 			return new Response(JSON.stringify({ error: 'User not found' }), { status: 404 });
 		}
 
-		
+		// Создаем payload для JWT
 		const payload = {
 			userId,
 			payment_status: user.payment_status,
@@ -45,9 +44,13 @@ export async function POST({ request, cookies }) {
 			createdAt: user.registration_date
 		};
 
-		const token = jwt.sign(payload, JWT_SECRET, { expiresIn: JWT_EXPIRES_IN });
+		// Генерация JWT с помощью jose
+		const token = await new SignJWT(payload)
+			.setProtectedHeader({ alg: 'HS256' })
+			.setExpirationTime(JWT_EXPIRES_IN)
+			.sign(new TextEncoder().encode(JWT_SECRET));
 
-		
+		// Установка cookie
 		cookies.set('session', token, {
 			httpOnly: true,
 			secure: process.env.NODE_ENV === 'production',

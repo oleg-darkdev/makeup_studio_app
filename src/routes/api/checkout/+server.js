@@ -1,8 +1,9 @@
+// src/routes/api/checkout/+server.js
 import Stripe from 'stripe';
 import { json } from '@sveltejs/kit';
 import { STRIPE_SECRET_KEY } from '$env/static/private';
-import jwt from 'jsonwebtoken';
 import { env } from '$env/dynamic/private';
+import { jwtVerify } from 'jose';
 
 const JWT_SECRET = env.JWT_SECRET;
 const stripe = new Stripe(STRIPE_SECRET_KEY);
@@ -15,12 +16,15 @@ export async function POST({ request, cookies }) {
 			return json({ error: 'Unauthorized' }, { status: 401 });
 		}
 
-		const decoded = jwt.verify(token, JWT_SECRET);
-		console.log('checkout server');
-		console.log(decoded.userId);
+		if (!JWT_SECRET) {
+			console.error('❌ Missing JWT_SECRET in environment variables');
+			return json({ error: 'Server misconfiguration' }, { status: 500 });
+		}
+
+		// Проверка JWT с помощью jose
+		const { payload } = await jwtVerify(token, new TextEncoder().encode(JWT_SECRET));
 
 		const { priceId, lang } = await request.json();
-		console.log(lang);
 
 		const session = await stripe.checkout.sessions.create({
 			mode: 'payment',
@@ -29,7 +33,7 @@ export async function POST({ request, cookies }) {
 			cancel_url: 'http://localhost:5173/cancel',
 			metadata: {
 				lang: lang,
-				user_id: decoded.userId
+				user_id: payload.userId
 			}
 		});
 

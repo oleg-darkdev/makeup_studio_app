@@ -56,6 +56,7 @@
 		"countup.js": "^2.6.0",
 		"dotenv": "^17.2.3",
 		"googleapis": "^164.1.0",
+		"jose": "^6.1.0",
 		"jsonwebtoken": "^9.0.2",
 		"stripe": "^19.1.0",
 		"svelte-seo": "^1.4.1",
