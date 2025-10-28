@@ -1,7 +1,7 @@
 <script>
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
-
+	import { LangSwitcher } from '$sharedUi';
 	import LL from '$i18n/i18n-svelte';
 
 	let userId = '';
@@ -72,6 +72,16 @@
 
 <main class="main-wrapper py-6 lg:py-16">
 	<div class="wrapper mx-auto max-w-2xl rounded-2xl border-2 border-[--pink] py-20 shadow-md">
+		<!-- md:left-[35%] left-[27%] -->
+
+		<div class="absolute top-8 -left-8 flex w-full flex-row mb-10 ">
+			<!-- <div class=" mr-4 h-10">
+				<a href="/app" aria-current="page" class="navbar_logo-link">
+					<img src="/images/logo.PNG" loading="lazy" alt="" class="header_logo" />
+				</a>
+			</div> -->
+			<LangSwitcher />
+		</div>
 		<div class="mx-auto mx-auto flex w-full flex-col items-center justify-center px-6">
 			<div class="text-style-signature noise-effect mb-6">
 				<img src="/images/signature_1.png" class="h-6 w-full" alt="Logotype" />
@@ -93,7 +103,7 @@
 					{$LL.app.auth.createAccountButton()}
 				</button>
 				<div class="divider uppercase">{$LL.app.auth.orDivider()}</div>
-				<p class="mb-6 mt-2 text-sm text-gray-600">
+				<p class="mb-6 mt-2 text-center text-sm text-gray-600">
 					{$LL.app.auth.existingUserText()}
 				</p>
 				<form
@@ -173,5 +183,14 @@
 		/* color: var(--main-black);
 		border-radius: 16px;
 		border: 2px var(--pink) solid; */
+	}
+	.header_logo {
+		max-height: 5rem;
+		margin: 1.5em;
+	}
+	@media screen and (max-width: 479px) {
+		.header_logo {
+			max-height: 3rem;
+		}
 	}
 </style>

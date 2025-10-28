@@ -43,8 +43,8 @@ import programAppRu from './app-i18/program/ru.ts';
 import pricesAppRu from './app-i18/selectPrice/ru.ts';
 import checkoutAppRu from './app-i18/checkout/ru.ts';
 import cancelPaymentAppRu from './app-i18/cancelPayment/ru.ts';
-import welcomeAppRu from './app-i18/welcome/en.ts';
-import authAppRu from './app-i18/auth/en.ts';
+import welcomeAppRu from './app-i18/welcome/ru.ts';
+import authAppRu from './app-i18/auth/ru.ts';
 // import checkoutAppRu from './app-i18/checkout/en.ts';
 // import checkoutAppRu from './app-i18/checkout/en.ts';
 
@@ -67,8 +67,8 @@ import programAppEs from './app-i18/program/es.ts';
 import pricesAppEs from './app-i18/selectPrice/es.ts';
 import checkoutAppEs from './app-i18/checkout/es.ts';
 import cancelPaymentAppEs from './app-i18/cancelPayment/es.ts';
-import welcomeAppEs from './app-i18/welcome/en.ts';
-import authAppEs from './app-i18/auth/en.ts';
+import welcomeAppEs from './app-i18/welcome/es.ts';
+import authAppEs from './app-i18/auth/es.ts';
 // import checkoutAppEs  from './app-i18/checkout/en.ts';
 // import checkoutAppEs  from './app-i18/checkout/en.ts';
 // French
@@ -90,8 +90,8 @@ import programAppFr from './app-i18/program/fr.ts';
 import pricesAppFr from './app-i18/selectPrice/fr.ts';
 import checkoutAppFr from './app-i18/checkout/fr.ts';
 import cancelPaymentFr from './app-i18/cancelPayment/fr.ts';
-import welcomeAppFr from './app-i18/welcome/en.ts';
-import authAppFr from './app-i18/auth/en.ts';
+import welcomeAppFr from './app-i18/welcome/fr.ts';
+import authAppFr from './app-i18/auth/fr.ts';
 // import checkoutAppFr from './app-i18/checkout/en.ts';
 // import checkoutAppFr from './app-i18/checkout/en.ts';
 
@@ -114,8 +114,8 @@ import programAppDe from './app-i18/program/de.ts';
 import pricesAppDe from './app-i18/selectPrice/de.ts';
 import checkoutAppDe from './app-i18/checkout/de.ts';
 import cancelPaymentDe from './app-i18/cancelPayment/de.ts';
-import welcomeAppDe from './app-i18/welcome/en.ts';
-import authAppDe from './app-i18/auth/en.ts';
+import welcomeAppDe from './app-i18/welcome/de.ts';
+import authAppDe from './app-i18/auth/de.ts';
 // import checkoutAppDe from './app-i18/checkout/en.ts';
 // import checkoutAppDe from './app-i18/checkout/en.ts';
 // polish
@@ -137,8 +137,8 @@ import programAppPl from './app-i18/program/pl.ts';
 import pricesAppPl from './app-i18/selectPrice/pl.ts';
 import checkoutAppPl from './app-i18/checkout/pl.ts';
 import cancelPaymentPl from './app-i18/cancelPayment/pl.ts';
-import welcomeAppPl from './app-i18/welcome/en.ts';
-import authAppPl from './app-i18/auth/en.ts';
+import welcomeAppPl from './app-i18/welcome/pl.ts';
+import authAppPl from './app-i18/auth/pl.ts';
 // import checkoutAppPl from './app-i18/checkout/en.ts';
 // import checkoutAppPl from './app-i18/checkout/en.ts';
 

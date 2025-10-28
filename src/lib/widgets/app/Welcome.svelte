@@ -105,7 +105,7 @@
 							/>
 						</div>
 					</div>
-					<div class="">
+					<div class="mx-auto">
 						<div class="w-layout-grid social_icons-list">
 							<a
 								href="https://www.facebook.com/vasilyevavaleriapmu"

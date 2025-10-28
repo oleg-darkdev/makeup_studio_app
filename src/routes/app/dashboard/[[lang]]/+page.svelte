@@ -39,8 +39,8 @@
 <main class="main-wrapper">
 	{#if paymentTransaction == 'unpaid' || paymentTransaction == undefined}
 		<section class="section_cta">
-			<div class="padding-global">
-				<div class="container-large">
+			<div class="lg:padding-global">
+				<div class="lg:container-large">
 					<div class="padding-section-large">
 						<div class="w-layout-grid cta_component noise-effect">
 							<div class="app_wrap mx-auto max-w-4xl">

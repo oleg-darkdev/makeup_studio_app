@@ -34,7 +34,7 @@
 <!-- right-20 -->
 <div
 	on:click={() => (showLocalesList = !showLocalesList)}
-	class="absolute lg:left-40 left-24 top-8 z-10 mx-auto flex flex-row flex-wrap justify-center gap-2 rounded-xl bg-black p-3 lg:ml-20  {showLocalesList
+	class="absolute lg:left-40 left-16 top-5 md:left-24 md:top-8 z-10 mx-auto flex flex-row flex-wrap justify-center gap-2 rounded-xl bg-black p-3 lg:ml-20  {showLocalesList
 		? 'w-64'
 		: ''}  lg:justify-start"
 >
@@ -67,7 +67,7 @@
 				{l.code.toUpperCase()}
 			</a> -->
 			<a
-				href="/{l.code}"
+				href="{l.code}"
 				class="flex w-16 items-center justify-center rounded-lg border p-2 text-center text-sm font-medium no-underline shadow-sm transition hover:bg-gray-100
 			{$page.params.lang === l.code
 					? 'border-pink-600 bg-pink-500 text-white'
