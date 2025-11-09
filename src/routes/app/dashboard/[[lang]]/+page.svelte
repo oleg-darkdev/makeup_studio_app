@@ -5,6 +5,44 @@
 	import { uiAppLang, step, startPaymentProcess } from '$sharedStores';
 	import LL from '$i18n/i18n-svelte';
 
+	import { page } from '$app/stores';
+	import { onMount } from 'svelte';
+
+	let loading = false;
+	let message = '';
+
+	// Проверяем session_id из query после редиректа Stripe
+	onMount(async () => {
+		const params = $page.url.searchParams;
+		const session_id = params.get('session_id');
+		// console.log(session_id);
+
+		if (session_id) {
+			loading = true;
+			try {
+				const res = await fetch(`/app/dashboard/${$page.params.lang}`, {
+					method: 'POST',
+					headers: { 'Content-Type': 'application/json' },
+					body: JSON.stringify({ session_id })
+				});
+				const data = await res.json();
+
+				console.log('запрос на проверку');
+				if (data.ok) {
+					message = 'Оплата подтверждена!';
+					// acces = true
+				} else {
+					message = data.message || 'Оплата не завершена';
+				}
+			} catch (err) {
+				message = 'Ошибка при подтверждении оплаты';
+				console.error(err);
+			} finally {
+				loading = false;
+			}
+		}
+	});
+
 	let readyToNextStep = $state(false);
 
 	let menu = [
@@ -23,29 +61,37 @@
 	});
 
 	// import { fade } from 'svelte/transition';
-	import { goto } from '$app/navigation';
+	// import { goto } from '$app/navigation';
 	// import { LessonsList } from '$widgetsApp';
 
 	let { data } = $props();
 
-	let { id, progress, createdAt, paymentTransaction } = data.user;
-
+	let { nickname, progress, createdAt, paymentStatus } = data.user;
+	let errorCode = data.errorCode;
+	let paymentConfirmed = data.paymentConfirmed;
 	// async function logout() {
 	// 	await fetch('/api/logout', { method: 'POST' });
 	// 	goto('/login');
 	// }
+
+	console.log(data.user);
+	console.log(data.errorCode);
+	// console.log(nickname)
 </script>
 
 <main class="main-wrapper">
-	<!-- {#if paymentTransaction == 'unpaid' || paymentTransaction == undefined} -->
-	<section class="section_cta">
-		<div class="lg:padding-global">
-			<div class="lg:container-large">
-				<div class="padding-section-large">
-					<div class="w-layout-grid cta_component noise-effect">
-						<div class="app_wrap mx-auto max-w-4xl">
-							<!-- <h2>{$startPaymentProcess}</h2> -->
-							<!-- {#if !$startPaymentProcess}
+	{#if errorCode}
+		<h2>{errorCode}</h2>
+		<!-- <h2>{paymentStatus}</h2> -->
+	{:else if paymentStatus === false || paymentStatus == undefined}
+		<section class="section_cta">
+			<div class="lg:padding-global">
+				<div class="lg:container-large">
+					<div class="padding-section-large">
+						<div class="w-layout-grid cta_component noise-effect">
+							<div class="app_wrap mx-auto max-w-4xl">
+								<!-- <h2>{$startPaymentProcess}</h2> -->
+								<!-- {#if !$startPaymentProcess}
 									<Welcome {id} {progress} {createdAt} />
 								{:else}
 									<div class="z-index-2 mb-10">
@@ -54,7 +100,7 @@
 										</h2>
 									</div> -->
 
-							<!-- <ul class="timeline">
+								<!-- <ul class="timeline">
 										{#each menu as title}
 											<li>
 												<div class="timeline-start timeline-box">{title}</div>
@@ -97,16 +143,16 @@
 										</li>
 									</ul> -->
 
-							{#key $step}
-								<div transition:fade>
-									{@render menu[$step].screen({
-										onReady: (value) => (readyToNextStep = value)
-									})}
-								</div>
-							{/key}
+								{#key $step}
+									<div transition:fade>
+										{@render menu[$step].screen({
+											onReady: (value) => (readyToNextStep = value)
+										})}
+									</div>
+								{/key}
 
-							<!-- 🔹 Кнопка Назад -->
-							<!-- {#if $step > 0}
+								<!-- 🔹 Кнопка Назад -->
+								<!-- {#if $step > 0}
 							<button
 								on:click={() => ($step = $step - 1)}
 								class="cta_image-button-wrap-prev w-inline-block"
@@ -124,13 +170,13 @@
 							</button>
 						{/if} -->
 
-							<!-- 🔹 Кнопка Далее -->
+								<!-- 🔹 Кнопка Далее -->
 
-							<!-- 	
+								<!-- 	
 														disabled={!readyToNextStep}
 							
  -->
-							<!-- {#if $step >= 2}
+								<!-- {#if $step >= 2}
 							<button
 								on:click={() => ($step = $step + 1)}
 								class="cta_image-button-wrap-next w-inline-block"
@@ -148,15 +194,20 @@
 							</button>
 						{/if} -->
 
-							<img src="images/cta-lines.svg" loading="lazy" alt="waves" class="cta_object-lines" />
-							<!-- {/if} -->
+								<img
+									src="images/cta-lines.svg"
+									loading="lazy"
+									alt="waves"
+									class="cta_object-lines"
+								/>
+								<!-- {/if} -->
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	<!-- {:else if paymentTransaction == 'paid'}
+		</section>
+	{:else if paymentStatus}
 		<section class="section_cta">
 			<div class="padding-global">
 				<div class="container-large">
@@ -169,7 +220,7 @@
 									</h2>
 								</div>
 
-								<LessonsList />
+								<LessonsList program={$LL.program.courseDatas}/>
 
 								<img
 									src="images/cta-lines.svg"
@@ -183,7 +234,7 @@
 				</div>
 			</div>
 		</section>
-	{/if} -->
+	{/if}
 </main>
 
 <style lang="postcss">

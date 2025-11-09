@@ -18,10 +18,12 @@ export const POST = async ({ request }) => {
 
 		const session = await stripe.checkout.sessions.retrieve(session_id);
 
-		console.log(session);
+		// console.log(session.payment_status);
 
 		if (session.payment_status === 'paid') {
 			const nickname = session.metadata.nickname;
+
+			console.log(nickname);
 
 			const { error } = await supabase
 				.from('users_progress')

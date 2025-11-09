@@ -5,7 +5,7 @@
 
 	import LL from '$i18n/i18n-svelte';
 
-	let {program} = $props();
+	let { program } = $props();
 </script>
 
 <section class="overflow-hidden">
@@ -16,7 +16,7 @@
 					<div class="faq_icon-wrap">
 						<div class="w-layout-grid program_list">
 							<!-- $LL.program.courseData -->
-							{#each program.courseData as stage}
+							{#each program as stage}
 								<ProgramCard {stage} />
 							{/each}
 						</div>

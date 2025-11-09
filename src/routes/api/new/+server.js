@@ -24,8 +24,44 @@ export async function POST({ request, cookies }) {
 			return new Response(JSON.stringify({ error: 'Nickname is required' }), { status: 400 });
 		}
 
-		// Payload для JWT
-		const payload = { nickname, anonymous: false, createdAt: Date.now() };
+		// Проверяем, есть ли уже пользователь в базе
+		const { data: existingUser, error: fetchError } = await supabase
+			.from('users_progress')
+			.select('nickname, payment_status, progress_level, created_at')
+			.eq('nickname', nickname)
+			.single();
+
+		if (fetchError && fetchError.code !== 'PGRST116') {
+			console.error('❌ Supabase fetch error:', fetchError.message);
+			return new Response(JSON.stringify({ error: 'Database fetch failed' }), { status: 500 });
+		}
+
+		let userData = existingUser;
+
+		// Если пользователь не найден — создаём нового
+		if (!existingUser) {
+			const { data: newUser, error: insertError } = await supabase
+				.from('users_progress')
+				.insert([{ nickname, payment_status: false, progress_level: 0 }])
+				.select()
+				.single();
+
+			if (insertError) {
+				console.error('❌ Supabase insert error:', insertError.message);
+				return new Response(JSON.stringify({ error: 'Database insert failed' }), { status: 500 });
+			}
+
+			userData = newUser;
+		}
+
+		// ✅ Формируем payload для JWT
+		const payload = {
+			nickname: userData.nickname,
+			anonymous: false,
+			payment_status: userData.payment_status ?? false,
+			progress_level: userData.progress_level ?? 0,
+			createdAt: userData.created_at ?? Date.now()
+		};
 
 		// Генерация JWT
 		const token = await new SignJWT(payload)
@@ -42,19 +78,17 @@ export async function POST({ request, cookies }) {
 			maxAge: 7 * 24 * 60 * 60 // 7 дней
 		});
 
-		// Записываем нового пользователя в Supabase
-		const { error } = await supabase
-			.from('users_progress')
-			.insert([{ nickname, payment_status: 'unpaid', progress_level: 0 }]);
-
-		if (error) {
-			console.error('❌ Supabase insert error:', error.message);
-			return new Response(JSON.stringify({ error: 'Database insert failed' }), { status: 500 });
-		}
-
-		return new Response(JSON.stringify({ ok: true, nickname }), {
-			headers: { 'Content-Type': 'application/json' }
-		});
+		return new Response(
+			JSON.stringify({
+				ok: true,
+				user: {
+					nickname: userData.nickname,
+					payment_status: userData.payment_status,
+					progress_level: userData.progress_level
+				}
+			}),
+			{ headers: { 'Content-Type': 'application/json' } }
+		);
 	} catch (err) {
 		console.error('❌ Server error:', err);
 		return new Response(JSON.stringify({ error: 'Server error' }), { status: 500 });
