@@ -2,7 +2,7 @@
 	import { portfolioImgs } from '$sharedData';
 	import LL from '$i18n/i18n-svelte';
 
-	// import {  } from '$widgets';
+	import { page } from '$app/stores';
 	import { PortfolioCard } from '$entitiesLanding';
 </script>
 
@@ -30,7 +30,10 @@
 							/>
 						</div>
 						<div class="splide__slide splide_carousel-slide mx-auto">
-							<a href="/" class="splide_carousel-wrap w-inline-block no-underline">
+							<a
+								href={`/app/${$page.params.lang}`}
+								class="splide_carousel-wrap w-inline-block no-underline"
+							>
 								<div class="splide_carousel-content noise-effect">
 									<div
 										class="mx-auto max-w-[340px] transform transition duration-300 hover:scale-105 lg:max-w-2xl"

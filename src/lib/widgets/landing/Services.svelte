@@ -68,7 +68,7 @@
 					/>
 				</div>
 			</div>
-			<div class="mx-auto my-6">
+			<!-- <div class="mx-auto my-6">
 				<div class="splide__buttons">
 					<a href="#" class="slide-arrow prev noise-effect w-inline-block">
 						<img src="images/icon_slider-arrow-left.svg" loading="lazy" alt="arrow left" />
@@ -77,7 +77,7 @@
 						<img src="images/icon_slider-arrow-right.svg" loading="lazy" alt="Arrow Right" />
 					</a>
 				</div>
-			</div>
+			</div> -->
 			<img
 				src="images/services-lines.svg"
 				loading="lazy"
@@ -111,6 +111,9 @@
 	}
 
 	@media screen and (max-width: 479px) {
+		.section_services {
+			display: none;
+		}
 		.splide__buttons {
 			grid-column-gap: 1rem;
 			grid-row-gap: 1rem;
