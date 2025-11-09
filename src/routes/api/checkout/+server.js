@@ -22,7 +22,7 @@ export async function POST({ request, cookies }) {
 		const session = await stripe.checkout.sessions.create({
 			mode: 'payment',
 			line_items: [{ price: priceId, quantity: 1 }],
-			success_url: `http://localhost:5173/api/confirm?session_id={CHECKOUT_SESSION_ID}`,
+			success_url: `https://vasilyeva-pmu.vercel.app/app/dashboard/${lang}?session_id={CHECKOUT_SESSION_ID}`,
 			cancel_url: 'http://localhost:5173/cancel',
 			metadata: {
 				lang,
