@@ -2,6 +2,7 @@
 	// import {  } from '$shared';
 	// import {  } from '$widgets';
 	// import {  } from '$entities'
+	import { page } from '$app/stores';
 
 	import LL from '$i18n/i18n-svelte';
 </script>
@@ -13,7 +14,7 @@
 				<div class="w-layout-grid cta_component noise-effect">
 					<div class="cta_card">
 						<div class="z-index-2 mb-10">
-							<h2 class="uppercase text-color-main-black font-poppins font-black">
+							<h2 class="text-color-main-black font-poppins font-black uppercase">
 								{$LL.cta.titleStart()} <br />
 								<span class="text-underline-v6">{$LL.cta.titleCenter()} </span>
 								<br />
@@ -38,7 +39,11 @@
 
 						<div class="mt-4">
 							<div class="button-group">
-								<a href="/app" target="_blank" class="button is-alternate w-inline-block no-underline">
+								<a
+									href={`/app/${$page.params.lang}`}
+									target="_blank"
+									class="button is-alternate w-inline-block no-underline"
+								>
 									<div>{$LL.cta.button()}</div>
 								</a>
 							</div>

@@ -2,6 +2,8 @@
 	// import {  } from '$shared';
 	// import {  } from '$widgets';
 	import LL from '$i18n/i18n-svelte';
+		import { page } from '$app/stores';
+
 </script>
 
 <section id="gift" class="section_giftcard">
@@ -41,7 +43,7 @@
 					</div>
 					<div class="giftcard-col">
 						<div class="button-group is-end mobile-justify-align-start">
-							<a href="/app" target="_blank" class="button noise-effect w-inline-block no-underline">
+							<a href={`/app/${$page.params.lang}`} target="_blank" class="button noise-effect w-inline-block no-underline">
 								<!-- Purchase Now -->
 								<div>{$LL.gift.button()}</div>
 							</a>

@@ -1,8 +1,6 @@
 <script lang="ts">
 	import { LangSwitcher } from '$sharedUi';
-
-	// import {  } from '$entities'
-
+	import { page } from '$app/stores';
 	import { fade } from 'svelte/transition';
 
 	let menuIsOpen = $state(false);
@@ -20,8 +18,8 @@
 					</a>
 				</div>
 
-				<div class="navbar1_menu-button flex flex-row justify-center content-center items-center">
-					<div class="mx-auto my-4 mr-6 ">
+				<div class="navbar1_menu-button flex flex-row content-center items-center justify-center">
+					<div class="mx-auto my-4 mr-6">
 						<LangSwitcher />
 					</div>
 					<div class="menu-icon1">
@@ -69,7 +67,8 @@
 					<div class="navbar_link-wrap">
 						<div class="navbar1_menu-buttons pt-8">
 							<a
-								href="#"
+								href={`/app/${$page.params.lang}`}
+								target="_blank"
 								class="button-3 is-navbar4-button noise-effect w-inline-block no-underline"
 							>
 								<div>{$LL.header.button()}</div>
@@ -109,8 +108,12 @@
 
 					<div class="navbar_link-wrap mx-auto mb-20">
 						<div class="navbar1_menu-buttons">
-							<a href="#" class="button is-small noise-effect w-inline-block no-underline">
-								kup dostęp
+							<a
+								href={`/app/${$page.params.lang}`}
+								target="_blank"
+								class="button is-small noise-effect w-inline-block no-underline"
+							>
+								{$LL.header.button()}
 							</a>
 						</div>
 					</div>
