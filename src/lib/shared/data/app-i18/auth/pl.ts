@@ -6,9 +6,9 @@ const pl = {
 	createAccountButton: 'Utwórz konto',
 	orDivider: 'Lub',
 	existingUserText: 'Jeśli masz już swój ID — wpisz go w tym formularzu.',
-	inputPlaceholder: 'Wpisz swój ID',
+	inputPlaceholder: 'Wpisz swój nick na Instagramie',
 	inputTitle: 'Tylko litery, cyfry i myślniki',
-	checkButton: 'Sprawdź ID',
+	checkButton: 'Zaloguj się',
 
 	userData: {
 		idLabel: 'ID',

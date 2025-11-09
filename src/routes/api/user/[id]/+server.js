@@ -7,22 +7,21 @@ const supabase = createClient(
 	import.meta.env.VITE_SUPABASE_ANON_KEY
 );
 
-
 export async function GET({ params }) {
-	const { id } = params;
+	const { nickname } = params;
 
-	if (!id) {
-		return json({ error: 'Не передан ID пользователя' }, { status: 400 });
+	if (!nickname) {
+		return json({ error: 'Не передан nickname пользователя' }, { status: 400 });
 	}
 
-	// Запрос в базу данных
+	// Поиск пользователя по nickname
 	const { data, error } = await supabase
 		.from('users_progress')
 		.select('*')
-		.eq('user_id', id)
+		.eq('nickname', nickname)
 		.single(); // гарантирует, что вернётся один пользователь
 
-	if (error) {
+	if (error || !data) {
 		console.error('Ошибка при поиске пользователя:', error);
 		return json({ error: 'Пользователь не найден' }, { status: 404 });
 	}

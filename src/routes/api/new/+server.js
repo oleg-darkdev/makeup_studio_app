@@ -1,5 +1,4 @@
 // src/routes/api/session/+server.js
-import { v4 as uuidv4 } from 'uuid';
 import { env } from '$env/dynamic/private';
 import { createClient } from '@supabase/supabase-js';
 import { SignJWT } from 'jose';
@@ -12,38 +11,52 @@ const supabase = createClient(
 	import.meta.env.VITE_SUPABASE_ANON_KEY
 );
 
-export async function POST({ cookies }) {
+export async function POST({ request, cookies }) {
 	if (!JWT_SECRET) {
 		console.error('❌ Missing JWT_SECRET in environment variables');
 		return new Response(JSON.stringify({ error: 'Server misconfiguration' }), { status: 500 });
 	}
 
-	const userId = uuidv4();
-	const payload = { userId, anonymous: true, createdAt: Date.now() };
+	try {
+		const { nickname } = await request.json();
 
-	// Генерация JWT с помощью jose (подходит для Edge Functions)
-	const token = await new SignJWT(payload)
-		.setProtectedHeader({ alg: 'HS256' })
-		.setExpirationTime(JWT_EXPIRES_IN)
-		.sign(new TextEncoder().encode(JWT_SECRET));
+		if (!nickname) {
+			return new Response(JSON.stringify({ error: 'Nickname is required' }), { status: 400 });
+		}
 
-	// Установка cookie
-	cookies.set('session', token, {
-		httpOnly: true,
-		secure: process.env.NODE_ENV === 'production',
-		sameSite: 'lax',
-		path: '/',
-		maxAge: 7 * 24 * 60 * 60
-	});
+		// Payload для JWT
+		const payload = { nickname, anonymous: false, createdAt: Date.now() };
 
-	// Вставка нового пользователя в Supabase
-	const { error } = await supabase
-		.from('users_progress')
-		.insert([{ user_id: userId, payment_status: 'unpaid', progress_level: 0 }]);
+		// Генерация JWT
+		const token = await new SignJWT(payload)
+			.setProtectedHeader({ alg: 'HS256' })
+			.setExpirationTime(JWT_EXPIRES_IN)
+			.sign(new TextEncoder().encode(JWT_SECRET));
 
-	if (error) console.error(error);
+		// Ставим cookie
+		cookies.set('session', token, {
+			httpOnly: true,
+			secure: process.env.NODE_ENV === 'production',
+			sameSite: 'lax',
+			path: '/',
+			maxAge: 7 * 24 * 60 * 60 // 7 дней
+		});
 
-	return new Response(JSON.stringify({ ok: true, userId }), {
-		headers: { 'Content-Type': 'application/json' }
-	});
+		// Записываем нового пользователя в Supabase
+		const { error } = await supabase
+			.from('users_progress')
+			.insert([{ nickname, payment_status: 'unpaid', progress_level: 0 }]);
+
+		if (error) {
+			console.error('❌ Supabase insert error:', error.message);
+			return new Response(JSON.stringify({ error: 'Database insert failed' }), { status: 500 });
+		}
+
+		return new Response(JSON.stringify({ ok: true, nickname }), {
+			headers: { 'Content-Type': 'application/json' }
+		});
+	} catch (err) {
+		console.error('❌ Server error:', err);
+		return new Response(JSON.stringify({ error: 'Server error' }), { status: 500 });
+	}
 }

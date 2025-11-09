@@ -6,9 +6,9 @@ const en = {
 	createAccountButton: 'Create account',
 	orDivider: 'Or',
 	existingUserText: 'If you already have your ID — enter it in this form.',
-	inputPlaceholder: 'Enter your ID',
+	inputPlaceholder: 'Enter your Instagram username',
 	inputTitle: 'Only letters, numbers, and hyphens',
-	checkButton: 'Check ID',
+	checkButton: 'Log in',
 
 	userData: {
 		idLabel: 'ID',

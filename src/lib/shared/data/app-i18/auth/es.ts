@@ -6,9 +6,9 @@ const es = {
 	createAccountButton: 'Crear cuenta',
 	orDivider: 'O',
 	existingUserText: 'Si ya tienes tu ID — introdúcelo en este formulario.',
-	inputPlaceholder: 'Introduce tu ID',
+	inputPlaceholder: 'Introduce tu nombre de usuario de Instagram',
 	inputTitle: 'Solo letras, números y guiones',
-	checkButton: 'Verificar ID',
+	checkButton: 'Iniciar sesión',
 
 	userData: {
 		idLabel: 'ID',

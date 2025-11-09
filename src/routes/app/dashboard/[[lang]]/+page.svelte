@@ -37,24 +37,24 @@
 </script>
 
 <main class="main-wrapper">
-	{#if paymentTransaction == 'unpaid' || paymentTransaction == undefined}
-		<section class="section_cta">
-			<div class="lg:padding-global">
-				<div class="lg:container-large">
-					<div class="padding-section-large">
-						<div class="w-layout-grid cta_component noise-effect">
-							<div class="app_wrap mx-auto max-w-4xl">
-								<!-- <h2>{$startPaymentProcess}</h2> -->
-								{#if !$startPaymentProcess}
+	<!-- {#if paymentTransaction == 'unpaid' || paymentTransaction == undefined} -->
+	<section class="section_cta">
+		<div class="lg:padding-global">
+			<div class="lg:container-large">
+				<div class="padding-section-large">
+					<div class="w-layout-grid cta_component noise-effect">
+						<div class="app_wrap mx-auto max-w-4xl">
+							<!-- <h2>{$startPaymentProcess}</h2> -->
+							<!-- {#if !$startPaymentProcess}
 									<Welcome {id} {progress} {createdAt} />
 								{:else}
 									<div class="z-index-2 mb-10">
 										<h2 class="text-color-pink font-poppins font-black uppercase">
 											<span class="text-underline-v6">{menu[$step].title}</span>
 										</h2>
-									</div>
+									</div> -->
 
-									<!-- <ul class="timeline">
+							<!-- <ul class="timeline">
 										{#each menu as title}
 											<li>
 												<div class="timeline-start timeline-box">{title}</div>
@@ -97,16 +97,16 @@
 										</li>
 									</ul> -->
 
-									{#key $step}
-										<div transition:fade>
-											{@render menu[$step].screen({
-												onReady: (value) => (readyToNextStep = value)
-											})}
-										</div>
-									{/key}
+							{#key $step}
+								<div transition:fade>
+									{@render menu[$step].screen({
+										onReady: (value) => (readyToNextStep = value)
+									})}
+								</div>
+							{/key}
 
-									<!-- 🔹 Кнопка Назад -->
-									<!-- {#if $step > 0}
+							<!-- 🔹 Кнопка Назад -->
+							<!-- {#if $step > 0}
 							<button
 								on:click={() => ($step = $step - 1)}
 								class="cta_image-button-wrap-prev w-inline-block"
@@ -124,13 +124,13 @@
 							</button>
 						{/if} -->
 
-									<!-- 🔹 Кнопка Далее -->
+							<!-- 🔹 Кнопка Далее -->
 
-									<!-- 	
+							<!-- 	
 														disabled={!readyToNextStep}
 							
  -->
-									<!-- {#if $step >= 2}
+							<!-- {#if $step >= 2}
 							<button
 								on:click={() => ($step = $step + 1)}
 								class="cta_image-button-wrap-next w-inline-block"
@@ -148,20 +148,15 @@
 							</button>
 						{/if} -->
 
-									<img
-										src="images/cta-lines.svg"
-										loading="lazy"
-										alt="waves"
-										class="cta_object-lines"
-									/>
-								{/if}
-							</div>
+							<img src="images/cta-lines.svg" loading="lazy" alt="waves" class="cta_object-lines" />
+							<!-- {/if} -->
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
-	{:else if paymentTransaction == 'paid'}
+		</div>
+	</section>
+	<!-- {:else if paymentTransaction == 'paid'}
 		<section class="section_cta">
 			<div class="padding-global">
 				<div class="container-large">
@@ -174,7 +169,7 @@
 									</h2>
 								</div>
 
-								<!-- <LessonsList /> -->
+								<LessonsList />
 
 								<img
 									src="images/cta-lines.svg"
@@ -188,7 +183,7 @@
 				</div>
 			</div>
 		</section>
-	{/if}
+	{/if} -->
 </main>
 
 <style lang="postcss">

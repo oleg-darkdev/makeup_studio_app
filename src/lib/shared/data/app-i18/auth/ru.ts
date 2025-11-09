@@ -6,9 +6,9 @@ const ru = {
 	createAccountButton: 'Создать аккаунт',
 	orDivider: 'Или',
 	existingUserText: 'Если вы уже имеете свой ID — впишите его в эту форму.',
-	inputPlaceholder: 'Введите ваш ID',
+	inputPlaceholder: 'Введите ваш никнейм в инстраграм',
 	inputTitle: 'Только буквы, цифры и дефис',
-	checkButton: 'Проверить ID',
+	checkButton: 'Авторизироваться',
 
 	userData: {
 		idLabel: 'ID',

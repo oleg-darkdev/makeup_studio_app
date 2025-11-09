@@ -3,6 +3,22 @@ const ru = {
 	titleEnd: 'тарифные планы',
 	buttonBuy: 'Получить доступ',
 	data: [
+		//
+		{
+			id: 0,
+			title: 'Тестовый',
+			shortDesc:
+				'Тестовый платёж',
+			img: '/images/prices/self.webp',
+			features: ['тестовый'],
+			priceId: 'price_1SJbF6EdBK6uZ4fPpeHjrqBq',
+
+			price: '5',
+			link: '#self',
+			anchor: 'self',
+			lang: 'ru',
+			buyLink: '/app'
+		},
 		{
 			id: 1,
 			title: 'Самостоятельный',

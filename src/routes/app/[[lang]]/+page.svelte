@@ -9,21 +9,29 @@
 	let loading = false;
 	let error = '';
 
-	async function checkUser() {
+	async function checkUser(nickname) {
 		error = '';
 		userData = null;
 		loading = true;
 
 		try {
-			const res = await fetch(`/api/user/${userId}`);
+			// Запрос пользователя по nickname
+			const res = await fetch(`/api/user/${nickname}`);
 			const data = await res.json();
 
-			if (!res.ok) throw new Error(data.error || 'Ошибка запроса');
+			if (res.ok && data.user) {
+				// ✅ Пользователь найден
+				userData = data.user;
+				console.log('✅ Пользователь найден:', data.user);
 
-			userData = data.user;
-			// console.log('✅ Найден пользователь:', data.user);
-
-			loginWithExistingId(userId);
+				// Авторизация и переход в dashboard
+				await loginWithExistingId(nickname);
+				goto(`/app/dashboard/${$page.params.lang}`);
+			} else {
+				// ❌ Пользователь не найден — создаём нового
+				console.warn('⚠️ Пользователь не найден, создаю нового...');
+				await newUser(nickname);
+			}
 		} catch (err) {
 			error = err.message || 'Ошибка при проверке пользователя';
 			console.error('❌ Ошибка:', err);
@@ -32,9 +40,14 @@
 		}
 	}
 
-	async function newUser() {
+	async function newUser(nickname) {
 		loading = true;
-		const res = await fetch('/api/new', { method: 'POST' });
+
+		const res = await fetch('/api/new', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/json' },
+			body: JSON.stringify({ nickname })
+		});
 
 		if (res.ok) {
 			goto(`/app/dashboard/${$page.params.lang}`);
@@ -45,8 +58,6 @@
 	}
 
 	async function loginWithExistingId(userId) {
-		// console.log(userId);
-
 		try {
 			const res = await fetch('/api/auth', {
 				method: 'POST',
@@ -62,8 +73,6 @@
 			} else {
 				throw new Error(data.error);
 			}
-
-			// console.log('✅ Куки обновлены, пользователь найден:', data.user);
 		} catch (err) {
 			console.error('❌ Ошибка входа:', err);
 		}
@@ -74,7 +83,7 @@
 	<div class="wrapper mx-auto max-w-2xl rounded-2xl border-2 border-[--pink] py-20 shadow-md">
 		<!-- md:left-[35%] left-[27%] -->
 
-		<div class="absolute top-8 -left-8 flex w-full flex-row mb-10 ">
+		<div class="absolute -left-8 top-8 mb-10 flex w-full flex-row md:-left-8 lg:left-[50]">
 			<!-- <div class=" mr-4 h-10">
 				<a href="/app" aria-current="page" class="navbar_logo-link">
 					<img src="/images/logo.PNG" loading="lazy" alt="" class="header_logo" />
@@ -96,7 +105,7 @@
 			</p>
 
 			<div class="mx-auto flex w-full max-w-sm flex-col items-center justify-center">
-				<button
+				<!-- <button
 					class="w-full rounded-xl bg-rose-400 px-4 py-2 text-white transition hover:bg-rose-600"
 					onclick={newUser}
 				>
@@ -105,7 +114,7 @@
 				<div class="divider uppercase">{$LL.app.auth.orDivider()}</div>
 				<p class="mb-6 mt-2 text-center text-sm text-gray-600">
 					{$LL.app.auth.existingUserText()}
-				</p>
+				</p> -->
 				<form
 					class="flex w-full max-w-md flex-col items-start gap-3 rounded-xl bg-rose-300 bg-opacity-75 p-4 shadow-md"
 				>
@@ -141,7 +150,7 @@
 					</label>
 
 					<button
-						onclick={() => checkUser()}
+						onclick={() => checkUser(userId)}
 						class="w-full rounded-xl bg-rose-600 px-4 py-2 text-white transition hover:bg-rose-700"
 					>
 						{$LL.app.auth.checkButton()}
