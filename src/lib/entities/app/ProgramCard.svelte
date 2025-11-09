@@ -3,7 +3,8 @@
 
 	let { stage } = $props();
 
-	let { title, lessons, id } = stage;
+	let { title, lessons, idBlock } = stage;
+	// console.log(stage)
 
 	let showInfo = $state(false);
 
@@ -18,7 +19,7 @@
 	<div class="faq_accordion-question" on:click={() => (showInfo = !showInfo)}>
 		<h4 class="text-color-main-white">
 			{$LL.program.module()}
-			{id}:
+			{idBlock}:
 			<span class="text-color-pink noise-effect">{title}</span>
 		</h4>
 		<div class="icon-embed-xxsmall w-embed">
@@ -48,9 +49,9 @@
 				</div> -->
 				<div class="text-rich-text w-richtext flex flex-col">
 					{#each lessons as { idLesson, title, link, shortDesc }, id}
-						<a href='/app/lessons{link}' target="_blank" class="text-bold text-color-main-white my-2 text-4xl">
-							{id}:
-							<span class="text-color-pink noise-effect">{title}</span>
+						<a href='/app/lessons{link}' target="_blank" class="text-bold text-color-main-white my-2 text-2xl no-underline">
+							{idBlock}.{id + 1}:
+							<span class="text-color-pink italic">{title}</span>
 						</a>
 					{/each}
 				</div>

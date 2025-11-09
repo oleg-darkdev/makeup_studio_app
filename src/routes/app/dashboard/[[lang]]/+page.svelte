@@ -77,6 +77,26 @@
 	console.log(data.user);
 	console.log(data.errorCode);
 	// console.log(nickname)
+
+	// lessons
+	import { ProgramCard } from '$entitiesApp';
+
+	import { programAppRu, DB } from '$sharedData';
+	import { unlockBlocksPerWeek, mergeAndSplitLessons } from '$sharedUtils';
+
+	// Имитация даты начала — позже будет приходить из БД
+	const userStartDate = '2025-10-01';
+	const DBWithAccess = unlockBlocksPerWeek(DB, userStartDate);
+
+	const { availableLessons, unavailableLessons } = mergeAndSplitLessons(
+		programAppRu.courseData,
+		DB
+	);
+
+
+	console.log(availableLessons)
+
+	// let { program } = $props();
 </script>
 
 <main class="main-wrapper">
@@ -208,7 +228,7 @@
 			</div>
 		</section>
 	{:else if paymentStatus}
-		<section class="section_cta">
+		<!-- <section class="section_cta">
 			<div class="padding-global">
 				<div class="container-large">
 					<div class="padding-section-large">
@@ -220,8 +240,103 @@
 									</h2>
 								</div>
 
-								<LessonsList program={$LL.program.courseDatas}/>
+								<LessonsList program={$LL.app.program.courseData}/>
 
+								<img
+									src="images/cta-lines.svg"
+									loading="lazy"
+									alt="waves"
+									class="cta_object-lines"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+		<section class="section_cta">
+			<div class="padding-global">
+				<div class="container-large">
+					<div class="padding-section-large">
+						<div class="w-layout-grid cta_component noise-effect">
+							<div class="app_wrap mx-auto max-w-4xl">
+								<!-- Заголовок -->
+								<div class="z-index-2 mb-10 text-center">
+									<h2 class="text-color-pink font-poppins font-black uppercase">
+										<span class="text-underline-v6">
+											Список доступных уроков ({availableLessons.length})
+										</span>
+									</h2>
+								</div>
+
+								<!-- Секция доступных уроков -->
+								<section class="mb-16 overflow-hidden">
+									<div class="mx-auto">
+										<div class="container-large">
+											<div class="padding-section-medium">
+												<div class="mx-auto flex max-w-3xl flex-row flex-wrap justify-center gap-4">
+													{#each availableLessons as stage (`${stage.idBlock}-${stage.title}`)}
+														<!-- transition:fade -->
+														<ProgramCard {stage} />
+													{/each}
+												</div>
+												<img
+													src="images/course-info-diamond-1.svg"
+													loading="lazy"
+													alt="Diamond"
+													class="faq_object-diamond-1"
+												/>
+												<img
+													src="images/course-info-diamond-2.svg"
+													loading="lazy"
+													alt="Diamond"
+													class="faq_object-diamond-2"
+												/>
+											</div>
+										</div>
+									</div>
+								</section>
+
+								<!-- Заголовок полного списка -->
+								<div class="z-index-2 mb-10 text-center">
+									<h2 class="text-color-pink font-poppins font-black uppercase">
+										<span class="text-underline-v6">
+											Полный список уроков ({unavailableLessons.length})
+										</span>
+									</h2>
+								</div>
+
+								<!-- Секция недоступных уроков -->
+								<section class="overflow-hidden">
+									<div class="mx-auto">
+										<div class="container-large">
+											<div class="padding-section-medium">
+												<div
+													class="mx-auto flex max-w-3xl flex-row flex-wrap justify-center gap-4 opacity-50"
+												>
+													{#each unavailableLessons as stage (`${stage.idBlock}-${stage.title}`)}
+														<!-- transition:fade -->
+														<ProgramCard {stage} />
+													{/each}
+												</div>
+												<img
+													src="images/course-info-diamond-1.svg"
+													loading="lazy"
+													alt="Diamond"
+													class="faq_object-diamond-1"
+												/>
+												<img
+													src="images/course-info-diamond-2.svg"
+													loading="lazy"
+													alt="Diamond"
+													class="faq_object-diamond-2"
+												/>
+											</div>
+										</div>
+									</div>
+								</section>
+
+								<!-- Фоновая линия -->
 								<img
 									src="images/cta-lines.svg"
 									loading="lazy"
@@ -257,5 +372,28 @@
 		display: flex;
 		position: absolute;
 		inset: auto 4rem -3rem auto;
+	}
+
+	.app_wrap {
+		color: var(--main-black);
+		border-radius: 16px;
+		border: 2px var(--pink) solid;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		min-height: 25rem;
+		padding: 3rem;
+		position: relative;
+		/* background-color: rgba(255, 255, 255, 0.); */
+		backdrop-filter: blur(6px);
+	}
+
+	.opacity-50 {
+		opacity: 0.5;
+	}
+
+	.text-underline-v6 {
+		border-bottom: 2px solid var(--pink);
+		padding-bottom: 4px;
 	}
 </style>

@@ -12,10 +12,11 @@
 	<div class="mx-auto">
 		<div class="container-large">
 			<div class="padding-section-large">
-				<div class="w-layout-grid program_component">
+				<div class="flex flex-col lg:px-10 px-2">
+					<!--  -->
 					<div class="faq_icon-wrap">
-						<div class="w-layout-grid program_list">
-							<!-- $LL.program.courseData -->
+						<!--  -->
+						<div class="w-layout-grid  program_list">
 							{#each program as stage}
 								<ProgramCard {stage} />
 							{/each}
@@ -57,11 +58,7 @@
 	}
 
 	.program_component {
-		grid-column-gap: 3rem;
-		grid-row-gap: 3rem;
 		grid-template-rows: auto;
-		grid-template-columns: 1fr 1fr;
-		grid-auto-columns: 1fr;
 		align-items: start;
 		display: grid;
 		position: relative;
