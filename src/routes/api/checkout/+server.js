@@ -14,15 +14,17 @@ export async function POST({ request, cookies }) {
 		if (!JWT_SECRET) return json({ error: 'Server misconfiguration' }, { status: 500 });
 
 		const { payload } = await jwtVerify(token, new TextEncoder().encode(JWT_SECRET));
-		const { priceId, lang } = await request.json();
+		const { priceId, lang, tildLink } = await request.json();
 
 		if (!priceId) return json({ error: 'Missing priceId' }, { status: 400 });
+
+		console.log(tildLink);
 
 		// Создаём Stripe Checkout Session
 		const session = await stripe.checkout.sessions.create({
 			mode: 'payment',
 			line_items: [{ price: priceId, quantity: 1 }],
-			success_url: `https://vasilyeva-pmu.vercel.app/app/dashboard/${lang}?session_id={CHECKOUT_SESSION_ID}`,
+			success_url: tildLink,
 			cancel_url: 'http://localhost:5173/cancel',
 			metadata: {
 				lang,

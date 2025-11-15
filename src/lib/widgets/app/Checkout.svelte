@@ -29,11 +29,13 @@
 
 	const selectedPlan = findPriceById(currentPrices(lang), $selectedPrice);
 
+	const tildLink = selectedPlan.tilda;
+
 	async function handleCheckout(priceId, lang) {
 		const res = await fetch('/api/checkout', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
-			body: JSON.stringify({ priceId, lang })
+			body: JSON.stringify({ priceId, lang, tildLink })
 		});
 
 		const data = await res.json();

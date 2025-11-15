@@ -14,6 +14,7 @@ const pl = {
 			link: '#self',
 			anchor: 'self',
 			priceId: 'price_1SMvjnEdBK6uZ4fPpi7Tnapj',
+			tilda: 'https://eyeliner.tilda.ws/members/signup/group/mzdtsujocensnwf-samodzielny',
 
 			lang: 'pl',
 			buyLink: '/app'
@@ -29,6 +30,7 @@ const pl = {
 			link: '#curator',
 			anchor: 'curator',
 			priceId: 'price_1SMvkCEdBK6uZ4fPAbaYANZG',
+			tilda: 'https://eyeliner.tilda.ws/members/signup/group/zkn5ukjxb2rpqi9-z-kuratorem',
 
 			lang: 'pl',
 			buyLink: '/app'
@@ -48,6 +50,7 @@ const pl = {
 			link: '#with-valeria',
 			anchor: 'with-valeria',
 			priceId: 'price_1SMvkaEdBK6uZ4fPkppS8Nsk',
+			tilda: 'https://eyeliner.tilda.ws/members/signup/group/vwrjk2fydfevze5-z-valeria',
 
 			lang: 'pl',
 			buyLink: '/app'

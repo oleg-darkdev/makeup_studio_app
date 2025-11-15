@@ -1,205 +1,198 @@
-<script>
-	import { goto } from '$app/navigation';
-	import { page } from '$app/stores';
-	import { LangSwitcher } from '$sharedUi';
+<script lang="ts">
+	import { fade } from 'svelte/transition';
+	import { UiLangSwitcherCard } from '$entitiesApp';
+	import { LessonsList, Prices, Welcome, Checkout } from '$widgetsApp';
+	import { uiAppLang, step, startPaymentProcess } from '$sharedStores';
 	import LL from '$i18n/i18n-svelte';
 
-	let userId = '';
-	let userData = null;
+	import { page } from '$app/stores';
+	import { onMount } from 'svelte';
+
 	let loading = false;
-	let error = '';
+	let message = '';
 
-	async function checkUser(nickname) {
-		error = '';
-		userData = null;
-		loading = true;
+	let readyToNextStep = $state(false);
 
-		try {
-			// Запрос пользователя по nickname
-			const res = await fetch(`/api/user/${nickname}`);
-			const data = await res.json();
+	let menu = [
+		// { title: 'Lang ui', screen: UiLangSwitcherCard },
+		// { title: 'Welcome', screen: Welcome },
+		// { title: 'Lang Course', screen: UiLangSwitcherCard },
+		{ title: $LL.app.prices.title(), screen: Prices },
+		{ title: $LL.app.checkout.title(), screen: Checkout }
+		// { title: 'Lorem ipsum #2', screen: LessonsList }
+	];
 
-			if (res.ok && data.user) {
-				// ✅ Пользователь найден
-				userData = data.user;
-				console.log('✅ Пользователь найден:', data.user);
+	$effect(() => {
+		// console.log(readyToNextStep);
+		readyToNextStep = false;
+		// console.log(readyToNextStep);
+	});
 
-				// Авторизация и переход в dashboard
-				await loginWithExistingId(nickname);
-				goto(`/app/dashboard/${$page.params.lang}`);
-			} else {
-				// ❌ Пользователь не найден — создаём нового
-				console.warn('⚠️ Пользователь не найден, создаю нового...');
-				await newUser(nickname);
-			}
-		} catch (err) {
-			error = err.message || 'Ошибка при проверке пользователя';
-			console.error('❌ Ошибка:', err);
-		} finally {
-			loading = false;
-		}
-	}
-
-	async function newUser(nickname) {
-		loading = true;
-
-		const res = await fetch('/api/new', {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/json' },
-			body: JSON.stringify({ nickname })
-		});
-
-		if (res.ok) {
-			goto(`/app/dashboard/${$page.params.lang}`);
-		} else {
-			alert('Ошибка входа');
-			loading = false;
-		}
-	}
-
-	async function loginWithExistingId(userId) {
-		try {
-			const res = await fetch('/api/auth', {
-				method: 'POST',
-				headers: { 'Content-Type': 'application/json' },
-				body: JSON.stringify({ userId })
-			});
-
-			const data = await res.json();
-			if (res.ok) {
-				// console.log('req send');
-
-				goto(`/app/dashboard/${$page.params.lang}`);
-			} else {
-				throw new Error(data.error);
-			}
-		} catch (err) {
-			console.error('❌ Ошибка входа:', err);
-		}
-	}
 </script>
 
-<main class="main-wrapper py-6 lg:py-16">
-	<div class="wrapper mx-auto max-w-2xl rounded-2xl border-2 border-[--pink] py-20 shadow-md">
-		<!-- md:left-[35%] left-[27%] -->
+<main class="main-wrapper">
+	<section class="section_cta">
+		<div class="lg:padding-global">
+			<div class="lg:container-large">
+				<div class="padding-section-large">
+					<div class="w-layout-grid cta_component noise-effect">
+						<div class="app_wrap mx-auto max-w-4xl">
+							<!-- <h2>{$startPaymentProcess}</h2> -->
+							<!-- {#if !$startPaymentProcess}
+									<Welcome {id} {progress} {createdAt} />
+								{:else}
+									<div class="z-index-2 mb-10">
+										<h2 class="text-color-pink font-poppins font-black uppercase">
+											<span class="text-underline-v6">{menu[$step].title}</span>
+										</h2>
+									</div> -->
 
-		<div class="absolute -left-8 top-8 mb-10 flex w-full flex-row md:-left-8 lg:left-[50]">
-			<!-- <div class=" mr-4 h-10">
-				<a href="/app" aria-current="page" class="navbar_logo-link">
-					<img src="/images/logo.PNG" loading="lazy" alt="" class="header_logo" />
-				</a>
-			</div> -->
-			<LangSwitcher />
-		</div>
-		<div class="mx-auto mx-auto flex w-full flex-col items-center justify-center px-6">
-			<div class="text-style-signature noise-effect mb-6">
-				<img src="/images/signature_1.png" class="h-6 w-full" alt="Logotype" />
-			</div>
+							<!-- <ul class="timeline">
+										{#each menu as title}
+											<li>
+												<div class="timeline-start timeline-box">{title}</div>
+												<div class="timeline-middle">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 20 20"
+														fill="currentColor"
+														class="h-5 w-5 text-primary"
+													>
+														<path
+															fill-rule="evenodd"
+															d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+															clip-rule="evenodd"
+														/>
+													</svg>
+												</div>
+												<hr class="bg-primary" />
+											</li>
+										{/each}
 
-			<h2 class="heading-style-h2 font-poppins mb-10 text-center font-black uppercase">
-				{$LL.app.auth.title()}
-				<span class="text-underline-v1 noise-effect"> «EYE LINER» </span>
-			</h2>
-			<p class="mb-6 max-w-md text-center text-sm text-gray-600">
-				{$LL.app.auth.description()}
-			</p>
+										<li>
+											<hr />
+											<div class="timeline-middle">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													viewBox="0 0 20 20"
+													fill="currentColor"
+													class="h-5 w-5"
+												>
+													<path
+														fill-rule="evenodd"
+														d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+														clip-rule="evenodd"
+													/>
+												</svg>
+											</div>
+											<div class="timeline-end timeline-box">iPhone</div>
+											<hr />
+										</li>
+									</ul> -->
 
-			<div class="mx-auto flex w-full max-w-sm flex-col items-center justify-center">
-				<!-- <button
-					class="w-full rounded-xl bg-rose-400 px-4 py-2 text-white transition hover:bg-rose-600"
-					onclick={newUser}
-				>
-					{$LL.app.auth.createAccountButton()}
-				</button>
-				<div class="divider uppercase">{$LL.app.auth.orDivider()}</div>
-				<p class="mb-6 mt-2 text-center text-sm text-gray-600">
-					{$LL.app.auth.existingUserText()}
-				</p> -->
-				<form
-					class="flex w-full max-w-md flex-col items-start gap-3 rounded-xl bg-rose-300 bg-opacity-75 p-4 shadow-md"
-				>
-					<label class="input validator flex w-full items-center gap-2">
-						<svg
-							class="h-[1.2em] opacity-50"
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 24 24"
-						>
-							<g
-								stroke-linejoin="round"
-								stroke-linecap="round"
-								stroke-width="2.5"
-								fill="none"
-								stroke="currentColor"
+							{#key $step}
+								<div transition:fade>
+									{@render menu[$step].screen({
+										onReady: (value) => (readyToNextStep = value)
+									})}
+								</div>
+							{/key}
+
+							<!-- 🔹 Кнопка Назад -->
+							<!-- {#if $step > 0}
+							<button
+								on:click={() => ($step = $step - 1)}
+								class="cta_image-button-wrap-prev w-inline-block"
 							>
-								<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-								<circle cx="12" cy="7" r="4"></circle>
-							</g>
-						</svg>
+								<div class="button_image-btn large">
+									<div class="splide_carousel-service-icon w-embed">
+										<svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M12 0.923H10.153V8.852L1.302 0L0 1.302L8.852 10.154H0.923V12H12V0.923Z"
+												fill="currentColor"
+											/>
+										</svg>
+									</div>
+								</div>
+							</button>
+						{/if} -->
 
-						<input
-							bind:value={userId}
-							type="text"
-							required
-							placeholder={$LL.app.auth.inputPlaceholder()}
-							pattern="[A-Za-z0-9\-]+"
-							minlength="3"
-							maxlength="60"
-							title={$LL.app.auth.inputTitle()}
-							class="flex-1 rounded-lg border p-2 outline-none focus:ring-2 focus:ring-rose-400"
-						/>
-					</label>
+							<!-- 🔹 Кнопка Далее -->
 
-					<button
-						onclick={() => checkUser(userId)}
-						class="w-full rounded-xl bg-rose-600 px-4 py-2 text-white transition hover:bg-rose-700"
-					>
-						{$LL.app.auth.checkButton()}
-					</button>
+							<!-- 	
+														disabled={!readyToNextStep}
+							
+ -->
+							<!-- {#if $step >= 2}
+							<button
+								on:click={() => ($step = $step + 1)}
+								class="cta_image-button-wrap-next w-inline-block"
+							>
+								<div class="button_image-btn large">
+									<div class="splide_carousel-service-icon w-embed">
+										<svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M12 0.923H10.153V8.852L1.302 0L0 1.302L8.852 10.154H0.923V12H12V0.923Z"
+												fill="currentColor"
+											/>
+										</svg>
+									</div>
+								</div>
+							</button>
+						{/if} -->
 
-					{#if error}
-						<p class="mt-2 text-sm text-red-500">{error}</p>
-					{/if}
-
-					{#if userData}
-						<div class="mt-3 w-full rounded-xl border bg-white p-3">
-							<p><strong>{$LL.app.auth.userData.idLabel()}:</strong> {userData.user_id}</p>
-							<p>
-								<strong>{$LL.app.auth.userData.paymentStatus()}:</strong>
-								{userData.payment_status}
-							</p>
-							<p>
-								<strong>{$LL.app.auth.userData.progressLevel()}:</strong>
-								{userData.progress_level}%
-							</p>
-							<p>
-								<strong>{$LL.app.auth.userData.registrationDate()}:</strong>
-								{new Date(userData.registration_date).toLocaleDateString()}
-							</p>
+							<img src="images/cta-lines.svg" loading="lazy" alt="waves" class="cta_object-lines" />
+							<!-- {/if} -->
 						</div>
-					{/if}
-				</form>
-
-				<p class="validator-hint"></p>
+					</div>
+				</div>
 			</div>
-			<!-- <div class="mx-auto max-w-sm"></div> -->
 		</div>
-	</div>
+	</section>
 </main>
 
-<style>
-	.wrapper {
-		/* background-color: var(--pink); */
-		/* color: var(--main-black);
+<style lang="postcss">
+	.cta_image-button-wrap-next {
+		text-align: right;
+		justify-content: flex-end;
+		display: flex;
+		position: absolute;
+		inset: auto 12rem -3rem auto;
+	}
+
+	.cta_image-button-wrap-next:disabled {
+		opacity: 0.4;
+		pointer-events: none;
+	}
+
+	.cta_image-button-wrap-prev {
+		text-align: right;
+		justify-content: flex-end;
+		display: flex;
+		position: absolute;
+		inset: auto 4rem -3rem auto;
+	}
+
+	.app_wrap {
+		color: var(--main-black);
 		border-radius: 16px;
-		border: 2px var(--pink) solid; */
+		border: 2px var(--pink) solid;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		min-height: 25rem;
+		padding: 3rem;
+		position: relative;
+		/* background-color: rgba(255, 255, 255, 0.); */
+		backdrop-filter: blur(6px);
 	}
-	.header_logo {
-		max-height: 5rem;
-		margin: 1.5em;
+
+	.opacity-50 {
+		opacity: 0.5;
 	}
-	@media screen and (max-width: 479px) {
-		.header_logo {
-			max-height: 3rem;
-		}
+
+	.text-underline-v6 {
+		border-bottom: 2px solid var(--pink);
+		padding-bottom: 4px;
 	}
 </style>

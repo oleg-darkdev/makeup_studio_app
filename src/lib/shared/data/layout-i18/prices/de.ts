@@ -14,7 +14,7 @@ const de = {
 			anchor: 'self',
 			price: '300',
 			priceId: 'price_1SMvlcEdBK6uZ4fPj1ey8MEe',
-
+			tilda: '',
 			lang: 'de',
 			buyLink: '/app'
 		}

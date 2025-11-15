@@ -14,6 +14,7 @@ const es = {
 			link: '#self',
 			anchor: 'self',
 			priceId: 'price_1SMvmtEdBK6uZ4fPRrCQwAlf',
+			tilda: '',
 
 			lang: 'es',
 			buyLink: '/app'

@@ -15,6 +15,9 @@ const en = {
 			anchor: 'self',
 			priceId: 'price_1SMvkvEdBK6uZ4fPOB1ZmZz6',
 			lang: 'en',
+			tilda:
+				'https://eyeliner.tilda.ws/members/signup/group/sxjoutawt3humli-self-access-to-training-eng',
+
 			buyLink: '/app'
 		}
 		// {

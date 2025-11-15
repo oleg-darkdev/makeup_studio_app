@@ -4,21 +4,21 @@ const ru = {
 	buttonBuy: 'Получить доступ',
 	data: [
 		//
-		{
-			id: 0,
-			title: 'Тестовый',
-			shortDesc:
-				'Тестовый платёж',
-			img: '/images/prices/self.webp',
-			features: ['тестовый'],
-			priceId: 'price_1SJbF6EdBK6uZ4fPpeHjrqBq',
+		// {
+		// 	id: 0,
+		// 	title: 'Тестовый',
+		// 	shortDesc: 'Тестовый платёж',
+		// 	img: '/images/prices/self.webp',
+		// 	features: ['тестовый'],
+		// 	priceId: 'price_1SJbF6EdBK6uZ4fPpeHjrqBq',
+		// 	tilda: 'https://eyeliner.tilda.ws/members/signup/group/uep4cvnjvvdmvwt-samostoatelnyj-dostup',
 
-			price: '5',
-			link: '#self',
-			anchor: 'self',
-			lang: 'ru',
-			buyLink: '/app'
-		},
+		// 	price: '5',
+		// 	link: '#self',
+		// 	anchor: 'self',
+		// 	lang: 'ru',
+		// 	buyLink: '/app'
+		// },
 		{
 			id: 1,
 			title: 'Самостоятельный',
@@ -27,6 +27,7 @@ const ru = {
 			img: '/images/prices/self.webp',
 			features: ['Возможность обучаться в удобном для тебя ритме'],
 			priceId: 'price_1SJbXjEdBK6uZ4fP8gNktSSk',
+			tilda: 'https://eyeliner.tilda.ws/members/signup/group/uep4cvnjvvdmvwt-samostoatelnyj-dostup',
 
 			price: '300',
 			link: '#self',
@@ -41,6 +42,7 @@ const ru = {
 				'ты не просто смотришь уроки — ты получаешь наставника. После каждой домашней работы куратор даст развернутую обратную связь и поможет исправить ошибки. (количество мест ограничено)',
 			img: '/images/prices/curator.webp',
 			features: ['Персонализированная поддержка', 'Непосредственный контакт с куратором'],
+			tilda: 'https://eyeliner.tilda.ws/members/signup/group/wdftcu1uyzl2c3c-dostup-s-kuratorom',
 
 			price: '500',
 			link: '#curator',
@@ -66,6 +68,7 @@ const ru = {
 			link: '#with-valeria',
 			anchor: 'with-valeria',
 			priceId: 'price_1SJbZ5EdBK6uZ4fPo6F0QDZu',
+			tilda: 'https://eyeliner.tilda.ws/members/signup/group/uvb1nflymzzjduj-dostup-s-valeriej',
 
 			lang: 'ru',
 			buyLink: '/app'

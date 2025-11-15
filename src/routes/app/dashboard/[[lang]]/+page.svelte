@@ -74,8 +74,6 @@
 	// 	goto('/login');
 	// }
 
-	console.log(data.user);
-	console.log(data.errorCode);
 	// console.log(nickname)
 
 	// lessons
@@ -93,25 +91,20 @@
 		DB
 	);
 
-
-	console.log(availableLessons)
+	// console.log(availableLessons)
 
 	// let { program } = $props();
 </script>
 
 <main class="main-wrapper">
-	{#if errorCode}
-		<h2>{errorCode}</h2>
-		<!-- <h2>{paymentStatus}</h2> -->
-	{:else if paymentStatus === false || paymentStatus == undefined}
-		<section class="section_cta">
-			<div class="lg:padding-global">
-				<div class="lg:container-large">
-					<div class="padding-section-large">
-						<div class="w-layout-grid cta_component noise-effect">
-							<div class="app_wrap mx-auto max-w-4xl">
-								<!-- <h2>{$startPaymentProcess}</h2> -->
-								<!-- {#if !$startPaymentProcess}
+	<section class="section_cta">
+		<div class="lg:padding-global">
+			<div class="lg:container-large">
+				<div class="padding-section-large">
+					<div class="w-layout-grid cta_component noise-effect">
+						<div class="app_wrap mx-auto max-w-4xl">
+							<!-- <h2>{$startPaymentProcess}</h2> -->
+							<!-- {#if !$startPaymentProcess}
 									<Welcome {id} {progress} {createdAt} />
 								{:else}
 									<div class="z-index-2 mb-10">
@@ -120,7 +113,7 @@
 										</h2>
 									</div> -->
 
-								<!-- <ul class="timeline">
+							<!-- <ul class="timeline">
 										{#each menu as title}
 											<li>
 												<div class="timeline-start timeline-box">{title}</div>
@@ -163,16 +156,16 @@
 										</li>
 									</ul> -->
 
-								{#key $step}
-									<div transition:fade>
-										{@render menu[$step].screen({
-											onReady: (value) => (readyToNextStep = value)
-										})}
-									</div>
-								{/key}
+							{#key $step}
+								<div transition:fade>
+									{@render menu[$step].screen({
+										onReady: (value) => (readyToNextStep = value)
+									})}
+								</div>
+							{/key}
 
-								<!-- 🔹 Кнопка Назад -->
-								<!-- {#if $step > 0}
+							<!-- 🔹 Кнопка Назад -->
+							<!-- {#if $step > 0}
 							<button
 								on:click={() => ($step = $step - 1)}
 								class="cta_image-button-wrap-prev w-inline-block"
@@ -190,13 +183,13 @@
 							</button>
 						{/if} -->
 
-								<!-- 🔹 Кнопка Далее -->
+							<!-- 🔹 Кнопка Далее -->
 
-								<!-- 	
+							<!-- 	
 														disabled={!readyToNextStep}
 							
  -->
-								<!-- {#if $step >= 2}
+							<!-- {#if $step >= 2}
 							<button
 								on:click={() => ($step = $step + 1)}
 								class="cta_image-button-wrap-next w-inline-block"
@@ -214,142 +207,14 @@
 							</button>
 						{/if} -->
 
-								<img
-									src="images/cta-lines.svg"
-									loading="lazy"
-									alt="waves"
-									class="cta_object-lines"
-								/>
-								<!-- {/if} -->
-							</div>
+							<img src="images/cta-lines.svg" loading="lazy" alt="waves" class="cta_object-lines" />
+							<!-- {/if} -->
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
-	{:else if paymentStatus}
-		<!-- <section class="section_cta">
-			<div class="padding-global">
-				<div class="container-large">
-					<div class="padding-section-large">
-						<div class="w-layout-grid cta_component noise-effect">
-							<div class="app_wrap mx-auto max-w-4xl">
-								<div class="z-index-2 mb-10">
-									<h2 class="text-color-pink font-poppins font-black uppercase">
-										<span class="text-underline-v6">Список доступных уроков</span>
-									</h2>
-								</div>
-
-								<LessonsList program={$LL.app.program.courseData}/>
-
-								<img
-									src="images/cta-lines.svg"
-									loading="lazy"
-									alt="waves"
-									class="cta_object-lines"
-								/>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section> -->
-		<section class="section_cta">
-			<div class="padding-global">
-				<div class="container-large">
-					<div class="padding-section-large">
-						<div class="w-layout-grid cta_component noise-effect">
-							<div class="app_wrap mx-auto max-w-4xl">
-								<!-- Заголовок -->
-								<div class="z-index-2 mb-10 text-center">
-									<h2 class="text-color-pink font-poppins font-black uppercase">
-										<span class="text-underline-v6">
-											Список доступных уроков ({availableLessons.length})
-										</span>
-									</h2>
-								</div>
-
-								<!-- Секция доступных уроков -->
-								<section class="mb-16 overflow-hidden">
-									<div class="mx-auto">
-										<div class="container-large">
-											<div class="padding-section-medium">
-												<div class="mx-auto flex max-w-3xl flex-row flex-wrap justify-center gap-4">
-													{#each availableLessons as stage (`${stage.idBlock}-${stage.title}`)}
-														<!-- transition:fade -->
-														<ProgramCard {stage} />
-													{/each}
-												</div>
-												<img
-													src="images/course-info-diamond-1.svg"
-													loading="lazy"
-													alt="Diamond"
-													class="faq_object-diamond-1"
-												/>
-												<img
-													src="images/course-info-diamond-2.svg"
-													loading="lazy"
-													alt="Diamond"
-													class="faq_object-diamond-2"
-												/>
-											</div>
-										</div>
-									</div>
-								</section>
-
-								<!-- Заголовок полного списка -->
-								<div class="z-index-2 mb-10 text-center">
-									<h2 class="text-color-pink font-poppins font-black uppercase">
-										<span class="text-underline-v6">
-											Полный список уроков ({unavailableLessons.length})
-										</span>
-									</h2>
-								</div>
-
-								<!-- Секция недоступных уроков -->
-								<section class="overflow-hidden">
-									<div class="mx-auto">
-										<div class="container-large">
-											<div class="padding-section-medium">
-												<div
-													class="mx-auto flex max-w-3xl flex-row flex-wrap justify-center gap-4 opacity-50"
-												>
-													{#each unavailableLessons as stage (`${stage.idBlock}-${stage.title}`)}
-														<!-- transition:fade -->
-														<ProgramCard {stage} />
-													{/each}
-												</div>
-												<img
-													src="images/course-info-diamond-1.svg"
-													loading="lazy"
-													alt="Diamond"
-													class="faq_object-diamond-1"
-												/>
-												<img
-													src="images/course-info-diamond-2.svg"
-													loading="lazy"
-													alt="Diamond"
-													class="faq_object-diamond-2"
-												/>
-											</div>
-										</div>
-									</div>
-								</section>
-
-								<!-- Фоновая линия -->
-								<img
-									src="images/cta-lines.svg"
-									loading="lazy"
-									alt="waves"
-									class="cta_object-lines"
-								/>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	{/if}
+		</div>
+	</section>
 </main>
 
 <style lang="postcss">
