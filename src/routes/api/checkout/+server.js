@@ -9,11 +9,11 @@ const stripe = new Stripe(STRIPE_SECRET_KEY);
 
 export async function POST({ request, cookies }) {
 	try {
-		const token = cookies.get('session');
-		if (!token) return json({ error: 'Unauthorized' }, { status: 401 });
-		if (!JWT_SECRET) return json({ error: 'Server misconfiguration' }, { status: 500 });
+		// const token = cookies.get('session');
+		// if (!token) return json({ error: 'Unauthorized' }, { status: 401 });
+		// if (!JWT_SECRET) return json({ error: 'Server misconfiguration' }, { status: 500 });
 
-		const { payload } = await jwtVerify(token, new TextEncoder().encode(JWT_SECRET));
+		// const { payload } = await jwtVerify(token, new TextEncoder().encode(JWT_SECRET));
 		const { priceId, lang, tildLink } = await request.json();
 
 		if (!priceId) return json({ error: 'Missing priceId' }, { status: 400 });
@@ -28,7 +28,7 @@ export async function POST({ request, cookies }) {
 			cancel_url: 'http://localhost:5173/cancel',
 			metadata: {
 				lang,
-				nickname: payload.nickname
+				// nickname: payload.nickname
 			}
 		});
 

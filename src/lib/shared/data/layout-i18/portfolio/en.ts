@@ -4,7 +4,7 @@ const en = {
 	warning1: 'Curator support is available ',
 	warning2: 'only in Russian and Polish.',
 	warning3: 'For self-study, the course is available in ',
-	warning4: 'Russian, English, Polish, Spanish, French, German, Portuguese.',
+	warning4: 'Russian, English, Polish, Italian, Spanish, French, German, Portuguese.',
 
 	gallery: []
 };

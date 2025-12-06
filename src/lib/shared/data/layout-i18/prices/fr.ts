@@ -14,7 +14,7 @@ const fr = {
 			link: '#self',
 			anchor: 'self',
 			priceId: 'price_1SMvlIEdBK6uZ4fPVOYf3zQ2',
-			tilda: '',
+			tilda: 'https://eyeliner.tilda.ws/members/signup/group/MmEzZWMyY2IwOWM-self-access-french-language',
 
 			lang: 'fr',
 			buyLink: '/app'

@@ -77,7 +77,7 @@
 							</div>
 						</div>
 
-						<img src="images/cta-lines.svg" loading="lazy" alt="waves" class="cta_object-lines" />
+						<img src="/images/cta-lines.svg" loading="lazy" alt="waves" class="cta_object-lines" />
 					</div>
 				</div>
 			</div>

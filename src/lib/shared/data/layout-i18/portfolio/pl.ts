@@ -4,7 +4,8 @@ const pl = {
 	warning1: 'Wsparcie kuratora jest dostępne ',
 	warning2: 'tylko w języku rosyjskim i polskim.',
 	warning3: 'Do samodzielnej nauki kurs jest dostępny w ',
-	warning4: 'rosyjskim, angielskim, polskim, hiszpańskim, francuskim, niemieckim, portugalskim.',
+	warning4:
+		'rosyjskim, angielskim, polskim, włoskim, hiszpańskim, francuskim, niemieckim, portugalskim.',
 
 	gallery: []
 };

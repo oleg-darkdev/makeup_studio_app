@@ -4,7 +4,7 @@ const es = {
 	warning1: 'El acompañamiento del tutor está disponible ',
 	warning2: 'solo en ruso y polaco.',
 	warning3: 'Para el autoaprendizaje, el curso está disponible en ',
-	warning4: 'ruso, inglés, polaco, español, francés, alemán, portugués.',
+	warning4: 'ruso, inglés, polaco, italiano, español, francés, alemán, portugués.',
 
 	gallery: []
 };

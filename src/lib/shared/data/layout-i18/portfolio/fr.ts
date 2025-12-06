@@ -4,7 +4,7 @@ const fr = {
 	warning1: 'L’accompagnement par un tuteur est disponible ',
 	warning2: 'uniquement en russe et en polonais.',
 	warning3: 'Pour l’auto-apprentissage, le cours est disponible en ',
-	warning4: 'russe, anglais, polonais, espagnol, français, allemand, portugais.',
+	warning4: 'russe, anglais, polonais, italienne, espagnol, français, allemand, portugais.',
 
 	gallery: []
 };
