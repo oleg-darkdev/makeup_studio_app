@@ -19,6 +19,8 @@ const ru = {
 		// 	lang: 'ru',
 		// 	buyLink: '/app'
 		// },
+
+
 		{
 			id: 1,
 			title: 'Самостоятельный',
@@ -26,10 +28,10 @@ const ru = {
 				'идеальный вариант для тех, кто хочет изучать курс в своём ритме. Ты получишь полный доступ ко всем урокам без каких-либо ограничений.',
 			img: '/images/prices/self.webp',
 			features: ['Возможность обучаться в удобном для тебя ритме'],
-			priceId: 'price_1SJbXjEdBK6uZ4fP8gNktSSk',
+			priceId: 'price_1TBMgLEdBK6uZ4fPLy5aBS1M',
 			tilda: 'https://eyeliner.tilda.ws/members/signup/group/uep4cvnjvvdmvwt-samostoatelnyj-dostup',
 
-			price: '300',
+			price: '490',
 			link: '#self',
 			anchor: 'self',
 			lang: 'ru',
@@ -44,10 +46,10 @@ const ru = {
 			features: ['Персонализированная поддержка', 'Непосредственный контакт с куратором'],
 			tilda: 'https://eyeliner.tilda.ws/members/signup/group/wdftcu1uyzl2c3c-dostup-s-kuratorom',
 
-			price: '500',
+			price: '690',
 			link: '#curator',
 			anchor: 'curator',
-			priceId: 'price_1SJbYCEdBK6uZ4fPbvndkMKk',
+			priceId: 'price_1TBMfgEdBK6uZ4fPwEJR3jqz',
 
 			lang: 'ru',
 			buyLink: '/app'
@@ -64,10 +66,11 @@ const ru = {
 			shortDesc:
 				'премиум-версия курса. Ты будешь обучаться в мини-группе до 10 человек лично с автором курса. Это больше, чем поддержка — это эксклюзивный доступ к знаниям и опыту.',
 			img: '/images/prices/valeria.webp',
-			price: '1500',
+			price: '1110',
 			link: '#with-valeria',
 			anchor: 'with-valeria',
-			priceId: 'price_1SJbZ5EdBK6uZ4fPo6F0QDZu',
+			priceId: 'price_1TBMwjEdBK6uZ4fPyL3bSnzu',
+			
 			tilda: 'https://eyeliner.tilda.ws/members/signup/group/uvb1nflymzzjduj-dostup-s-valeriej',
 
 			lang: 'ru',

@@ -10,10 +10,10 @@ const fr = {
 				'Idéal pour ceux qui souhaitent apprendre à leur propre rythme. Vous aurez un accès complet à toutes les leçons sans aucune restriction.',
 			img: '/images/prices/self.webp',
 			features: ['Apprenez à votre propre rythme'],
-			price: '300',
+			price: '490',
 			link: '#self',
 			anchor: 'self',
-			priceId: 'price_1SMvlIEdBK6uZ4fPVOYf3zQ2',
+			priceId: 'price_1TBMbYEdBK6uZ4fPsA1ZjdPh',
 			tilda: 'https://eyeliner.tilda.ws/members/signup/group/MmEzZWMyY2IwOWM-self-access-french-language',
 
 			lang: 'fr',

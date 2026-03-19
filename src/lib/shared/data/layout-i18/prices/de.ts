@@ -12,13 +12,15 @@ const de = {
 			features: ['Lerne in deinem eigenen Tempo'],
 			link: '#self',
 			anchor: 'self',
-			price: '300',
-			priceId: 'price_1SMvlcEdBK6uZ4fPj1ey8MEe',
+			price: '490',
+			priceId: 'price_1TBMatEdBK6uZ4fPFnul4bTG',
 			tilda:
 				'https://eyeliner.tilda.ws/members/signup/group/NWQzZTc2MzFjMGZ-self-access-german-language',
 			lang: 'de',
 			buyLink: '/app'
 		}
+
+
 		// {
 		// 	id: 2,
 		// 	title: 'Mit Kurator',

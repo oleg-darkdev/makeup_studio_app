@@ -10,10 +10,10 @@ const es = {
 				'La opción ideal para quienes desean aprender a su propio ritmo. Obtendrás acceso completo a todas las lecciones sin restricciones.',
 			img: '/images/prices/self.webp',
 			features: ['Aprende a tu propio ritmo'],
-			price: '300',
+			price: '490',
 			link: '#self',
 			anchor: 'self',
-			priceId: 'price_1SMvmtEdBK6uZ4fPRrCQwAlf',
+			priceId: 'price_1TBMXrEdBK6uZ4fPSLOJdZT4',
 			tilda: '',
 
 			lang: 'es',

@@ -3,6 +3,8 @@ const pl = {
 	titleEnd: 'plany taryfowe',
 	buttonBuy: 'Uzyskaj dostęp',
 	data: [
+
+	
 		{
 			id: 1,
 			title: 'Samodzielny',
@@ -10,10 +12,10 @@ const pl = {
 				'Idealna opcja dla tych, którzy chcą uczyć się we własnym tempie. Otrzymasz pełny dostęp do wszystkich lekcji bez żadnych ograniczeń.',
 			img: '/images/prices/self.webp',
 			features: ['Możliwość nauki w dogodnym dla siebie tempie'],
-			price: '300',
+			price: '490',
 			link: '#self',
 			anchor: 'self',
-			priceId: 'price_1SMvjnEdBK6uZ4fPpi7Tnapj',
+			priceId: 'price_1TBMeQEdBK6uZ4fPyosRr351',
 			tilda: 'https://eyeliner.tilda.ws/members/signup/group/mzdtsujocensnwf-samodzielny',
 
 			lang: 'pl',
@@ -26,10 +28,10 @@ const pl = {
 				'Nie tylko oglądasz lekcje — masz mentora. Po każdej pracy domowej kurator udzieli szczegółowej informacji zwrotnej i pomoże poprawić błędy. (liczba miejsc ograniczona)',
 			img: '/images/prices/curator.webp',
 			features: ['Indywidualne wsparcie', 'Bezpośredni kontakt z mistrzem'],
-			price: '500',
+			price: '690',
 			link: '#curator',
 			anchor: 'curator',
-			priceId: 'price_1SMvkCEdBK6uZ4fPAbaYANZG',
+			priceId: 'price_1TBMdbEdBK6uZ4fPTBVmpF34',
 			tilda: 'https://eyeliner.tilda.ws/members/signup/group/zkn5ukjxb2rpqi9-z-kuratorem',
 
 			lang: 'pl',
@@ -46,10 +48,10 @@ const pl = {
 			shortDesc:
 				'Wersja premium kursu. Będziesz uczyć się w mini grupie do 10 osób bezpośrednio z autorką kursu. To coś więcej niż wsparcie — to ekskluzywny dostęp do wiedzy i doświadczenia.',
 			img: '/images/prices/valeria.webp',
-			price: '1500',
+			price: '1100',
 			link: '#with-valeria',
 			anchor: 'with-valeria',
-			priceId: 'price_1SMvkaEdBK6uZ4fPkppS8Nsk',
+			priceId: 'price_1TBMxrEdBK6uZ4fP5omaMOcB',
 			tilda: 'https://eyeliner.tilda.ws/members/signup/group/vwrjk2fydfevze5-z-valeria',
 
 			lang: 'pl',
